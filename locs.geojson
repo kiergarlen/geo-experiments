@@ -10067,17 +10067,19 @@
 			"type":"Feature",
 			"properties":{
 				"title":"Localidad",
-				"description":s Calaveras, 13 habs. (2010)",
+				"description":"Las Calaveras, 13 habs. (2010)",
 				"marker-size":"small",
 				"marker-symbol":"building",
 				"marker-color":"#fb6a4a",
-				"name":s Calaveras",
+				"name":"Las Calaveras",
 				"id":140290183,
 				"p":13,
 				"lv":1
+			},
+			"geometry":{
+				"type":"Point",
+				"coordinates":[-103.091667,21.000001]
 			}
-			-103.091667,"l"
-			"lat":21,"lng":
 		},
 		{
 			"type":"Feature",
@@ -25203,11 +25205,11 @@
 			"type":"Feature",
 			"properties":{
 				"title":"Localidad",
-				"description":"Ex, 918 habs. (2010)",
+				"description":"Ex-Hacienda de Zapotlanejo, 918 habs. (2010)",
 				"marker-size":"small",
 				"marker-symbol":"building",
 				"marker-color":"#fb6a4a",
-				"name":"Ex-,
+				"name":"Ex-Hacienda de Zapotlanejo",
 				"id":140510013,
 				"p":918,
 				"lv":1
@@ -25216,7 +25218,7 @@
 				"type":"Point",
 				"coordinates":[-103.167778,20.455555]
 			}
-		Hacienda de Zapotlanejo"
+
 	},
 		{
 			"type":"Feature",
@@ -30370,18 +30372,18 @@
 			"type":"Feature",
 			"properties":{
 				"title":"Localidad",
-				"description":s Chícharos, 127 habs. (2010)",
+				"description":"Los Chícharos, 127 habs. (2010)",
 				"marker-size":"small",
 				"marker-symbol":"building",
 				"marker-color":"#fb6a4a",
-				"name":s Chícharos",
+				"name":"Los Chícharos",
 				"id":140530672,
 				"p":127,
 				"lv":1
 			},
 			"geometry":{
 				"type":"Point",
-				"coordinates":[-102,"l"21.326666]
+				"coordinates":[-102.000001,21.326666]
 			}
 		},
 		{
@@ -74236,11 +74238,11 @@
 			"type":"Feature",
 			"properties":{
 				"title":"Localidad",
-				"description":"Ex, 4 habs. (2010)",
+				"description":"Ex-Hacienda de Huaxtla, 4 habs. (2010)",
 				"marker-size":"small",
 				"marker-symbol":"building",
 				"marker-color":"#fb6a4a",
-				"name":"Ex-,
+				"name":"Ex-Hacienda de Huaxtla",
 				"id":141200536,
 				"p":4,
 				"lv":1
@@ -74249,8 +74251,7 @@
 				"type":"Point",
 				"coordinates":[-103.407223,20.913055]
 			}
-		Hacienda de Huaxtla"
-	},
+		},
 		{
 			"type":"Feature",
 			"properties":{
@@ -80069,11 +80070,11 @@
 			"type":"Feature",
 			"properties":{
 				"title":"Localidad",
-				"description":"J, 315 habs. (2010)",
+				"description":"J Isabel Flores, 315 habs. (2010)",
 				"marker-size":"small",
 				"marker-symbol":"building",
 				"marker-color":"#fb6a4a",
-				"name":"J.,
+				"name":"J. Isabel Flores",
 				"id":141240322,
 				"p":315,
 				"lv":1
@@ -80082,7 +80083,6 @@
 				"type":"Point",
 				"coordinates":[-103.078056,20.6375]
 			}
-		 Isabel Flores"
 		},
 		{
 			"type":"Feature",
