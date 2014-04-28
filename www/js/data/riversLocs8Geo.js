@@ -1,0 +1,3 @@
+var riversLocs8Geo = {"type":"FeatureCollection","features":[
+	{"type":"Feature","properties":{"id":140390001,"name":"Guadalajara","p":1495182,"lv":8},"geometry":{"type":"Point","coordinates":[-103.342223,20.676388]}},{"type":"Feature","properties":{"id":141200001,"name":"Zapopan","p":1142483,"lv":8},"geometry":{"type":"Point","coordinates":[-103.388334,20.720555]}},{"type":"Feature","properties":{"id":140980001,"name":"Tlaquepaque","p":575942,"lv":8},"geometry":{"type":"Point","coordinates":[-103.307223,20.638611]}},{"type":"Feature","properties":{"id":141010001,"name":"Tonalá","p":408759,"lv":8},"geometry":{"type":"Point","coordinates":[-103.245556,20.623333]}}
+]};
