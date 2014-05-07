@@ -1,7 +1,6 @@
 var riversDamsGeo = {
 	"type":"FeatureCollection",
-	"features":
-	[
+	"features":[
 		{
 			"type":"Feature",
 			"properties":{
@@ -55,17 +54,6 @@ var riversDamsGeo = {
 			"geometry":{
 				"type":"Point",
 				"coordinates":[-103.0394,20.9475]
-			}
-		},
-		{
-			"type":"Feature",
-			"properties":{
-				"id":181,
-				"name":"Ing. Guillermo Lugo Sanabria"
-			},
-			"geometry":{
-				"type":"Point",
-				"coordinates":[-102.2314,20.4906]
 			}
 		},
 		{

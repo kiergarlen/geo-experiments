@@ -4,366 +4,6 @@ var riversPtarsGeo = {
 		{
 			"type":"Feature",
 			"properties":{
-				"id_mun":14008,
-				"cve":"14008PTAR04",
-				"name":"Fraccionamiento Santa Barbara",
-				"g":3.00,
-				"h":3200,
-				"o":0
-			},
-			"geometry":{
-				"type":"Point",
-				"coordinates":[-102.365267,20.696403]
-			}
-		},
-		{
-			"type":"Feature",
-			"properties":{
-				"id_mun":14013,
-				"cve":"14013PTAR02",
-				"name":"El Nacimiento",
-				"g":3.00,
-				"h":1898,
-				"o":0
-			},
-			"geometry":{
-				"type":"Point",
-				"coordinates":[-102.548083,20.531225]
-			}
-		},
-		{
-			"type":"Feature",
-			"properties":{
-				"id_mun":14029,
-				"cve":"14029PTAR03",
-				"name":"Cuquio",
-				"g":13.00,
-				"h":4631,
-				"o":0
-			},
-			"geometry":{
-				"type":"Point",
-				"coordinates":[-103.041350,20.927419]
-			}
-		},
-		{
-			"type":"Feature",
-			"properties":{
-				"id_mun":14029,
-				"cve":"14029PTAR01",
-				"name":"San Juan del Monte",
-				"g":3.00,
-				"h":605,
-				"o":0
-			},
-			"geometry":{
-				"type":"Point",
-				"coordinates":[-103.121644,20.908900]
-			}
-		},
-		{
-			"type":"Feature",
-			"properties":{
-				"id_mun":14029,
-				"cve":"14029PTAR02",
-				"name":"Teponahuasco",
-				"g":3.00,
-				"h":855,
-				"o":0
-			},
-			"geometry":{
-				"type":"Point",
-				"coordinates":[-103.034306,20.908894]
-			}
-		},
-		{
-			"type":"Feature",
-			"properties":{
-				"id_mun":14044,
-				"cve":"14044PTAR10",
-				"name":"Los Girasoles",
-				"g":8.00,
-				"h":1478,
-				"o":0
-			},
-			"geometry":{
-				"type":"Point",
-				"coordinates":[-103.197528,20.431778]
-			}
-		},
-		{
-			"type":"Feature",
-			"properties":{
-				"id_mun":14044,
-				"cve":"14044PTAR11",
-				"name":"Puerta del Sol",
-				"g":10.00,
-				"h":4180,
-				"o":0
-			},
-			"geometry":{
-				"type":"Point",
-				"coordinates":[-103.232153,20.433061]
-			}
-		},
-		{
-			"type":"Feature",
-			"properties":{
-				"id_mun":14044,
-				"cve":"14044PTAR13",
-				"name":"Rinconada La Loma ",
-				"g":8.00,
-				"h":2476,
-				"o":0
-			},
-			"geometry":{
-				"type":"Point",
-				"coordinates":[-103.218458,20.455706]
-			}
-		},
-		{
-			"type":"Feature",
-			"properties":{
-				"id_mun":14044,
-				"cve":"14044PTAR07",
-				"name":"Los Olivos 1",
-				"g":10.00,
-				"h":2184,
-				"o":0
-			},
-			"geometry":{
-				"type":"Point",
-				"coordinates":[-103.228161,20.434492]
-			}
-		},
-		{
-			"type":"Feature",
-			"properties":{
-				"id_mun":14044,
-				"cve":"14044PTAR08",
-				"name":"Los Olivos 2",
-				"g":25.00,
-				"h":5462,
-				"o":0
-			},
-			"geometry":{
-				"type":"Point",
-				"coordinates":[-103.237639,20.446139]
-			}
-		},
-		{
-			"type":"Feature",
-			"properties":{
-				"id_mun":14044,
-				"cve":"14044PTAR14",
-				"name":"Residencial La Capilla",
-				"g":9.00,
-				"h":3888,
-				"o":0
-			},
-			"geometry":{
-				"type":"Point",
-				"coordinates":[-103.213303,20.437894]
-			}
-		},
-		{
-			"type":"Feature",
-			"properties":{
-				"id_mun":14063,
-				"cve":"14063PTAR03",
-				"name":"Odis",
-				"g":18.00,
-				"h":2050,
-				"o":0
-			},
-			"geometry":{
-				"type":"Point",
-				"coordinates":[-102.767786,20.332344]
-			}
-		},
-		{
-			"type":"Feature",
-			"properties":{
-				"id_mun":14066,
-				"cve":"14066PTAR01",
-				"name":"Poncitlan",
-				"g":32.00,
-				"h":13490,
-				"o":0
-			},
-			"geometry":{
-				"type":"Point",
-				"coordinates":[-102.940225,20.387333]
-			}
-		},
-		{
-			"type":"Feature",
-			"properties":{
-				"id_mun":14066,
-				"cve":"14066PTAR05",
-				"name":"Cuitzeo",
-				"g":12.00,
-				"h":5528,
-				"o":0
-			},
-			"geometry":{
-				"type":"Point",
-				"coordinates":[-102.785217,20.350050]
-			}
-		},
-		{
-			"type":"Feature",
-			"properties":{
-				"id_mun":14066,
-				"cve":"14066PTAR06",
-				"name":"San Jacinto",
-				"g":3.00,
-				"h":1698,
-				"o":0
-			},
-			"geometry":{
-				"type":"Point",
-				"coordinates":[-103.057103,20.403989]
-			}
-		},
-		{
-			"type":"Feature",
-			"properties":{
-				"id_mun":14066,
-				"cve":"14066PTAR04",
-				"name":"San Juan Tecomatlan",
-				"g":4.00,
-				"h":1910,
-				"o":0
-			},
-			"geometry":{
-				"type":"Point",
-				"coordinates":[-103.098622,20.326897]
-			}
-		},
-		{
-			"type":"Feature",
-			"properties":{
-				"id_mun":14066,
-				"cve":"14066PTAR03",
-				"name":"San Pedro Itzican",
-				"g":6.00,
-				"h":4932,
-				"o":0
-			},
-			"geometry":{
-				"type":"Point",
-				"coordinates":[-102.949206,20.315644]
-			}
-		},
-		{
-			"type":"Feature",
-			"properties":{
-				"id_mun":14073,
-				"cve":"14073PTAR01",
-				"name":"San Juan de los Lagos",
-				"g":200.00,
-				"h":48153,
-				"o":0
-			},
-			"geometry":{
-				"type":"Point",
-				"coordinates":[-102.349133,21.256675]
-			}
-		},
-		{
-			"type":"Feature",
-			"properties":{
-				"id_mun":14076,
-				"cve":"14076PTAR01",
-				"name":"San Martin de Bolaños",
-				"g":5.00,
-				"h":2130,
-				"o":0
-			},
-			"geometry":{
-				"type":"Point",
-				"coordinates":[-103.810944,21.680586]
-			}
-		},
-		{
-			"type":"Feature",
-			"properties":{
-				"id_mun":14078,
-				"cve":"14078PTAR01",
-				"name":"San Miguel El Alto",
-				"g":60.00,
-				"h":23685,
-				"o":0
-			},
-			"geometry":{
-				"type":"Point",
-				"coordinates":[-102.410639,21.043556]
-			}
-		},
-		{
-			"type":"Feature",
-			"properties":{
-				"id_mun":14120,
-				"cve":"14120PTAR12",
-				"name":"La Venta Grande",
-				"g":10.00,
-				"h":0,
-				"o":0
-			},
-			"geometry":{
-				"type":"Point",
-				"coordinates":[-103.552028,20.727639]
-			}
-		},
-		{
-			"type":"Feature",
-			"properties":{
-				"id_mun":14124,
-				"cve":"14124PTAR01",
-				"name":"Zapotlanejo",
-				"g":73.00,
-				"h":32052,
-				"o":0
-			},
-			"geometry":{
-				"type":"Point",
-				"coordinates":[-103.094272,20.624436]
-			}
-		},
-		{
-			"type":"Feature",
-			"properties":{
-				"id_mun":14124,
-				"cve":"14124PTAR04",
-				"name":"Matatlan",
-				"g":3.00,
-				"h":1805,
-				"o":0
-			},
-			"geometry":{
-				"type":"Point",
-				"coordinates":[-103.138925,20.702814]
-			}
-		},
-		{
-			"type":"Feature",
-			"properties":{
-				"id_mun":14124,
-				"cve":"14124PTAR05",
-				"name":"San Joaquin de los Zorrillos",
-				"g":3.00,
-				"h":973,
-				"o":0
-			},
-			"geometry":{
-				"type":"Point",
-				"coordinates":[-103.025603,20.626022]
-			}
-		},
-		{
-			"type":"Feature",
-			"properties":{
 				"id_mun":14001,
 				"cve":"14001PTAR02",
 				"name":"Acatic",
@@ -396,7 +36,7 @@ var riversPtarsGeo = {
 			"properties":{
 				"id_mun":14117,
 				"cve":"14117PTAR01",
-				"name":"Cañadas de Obregon",
+				"name":"Cañadas De Obregon",
 				"g":8.00,
 				"h":2584,
 				"o":1
@@ -441,7 +81,7 @@ var riversPtarsGeo = {
 			"properties":{
 				"id_mun":14030,
 				"cve":"14030PTAR04",
-				"name":"Santa Cruz de La Soledad",
+				"name":"Santa Cruz De La Soledad",
 				"g":4.00,
 				"h":1701,
 				"o":1
@@ -456,7 +96,7 @@ var riversPtarsGeo = {
 			"properties":{
 				"id_mun":14030,
 				"cve":"14030PTAR03",
-				"name":"San Nicolas de Ibarra",
+				"name":"San Nicolas De Ibarra",
 				"g":8.00,
 				"h":1354,
 				"o":1
@@ -501,7 +141,7 @@ var riversPtarsGeo = {
 			"properties":{
 				"id_mun":14044,
 				"cve":"14044PTAR01",
-				"name":"Ixtlahuacan de los Membrillos",
+				"name":"Ixtlahuacan De Los Membrillos",
 				"g":16.00,
 				"h":6096,
 				"o":1
@@ -516,7 +156,7 @@ var riversPtarsGeo = {
 			"properties":{
 				"id_mun":14044,
 				"cve":"14044PTAR15",
-				"name":"Fraccionamiento Valle de los Sabinos",
+				"name":"Fraccionamiento Valle De Los Sabinos",
 				"g":40.00,
 				"h":4700,
 				"o":1
@@ -559,6 +199,51 @@ var riversPtarsGeo = {
 		{
 			"type":"Feature",
 			"properties":{
+				"id_mun":14050,
+				"cve":"14050PTAR01",
+				"name":"Jocotepec",
+				"g":80.00,
+				"h":18852,
+				"o":1
+			},
+			"geometry":{
+				"type":"Point",
+				"coordinates":[-103.416961,20.283203]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+				"id_mun":14050,
+				"cve":"14050PTAR03",
+				"name":"El Chante",
+				"g":9.00,
+				"h":3064,
+				"o":1
+			},
+			"geometry":{
+				"type":"Point",
+				"coordinates":[-103.388744,20.293614]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+				"id_mun":14050,
+				"cve":"14050PTAR02",
+				"name":"San Juan Cosala",
+				"g":20.00,
+				"h":6903,
+				"o":1
+			},
+			"geometry":{
+				"type":"Point",
+				"coordinates":[-103.353303,20.289619]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
 				"id_mun":14051,
 				"cve":"14051PTAR01",
 				"name":"Juanacatlan",
@@ -576,7 +261,7 @@ var riversPtarsGeo = {
 			"properties":{
 				"id_mun":14053,
 				"cve":"14053PTAR01",
-				"name":"Lagos de Moreno",
+				"name":"Lagos De Moreno",
 				"g":285.00,
 				"h":96605,
 				"o":1
@@ -584,21 +269,6 @@ var riversPtarsGeo = {
 			"geometry":{
 				"type":"Point",
 				"coordinates":[-101.957694,21.313583]
-			}
-		},
-		{
-			"type":"Feature",
-			"properties":{
-				"id_mun":14053,
-				"cve":"14053PTAR15",
-				"name":"Parque Industrial",
-				"g":3.00,
-				"h":0,
-				"o":1
-			},
-			"geometry":{
-				"type":"Point",
-				"coordinates":[-101.973883,21.356672]
 			}
 		},
 		{
@@ -666,7 +336,7 @@ var riversPtarsGeo = {
 			"properties":{
 				"id_mun":14078,
 				"cve":"14078PTAR03",
-				"name":"San Jose de los Reynoso",
+				"name":"San Jose De Los Reynoso",
 				"g":2.00,
 				"h":1168,
 				"o":1
@@ -726,7 +396,7 @@ var riversPtarsGeo = {
 			"properties":{
 				"id_mun":14111,
 				"cve":"14111PTAR01",
-				"name":"Valle de Guadalupe",
+				"name":"Valle De Guadalupe",
 				"g":18.00,
 				"h":4465,
 				"o":1
@@ -741,7 +411,7 @@ var riversPtarsGeo = {
 			"properties":{
 				"id_mun":14120,
 				"cve":"14120PTAR17",
-				"name":"Club de Golf Las Cañadas",
+				"name":"Club De Golf Las Cañadas",
 				"g":10.00,
 				"h":5400,
 				"o":1
@@ -786,7 +456,7 @@ var riversPtarsGeo = {
 			"properties":{
 				"id_mun":14120,
 				"cve":"14120PTAR02",
-				"name":"La Venta del Astillero",
+				"name":"La Venta Del Astillero",
 				"g":29.00,
 				"h":5551,
 				"o":1
@@ -801,7 +471,7 @@ var riversPtarsGeo = {
 			"properties":{
 				"id_mun":14124,
 				"cve":"14124PTAR06",
-				"name":"San Jose de Las Flores",
+				"name":"San Jose De Las Flores",
 				"g":2.00,
 				"h":1119,
 				"o":1
@@ -809,51 +479,6 @@ var riversPtarsGeo = {
 			"geometry":{
 				"type":"Point",
 				"coordinates":[-102.962083,20.655889]
-			}
-		},
-		{
-			"type":"Feature",
-			"properties":{
-				"id_mun":14120,
-				"cve":"14120PTAR22",
-				"name":"Agua Prieta",
-				"g":8500.00,
-				"h":3280000,
-				"o":3
-			},
-			"geometry":{
-				"type":"Point",
-				"coordinates":[-103.335064,20.768811]
-			}
-		},
-		{
-			"type":"Feature",
-			"properties":{
-				"id_mun":14093,
-				"cve":"14093PTAR02",
-				"name":"Capilla de Guadalupe",
-				"g":30.00,
-				"h":13174,
-				"o":4
-			},
-			"geometry":{
-				"type":"Point",
-				"coordinates":[-102.582756,20.834058]
-			}
-		},
-		{
-			"type":"Feature",
-			"properties":{
-				"id_mun":14053,
-				"cve":"14053PTAR19",
-				"name":"Paso de Cuarenta",
-				"g":10.00,
-				"h":3547,
-				"o":9
-			},
-			"geometry":{
-				"type":"Point",
-				"coordinates":[-101.753611,21.502500]
 			}
 		},
 		{
@@ -906,7 +531,7 @@ var riversPtarsGeo = {
 			"properties":{
 				"id_mun":14008,
 				"cve":"14008PTAR03",
-				"name":"Rinconada de los Vazquez",
+				"name":"Rinconada De Los Vazquez",
 				"g":3.00,
 				"h":3200,
 				"o":14
@@ -921,7 +546,7 @@ var riversPtarsGeo = {
 			"properties":{
 				"id_mun":14008,
 				"cve":"14008PTAR02",
-				"name":"Santiaguito de Velazquez",
+				"name":"Santiaguito De Velazquez",
 				"g":4.00,
 				"h":1086,
 				"o":14
@@ -1011,7 +636,7 @@ var riversPtarsGeo = {
 			"properties":{
 				"id_mun":14046,
 				"cve":"14046PTAR03",
-				"name":"Santa Ana de Guadalupe",
+				"name":"Santa Ana De Guadalupe",
 				"g":5.00,
 				"h":273,
 				"o":14
@@ -1026,7 +651,7 @@ var riversPtarsGeo = {
 			"properties":{
 				"id_mun":14046,
 				"cve":"14046PTAR02",
-				"name":"Teocaltitan de Guadalupe",
+				"name":"Teocaltitan De Guadalupe",
 				"g":3.00,
 				"h":663,
 				"o":14
@@ -1054,9 +679,24 @@ var riversPtarsGeo = {
 		{
 			"type":"Feature",
 			"properties":{
+				"id_mun":14050,
+				"cve":"14050PTAR05",
+				"name":"San Cristobal Zapotitlan",
+				"g":4.00,
+				"h":2083,
+				"o":14
+			},
+			"geometry":{
+				"type":"Point",
+				"coordinates":[-103.377703,20.225911]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
 				"id_mun":14051,
 				"cve":"14051PTAR02",
-				"name":"Ex-hacienda de Zapotlanejo",
+				"name":"Ex-hacienda De Zapotlanejo",
 				"g":2.00,
 				"h":881,
 				"o":14
@@ -1079,6 +719,21 @@ var riversPtarsGeo = {
 			"geometry":{
 				"type":"Point",
 				"coordinates":[-103.143117,20.563833]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+				"id_mun":14053,
+				"cve":"14053PTAR15",
+				"name":"Parque Industrial",
+				"g":3.00,
+				"h":0,
+				"o":14
+			},
+			"geometry":{
+				"type":"Point",
+				"coordinates":[-101.973883,21.356672]
 			}
 		},
 		{
@@ -1109,6 +764,36 @@ var riversPtarsGeo = {
 			"geometry":{
 				"type":"Point",
 				"coordinates":[-102.771881,21.256581]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+				"id_mun":14064,
+				"cve":"14064PTAR01",
+				"name":"Chinampas",
+				"g":3.00,
+				"h":1540,
+				"o":14
+			},
+			"geometry":{
+				"type":"Point",
+				"coordinates":[-101.815364,21.825889]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+				"id_mun":14074,
+				"cve":"14074PTAR01",
+				"name":"San Julian",
+				"g":20.00,
+				"h":12730,
+				"o":14
+			},
+			"geometry":{
+				"type":"Point",
+				"coordinates":[-102.185611,21.034972]
 			}
 		},
 		{
@@ -1176,7 +861,7 @@ var riversPtarsGeo = {
 			"properties":{
 				"id_mun":14091,
 				"cve":"14091PTAR02",
-				"name":"Belen del Refugio",
+				"name":"Belen Del Refugio",
 				"g":7.00,
 				"h":2356,
 				"o":14
@@ -1206,7 +891,7 @@ var riversPtarsGeo = {
 			"properties":{
 				"id_mun":14093,
 				"cve":"14093PTAR01",
-				"name":"Tepatitlán de Morelos",
+				"name":"Tepatitlán De Morelos",
 				"g":200.00,
 				"h":91407,
 				"o":14
@@ -1236,7 +921,7 @@ var riversPtarsGeo = {
 			"properties":{
 				"id_mun":14097,
 				"cve":"14097PTAR15",
-				"name":"Tlajomulco de Zuñiga",
+				"name":"Tlajomulco De Zuñiga",
 				"g":120.00,
 				"h":41715,
 				"o":14
@@ -1266,7 +951,7 @@ var riversPtarsGeo = {
 			"properties":{
 				"id_mun":14097,
 				"cve":"14097PTAR14",
-				"name":"Club de Golf Santa Anita",
+				"name":"Club De Golf Santa Anita",
 				"g":10.00,
 				"h":2869,
 				"o":14
@@ -1281,7 +966,7 @@ var riversPtarsGeo = {
 			"properties":{
 				"id_mun":14097,
 				"cve":"14097PTAR33",
-				"name":"Fraccionamiento los Agaves",
+				"name":"Fraccionamiento Los Agaves",
 				"g":0.00,
 				"h":16000,
 				"o":14
@@ -1371,7 +1056,7 @@ var riversPtarsGeo = {
 			"properties":{
 				"id_mun":14118,
 				"cve":"14118PTAR01",
-				"name":"Yahualica de Gonzalez Gallo",
+				"name":"Yahualica De Gonzalez Gallo",
 				"g":65.00,
 				"h":13554,
 				"o":14
@@ -1476,7 +1161,7 @@ var riversPtarsGeo = {
 			"properties":{
 				"id_mun":14120,
 				"cve":"14120PTAR06",
-				"name":"Meson de Copala",
+				"name":"Meson De Copala",
 				"g":1.00,
 				"h":422,
 				"o":14

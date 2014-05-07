@@ -14,6 +14,32 @@ $(document).ready(function () {
 	//L.control.attribution({prefix:false}).addAttribution('CEA Jalisco-UEAS').addTo(map);
 	var overlayMaps = [];
 	var layersControl = {};
+	var ptarStatus = [
+		{
+			"o":0,
+			"s":"Fuera De Operación"
+		},
+		{
+			"o":1,
+			"s":"En Operación Dentro De Norma"
+		},
+		{
+			"o":3,
+			"s":"En Construcción"
+		},
+		{
+			"o":4,
+			"s":"En Rehabilitación"
+		},
+		{
+			"o":9,
+			"s":"En Proceso De Estabilización"
+		},
+		{
+			"o":14,
+			"s":"En Operación Fuera De Norma"
+		}
+	];
 	var locColors = [
 		'#67000d',
 		'#a50f15',
@@ -47,7 +73,7 @@ $(document).ready(function () {
 	var urbanPolyStyle = {
 		color: '#efa533',
 		fillColor: '#ffb543',
-		weight: 2,
+		weight: 1,
 		opacity: 1,
 		fillOpacity: 0.125
 	};
@@ -101,13 +127,13 @@ $(document).ready(function () {
 
 	var processLocMarkers = function(feature, latlng) {
 		return L.circleMarker(latlng, {
-			radius: 2 + (feature.properties.lv / 2),
-			//radius: feature.properties.lv,
+			//radius: 2 + (feature.properties.lv / 2),
+			radius: 3 + feature.properties.lv,
 			fillColor: locColors[feature.properties.lv - 1],
 			color: locColors[0],
 			weight: 1,
 			opacity: 1,
-			fillOpacity: 0.5,
+			fillOpacity: 0.75,
 			stroke: true
 		});
 	};
@@ -268,6 +294,11 @@ $(document).ready(function () {
 		onEachFeature: processPtarsFeatures
 	});
 
+	var ptarsNoOpGeoLayer = L.geoJson(riversPtarsNoOpGeo, {
+		pointToLayer: processPtarMarkers,
+		onEachFeature: processPtarsFeatures
+	});
+
 	var waterBodiesGeoLayer = L.geoJson(riversWaterBodiesGeo, {
 		style: {
 			color: '#00f',
@@ -278,6 +309,17 @@ $(document).ready(function () {
 		},
 		onEachFeature: processWaterBodiesFeatures
 	});
+
+	//var waterBodiesGeoLayerComplete = L.geoJson(riversWaterBodiesGeoComplete, {
+	//	style: {
+	//		color: '#f00',
+	//		weight: 1,
+	//		fillColor: '#f00',
+	//		opacity: 1,
+	//		fillOpacity: 1
+	//	},
+	//	onEachFeature: processWaterBodiesFeatures
+	//});
 
 	var metroAreasGeo = L.geoJson(riversMetroAreasGeo, {
 		style: {
@@ -337,6 +379,10 @@ $(document).ready(function () {
 			name: 'Cuerpos de agua',
 			layer: waterBodiesGeoLayer
 		},
+		//{
+		//	name: 'Cuerpos de agua (Otros)',
+		//	layer: waterBodiesGeoLayerComplete
+		//},
 		{
 			name: 'Ríos',
 			layer: riversGeoLayer
@@ -346,7 +392,11 @@ $(document).ready(function () {
 			layer: damsGeoLayer
 		},
 		{
-			name: 'PTAR\'s',
+			name: 'PTAR\'s (fuera de operación)',
+			layer: ptarsNoOpGeoLayer
+		},
+		{
+			name: 'PTAR\'s (operando)',
 			layer: ptarsGeoLayer
 		},
 		{
