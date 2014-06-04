@@ -5,10 +5,10 @@
 			"type":"Feature",
 			"properties":{
 				"title":"Localidad",
-				"description":"Acatic, 11890 habs. (2010)",
 				"marker-size":"small",
 				"marker-symbol":"building",
 				"marker-color":"#fb6a4a",
+				"description":"Acatic, 11890 habs. (2010)",
 				"name":"Acatic",
 				"id":140010001,
 				"p":11890,
