@@ -1,0 +1,803 @@
+{
+	"type":"FeatureCollection",
+	"features":[
+		{
+			"type":"Feature",
+			"properties":{
+				"id":"14010PPOT01",
+				"name":"Atemajac de Brizuela",
+				"idl":140100001,
+				"idf":6,
+				"idp":1,
+				"ids":7,
+				"g":0,
+				"mun":"Atemajac de Brizuela",
+				"loc":"Atemajac de Brizuela",
+				"f":"Río",
+				"p":"Planta Convencional",
+				"s":"Abandonada"
+			},
+			"geometry":{
+				"type":"Point",
+				"coordinates":[-103.7275,20.1389]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+				"id":"14018PPOT01",
+				"name":"La Barca",
+				"idl":140180001,
+				"idf":1,
+				"idp":1,
+				"ids":1,
+				"g":100,
+				"mun":"La Barca",
+				"loc":"La Barca",
+				"f":"Pozo",
+				"p":"Planta Convencional",
+				"s":"En Operación"
+			},
+			"geometry":{
+				"type":"Point",
+				"coordinates":[-102.5497,20.2772]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+				"id":"14019PPOT01",
+				"name":"Bolaños",
+				"idl":140190001,
+				"idf":3,
+				"idp":1,
+				"ids":0,
+				"g":16,
+				"mun":"Bolaños",
+				"loc":"Bolaños",
+				"f":"Galería",
+				"p":"Planta Convencional",
+				"s":"Fuera de Operación"
+			},
+			"geometry":{
+				"type":"Point",
+				"coordinates":[-103.7797,21.8314]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+				"id":"14021PPOT01",
+				"name":"La Resolana ",
+				"idl":140210001,
+				"idf":6,
+				"idp":1,
+				"ids":1,
+				"g":8,
+				"mun":"Casimiro Castillo",
+				"loc":"La Resolana",
+				"f":"Río",
+				"p":"Planta Convencional",
+				"s":"En Operación"
+			},
+			"geometry":{
+				"type":"Point",
+				"coordinates":[-104.4353,19.6022]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+				"id":"14029PPOT01",
+				"name":"Cuquío",
+				"idl":140290001,
+				"idf":8,
+				"idp":1,
+				"ids":1,
+				"g":16,
+				"mun":"Cuquío",
+				"loc":"Cuquío",
+				"f":"Presa",
+				"p":"Planta Convencional",
+				"s":"En Operación"
+			},
+			"geometry":{
+				"type":"Point",
+				"coordinates":[-103.0233,20.9278]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+				"id":"14029PPOT02",
+				"name":"Cuquío 2",
+				"idl":140290001,
+				"idf":8,
+				"idp":1,
+				"ids":1,
+				"g":30,
+				"mun":"Cuquío",
+				"loc":"Cuquío",
+				"f":"Presa",
+				"p":"Planta Convencional",
+				"s":"En Operación"
+			},
+			"geometry":{
+				"type":"Point",
+				"coordinates":[-103.0233,20.9278]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+				"id":"14039PPOT01",
+				"name":"ZCG (Miravalle)",
+				"idl":140390001,
+				"idf":7,
+				"idp":1,
+				"ids":1,
+				"g":9000,
+				"mun":"Guadalajara",
+				"loc":"Guadalajara",
+				"f":"Lago",
+				"p":"Planta Convencional",
+				"s":"En Operación"
+			},
+			"geometry":{
+				"type":"Point",
+				"coordinates":[-103.3461,20.6764]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+				"id":"14045PPOT01",
+				"name":"Ixtlahuacán del Río",
+				"idl":140450001,
+				"idf":8,
+				"idp":1,
+				"ids":1,
+				"g":22,
+				"mun":"Ixtlahuacán del Río",
+				"loc":"Ixtlahuacán del Río",
+				"f":"Presa",
+				"p":"Planta Convencional",
+				"s":"En Operación"
+			},
+			"geometry":{
+				"type":"Point",
+				"coordinates":[-103.2383,20.8642]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+				"id":"14045PPOT02",
+				"name":"San Antonio de los Vázquez",
+				"idl":140450106,
+				"idf":8,
+				"idp":1,
+				"ids":1,
+				"g":18,
+				"mun":"Ixtlahuacán del Río",
+				"loc":"San Antonio de los Vázquez",
+				"f":"Presa",
+				"p":"Planta Convencional",
+				"s":"En Operación"
+			},
+			"geometry":{
+				"type":"Point",
+				"coordinates":[-103.1461,20.8167]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+				"id":"14049PPOT01",
+				"name":"Jilotlan de los Dolores",
+				"idl":140490001,
+				"idf":5,
+				"idp":1,
+				"ids":0,
+				"g":5,
+				"mun":"Jilotlán de los Dolores",
+				"loc":"Jilotlán de los Dolores",
+				"f":"Arroyo",
+				"p":"Planta Convencional",
+				"s":"Fuera de Operación"
+			},
+			"geometry":{
+				"type":"Point",
+				"coordinates":[-103.0194,19.3706]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+				"id":"14054PPOT01",
+				"name":"San Miguel Hidalgo",
+				"idl":140540007,
+				"idf":8,
+				"idp":1,
+				"ids":0,
+				"g":5,
+				"mun":"El Limón",
+				"loc":"San Miguel Hidalgo",
+				"f":"Presa",
+				"p":"Planta Convencional",
+				"s":"Fuera de Operación"
+			},
+			"geometry":{
+				"type":"Point",
+				"coordinates":[-104.0825,19.8606]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+				"id":"14055PPOT01",
+				"name":"Magdalena (Cañita)",
+				"idl":140550001,
+				"idf":1,
+				"idp":2,
+				"ids":0,
+				"g":16,
+				"mun":"Magdalena",
+				"loc":"Magdalena",
+				"f":"Pozo",
+				"p":"Filtros A Presión",
+				"s":"Fuera de Operación"
+			},
+			"geometry":{
+				"type":"Point",
+				"coordinates":[-103.9797,20.9064]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+				"id":"14055PPOT02",
+				"name":"Magdalena (Cementerio)",
+				"idl":140550001,
+				"idf":1,
+				"idp":2,
+				"ids":0,
+				"g":25,
+				"mun":"Magdalena",
+				"loc":"Magdalena",
+				"f":"Pozo",
+				"p":"Filtros A Presión",
+				"s":"Fuera de Operación"
+			},
+			"geometry":{
+				"type":"Point",
+				"coordinates":[-103.9797,20.9064]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+				"id":"14057PPOT01",
+				"name":"Villa Morelos",
+				"idl":140570016,
+				"idf":9,
+				"idp":2,
+				"ids":1,
+				"g":3,
+				"mun":"La Manzanilla de la Paz",
+				"loc":"Villa Morelos",
+				"f":"Bordo",
+				"p":"Filtros A Presión",
+				"s":"En Operación"
+			},
+			"geometry":{
+				"type":"Point",
+				"coordinates":[-103.1585,19.9933]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+				"id":"14063PPOT01",
+				"name":"Joaquín Amaro",
+				"idl":140630009,
+				"idf":1,
+				"idp":2,
+				"ids":1,
+				"g":15,
+				"mun":"Ocotlán",
+				"loc":"General Joaquín Amaro (Los Sauces)",
+				"f":"Pozo",
+				"p":"Filtros A Presión",
+				"s":"En Operación"
+			},
+			"geometry":{
+				"type":"Point",
+				"coordinates":[-102.7728,20.4322]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+				"id":"14067PPOT01",
+				"name":"Puerto Vallarta 1",
+				"idl":140670001,
+				"idf":6,
+				"idp":1,
+				"ids":1,
+				"g":140,
+				"mun":"Puerto Vallarta",
+				"loc":"Puerto Vallarta",
+				"f":"Río",
+				"p":"Planta Convencional",
+				"s":"En Operación"
+			},
+			"geometry":{
+				"type":"Point",
+				"coordinates":[-105.2311,20.6133]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+				"id":"14067PPOT02",
+				"name":"Puerto Vallarta 2",
+				"idl":140670001,
+				"idf":6,
+				"idp":1,
+				"ids":1,
+				"g":300,
+				"mun":"Puerto Vallarta",
+				"loc":"Puerto Vallarta",
+				"f":"Río",
+				"p":"Planta Convencional",
+				"s":"En Operación"
+			},
+			"geometry":{
+				"type":"Point",
+				"coordinates":[-105.2311,20.6133]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+				"id":"14067PPOT04",
+				"name":"Palmas de Arriba",
+				"idl":140670038,
+				"idf":6,
+				"idp":1,
+				"ids":1,
+				"g":50,
+				"mun":"Puerto Vallarta",
+				"loc":"Las Palmas de Arriba",
+				"f":"Río",
+				"p":"Planta Convencional",
+				"s":"En Operación"
+			},
+			"geometry":{
+				"type":"Point",
+				"coordinates":[-103.7581,20.3569]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+				"id":"14067PPOT05",
+				"name":"Puerto Vallarta 3 (Mojonera)",
+				"idl":140670001,
+				"idf":3,
+				"idp":1,
+				"ids":1,
+				"g":600,
+				"mun":"Puerto Vallarta",
+				"loc":"Puerto Vallarta",
+				"f":"Galería",
+				"p":"Planta Convencional",
+				"s":"En Operación"
+			},
+			"geometry":{
+				"type":"Point",
+				"coordinates":[-104.7382,20.3730]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+				"id":"14073PPOT01",
+				"name":"San Juan de los Lagos",
+				"idl":140730001,
+				"idf":6,
+				"idp":1,
+				"ids":1,
+				"g":40,
+				"mun":"San Juan de los Lagos",
+				"loc":"San Juan de los Lagos",
+				"f":"Río",
+				"p":"Planta Convencional",
+				"s":"En Operación"
+			},
+			"geometry":{
+				"type":"Point",
+				"coordinates":[-102.3308,21.2458]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+				"id":"14077PPOT01",
+				"name":"San Gerónimo",
+				"idl":140770016,
+				"idf":1,
+				"idp":2,
+				"ids":1,
+				"g":2,
+				"mun":"San Martín Hidalgo",
+				"loc":"San Jerónimo (Los Barbosa)",
+				"f":"Pozo",
+				"p":"Filtros A Presión",
+				"s":"En Operación"
+			},
+			"geometry":{
+				"type":"Point",
+				"coordinates":[-103.9822,20.4025]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+				"id":"14083PPOT01",
+				"name":"Tala",
+				"idl":140830176,
+				"idf":6,
+				"idp":1,
+				"ids":1,
+				"g":35,
+				"mun":"Tala",
+				"loc":"Tala",
+				"f":"Río",
+				"p":"Planta Convencional",
+				"s":"En Operación"
+			},
+			"geometry":{
+				"type":"Point",
+				"coordinates":[-103.6933,20.6611]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+				"id":"14088PPOT01",
+				"name":"Tecolotlán",
+				"idl":140880001,
+				"idf":6,
+				"idp":1,
+				"ids":0,
+				"g":10,
+				"mun":"Tecolotlán",
+				"loc":"Tecolotlán",
+				"f":"Río",
+				"p":"Planta Convencional",
+				"s":"Fuera de Operación"
+			},
+			"geometry":{
+				"type":"Point",
+				"coordinates":[-104.0489,20.2028]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+				"id":"14091PPOT01",
+				"name":"Teocaltiche",
+				"idl":140910001,
+				"idf":6,
+				"idp":1,
+				"ids":1,
+				"g":60,
+				"mun":"Teocaltiche",
+				"loc":"Teocaltiche",
+				"f":"Río",
+				"p":"Planta Convencional",
+				"s":"En Operación"
+			},
+			"geometry":{
+				"type":"Point",
+				"coordinates":[-102.5739,21.4336]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+				"id":"14091PPOT02",
+				"name":"Rancho Nuevo",
+				"idl":140910107,
+				"idf":1,
+				"idp":2,
+				"ids":4,
+				"g":3,
+				"mun":"Teocaltiche",
+				"loc":"Rancho Nuevo",
+				"f":"Pozo",
+				"p":"Filtros A Presión",
+				"s":"En Rehabilitación"
+			},
+			"geometry":{
+				"type":"Point",
+				"coordinates":[-102.5228,21.3406]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+				"id":"14093PPOT01",
+				"name":"Tepatitlán de Morelos",
+				"idl":140930001,
+				"idf":8,
+				"idp":1,
+				"ids":1,
+				"g":80,
+				"mun":"Tepatitlán de Morelos",
+				"loc":"Tepatitlán de Morelos",
+				"f":"Presa",
+				"p":"Planta Convencional",
+				"s":"En Operación"
+			},
+			"geometry":{
+				"type":"Point",
+				"coordinates":[-102.7611,20.8167]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+				"id":"14094PPOT01",
+				"name":"Potrero de los Rivera",
+				"idl":140940109,
+				"idf":9,
+				"idp":1,
+				"ids":0,
+				"g":5,
+				"mun":"Tequila",
+				"loc":"Potrero de los Rivera",
+				"f":"Bordo",
+				"p":"Planta Convencional",
+				"s":"Fuera de Operación"
+			},
+			"geometry":{
+				"type":"Point",
+				"coordinates":[-103.6861,20.9378]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+				"id":"14095PPOT01",
+				"name":"La Vega",
+				"idl":140950011,
+				"idf":1,
+				"idp":2,
+				"ids":0,
+				"g":8,
+				"mun":"Teuchitlán",
+				"loc":"La Vega",
+				"f":"Pozo",
+				"p":"Filtros A Presión",
+				"s":"Fuera de Operación"
+			},
+			"geometry":{
+				"type":"Point",
+				"coordinates":[-103.8564,20.5833]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+				"id":"14098PPOT01",
+				"name":"ZCG (Las Huertas)",
+				"idl":140980081,
+				"idf":7,
+				"idp":1,
+				"ids":1,
+				"g":2000,
+				"mun":"Tlaquepaque",
+				"loc":"El Bajío [Lomas del Club]",
+				"f":"Lago",
+				"p":"Planta Convencional",
+				"s":"En Operación"
+			},
+			"geometry":{
+				"type":"Point",
+				"coordinates":[-103.2958,20.5833]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+				"id":"14100PPOT01",
+				"name":"Tomatlán",
+				"idl":141000001,
+				"idf":8,
+				"idp":6,
+				"ids":0,
+				"g":0,
+				"mun":"Tomatlán",
+				"loc":"Tomatlán",
+				"f":"Presa",
+				"p":"Otros",
+				"s":"Fuera de Operación"
+			},
+			"geometry":{
+				"type":"Point",
+				"coordinates":[-105.2486,19.9408]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+				"id":"14100PPOT02",
+				"name":"El Tule",
+				"idl":141000168,
+				"idf":8,
+				"idp":6,
+				"ids":0,
+				"g":0,
+				"mun":"Tomatlán",
+				"loc":"El Tule (La Taberna)",
+				"f":"Presa",
+				"p":"Otros",
+				"s":"Fuera de Operación"
+			},
+			"geometry":{
+				"type":"Point",
+				"coordinates":[-104.9247,19.9594]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+				"id":"14101PPOT01",
+				"name":"ZCG (San Gaspar)",
+				"idl":141010150,
+				"idf":7,
+				"idp":1,
+				"ids":1,
+				"g":3000,
+				"mun":"Tonalá",
+				"loc":"San Gaspar Uno",
+				"f":"Lago",
+				"p":"Planta Convencional",
+				"s":"En Operación"
+			},
+			"geometry":{
+				"type":"Point",
+				"coordinates":[-103.2347,20.6753]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+				"id":"14107PPOT01",
+				"name":"Las Cebollas",
+				"idl":141070002,
+				"idf":9,
+				"idp":2,
+				"ids":1,
+				"g":3,
+				"mun":"Tuxcueca",
+				"loc":"Las Cebollas",
+				"f":"Bordo",
+				"p":"Filtros A Presión",
+				"s":"En Operación"
+			},
+			"geometry":{
+				"type":"Point",
+				"coordinates":[-103.1841,20.1532]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+				"id":"14110PPOT01",
+				"name":"San Agustín",
+				"idl":141100038,
+				"idf":1,
+				"idp":2,
+				"ids":1,
+				"g":5,
+				"mun":"Unión de Tula",
+				"loc":"San Agustín (El Carrizal)",
+				"f":"Pozo",
+				"p":"Filtros A Presión",
+				"s":"En Operación"
+			},
+			"geometry":{
+				"type":"Point",
+				"coordinates":[-104.2033,20.0931]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+				"id":"14115PPOT01",
+				"name":"San Lorenzo de Atzqueltán",
+				"idl":141150008,
+				"idf":1,
+				"idp":2,
+				"ids":0,
+				"g":3,
+				"mun":"Villa Guerrero",
+				"loc":"San Lorenzo de Atzqueltán",
+				"f":"Pozo",
+				"p":"Filtros A Presión",
+				"s":"Fuera de Operación"
+			},
+			"geometry":{
+				"type":"Point",
+				"coordinates":[-103.7347,22.0417]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+				"id":"14117PPOT01",
+				"name":"Cañadas de Obregón",
+				"idl":141170001,
+				"idf":9,
+				"idp":1,
+				"ids":1,
+				"g":12,
+				"mun":"Cañadas de Obregón",
+				"loc":"Cañadas de Obregón",
+				"f":"Bordo",
+				"p":"Planta Convencional",
+				"s":"En Operación"
+			},
+			"geometry":{
+				"type":"Point",
+				"coordinates":[-102.6889,21.1483]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+				"id":"14118PPOT02",
+				"name":"Yahualica de González Gallo",
+				"idl":141180001,
+				"idf":8,
+				"idp":1,
+				"ids":1,
+				"g":32,
+				"mun":"Yahualica de González Gallo",
+				"loc":"Yahualica de González Gallo",
+				"f":"Presa",
+				"p":"Planta Convencional",
+				"s":"En Operación"
+			},
+			"geometry":{
+				"type":"Point",
+				"coordinates":[-102.8906,21.1817]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+				"id":"14120PPOT01",
+				"name":"ZCG (Toluquilla)",
+				"idl":141200001,
+				"idf":1,
+				"idp":6,
+				"ids":1,
+				"g":1200,
+				"mun":"Zapopan",
+				"loc":"Zapopan",
+				"f":"Pozo",
+				"p":"Otros",
+				"s":"En Operación"
+			},
+			"geometry":{
+				"type":"Point",
+				"coordinates":[-103.3919,20.7203]
+			}
+		}
+	]
+}

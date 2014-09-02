@@ -1,0 +1,694 @@
+{
+	"type":"FeatureCollection",
+	"features":[
+		{
+			"type":"Feature",
+			"properties":{
+				"id":222,
+				"name":"Achimec II",
+				"mun":"Huejúcar",
+				"vmax":9
+			},
+			"geometry":{
+				"type":"Point",
+				"coordinates":[-103.225,22.3263]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+				"id":737,
+				"name":"Alcaparrosa",
+				"mun":"Unión de Tula",
+				"vmax":5
+			},
+			"geometry":{
+				"type":"Point",
+				"coordinates":[-104.211,19.984]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+				"id":186,
+				"name":"Basilio Vadillo",
+				"mun":"Ejutla",
+				"vmax":145.72
+			},
+			"geometry":{
+				"type":"Point",
+				"coordinates":[-104.061,19.9139]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+				"id":753,
+				"name":"Boquilla Villa Guerrero",
+				"mun":"Villa Guerrero",
+				"vmax":2.42
+			},
+			"geometry":{
+				"type":"Point",
+				"coordinates":[-103.539,22.0052]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+				"id":634,
+				"name":"Cajón de Peña",
+				"mun":"Tomatlán",
+				"vmax":466.6
+			},
+			"geometry":{
+				"type":"Point",
+				"coordinates":[-105.151,20.0152]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+				"id":738,
+				"name":"Charco Azul",
+				"mun":"Unión de Tula",
+				"vmax":6
+			},
+			"geometry":{
+				"type":"Point",
+				"coordinates":[-104.269,19.9079]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+				"id":815,
+				"name":"Chila",
+				"mun":"Zapotlán del Rey",
+				"vmax":0.63
+			},
+			"geometry":{
+				"type":"Point",
+				"coordinates":[-102.983,20.4749]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+				"id":977,
+				"name":"Chilatán (Constitución de 1917)",
+				"mun":"Jilotlán de los Dolores",
+				"vmax":600
+			},
+			"geometry":{
+				"type":"Point",
+				"coordinates":[-102.774,19.288]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+				"id":203,
+				"name":"Coatepec",
+				"mun":"Etzatlán",
+				"vmax":2
+			},
+			"geometry":{
+				"type":"Point",
+				"coordinates":[-104.086,20.8025]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+				"id":349,
+				"name":"Corrinches",
+				"mun":"Mascota",
+				"vmax":20
+			},
+			"geometry":{
+				"type":"Point",
+				"coordinates":[-104.78,20.48]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+				"id":169,
+				"name":"Cuacuala",
+				"mun":"Cuquío",
+				"vmax":6.5
+			},
+			"geometry":{
+				"type":"Point",
+				"coordinates":[-103.093,20.9576]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+				"id":170,
+				"name":"Cuquío",
+				"mun":"Cuquío",
+				"vmax":7.5
+			},
+			"geometry":{
+				"type":"Point",
+				"coordinates":[-103.039,20.9476]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+				"id":284,
+				"name":"El Cuarenta",
+				"mun":"Lagos de Moreno",
+				"vmax":30.63
+			},
+			"geometry":{
+				"type":"Point",
+				"coordinates":[-101.737,21.4978]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+				"id":787,
+				"name":"El Estribón",
+				"mun":"Yahualica de González Gallo",
+				"vmax":6.4
+			},
+			"geometry":{
+				"type":"Point",
+				"coordinates":[-102.9,21.1853]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+				"id":548,
+				"name":"El Nogal",
+				"mun":"Tapalpa",
+				"vmax":19
+			},
+			"geometry":{
+				"type":"Point",
+				"coordinates":[-103.788,19.9004]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+				"id":558,
+				"name":"El Pochote",
+				"mun":"Tecolotlán",
+				"vmax":7
+			},
+			"geometry":{
+				"type":"Point",
+				"coordinates":[-104.049,20.1614]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+				"id":745,
+				"name":"El Salto",
+				"mun":"Valle de Guadalupe",
+				"vmax":85
+			},
+			"geometry":{
+				"type":"Point",
+				"coordinates":[-102.707,21.0428]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+				"id":339,
+				"name":"El Trigo II",
+				"mun":"Magdalena",
+				"vmax":4.45
+			},
+			"geometry":{
+				"type":"Point",
+				"coordinates":[-104,20.9]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+				"id":34,
+				"name":"El Tule",
+				"mun":"Arandas",
+				"vmax":30
+			},
+			"geometry":{
+				"type":"Point",
+				"coordinates":[-102.433,20.7257]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+				"id":607,
+				"name":"El Volantín",
+				"mun":"Tizapán el Alto",
+				"vmax":14.11
+			},
+			"geometry":{
+				"type":"Point",
+				"coordinates":[-103.09,20.0689]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+				"id":831,
+				"name":"Elías Gonzalez Chavez",
+				"mun":"Acatic",
+				"vmax":80
+			},
+			"geometry":{
+				"type":"Point",
+				"coordinates":[-102.983,20.6833]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+				"id":685,
+				"name":"Garabatos",
+				"mun":"Tototlán",
+				"vmax":12
+			},
+			"geometry":{
+				"type":"Point",
+				"coordinates":[-102.697,20.6273]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+				"id":743,
+				"name":"General Ramón Corona",
+				"mun":"Unión de Tula",
+				"vmax":250
+			},
+			"geometry":{
+				"type":"Point",
+				"coordinates":[-104.37,19.9759]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+				"id":584,
+				"name":"Huejotitlán",
+				"mun":"Teocuitatlán de Corona",
+				"vmax":7
+			},
+			"geometry":{
+				"type":"Point",
+				"coordinates":[-103.363,20.0506]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+				"id":8,
+				"name":"Hurtado",
+				"mun":"Acatlán de Juárez",
+				"vmax":22.62
+			},
+			"geometry":{
+				"type":"Point",
+				"coordinates":[-103.651,20.4672]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+				"id":181,
+				"name":"Ing. Guillermo Lugo Sanabria",
+				"mun":"Degollado",
+				"vmax":51.7
+			},
+			"geometry":{
+				"type":"Point",
+				"coordinates":[-102.231,20.4904]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+				"id":762,
+				"name":"Juiquinaque",
+				"mun":"Villa Hidalgo",
+				"vmax":7
+			},
+			"geometry":{
+				"type":"Point",
+				"coordinates":[-102.543,21.6948]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+				"id":619,
+				"name":"L. de Cajititlán",
+				"mun":"Tlajomulco de Zúñiga",
+				"vmax":54.4
+			},
+			"geometry":{
+				"type":"Point",
+				"coordinates":[-103.345,20.4228]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+				"id":294,
+				"name":"La Cantera",
+				"mun":"Lagos de Moreno",
+				"vmax":1.43
+			},
+			"geometry":{
+				"type":"Point",
+				"coordinates":[-102.03,21.3445]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+				"id":819,
+				"name":"La Colonia",
+				"mun":"Zapotlán del Rey",
+				"vmax":5.78
+			},
+			"geometry":{
+				"type":"Point",
+				"coordinates":[-102.933,20.4298]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+				"id":297,
+				"name":"La Duqueza",
+				"mun":"Lagos de Moreno",
+				"vmax":4
+			},
+			"geometry":{
+				"type":"Point",
+				"coordinates":[-101.847,21.7465]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+				"id":824,
+				"name":"La Joya",
+				"mun":"Zapotlanejo",
+				"vmax":3
+			},
+			"geometry":{
+				"type":"Point",
+				"coordinates":[-102.99,20.7021]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+				"id":60,
+				"name":"La Joya",
+				"mun":"Atoyac",
+				"vmax":20
+			},
+			"geometry":{
+				"type":"Point",
+				"coordinates":[-103.476,20.0206]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+				"id":341,
+				"name":"La Quemada II",
+				"mun":"Magdalena",
+				"vmax":1.5
+			},
+			"geometry":{
+				"type":"Point",
+				"coordinates":[-104.067,20.9667]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+				"id":596,
+				"name":"La Red",
+				"mun":"Tepatitlán de Morelos",
+				"vmax":14.25
+			},
+			"geometry":{
+				"type":"Point",
+				"coordinates":[-102.815,20.7181]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+				"id":304,
+				"name":"La Sauceda",
+				"mun":"Lagos de Moreno",
+				"vmax":16
+			},
+			"geometry":{
+				"type":"Point",
+				"coordinates":[-101.81,21.3703]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+				"id":19,
+				"name":"La Vega",
+				"mun":"Teuchitlán",
+				"vmax":44.04
+			},
+			"geometry":{
+				"type":"Point",
+				"coordinates":[-103.846,20.5962]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+				"id":586,
+				"name":"La Yerbabuena",
+				"mun":"Teocuitatlán de Corona",
+				"vmax":9
+			},
+			"geometry":{
+				"type":"Point",
+				"coordinates":[-103.243,20.0667]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+				"id":26,
+				"name":"Laguna Colorada",
+				"mun":"San Juanito de Escobedo",
+				"vmax":12.81
+			},
+			"geometry":{
+				"type":"Point",
+				"coordinates":[-104,20.7667]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+				"id":3,
+				"name":"Lagunillas",
+				"mun":"Acatic",
+				"vmax":12
+			},
+			"geometry":{
+				"type":"Point",
+				"coordinates":[-102.893,20.7643]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+				"id":228,
+				"name":"Los Mezquites",
+				"mun":"Huejuquilla el Alto",
+				"vmax":5
+			},
+			"geometry":{
+				"type":"Point",
+				"coordinates":[-103.868,22.631]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+				"id":252,
+				"name":"Los Sauces",
+				"mun":"Ixtlahuacán del Río",
+				"vmax":11.5
+			},
+			"geometry":{
+				"type":"Point",
+				"coordinates":[-103.222,20.8817]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+				"id":352,
+				"name":"Mexticacán",
+				"mun":"Mexticacán",
+				"vmax":1.6
+			},
+			"geometry":{
+				"type":"Point",
+				"coordinates":[-102.78,21.2755]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+				"id":565,
+				"name":"Miraplanes",
+				"mun":"Tenamaxtlán",
+				"vmax":3.5
+			},
+			"geometry":{
+				"type":"Point",
+				"coordinates":[-104.18,20.1523]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+				"id":209,
+				"name":"Palo Verde",
+				"mun":"Etzatlán",
+				"vmax":5
+			},
+			"geometry":{
+				"type":"Point",
+				"coordinates":[-104.108,20.776]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+				"id":832,
+				"name":"Peñas de Leon",
+				"mun":"San Juan de los Lagos",
+				"vmax":3
+			},
+			"geometry":{
+				"type":"Point",
+				"coordinates":[-102.168,21.3031]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+				"id":343,
+				"name":"San Andrés",
+				"mun":"Magdalena",
+				"vmax":4.2
+			},
+			"geometry":{
+				"type":"Point",
+				"coordinates":[-104.066,20.9024]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+				"id":490,
+				"name":"San Miguel El Alto",
+				"mun":"San Miguel el Alto",
+				"vmax":2.85
+			},
+			"geometry":{
+				"type":"Point",
+				"coordinates":[-102.403,20.991]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+				"id":13,
+				"name":"Santa Rosa",
+				"mun":"Amatitán",
+				"vmax":371.72
+			},
+			"geometry":{
+				"type":"Point",
+				"coordinates":[-103.705,20.9087]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+				"id":211,
+				"name":"Santa Rosalía",
+				"mun":"Etzatlán",
+				"vmax":0.4
+			},
+			"geometry":{
+				"type":"Point",
+				"coordinates":[-104.079,20.8162]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+				"id":742,
+				"name":"Tacotán",
+				"mun":"Unión de Tula",
+				"vmax":149
+			},
+			"geometry":{
+				"type":"Point",
+				"coordinates":[-104.32,20.0359]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+				"id":492,
+				"name":"Tenasco",
+				"mun":"Santa María de los Ángeles",
+				"vmax":10.49
+			},
+			"geometry":{
+				"type":"Point",
+				"coordinates":[-103.198,22.1716]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+				"id":747,
+				"name":"Valle de Juárez",
+				"mun":"Valle de Juárez",
+				"vmax":14.44
+			},
+			"geometry":{
+				"type":"Point",
+				"coordinates":[-102.942,19.9395]
+			}
+		}
+	]
+}
