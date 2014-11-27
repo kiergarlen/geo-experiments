@@ -1,0 +1,17 @@
+{
+	"id_cliente":1,
+	"cliente":"Comisión Estatal del Agua de Jalisco",
+	"rfc":"CEAJ-02-12-31-A",
+	"cve_edo":14,
+	"cve_mun_com":14039,
+	"cve_mun_loc_com":140390001,
+	"calle":"Avenida Francia",
+	"numero":"1377",
+	"colonia":"Moderna",
+	"codigo_postal":12345,
+	"telefono":"3030-9200",
+	"telefono_sec":"3030-9350",
+	"telefono_ter":"3030-9470",
+	"fax":"3030-9250 ext. 8888",
+	"activo":1
+}
