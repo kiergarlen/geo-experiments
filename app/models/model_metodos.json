@@ -1,0 +1,112 @@
+[
+	{
+		"id_metodo":1,
+		"metodo":"Conductividad",
+		"tipo":{
+			"id_tipo":1,
+			"tipo":"De Campo"
+		},
+		"unidad":{
+			"id_unidad":1,
+			"unidad":"uS/m"
+		},
+		"almacenamiento":{
+			"camara":{
+				"id_camara":3,
+				"camara":"Sin almacenamiento"
+			},
+			"anaquel":{
+				"id_anaquel":7,
+				"anaquel":"Sin anaquel"
+			}
+		}
+	},
+	{
+		"id_metodo":6,
+		"metodo":"Acidez Total",
+		"tipo":{
+			"id_tipo":2,
+			"tipo":"Físico-Químico"
+		},
+		"unidad":{
+			"id_unidad":2,
+			"unidad":"Unidad de Acidez"
+		},
+		"almacenamiento":{
+			"camara":{
+				"id_camara":2,
+				"camara":"Cámara 2"
+			},
+			"anaquel":{
+				"id_anaquel":4,
+				"anaquel":"D"
+			}
+		}
+	},
+	{
+		"id_metodo":48,
+		"metodo":"Aluminio",
+		"tipo":{
+			"id_tipo":3,
+			"tipo":"Metal Pesado"
+		},
+		"unidad":{
+			"id_unidad":3,
+			"unidad":"mg/l"
+		},
+		"almacenamiento":{
+			"camara":{
+				"id_camara":2,
+				"camara":"Cámara 2"
+			},
+			"anaquel":{
+				"id_anaquel":5,
+				"anaquel":"E"
+			}
+		}
+	},
+	{
+		"id_metodo":61,
+		"metodo":"Coliformes Fecales NMP",
+		"tipo":{
+			"id_tipo":2,
+			"tipo":"Microbiológico"
+		},
+		"unidad":{
+			"id_unidad":2,
+			"unidad":"Unidad de Acidez"
+		},
+		"almacenamiento":{
+			"camara":{
+				"id_camara":1,
+				"camara":"Cámara 1"
+			},
+			"anaquel":{
+				"id_anaquel":1,
+				"anaquel":"A"
+			}
+		}
+	},
+	{
+		"id_metodo":66,
+		"metodo":"Plaguicidas Organoclorados",
+		"tipo":{
+			"id_tipo":3,
+			"tipo":"Metal Pesado"
+		},
+		"unidad":{
+			"id_unidad":3,
+			"unidad":"mg/l"
+		},
+		"almacenamiento":{
+			"camara":{
+				"id_camara":2,
+				"camara":"Cámara 2"
+			},
+			"anaquel":{
+				"id_anaquel":6,
+				"anaquel":"F"
+			}
+		}
+	}
+]

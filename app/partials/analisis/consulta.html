@@ -1,0 +1,74 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-12 col-lg-8 col-lg-offset-2 main item-z2">
+      <div class="row">
+        <div class="col-xs-12">
+          <h2 class="page-header">Consultar Análisis</h2>
+        </div>
+      </div>
+      <div class="row">
+      </div>
+      <form class="form" role="form" action="#">
+        <div class="row">
+          <div class="col-xs-12">
+            <h4>Criterios de Búsqueda</h4>
+            <ul class="list-unstyled">
+              <li>Fecha</li>
+              <li>Norma</li>
+              <li>Cliente</li>
+            </ul>
+          </div>
+        </div>
+        <button class="btn btn-primary" type="submit">Buscar</button>
+      </form>
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="table-responsive">
+            <table class="table table-hover table-striped" id="clientsList">
+              <thead>
+                <tr>
+                  <th>Cliente</th>
+                  <th>Contacto</th>
+                  <th>Domicilio</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr id="clientId{{item.id_analisis}}">
+                  <td>
+                    <h6>{{item.organismo}}</h6>
+                    <span class="text-muted">{{item.area}}</span>
+                    <span class="label label-default">Externo</span>
+                  </td>
+                  <td>
+                    {{item.contacto}}<br>
+                    <a href="mailto:{{item.email}}">{{item.email}}</a><br>
+                    {{item.tel}}
+                  </td>
+                  <td>
+                    {{item.calle}}, {{item.numero}}<br>
+                    {{item.colonia}}<br>
+                    {{item.localidad}}
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <footer class="common-footer">
+        <br>
+        <strong>Centro de Estudios Limnológicos</strong><br>
+        <ul class="list-inline">
+          <li>Av. Solidaridad Iberoamericana Km 11</li>
+          <li>Col. Las Pintas</li>
+          <li>El Salto</li>
+          <li>Jalisco</li>
+          <li>CP 45690</li>
+          <li>Tel. (33) 3689-1542</li>
+          <li>Fax (33) 3689-4658</li>
+        </ul>
+        <small class=" text-muted">2014 &ndash; <strong>Comisión Estatal del Agua de Jalisco</strong></small>
+      </footer>
+    </div>
+  </div><!-- row -->
+</div>

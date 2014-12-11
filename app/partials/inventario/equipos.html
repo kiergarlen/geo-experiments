@@ -1,0 +1,61 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-12 col-lg-8 col-lg-offset-2 main item-z2">
+      <div class="row">
+        <div class="col-xs-12">
+          <h2 class="page-header">Equipos</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="panel">
+            <div class="panel-heading">
+              <h3 class="panel-title">Equipos</h3>
+              <!--
+              <h3 class="sub-header">Equipos</h3>
+              -->
+            </div>
+            <div class="table-responsive">
+              <table class="table table-hover table-striped" id="employeesList">
+                <thead>
+                  <tr>
+                    <th>Equipo</th>
+                    <th>Clave</th>
+                    <th>Área</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr ng-repeat="item in employees" id="empId{{item.id_empleado}}">
+                    <td>
+                      <strong>{{item.nombres}}</strong> {{item.ap}} {{item.am}}
+                    </td>
+                    <td>
+                      {{item.puesto}}
+                    </td>
+                    <td>
+                      {{item.area}}
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="common-footer">
+        <br>
+        <strong>Centro de Estudios Limnológicos</strong><br>
+        <ul class="list-inline">
+          <li>Av. Solidaridad Iberoamericana Km 11</li>
+          <li>Col. Las Pintas</li>
+          <li>El Salto</li>
+          <li>Jalisco</li>
+          <li>CP 45690</li>
+          <li>Tel. (33) 3689-1542</li>
+          <li>Fax (33) 3689-4658</li>
+        </ul>
+        <small class=" text-muted">2014 &ndash; <strong>Comisión Estatal del Agua de Jalisco</strong></small>
+      </footer>
+    </div>
+  </div>
+</div>

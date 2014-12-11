@@ -1,0 +1,43 @@
+{
+	"id_punto_muestreo":432,
+	"punto_muestreo":"punto muestreo nuevo",
+	"id_cuerpo_agua":null,
+	"cuerpo_agua_asociado":"descarga domiciliaria",
+	"clave":"",
+	"consecutivo":234,
+	"coordenadas":[
+		{
+			"id_tipo_coordenada":1,
+			"tipo_coordenada":"Grados, minutos, segundos (GPS)",
+			"id_metodo":1,
+			"metodo":"Localidad",
+			"coordenada":{
+				"lng":"103º 12' 32.43\" W",
+				"lat":"20º 42' 25.42\" N",
+				"alt":0
+			}
+		},
+		{
+			"id_tipo_coordenada":5,
+			"tipo_coordenada":"UTM",
+			"id_metodo":3,
+			"metodo":"GIS",
+			"coordenada":{
+				"y":233214324.3242353,
+				"x":435626556.6554103,
+				"alt":0
+			}
+		},
+		{
+			"id_tipo_coordenada":3,
+			"tipo_coordenada":"Grados decimales",
+			"id_metodo":3,
+			"metodo":"GIS",
+			"coordenada":{
+				"lng":-103.423423,
+				"lat":23.232535,
+				"alt":2124
+			}
+		}
+	]
+}

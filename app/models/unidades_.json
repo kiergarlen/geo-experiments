@@ -1,0 +1,107 @@
+[
+	{
+		"id_unidad":1,
+		"unidad":"mg/l",
+		"descripcion":"miligramos por litro"
+	},
+	{
+		"id_unidad":2,
+		"unidad":"°C",
+		"descripcion":"grados celsius"
+	},
+	{
+		"id_unidad":3,
+		"unidad":"Unid. pH",
+		"descripcion":"unidad pH"
+	},
+	{
+		"id_unidad":4,
+		"unidad":"uS/cm",
+		"descripcion":"microsiemens por centímetro"
+	},
+	{
+		"id_unidad":5,
+		"unidad":"UNT",
+		"descripcion":"unidades nefelométricas de turbidez"
+	},
+	{
+		"id_unidad":6,
+		"unidad":"mg CaCO3/l",
+		"descripcion":"miligramos de Carbonato de Calcio por litro"
+	},
+	{
+		"id_unidad":7,
+		"unidad":"ml/l",
+		"descripcion":"mililitros por litro"
+	},
+	{
+		"id_unidad":8,
+		"unidad":"NMP/100ml",
+		"descripcion":"número más probable por 100 mililitros"
+	},
+	{
+		"id_unidad":9,
+		"unidad":"--",
+		"descripcion":"sin unidad"
+	},
+	{
+		"id_unidad":10,
+		"unidad":"l/s",
+		"descripcion":"litros por segundo"
+	},
+	{
+		"id_unidad":11,
+		"unidad":"m",
+		"descripcion":"metros"
+	},
+	{
+		"id_unidad":12,
+		"unidad":"U (Pt-Co)",
+		"descripcion":"color"
+	},
+	{
+		"id_unidad":13,
+		"unidad":"U (Pt-Co)",
+		"descripcion":"color"
+	},
+	{
+		"id_unidad":14,
+		"unidad":"U (Pt-Co)",
+		"descripcion":"color"
+	},
+	{
+		"id_unidad":15,
+		"unidad":"%",
+		"descripcion":"porcentaje"
+	},
+	{
+		"id_unidad":16,
+		"unidad":"mg/kg base seca",
+		"descripcion":"miligramos por kilogramo en base seca"
+	},
+	{
+		"id_unidad":17,
+		"unidad":"UFC/100 ml",
+		"descripcion":"UFC por 100ml"
+	},
+	{
+		"id_unidad":18,
+		"unidad":"H/l",
+		"descripcion":"Huevos por litro"
+	},
+	{
+		"id_unidad":19,
+		"unidad":"mg/m³",
+		"descripcion":"miligramos por metro cúbico"
+	},
+	{
+		"id_unidad":20,
+		"unidad":"NMP/g base seca",
+		"descripcion":"Número más probable por gramo en base seca"
+	},
+	{
+		"id_unidad":21,
+		"unidad":"HH/g base seca",
+		"descripcion":"Huevos de helminto por gramo en base seca"
+	}
+]

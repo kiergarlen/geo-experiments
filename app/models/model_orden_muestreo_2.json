@@ -1,0 +1,90 @@
+self.aViewController.layer.cornerRadius = 10; // 10 pixels to roundoff corners
+self.aViewController.clipsToBounds = YES; // clips content to rounded border
+
+/// check pass-through
+
+
+//ScrollView
+//Permite al usuario desplazarse por la interfaz y los elementos perdidos o no visibles en la pantalla.
+
+
+{
+	"id_orden_muestreo":1,
+	"fecha_captura":"2014-11-30",
+	"folio_orden":"003/14",
+	"id_cliente":1,
+	"cliente":{
+
+	},
+	"id_solicitud_muestreo":2,
+	"solicitud_muestreo":{
+
+	},
+	"id_plan_muestreo":1,
+	"plan_muestreo":{
+		"id_plan_muestreo":1,
+		"folio_plan_muestreo":"032/2014"
+	},
+	"id_responsable_muestreo":1,
+	"responsable_muestreo":{
+		"id_responsable_muestreo":1,
+		"responsable_muestreo":"Empleado responsable del muestreo"
+	},
+	"id_origen_solicitud":1,
+	"origen_solicitud":{
+		"id_origen_solicitud":1,
+		"origen_solicitud":"Oficio"
+	},
+	"id_matriz":1,
+	"matriz":{
+		"id_matriz":1,
+		"matriz":"Agua Residual"
+	},
+	"id_tipo_muestreo":1,
+	"tipo_muestreo":{
+		"id_tipo_muestreo":1,
+		"tipo_muestreo":"Simple"
+	},
+	"id_origen_muestras":1,
+	"origen_muestras":{
+		"id_origen_muestras":1,
+		"origen_muestras":"Agua Residual"
+	},
+	"id_norma":1,
+	"norma_solicitada":{
+		"id_norma":15,
+		"norma":"Ninguna Norma solicitada (a medida)",
+	},
+	"parametros_solicitados":[
+		{
+			"id_parametro":1,
+			"parametro":"Temperatura",
+			"id_unidad":2,
+			"unidad":"Grados Celsius"
+		},
+		{
+			"id_parametro":10,
+			"parametro":"Sodio",
+			"id_unidad":1,
+			"unidad":"mg/l"
+		},
+		{
+			"id_parametro":43,
+			"parametro":"Coliformes fecales NMP",
+			"id_unidad":5,
+			"unidad":"NMP"
+		},
+		{
+			"id_parametro":1,
+			"parametro":"Temperatura",
+			"id_unidad":2,
+			"unidad":"Grados Celsius"
+		},		{
+			"id_parametro":1,
+			"parametro":"Temperatura",
+			"id_unidad":2,
+			"unidad":"Grados Celsius"
+		}
+	]
+
+}

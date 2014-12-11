@@ -1,0 +1,82 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-12 col-lg-8 col-lg-offset-2 main item-z2">
+      <div class="row">
+        <div class="col-xs-12">
+          <h2 class="page-header">Clientes</h2>
+          <form class="form" role="form" action="">
+            <div class="row">
+              <div class="col-xs-12">
+                <h4>Filtro</h4>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12 col-sm-8 col-md-6">
+                <label for="clientName" class="sr-only">Ingrese una búsqueda (Razon Social, Contacto, etc.)</label>
+                <input type="text" class="form-control" placeholder="Ingrese una búsqueda (Razon Social, Contacto, etc.)" data-ng-model="filter.$">
+              </div>
+            </div>
+          </form>
+          <br class="clear-all">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="panel">
+            <div class="panel-heading">
+              <h3 class="panel-title">Clientes</h3>
+              <!--
+              <h3 class="sub-header">Clientes</h3>
+              -->
+            </div>
+            <div class="table-responsive">
+              <table class="table table-hover" id="clientsList">
+                <thead>
+                  <tr>
+                    <th>Cliente</th>
+                    <th>Contacto</th>
+                    <th>Domicilio</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr data-ng-repeat="item in clients | filter:filter | orderBy: 'id_organismo'" id="clientId{{item.id_cliente}}" data-ng-click="">
+                    <td>
+                      <h6>{{item.cliente}}</h6>
+                      <span class="text-muted" data-ng-show="item.area.length > 0">{{item.area}}</span>
+                      <span class="label label-default" data-ng-show="item.interno < 1">Externo</span>
+                    </td>
+                    <td>
+                      {{item.contacto}}<br>
+                      <a href="mailto:{{item.email}}" data-ng-show="item.email.length > 0">{{item.email}}</a><br>
+                      {{item.tel}}
+                    </td>
+                    <td>
+                      {{item.calle}}, {{item.numero}}<br>
+                      {{item.colonia}}<br>
+                      {{item.localidad}}, {{item.estado}}<br>
+                      CP {{item.cp}}
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="common-footer">
+        <br>
+        <strong>Centro de Estudios Limnológicos</strong><br>
+        <ul class="list-inline">
+          <li>Av. Solidaridad Iberoamericana Km 11</li>
+          <li>Col. Las Pintas</li>
+          <li>El Salto</li>
+          <li>Jalisco</li>
+          <li>CP 45690</li>
+          <li>Tel. (33) 3689-1542</li>
+          <li>Fax (33) 3689-4658</li>
+        </ul>
+        <small class=" text-muted">2014 &ndash; <strong>Comisión Estatal del Agua de Jalisco</strong></small>
+      </footer>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,178 @@
+[
+	{
+		"id_custodia":1,
+		"id_cliente":1,
+		"id_orden_muestreo":1,
+		"id_plan_muestreo":1,
+		"id_muestreo":1,
+		"folio_custodia":154,
+		"ejercicio":2014,
+		"fecha_captura":"2014-07-01",
+		"fecha_entrega":"2014-07-03",
+		"fecha_recibe":"2014-07-03",
+		"fecha_valida":"2014-07-02",
+		"fecha_verificacion":"2014-07-03",
+		"fecha_subcontratacion":"2014-07-01",
+		"fecha_actualizacion":"2014-07-01",
+
+		"id_verificacion_muestreo":1,
+		"id_responsable_muestreo":1,
+		"id_receptor_muestreo":1,
+		"id_verificador":1,
+		"id_subcontractor":1,
+
+		"recibido":1,
+		"verificado":1,
+		"validado":1,
+		"subcontratado":0,
+		"cliente": {
+			"id_cliente":1,
+			"id_organismo":1,
+			"cliente":"CEA Jalisco",
+			"area":"Dirección de Operación de PTAR'S",
+			"rfc":"Registro Federal de Contribuyentes",
+			"calle":"Av. Brasilia",
+			"numero":"2970",
+			"colonia":"Col. Colomos Providencia",
+			"cp":"44680",
+			"id_estado":14,
+			"id_municipio":14039,
+			"municipio":"Guadalajara",
+			"id_localidad":140390001,
+			"localidad":"Guadalajara",
+			"tel":"3030-9350 ext. 8370",
+			"fax":"",
+			"contacto":"Biol. Luis Aceves Martínez",
+			"puesto_contacto":"puesto contacto",
+			"email":"laceves@ceajalisco.gob.mx",
+			"fecha_act":"2014-11-23",
+			"interno":1,
+			"cea":1,
+			"tasa":0,
+			"activo":1
+		},
+		"orden_muestreo": {
+
+		},
+		"plan_muestreo": {
+
+		},
+		"muestreo": {
+			"id_muestreo":1,
+			"id_municipio":1,
+			"id_localidad":1,
+			"fecha_muestreo":"2014-07-01",
+			"id_tipo_muestreo":1,
+			"cantidad":1,
+			"id_matriz":1,
+			"id_norma":1,
+			"id_verificacion_muestreo":1,
+			"id_responsable_muestreo":1,
+			"id_receptor_muestreo":1,
+			"municipio": {
+				"id_municipio":1,
+				"municipio":"Municipio muestra"
+			},
+			"localidad": {
+				"id_localidad":1,
+				"localidad":"Localidad muestra"
+			},
+			"tipo_muestreo": {
+				"id_tipo_muestreo":1,
+				"tipo_muestreo":"Simple"
+			},
+			"matriz": {
+				"id_matriz":1,
+				"matriz":"Matriz del muestreo",
+				"siglas":"AR"
+			}
+		},
+		"verificacion_muestreo": {
+			"id_verificacion_muestreo":1,
+			"preservaciones": [
+				{
+					"id_preservacion":1,
+					"preservacion":"Hielo",
+					"abreviada":""
+				},
+				{
+					"id_preservacion":2,
+					"preservacion":"Dureza pH <2",
+					"abreviada":"Dza pH<2"
+				},
+				{
+					"id_preservacion":3,
+					"preservacion":"Demanda Química de Oxígeno pH <2",
+					"abreviada":"DQO pH<2"
+				},
+				{
+					"id_preservacion":4,
+					"preservacion":"Sustancias Activas al Azul de Metileno pH <2",
+					"abreviada":"SAAM pH<2"
+				},
+				{
+					"id_preservacion":5,
+					"preservacion":"Grasas y Aceites pH <2",
+					"abreviada":"GyA pH<2"
+				},
+				{
+					"id_preservacion":6,
+					"preservacion":"Nitrógeno pH <2",
+					"abreviada":"Nitrógeno pH<2"
+				},
+				{
+					"id_preservacion":7,
+					"preservacion":"Metales pesados pH <2",
+					"abreviada":"MP pH<2"
+				},
+				{
+					"id_preservacion":8,
+					"preservacion":"Sulfuros >=9",
+					"abreviada":"Sulfuros >=9"
+				},
+				{
+					"id_preservacion":9,
+					"preservacion":"Otra",
+					"abreviada":"Otra"
+				}
+			],
+			"TODO_vigencias":"Revisar si agregar vigencia (Dentro de tiempo) a muestras y consultar en la vista en esta posición",
+			"verificaciones_tipo_parametro": [
+				{
+					"id_tipo_parametro":1,
+					"tipo_parametro":"Fisicoquímico",
+					"muestra_vigente":1,
+					"volumen_requerido":1,
+					"contenedor_adecuado":1,
+					"horas_restantes":"horas restantes según parámetro/método"
+				}
+			],
+			"observaciones":"",
+			"fecha_verificacion":"2014-07-03",
+			"id_verificador":1,
+			"verificador": {
+
+			}
+		},
+		"responsable_muestreo": {
+			"id_responsable_muestreo":1,
+			"responsable_muestreo":"Responsable muestreo",
+			"puesto_resposable":"Puesto del responsable"
+		},
+		"receptor_muestreo": {
+			"id_receptor_muestreo":1,
+			"receptor_muestreo":"Receptor muestreo",
+			"puesto_receptor":"Puesto del Receptor"
+		},
+		"subcontractor": {
+			"id_subcontractor":1,
+			"subcontractor":"Subcontractor muestreo",
+			"puesto_subcontractor":"Puesto del Subcontractor"
+		},
+		"muestras": [
+			{
+				"id_muestra":1
+			}
+		]
+	}
+]

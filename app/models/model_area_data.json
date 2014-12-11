@@ -1,0 +1,37 @@
+[
+	{
+		"id_area":1,
+		"area":"Fisicoquímico",
+		"siglas":"FQ",
+		"fecha_act":"2014-11-30",
+		"activo":1
+	},
+	{
+		"id_area":2,
+		"area":"Metales Pesados",
+		"siglas":"MP",
+		"fecha_act":"2014-11-30",
+		"activo":1
+	},
+	{
+		"id_area":3,
+		"area":"Microbiología",
+		"siglas":"MB",
+		"fecha_act":"2014-11-30",
+		"activo":1
+	},
+	{
+		"id_area":4,
+		"area":"Muestreo",
+		"siglas":"MU",
+		"fecha_act":"2014-11-30",
+		"activo":1
+	},
+	{
+		"id_area":5,
+		"area":"Administrativo",
+		"siglas":"AD",
+		"fecha_act":"2014-11-30",
+		"activo":1
+	}
+]

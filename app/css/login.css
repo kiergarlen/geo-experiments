@@ -1,0 +1,33 @@
+  .login-bg {
+    background: url('img/bg-lab-lowres.jpg') no-repeat center center fixed;
+
+    position:fixed;
+    width:200%;
+    height:200%;
+    left:-50%;
+  }
+
+  .login-bg img {
+    /*
+    display:none;
+    */
+    margin:auto;
+    min-width:50%;
+    min-height:50%;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+  }
+
+  .login-footer {
+    bottom:30px;
+    color:#fff;
+    font-size:11px;
+    position:absolute;
+    text-align:center;
+    width:100%;
+    /*
+    text-shadow: 0px 0px 2px #560f27, 0 0 1em #560f27, 0 0 0.2em #560f27;
+    */
+  }

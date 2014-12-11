@@ -1,0 +1,34 @@
+[
+	{
+		"id_direccion_viento":1,
+		"direccion_viento":"Norte"
+	},
+	{
+		"id_direccion_viento":2,
+		"direccion_viento":"Noreste"
+	},
+	{
+		"id_direccion_viento":3,
+		"direccion_viento":"Este"
+	},
+	{
+		"id_direccion_viento":4,
+		"direccion_viento":"Sureste"
+	},
+	{
+		"id_direccion_viento":5,
+		"direccion_viento":"Sur"
+	},
+	{
+		"id_direccion_viento":6,
+		"direccion_viento":"Suroeste"
+	},
+	{
+		"id_direccion_viento":7,
+		"direccion_viento":"Oeste"
+	},
+	{
+		"id_direccion_viento":8,
+		"direccion_viento":"Noroeste"
+	}
+]

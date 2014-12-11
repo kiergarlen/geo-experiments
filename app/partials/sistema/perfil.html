@@ -1,0 +1,56 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-12 col-lg-8 col-lg-offset-2 main item-z2">
+      <div class="row">
+        <div class="col-xs-12">
+          <h2 class="page-header">Perfil de Usuario</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <h3 class="sub-header">{{currentUser.nombreUsuario}}</h3>
+          <p>{{currentUser.puestoUsuario}}</p>
+          <ul class="list-unstyled">
+            <li><strong>Rol:</strong> {{currentUser.rolUsuario}}</li>
+            <li><strong>Permisos:</strong> {{currentUser.permisosUsuario}}</li>
+          </ul>
+        </div>
+      </div>
+      <form class="form" role="form" action="#">
+        <div class="row">
+          <div class="col-xs-12">
+            <h4>Cambiar contraseña</h4>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <label for="oldPassword">Contraseña actual</label>
+            <input type="text" class="form-control" placeholder="Contraseña actual" id="oldPassword">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <label for="newPassword">Nueva contraseña</label>
+            <input type="text" class="form-control" placeholder="Nueva contraseña" id="newPassword">
+          </div>
+        </div>
+        <br class="clear">
+        <button class="btn btn-primary" type="submit">{{currentUser.buttonSubmitLabel}}</button>
+      </form>
+      <footer class="common-footer">
+        <br>
+        <strong>Centro de Estudios Limnológicos</strong><br>
+        <ul class="list-inline">
+          <li>Av. Solidaridad Iberoamericana Km 11</li>
+          <li>Col. Las Pintas</li>
+          <li>El Salto</li>
+          <li>Jalisco</li>
+          <li>CP 45690</li>
+          <li>Tel. (33) 3689-1542</li>
+          <li>Fax (33) 3689-4658</li>
+        </ul>
+        <small class=" text-muted">2014 &ndash; <strong>Comisión Estatal del Agua de Jalisco</strong></small>
+      </footer>
+    </div>
+  </div><!-- row -->
+</div>

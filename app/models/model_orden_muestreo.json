@@ -1,0 +1,84 @@
+{
+	"type":"OrdenMuestreo",
+	"orden_muestreo":
+	{
+		"id_orden_muestreo":242334,
+		"folio":"001/14",
+		"fecha_captura":"2012-02-01",
+		"id_cliente":12324,
+		"cliente":{
+			"cliente":"Razon social del cliente",
+			"rfc":"RFC DEL CLIENTE",
+			"domicilio" : {},
+			"contacto": {}
+		},
+		"fecha_muestreo":"2012-02-01",
+		"id_mun":14000,
+		"id_loc":140000000,
+		"id_plan_muestreo":5424,
+		"id_hoja_campo":134,
+		"id_custodia":234,
+		"medios_solicitud":[
+			{
+				"id_tipo_solicitud":1,
+				"tipo_solicitud":"Cotización",
+				"comentarios":""
+			},
+			{
+				"id_tipo_solicitud":2,
+				"tipo_solicitud":"Oficio",
+				"comentarios":""
+			},
+			{
+				"id_tipo_solicitud":3,
+				"tipo_solicitud":"Muestreo de Rutina",
+				"comentarios":""
+			},
+			{
+				"id_tipo_solicitud":4,
+				"tipo_solicitud":"Emergencia",
+				"comentarios":"Emergencia ambiental"
+			}
+		],
+		"matrices":[],
+		"tipos_muestreo":[],
+		"fuentes_muestreo":[
+			{
+				"id_fuente_muestreo":1,
+				"fuente_muestreo":"Agua"
+			},
+			{
+				"id_fuente_muestreo":2,
+				"fuente_muestreo":"Muestras de Grasas y Aceite"
+			},
+			{
+				"id_fuente_muestreo":3,
+				"fuente_muestreo":"Sedimentos"
+			},
+			{
+				"id_fuente_muestreo":4,
+				"fuente_muestreo":"Muestras de Coliformes"
+			}
+		],
+		"elaboracion": {
+			"elabora": {
+				"id_empleado":1
+			},
+			"fecha_elabora":"2012-01-01"
+		},
+		"recepción": {
+			"recibe": {
+				"id_empleado":2
+			},
+			"fecha_recibe":"2012-01-01"
+		},
+		"normas_solicitadas": [
+			{
+				"id_norma":1,
+				"norma":"NOM-001-SEMARNAT-1996",
+				"parametros":[]
+			}
+		],
+		"parametros_solicitados": []
+	}
+}

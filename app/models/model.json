@@ -1,0 +1,648 @@
+{
+	"id_informe":235,
+	"fecha":"2013-01-01",
+	"fecha_letra":"29 de agosto de 2012",
+	"numero":"CEA-193/12",
+	"cliente":{
+		"id_cliente":1,
+		"cliente":"Comisión Estatal del Agua de Jalisco",
+		"rfc":"CEAJ-02-12-31-A",
+		"estado":{
+			"id_estado":14,
+			"estado":"Jalisco"
+		},
+		"municipio":{
+			"id_municipio":14039,
+			"municipio":"Guadalajara"
+		},
+		"localidad":{
+			"id_localidad":140390001,
+			"localidad":"Guadalajara"
+		},
+		"domicilio": {
+			"calle":"Avenida Francia",
+			"numero":"1377",
+			"colonia":"Moderna",
+			"codigo_postal":12345,
+			"telefono":"3030-9200",
+			"telefono_sec":"3030-9350",
+			"telefono_ter":"3030-9470",
+			"fax":"3030-9250 ext. 8888"
+		},
+		"solicitante":{
+			"id_solicitante":1,
+			"nombre":"Solicitante de servicio de análisis",
+			"puesto":"Puesto del solicitante del análisis, independiente de estructura de empleados del laboratorio",
+			"telefono":"3030-9200 ext 8887",
+			"tel_celular":"044-44-3030-9200",
+			"email":"correo_electronico1234@serviciocorreo.com"
+		},
+		"contacto":{
+			"id_contacto":1,
+			"nombre":"Contacto para entrega de información de resultados de análisis",
+			"puesto":"Puesto del contacto, independiente de estructura de empleados del laboratorio",
+			"telefono":"3030-9200 ext 8887",
+			"tel_celular":"044-44-3030-9200",
+			"email":"correo_electronico1234@serviciocorreo.com"
+		},
+		"solicitudes_cotizacion":[
+			{
+				"id_solicitud_cotizacion":3458,
+				"numero_solicitud_cotizacion":432,
+				"solicitud_cotizacion":"432 A",
+				"folio":"CEA-023/12",
+				"fecha":"2012-07-01",
+				"fecha_emision":"2012-07-01",
+				"elabora":{
+					"nombre":"Solicitante"
+				},
+				"recibe":{
+					"id_empleado":43,
+					"nombre":"Recepcionista"
+				},
+				"id_status":5,
+				"status":"Recibida, firmada",
+				"puntos_muestreo_solicitados":[
+					{
+						"cantidad_muestras":3,
+						"punto_muestreo":{
+							"id_punto_muestreo":432,
+							"punto_muestreo":"punto muestreo nuevo",
+							"id_cuerpo_agua":8,
+							"cuerpo_agua_asociado":"descarga domiciliaria",
+							"clave":"",
+							"consecutivo":234,
+							"coordenadas":[
+								{
+									"id_tipo_coordenada":1,
+									"tipo_coordenada":"Grados, minutos, segundos (GPS)",
+									"id_metodo":1,
+									"metodo":"Localidad",
+									"coordenada":{
+										"lng":"103º 12' 32.43\" W",
+										"lat":"20º 42' 25.42\" N",
+										"alt":0
+									}
+								},
+								{
+									"id_tipo_coordenada":5,
+									"tipo_coordenada":"UTM",
+									"id_metodo":3,
+									"metodo":"GIS",
+									"coordenada":{
+										"y":233214324.3242353,
+										"x":435626556.6554103,
+										"alt":0
+									}
+								},
+								{
+									"id_tipo_coordenada":3,
+									"tipo_coordenada":"Grados decimales",
+									"id_metodo":3,
+									"metodo":"GIS",
+									"coordenada":{
+										"lng":-103.423423,
+										"lat":23.232535,
+										"alt":2124
+									}
+								}
+							]
+						}
+					}
+				],
+				"matrices_solicitadas":[
+					{
+						"id_matriz":1,
+						"matriz":"Aguas Residuales",
+						"clave":"AR"
+					},
+					{
+						"id_matriz":2,
+						"matriz":"Aguas Residuales, Tratadas",
+						"clave":"ART"
+					},
+					{
+						"id_matriz":3,
+						"matriz":"Agua Potable",
+						"clave":"AP"
+					},
+					{
+						"id_matriz":4,
+						"matriz":"Aguas Saneadas",
+						"clave":"AS"
+					},
+					{
+						"id_matriz":5,
+						"matriz":"Aguas Saneadas B",
+						"clave":"AS<sub>b</sub>"
+					},
+					{
+						"id_matriz":6,
+						"matriz":"Otra",
+						"clave":"OTRA"
+					},
+				],
+				"normas_solicitadas":[
+					{
+						"id_norma":1,
+						"norma":"Norma Oficial mexicana....",
+						"clave":"NOM-001-SEMARNAT-1996"
+					},
+					{
+						"id_norma":2,
+						"norma":"Norma Oficial mexicana....",
+						"clave":"NOM-002-SEMARNAT-1996"
+					},
+					{
+						"id_norma":3,
+						"norma":"Norma Oficial mexicana....",
+						"clave":"NOM-003-SEMARNAT-1997"
+					},
+					{
+						"id_norma":4,
+						"norma":"Norma Oficial mexicana....",
+						"clave":"NOM-004-SEMARNAT-2002"
+					},
+					{
+						"id_norma":5,
+						"norma":"Norma Oficial mexicana....",
+						"clave":"NOM-127-SSA1-1994"
+					},
+					{
+						"id_norma":6,
+						"norma":"Norma Oficial mexicana....",
+						"clave":"NOM-230-SSA1-2002"
+					},
+					{
+						"id_norma":7,
+						"norma":"Ley Federal de Derechos....",
+						"clave":"LFD Uso 3"
+					},
+					{
+						"id_norma":8,
+						"norma":"Otra/Personalizada",
+						"clave":"Personalizada"
+					}
+				],
+				"parametros_solicitados":[
+					{
+						"id_parametro":534,
+						"parametro":"Potencial de hidrógeno",
+						"param_abreviado":"Ph",
+						"id_unidad":1,
+						"unidad":"Unidad Ph"
+					}
+				],
+				"tipos_muestreo_solicitados":[
+					{
+						"id_tipo_muestreo":1,
+						"tipo_muestreo":"Simple"
+					},
+					{
+						"id_tipo_muestreo":2,
+						"tipo_muestreo":"Compuesto"
+					}
+				]
+			}
+		],
+		"cotizaciones":[
+			{
+				"id_cotizacion":12412,
+				"cotizacion":"CEA-CT-121/2014",
+				"fecha_solicitud":"2013-12-31",
+				"fecha":"2013-12-31",
+				"id_status_cotizacion":16,
+				"status_cotizacion":"Aceptada y Aprobada",
+				"id_cliente":1,
+				"cliente":{
+					"id_cliente":1,
+					"cliente":"..."
+				},
+				"cliente_contacto":{
+					"id_contacto":1,
+					"contacto":"Cliente",
+					"puesto":"Puesto del contacto con el Cliente"
+				},
+				"empleado_elabora":{
+					"id_empleado":153,
+					"id_nivel":43,
+					"nivel":"Recepcionista",
+					"empleado":"Empleado que elabora",
+					"puesto":"Puesto del empleado del laboratorio que elabora"
+				},
+				"empleado_aprueba":{
+					"id_empleado":153,
+					"id_nivel":54,
+					"nivel":"Supervisor de Recepcionista",
+					"empleado":"Empleado que elabora",
+					"puesto":"Puesto del empleado del laboratorio que elabora"
+				},
+				"fecha_aceptacion":"2012-10-01",
+				"fecha_elaboracion":"2012-10-01",
+				"fecha_aprobacion":"2012-10-01",
+				"analisis_solicitados":[
+					{
+						"numero":1,
+						"id_analisis_sol":3243,
+						"id_tipo_analisis":2,
+						"tipo_analisis":"Metales pesados",
+						"id_metodo_analisis":42,
+						"metodo_analisis":"Metodo analítico del tipo 42",
+						"cantidad":10,
+						"precio_unitario":{
+							"monto":368.4127,
+							"fecha":"2013-12-30"
+						},
+						"total":3684.1270
+					},
+					{
+						"numero":2,
+						"id_analisis_sol":3244,
+						"id_tipo_analisis":4,
+						"tipo_analisis":"Fisico-químico",
+						"id_metodo_analisis":34,
+						"metodo_analisis":"Metodo analítico del tipo 34",
+						"cantidad":5,
+						"precio_unitario":{
+							"monto":835.4127,
+							"fecha":"2013-12-30"
+						},
+						"total":4177.0635
+					},
+					{
+						"numero":3,
+						"id_analisis_sol":3245,
+						"id_tipo_analisis":7,
+						"tipo_analisis":"Gravimétrico",
+						"id_metodo_analisis":57,
+						"metodo_analisis":"Metodo analítico del tipo 57",
+						"cantidad":15,
+						"precio_unitario":{
+							"monto":8257.6243,
+							"fecha":"2013-12-30"
+						},
+						"total":123864.3645
+					}
+				],
+				"notas":"Notas y observaciones a considerar",
+				"condiciones":"Condiciones para realizar el pago de los servicios de análisis"
+			}
+		],
+		"planes_muestreo":[
+			{
+				"id_plan_muestreo":1,
+				"plan_muestreo":"CEA-PM-001/2014",
+				"folio":17897,
+				"id_cotizacion":12412,
+				"cotizacion":"CEA-CT-121/2014",
+				"fecha_elaboracion":"2014-12-31",
+				"cliente":{
+					"id_cliente":1,
+					"nombre":"Comisión Estatal del Agua de Jalisco",
+					"contacto":"nombre del contacto del cliente (Atención, dicen ellos)",
+					"domicilio": {
+						"calle":"Avenida Francia",
+						"numero":"1377",
+						"telefono":"3030-9200"
+					},
+				},
+				"elabora":{
+					"id_empleado":1,
+					"nombre":"Empleado",
+					"puesto":"Puesto del elaborador"
+				},
+				"revisa":{
+					"id_empleado":2,
+					"nombre":"Empleado 2",
+					"puesto":"Supervisor Empleado 1"
+				},
+				"fecha_muestreo":"2014-12-16",
+				"fecha_entrega":"2014-12-19",
+				"objetivo":"Objetivo en la vida de este plan de muestreo",
+				"lugar":"pleonasmo para ubicación, ver datos reales",
+				"justificacion":"aqui se justifica",
+				"antecedentes":"escribir antecedentes",
+				"visita_previa":"escribir historia de la visita previa, o un SI o un NO, talvez..",
+				"actividades":[
+					{
+						"id_actividad":1,
+						"actividad":"Responsable del Muestreo",
+						"fecha_cumplida":"2014-12-01",
+						"empleado":{
+							"id_empleado":1,
+							"nombre":"soy muy Responsable"
+						}
+					},
+					{
+						"id_actividad":2,
+						"actividad":"Preparación de Envases",
+						"fecha_cumplida":"2014-12-02",
+						"empleado":{
+							"id_empleado":10,
+							"nombre":"soy muy Preparado"
+						}
+					},
+					{
+						"id_actividad":3,
+						"actividad":"Preparación y Calibración de Equipo",
+						"fecha_cumplida":"2014-12-03",
+						"empleado":{
+							"id_empleado":100,
+							"nombre":"estoy muy Calibrado"
+						}
+					},
+					{
+						"id_actividad":4,
+						"actividad":"Preparación de Reactivos y/o Soluciones para Preservar",
+						"fecha_cumplida":"2014-12-04",
+						"empleado":{
+							"id_empleado":1000,
+							"nombre":"tengo un nombramiento muy largo"
+						}
+					},
+					{
+						"id_actividad":5,
+						"actividad":"Preparación de Hoja de Campo",
+						"fecha_cumplida":"2014-12-05",
+						"empleado":{
+							"id_empleado":10000,
+							"nombre":"soy muy Preparado, también"
+						}
+					},
+					{
+						"id_actividad":6,
+						"actividad":"Muestreador Recolector de Muestras",
+						"fecha_cumplida":"2014-12-06",
+						"empleado":{
+							"id_empleado":100000,
+							"nombre":"soy muy Recolector"
+						}
+					},
+					{
+						"id_actividad":7,
+						"actividad":"Muestreador Toma de Lecturas y Registros",
+						"fecha_cumplida":"2014-12-07",
+						"empleado":{
+							"id_empleado":100000,
+							"nombre":"soy muy Lector"
+						}
+					},
+					{
+						"id_actividad":8,
+						"actividad":"Responsable de la Entrega de Muestras",
+						"fecha_cumplida":"2014-12-08",
+						"empleado":{
+							"id_empleado":10000,
+							"nombre":"soy muy Responsable, también, también"
+						}
+					}
+				],
+				"punto_muestreo":{
+					"id_punto_muestreo":1,
+					"punto_muestreo":"punto muestreo 1"
+				},
+				"matrices_solicitadas":[
+					{
+						"id_matriz":1,
+						"matriz":"Aguas Superficiales"
+					}
+				],
+				"tipos_muestreo_solicitados":[
+					{
+						"tipo":{
+							"id_tipo_muestreo":1,
+							"tipo_muestreo":"Simple"
+						},
+						"cantidad_muestras":3,
+						"cantidad_frascos":5
+					},
+					{
+						"tipo":{
+							"id_tipo_muestreo":2,
+							"tipo_muestreo":"Compuesto"
+						},
+						"cantidad_muestras":3,
+						"cantidad_frascos":5
+					}
+				],
+				"normas_muestreo":[
+					{
+						"id_norma":1,
+						"norma":"NOM-001-SEMARNAT-1996"
+					}
+				],
+				"normas_referencia":[
+					{
+						"id_norma_referencia":1,
+						"norma_referencia":"NORMA de referencia 1"
+					}
+				],
+				"recipientes":[
+					{
+						"recipiente":{
+							"id_tipo_recipiente":1,
+							"tipo_recipiente":"Plástico",
+							"clave_recipiente":"P"
+						},
+						"cantidad_frascos":3,
+						"claves":[
+							"CEA-RCP-P-0323 cambiar por consecutivo...",
+							34560002,
+							34560003
+						]
+					},
+					{
+						"recipiente":{
+							"id_tipo_recipiente":2,
+							"tipo_recipiente":"Vidrio",
+							"clave_recipiente":"V"
+						},
+						"cantidad_frascos":5,
+						"claves":[
+							34560004,
+							34560005,
+							34560006,
+							34560007,
+							34560008
+						]
+					},
+					{
+						"recipiente":{
+							"id_tipo_recipiente":3,
+							"tipo_recipiente":"Bolsa Estéril",
+							"clave_recipiente":"B"
+						},
+						"cantidad_frascos":2,
+						"claves":[
+							34560009,
+							34560010
+						]
+					}
+				],
+				"soluciones":[
+					{
+						"reactivos":{
+							"id_reactivo":1,
+							"reactivo":"Agua desionizada"
+						},
+						"cantidad_reactivos":7,
+						"lote_reactivo":"Lote del reactivo agua"
+					},
+					{
+						"reactivos":{
+							"id_reactivo":2,
+							"reactivo":"Soy un reactivo"
+						},
+						"cantidad_reactivos":4,
+						"lote_reactivo":"Lote del reactivo 2"
+					},
+					{
+						"reactivos":{
+							"id_reactivo":5,
+							"reactivo":"Soy un reactivo 5"
+						},
+						"cantidad_reactivos":3,
+						"lote_reactivo":"Lote del reactivo 5"
+					}
+				],
+				"hieleras":[
+					{
+						"id_hielera":1,
+						"hielera":"la hielera más chida",
+						"clave_hielera":"CEA-HE-03146"
+					},
+					{
+						"id_hielera":2,
+						"hielera":"la hielera que nunca, jamás usamos para las cevezas",
+						"clave_hielera":"CEA-HE-03147"
+					}
+				],
+				"equipos":[
+					{
+						"id_equipo_campo":1,
+						"equipo_campo":"Medidor Multiparámetros",
+						"lote":"43545",
+						"serie":"ertwet",
+						"estaSeleccionado":true,
+						"comentario":""
+					},
+					{
+						"id_equipo_campo":2,
+						"equipo_campo":"Termómetros",
+						"lote":"43545",
+						"serie":"ertwet",
+						"estaSeleccionado":true,
+						"comentario":""
+					},
+					{
+						"id_equipo_campo":3,
+						"equipo_campo":"Disco Sechi",
+						"lote":"43545",
+						"serie":"ertwet",
+						"estaSeleccionado":true,
+						"comentario":""
+					},
+					{
+						"id_equipo_campo":4,
+						"equipo_campo":"Cintas y Marcadores",
+						"lote":"43545",
+						"serie":"ertwet",
+						"estaSeleccionado":true,
+						"comentario":""
+					},
+					{
+						"id_equipo_campo":5,
+						"equipo_campo":"Guantes, Cubrebocas y Lentes",
+						"lote":"43545",
+						"serie":"ertwet",
+						"estaSeleccionado":true,
+						"comentario":""
+					},
+					{
+						"id_equipo_campo":6,
+						"equipo_campo":"Cubeta y Soga",
+						"lote":"43545",
+						"serie":"ertwet",
+						"estaSeleccionado":true,
+						"comentario":""
+					},
+					{
+						"id_equipo_campo":7,
+						"equipo_campo":"Tamiz",
+						"lote":"43545",
+						"serie":"ertwet",
+						"estaSeleccionado":true,
+						"comentario":""
+					},
+					{
+						"id_equipo_campo":8,
+						"equipo_campo":"Draga",
+						"lote":"43545",
+						"serie":"ertwet",
+						"estaSeleccionado":true,
+						"comentario":""
+					},
+					{
+						"id_equipo_campo":9,
+						"equipo_campo":"Salvavidas",
+						"lote":"43545",
+						"serie":"ertwet",
+						"estaSeleccionado":true,
+						"comentario":""
+					},
+					{
+						"id_equipo_campo":10,
+						"equipo_campo":"Papel Secante",
+						"lote":"43545",
+						"serie":"ertwet",
+						"estaSeleccionado":true,
+						"comentario":""
+					},
+					{
+						"id_equipo_campo":11,
+						"equipo_campo":"Registros",
+						"lote":"43545",
+						"serie":"ertwet",
+						"estaSeleccionado":true,
+						"comentario":""
+					},
+					{
+						"id_equipo_campo":12,
+						"equipo_campo":"Pipetas Pasteur",
+						"lote":"43545",
+						"serie":"ertwet",
+						"estaSeleccionado":true,
+						"comentario":""
+					},
+					{
+						"id_equipo_campo":13,
+						"equipo_campo":"Papel pH",
+						"lote":"43545",
+						"serie":"ertwet",
+						"estaSeleccionado":true,
+						"comentario":""
+					},
+					{
+						"id_equipo_campo":14,
+						"equipo_campo":"Otros",
+						"lote":"43545",
+						"serie":"ertwet",
+						"estaSeleccionado":false,
+						"comentario":"esto nunca nadie lo hace"
+					}
+				],
+				"comentarios":"Sin comentarios"
+			}
+		],
+		"puntos_muestreo":{
+			"id_punto":1,
+			"punto":"Descripción del punto de muestreo",
+			"clave":"SIGLASCUERPO-0000"
+		}
+	},
+	"informe":{
+		"id_informe":323424,
+		"fecha":"2012-08-29",
+		"folio":"CEA-193/12"
+	}
+}

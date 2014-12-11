@@ -1,0 +1,10 @@
+[
+	{
+		"id_tipo_muestreo":1,
+		"tipo_muestreo":"Simple"
+	},
+	{
+		"id_tipo_muestreo":2,
+		"tipo_muestreo":"Compuesto"
+	}
+]

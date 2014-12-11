@@ -1,0 +1,163 @@
+[
+	{
+		"id_norma":1,
+		"norma":"NOM-001-SEMARNAT-1996",
+		"desc":"Norma Oficial Mexicana",
+		"parametros":[
+			{"id_parametro":25,"parametro":"Arsénico"},
+			{"id_parametro":27,"parametro":"Cadmio"},
+			{"id_parametro":28,"parametro":"Cobre"},
+			{"id_parametro":38,"parametro":"Coliformes fecales"},
+			{"id_parametro":29,"parametro":"Cromo"},
+			{"id_parametro":16,"parametro":"Demada bioquímica de oxígeno*"},
+			{"id_parametro":19,"parametro":"Fósforo total"},
+			{"id_parametro":18,"parametro":"Grasas y aceites"},
+			{"id_parametro":6,"parametro":"Alcalinidad total"},
+			{"id_parametro":39,"parametro":"Materia flotante"},
+			{"id_parametro":32,"parametro":"Mercurio"},
+			{"id_parametro":7,"parametro":"Cloruros totales"},
+			{"id_parametro":33,"parametro":"Níquel"},
+			{"id_parametro":2,"parametro":"Potencial de hidrógeno"},
+			{"id_parametro":34,"parametro":"Plomo"},
+			{"id_parametro":22,"parametro":"Sólidos sedimentables"},
+			{"id_parametro":20,"parametro":"Sólidos suspendidos totales"},
+			{"id_parametro":1,"parametro":"Temperatura"},
+			{"id_parametro":36,"parametro":"Zinc"}
+		]
+	},
+	{
+		"id_norma":2,
+		"norma":"NOM-002-SEMARNAT-1996",
+		"desc":"Norma Oficial Mexicana",
+		"parametros":[
+			{"id_parametro":25,"parametro":"Arsénico"},
+			{"id_parametro":27,"parametro":"Cadmio"},
+			{"id_parametro":28,"parametro":"Cobre"},
+			{"id_parametro":51,"parametro":"Cromo hexavalente"},
+			{"id_parametro":16,"parametro":"Demada bioquímica de oxígeno*"},
+			{"id_parametro":18,"parametro":"Grasas y aceites"},
+			{"id_parametro":39,"parametro":"Materia flotante"},
+			{"id_parametro":32,"parametro":"Mercurio"},
+			{"id_parametro":33,"parametro":"Níquel"},
+			{"id_parametro":2,"parametro":"Potencial de hidrógeno"},
+			{"id_parametro":34,"parametro":"Plomo"},
+			{"id_parametro":22,"parametro":"Sólidos sedimentables"},
+			{"id_parametro":20,"parametro":"Sólidos suspendidos totales"},
+			{"id_parametro":1,"parametro":"Temperatura"},
+			{"id_parametro":36,"parametro":"Zinc"}
+		]
+	},
+	{
+		"id_norma":3,
+		"norma":"NOM-003-SEMARNAT-1997",
+		"desc":"Norma Oficial Mexicana",
+		"parametros":[
+			{"id_parametro":25,"parametro":"Arsénico"},
+			{"id_parametro":27,"parametro":"Cadmio"},
+			{"id_parametro":28,"parametro":"Cobre"},
+			{"id_parametro":38,"parametro":"Coliformes fecales"},
+			{"id_parametro":29,"parametro":"Cromo"},
+			{"id_parametro":16,"parametro":"Demada bioquímica de oxígeno*"},
+			{"id_parametro":6,"parametro":"Alcalinidad total"},
+			{"id_parametro":18,"parametro":"Grasas y aceites"},
+			{"id_parametro":32,"parametro":"Mercurio"},
+			{"id_parametro":33,"parametro":"Níquel"},
+			{"id_parametro":34,"parametro":"Plomo"},
+			{"id_parametro":20,"parametro":"Sólidos suspendidos totales"},
+			{"id_parametro":36,"parametro":"Zinc"}
+		]
+	},
+	{
+		"id_norma":4,
+		"norma":"NOM-004-SEMARNAT-2002",
+		"desc":"Norma Oficial Mexicana",
+		"parametros":[
+		]
+	},
+	{
+		"id_norma":5,
+		"norma":"NOM-127-SSA1-1994",
+		"desc":"Norma Oficial Mexicana",
+		"parametros":[
+			{"id_parametro":24,"parametro":"Aluminio"},
+			{"id_parametro":25,"parametro":"Arsénico"},
+			{"id_parametro":26,"parametro":"Bario"},
+			{"id_parametro":27,"parametro":"Cadmio"},
+			{"id_parametro":40,"parametro":"Cloro libre residual"},
+			{"id_parametro":7,"parametro":"Cloruros totales"},
+			{"id_parametro":28,"parametro":"Cobre"},
+			{"id_parametro":38,"parametro":"Coliformes fecales"},
+			{"id_parametro":37,"parametro":"Coliformes totales"},
+			{"id_parametro":29,"parametro":"Cromo"},
+			{"id_parametro":50,"parametro":"Color verdadero"},
+			{"id_parametro":8,"parametro":"Dureza total"},
+			{"id_parametro":54,"parametro":"Fenoles"},
+			{"id_parametro":30,"parametro":"Fierro"},
+			{"id_parametro":9,"parametro":"Fluoruros"},
+			{"id_parametro":31,"parametro":"Manganeso*"},
+			{"id_parametro":32,"parametro":"Mercurio"},
+			{"id_parametro":10,"parametro":"Nitrógeno de nitratos"},
+			{"id_parametro":11,"parametro":"Nitrógeno de nitritos"},
+			{"id_parametro":12,"parametro":"Nitrógeno amoniacal"},
+			{"id_parametro":2,"parametro":"Potencial de hidrógeno"},
+			{"id_parametro":34,"parametro":"Plomo"},
+			{"id_parametro":35,"parametro":"Sodio"},
+			{"id_parametro":21,"parametro":"Sólidos disueltos totales"},
+			{"id_parametro":14,"parametro":"Sulfatos"},
+			{"id_parametro":15,"parametro":"Sustancias activas al azul de metileno"},
+			{"id_parametro":36,"parametro":"Zinc"},
+			{"id_parametro":5,"parametro":"Turbiedad"}
+		]
+	},
+	{
+		"id_norma":6,
+		"norma":"NOM-230-SSA1-2002",
+		"desc":"Norma Oficial Mexicana",
+		"parametros":[
+		]
+	},
+	{
+		"id_norma":7,
+		"norma":"LFD Uso 3",
+		"desc":"Ley Federal de Derechos",
+		"parametros":[
+			{"id_parametro":1,"parametro":"Temperatura"},
+			{"id_parametro":2,"parametro":"pH"},
+			{"id_parametro":39,"parametro":"Materia flotante"},
+			{"id_parametro":4,"parametro":"Conductividad*"},
+			{"id_parametro":44,"parametro":"Oxígeno disuelto"},
+			{"id_parametro":6,"parametro":"Alcalinidad total"},
+			{"id_parametro":7,"parametro":"Cloruros totales"},
+			{"id_parametro":16,"parametro":"Demada bioquímica de oxígeno*"},
+			{"id_parametro":17,"parametro":"Demanda química de oxígeno*"},
+			{"id_parametro":9,"parametro":"Fluoruros"},
+			{"id_parametro":19,"parametro":"Fósforo total"},
+			{"id_parametro":18,"parametro":"Grasas y aceites"},
+			{"id_parametro":12,"parametro":"Nitrógeno amoniacal"},
+			{"id_parametro":20,"parametro":"Sólidos suspendidos totales"},
+			{"id_parametro":23,"parametro":"Sulfuros"},
+			{"id_parametro":54,"parametro":"Fenoles"},
+			{"id_parametro":50,"parametro":"Color verdadero"},
+			{"id_parametro":24,"parametro":"Aluminio"},
+			{"id_parametro":25,"parametro":"Arsénico"},
+			{"id_parametro":26,"parametro":"Bario"},
+			{"id_parametro":27,"parametro":"Cadmio"},
+			{"id_parametro":28,"parametro":"Cobre"},
+			{"id_parametro":29,"parametro":"Cromo"},
+			{"id_parametro":30,"parametro":"Fierro"},
+			{"id_parametro":31,"parametro":"Manganeso*"},
+			{"id_parametro":32,"parametro":"Mercurio"},
+			{"id_parametro":33,"parametro":"Níquel"},
+			{"id_parametro":34,"parametro":"Plomo"},
+			{"id_parametro":36,"parametro":"Zinc"},
+			{"id_parametro":7,"parametro":"Cloruros totales"}
+		]
+	},
+	{
+		"id_norma":8,
+		"norma":"Personalizada",
+		"desc":"Otra/Personalizada",
+		"parametros":[
+		]
+	}
+]

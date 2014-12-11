@@ -1,0 +1,134 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-12 col-lg-8 col-lg-offset-2 main item-z2">
+      <div class="row">
+        <div class="col-xs-12">
+          <h2 class="page-header">Solicitud de Servicios / Cotización</h2>
+        </div>
+      </div>
+      <form class="form" role="form" action="" name="serviceRequestForm">
+        <div class="row">
+          <div class="col-xs-12">
+            <h4>Datos de Referencia</h4>
+            <div class="well well-sm">
+              <ul class="list-unstyled">
+                <li>[{{currentLabServiceRequest.id_solicitud_cotizacion}}]</li>
+                <li>Folio: {{currentLabServiceRequest.folio_solicitud}}/{{currentLabServiceRequest.ejercicio}}</li>
+                <li>Fecha Solicitud: {{currentLabServiceRequest.fecha_solicitud}}</li>
+                <li>Fecha Captura: {{currentLabServiceRequest.fecha_captura}}</li>
+                <li>Fecha Validación Gerente: {{currentLabServiceRequest.fecha_valida}}</li>
+                <li>Fecha Aceptación Cliente: {{currentLabServiceRequest.fecha_acepta}}</li>
+                <li>Fecha Última modificación: {{currentLabServiceRequest.fecha_actualizacion}}</li>
+              </ul>
+              <br>
+              <span class="text-info" data-ng-show="currentLabServiceRequest.esta_validado > 0">Validada</span>
+              <br>
+              Precio: {{currentLabServiceRequest.precio_total}}
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <h4>Cliente</h4>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-md-6 col-lg-5">
+            <label for="selectClient">Seleccione un Cliente</label>
+            <select class="form-control" id="selectClient">
+              <option value="0" selected="selected">Seleccione una opción</option>
+              <option ng-repeat="client in clients"
+                value="{{client.id_cliente}}">
+                {{client.cliente}} {{client.area}}
+              </option>
+            </select>
+          </div>
+        </div>
+        <div class="row hide">
+          <div class="col-xs-12 col-md-8 col-lg-7">
+             <div class="well well-sm">
+              <h4>{{currentLabServiceRequest.cliente.cliente}}<br>
+                <small>{{currentLabServiceRequest.cliente.area}}</small>
+              </h4>
+              <ul class="list-unstyled">
+                <li>Domicilio <strong>{{currentLabServiceRequest.cliente.calle}}
+                  {{currentLabServiceRequest.cliente.numero}},
+                  {{currentLabServiceRequest.cliente.colonia}}</strong></li>
+                <li>Contacto <strong>{{currentLabServiceRequest.cliente.contacto}}</strong></li>
+                <li>Tel. <strong>{{currentLabServiceRequest.cliente.tel}}</strong></li>
+                <li>Email <strong>{{currentLabServiceRequest.cliente.email}}</strong></li>
+                <li>Tarifa <strong>{{100 * currentLabServiceRequest.cliente.tasa}}%</strong></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <h5>Norma</h5>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-md-6 col-lg-5">
+            <label for="selectNorm">Análisis de parámetros según Norma</label>
+            <select class="form-control" id="selectNorm">
+              <option value="0" selected="selected">Seleccione una opción</option>
+              <option ng-repeat="norm in norms"
+                value="{{norm.id_norma}}">
+                {{norm.norma}}
+              </option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <h5>Parámetros seleccionados</h5>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-6 col-sm-4 col-md-3" data-ng-repeat="parameter in parameters">
+            <label>
+              <input type="checkbox" value="paramId{{parameter.idParametro}}"> {{parameter.param}}
+            </label>
+          </div>
+          <div class="col-xs-6 col-sm-4 col-md-3" data-ng-repeat="activity in currentLabServiceRequest.actividades_adicionales">
+            <label>
+              <input type="checkbox" value="activityId{{activity.id_actividad}}"> {{activity.actividad}}
+            </label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <h5>Tipo de muestreo</h5>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-6">
+            <div class="radio" data-ng-repeat="samplingType in samplingTypes">
+              <label>
+                <input type="radio" name="samplingTypesRadios"
+                  id="samplingTypeId{{samplingType.id_tipo_muestreo}}"
+                  value="{{samplingType.id_tipo_muestreo}}"> {{samplingType.tipo_muestreo}}
+              </label>
+            </div>
+          </div>
+        </div>
+        <br>
+        <button class="btn btn-primary" type="submit">Guardar y enviar a validación</button>
+      </form>
+      <footer class="common-footer">
+        <br>
+        <strong>Centro de Estudios Limnológicos</strong><br>
+        <ul class="list-inline">
+          <li>Av. Solidaridad Iberoamericana Km 11</li>
+          <li>Col. Las Pintas</li>
+          <li>El Salto</li>
+          <li>Jalisco</li>
+          <li>CP 45690</li>
+          <li>Tel. (33) 3689-1542</li>
+          <li>Fax (33) 3689-4658</li>
+        </ul>
+        <small class=" text-muted">2014 &ndash; <strong>Comisión Estatal del Agua de Jalisco</strong></small>
+      </footer>
+    </div>
+  </div><!-- row -->
+</div>

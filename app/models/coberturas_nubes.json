@@ -1,0 +1,18 @@
+[
+	{
+		"id_cobertura_nubes":1,
+		"cobertura_nubes":"Despejado"
+	},
+	{
+		"id_cobertura_nubes":2,
+		"cobertura_nubes":"Nublado"
+	},
+	{
+		"id_cobertura_nubes":3,
+		"cobertura_nubes":"Lluvia"
+	},
+	{
+		"id_cobertura_nubes":4,
+		"cobertura_nubes":"Otro"
+	}
+]

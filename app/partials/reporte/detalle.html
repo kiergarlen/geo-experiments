@@ -1,0 +1,784 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <title>Consultar Reportes</title>
+  <link rel="icon" type="image/png" href="img/favicon.png"/>
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <!--
+  <link rel="stylesheet" href="css/bootstrap.min.css"/>
+  -->
+  <link href="css/bootstrap.material-red.css" rel="stylesheet">
+  <link href="css/common.css" rel="stylesheet">
+  <link href="css/levels.css" rel="stylesheet">
+  <link href="css/dashboard.css" rel="stylesheet">
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <nav class="navbar navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          Menú
+        </button>
+        <a class="navbar-brand" href="#">SICLAB</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle"
+              data-toggle="dropdown">Muestreo
+                <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="muestreo_solicitud.html">Solicitudes</a></li>
+              <li><a href="muestreo_cotizacion.html">Cotizaciones</a></li>
+              <li><a href="muestreo_orden_muestreo.html">Órdenes Muestreo</a></li>
+              <li><a href="muestreo_plan_muestreo.html">Plan Muestreo</a></li>
+              <li><a href="catalogo_puntos.html">Puntos Muestreo</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle"
+              data-toggle="dropdown">Recepción
+                <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="recepcion_muestra.html">Recepción Muestras</a></li>
+              <li><a href="recepcion_hoja_campo.html">Hoja Campo</a></li>
+              <li><a href="recepcion_custodia.html">Cadena Custodia</a></li>
+              <li><a href="inventario_muestras.html">Inventario Muestras</a></li>
+              <li><a href="recepcion_orden_trabajo.html">Órdenes Trabajo</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Análisis <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="analisis_consulta.html">Consultar</a></li>
+              <li><a href="analisis_captura.html">Registrar</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Reportes <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="reporte_consulta.html">Consultar</a></li>
+              <li><a href="reporte_validar.html">Validar</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Administración <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="sistema_usuarios.html">Usuarios</a></li>
+              <li role="presentation" class="dropdown-header">Catálogos Sistema</li>
+              <li><a href="catalogo_clientes.html">Clientes</a></li>
+              <li><a href="catalogo_areas.html">Áreas</a></li>
+              <li><a href="catalogo_empleados.html">Empleados</a></li>
+              <li role="presentation" class="dropdown-header">Catálogos Análisis</li>
+              <li><a href="catalogo_analisis_normas.html">Normas</a></li>
+              <li><a href="catalogo_analisis_referencia.html">Valores Referencia</a></li>
+              <li><a href="catalogo_analisis.html">Análisis</a></li>
+              <li><a href="catalogo_analisis_precio.html">Precio análisis</a></li>
+              <li role="presentation" class="dropdown-header">Catálogos Inventario</li>
+              <li><a href="inventario_equipos.html">Equipos</a></li>
+              <li><a href="inventario_reactivos.html">Reactivos</a></li>
+              <li><a href="inventario_recipientes.html">Recipientes</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user" aria-hidden="true" title="Cuenta"></span> <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="sistema_perfil.html">Ver Perfil</a></li>
+
+              <li><a href="index.html">Cerrar sesión</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <img src="img/crystal-bg-header.jpg" class="img-responsive-full hidden-lg" alt="">
+  <div class="main-bg visible-lg">
+    <img src="img/crystal-bg.png" alt="" style="display: block;">
+  </div>
+   <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-12 col-lg-8 col-lg-offset-2 main item-z2">
+          <div class="row">
+            <div class="col-xs-12">
+              <h2 class="page-header">Consultar Reportes</h2>
+            </div>
+          </div>
+          <div class="row">
+          </div>
+          <form class="form" role="form" action="#">
+            <div class="row">
+              <div class="col-xs-12">
+                <h4>Criterios de Búsqueda</h4>
+                <ul class="list-unstyled">
+                  <li>Fecha</li>
+                  <li>Norma</li>
+                  <li>Cliente</li>
+                </ul>
+              </div>
+            </div>
+            <button class="btn btn-primary" type="submit">Buscar</button>
+          </form>
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="table-responsive">
+                <table class="table table-hover table-striped" id="clientsList">
+                  <thead>
+                    <tr>
+                      <th>Cliente</th>
+                      <th>Contacto</th>
+                      <th>Domicilio</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr id="clientId{{id}}">
+                      <td>
+                        <h6>{{organismo}}</h6>
+                        <span class="text-muted">{{area}}</span>
+                        <span class="label label-default">Externo</span>
+                      </td>
+                      <td>
+                        {{contacto}}<br>
+                        <a href="mailto:{{email}}">{{email}}</a><br>
+                        {{tel}}
+                      </td>
+                      <td>
+                        {{calle}}, {{numero}}<br>
+                        {{colonia}}<br>
+                        {{localidad}}
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <footer class="common-footer">
+            <br>
+            <strong>Centro de Estudios Limnológicos</strong><br>
+            <ul class="list-inline">
+              <li>Av. Solidaridad Iberoamericana Km 11</li>
+              <li>Col. Las Pintas</li>
+              <li>El Salto</li>
+              <li>Jalisco</li>
+              <li>CP 45690</li>
+              <li>Tel. (33) 3689-1542</li>
+              <li>Fax (33) 3689-4658</li>
+            </ul>
+            <small class=" text-muted">2014 &ndash; <strong>Comisión Estatal del Agua de Jalisco</strong></small>
+          </footer>
+        </div>
+      </div><!-- row -->
+    </div><!-- container -->
+    <img src="img/crystal-bg-footer.jpg" class="img-responsive-full" alt="">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  <script>
+    'use strict';
+    var data =
+[
+  {
+    "id":1,
+    "id_cliente":1,
+    "cliente":"Comisión Estatal del Agua de Jalisco",
+    "area":"Dirección de Operación de PTAR'S",
+    "rfc":"Registro Federal de Contribuyentes",
+    "calle":"Av. Brasilia",
+    "numero":"2970",
+    "colonia":"Col. Colomos Providencia",
+    "cp":"44680",
+    "id_estado":14,
+    "estado":"Jalisco",
+    "id_municipio":14039,
+    "municipio":"Guadalajara",
+    "id_localidad":140390001,
+    "localidad":"Guadalajara",
+    "tel":"3030-9350 ext. 8370",
+    "fax":"",
+    "contacto":"Biol. Luis Aceves Martínez",
+    "email":"laceves@ceajalisco.gob.mx",
+    "fecha_act":"2014-11-23",
+    "interno":1,
+    "cea":1,
+    "tasa":0,
+    "activo":1
+  },
+  {
+    "id":2,
+    "id_cliente":1,
+    "cliente":"Comisión Estatal del Agua de Jalisco",
+    "area":"Gerencia Técnica Cosultiva",
+    "rfc":"Registro Federal de Contribuyentes",
+    "calle":"Av. Brasilia",
+    "numero":"2970",
+    "colonia":"Col. Colomos Providencia",
+    "cp":"44680",
+    "id_estado":14,
+    "estado":"Jalisco",
+    "id_municipio":14039,
+    "municipio":"Guadalajara",
+    "id_localidad":140390001,
+    "localidad":"Guadalajara",
+    "tel":"3030-9350 ext. 8384",
+    "fax":"",
+    "contacto":"Martha Olga Peña Lie",
+    "email":"mpena@ceajalisco.gob.mx",
+    "fecha_act":"2014-11-23",
+    "interno":1,
+    "cea":1,
+    "tasa":0,
+    "activo":1
+  },
+  {
+    "id":3,
+    "id_cliente":1,
+    "cliente":"Comisión Estatal del Agua de Jalisco",
+    "area":"Gerencia de PTAR'S",
+    "rfc":"Registro Federal de Contribuyentes",
+    "calle":"Av. Brasilia",
+    "numero":"2970",
+    "colonia":"Col. Colomos Providencia",
+    "cp":"44680",
+    "id_estado":14,
+    "estado":"Jalisco",
+    "id_municipio":14039,
+    "municipio":"Guadalajara",
+    "id_localidad":140390001,
+    "localidad":"Guadalajara",
+    "tel":"3030-9350 ext. 8382",
+    "fax":"",
+    "contacto":"Ing. Víctor Ignacio Méndez Gómez",
+    "email":"vmendez@ceajalisco.gob.mx",
+    "fecha_act":"2014-11-23",
+    "interno":1,
+    "cea":1,
+    "tasa":0,
+    "activo":1
+  },
+  {
+    "id":4,
+    "id_cliente":1,
+    "cliente":"Comisión Estatal del Agua de Jalisco",
+    "area":"Unidad Ejecutora de Abastecimiento y Saneamiento",
+    "rfc":"Registro Federal de Contribuyentes",
+    "calle":"Av. Francia",
+    "numero":"1726",
+    "colonia":"Col. Moderna",
+    "cp":"44190",
+    "id_estado":14,
+    "estado":"Jalisco",
+    "id_municipio":14039,
+    "municipio":"Guadalajara",
+    "id_localidad":140390001,
+    "localidad":"Guadalajara",
+    "tel":"3030-9200 ext. 8288",
+    "fax":"",
+    "contacto":"Salvador Delgado Sánchez",
+    "email":"sdelgado@ceajalisco.gob.mx",
+    "fecha_act":"2014-11-23",
+    "interno":1,
+    "cea":1,
+    "tasa":0,
+    "activo":1
+  },
+  {
+    "id":5,
+    "id_cliente":1,
+    "cliente":"Comisión Estatal del Agua de Jalisco",
+    "area":"Dirección de Cuencas y Sustentabilidad",
+    "rfc":"Registro Federal de Contribuyentes",
+    "calle":"Av. Brasilia",
+    "numero":"2970",
+    "colonia":"Col. Colomos Providencia",
+    "cp":"44680",
+    "id_estado":14,
+    "estado":"Jalisco",
+    "id_municipio":14039,
+    "municipio":"Guadalajara",
+    "id_localidad":140390001,
+    "localidad":"Guadalajara",
+    "tel":"3030-9350 ext. 8313",
+    "fax":"",
+    "contacto":"Ing. Armando Brígido Muñoz Juárez",
+    "email":"amunoz@ceajalisco.gob.mx",
+    "fecha_act":"2014-11-23",
+    "interno":1,
+    "cea":1,
+    "tasa":0,
+    "activo":1
+  },
+  {
+    "id":6,
+    "id_cliente":1,
+    "cliente":"Comisión Estatal del Agua de Jalisco",
+    "area":"Dirección de Apoyo a Municipios",
+    "rfc":"Registro Federal de Contribuyentes",
+    "calle":"Av. Francia",
+    "numero":"1726",
+    "colonia":"Col. Moderna",
+    "cp":"44190",
+    "id_estado":14,
+    "estado":"Jalisco",
+    "id_municipio":14039,
+    "municipio":"Guadalajara",
+    "id_localidad":140390001,
+    "localidad":"Guadalajara",
+    "tel":"3030-9200 ext. 8224",
+    "fax":"",
+    "contacto":"Ing. Ernesto Marroquín Álvarez",
+    "email":"emarroquin@ceajalisco.gob.mx",
+    "fecha_act":"2014-11-23",
+    "interno":1,
+    "cea":1,
+    "tasa":0,
+    "activo":1
+  },
+  {
+    "id":7,
+    "id_cliente":1,
+    "cliente":"Comisión Estatal del Agua de Jalisco",
+    "area":"Gerencia de Servicio a Municipios",
+    "rfc":"Registro Federal de Contribuyentes",
+    "calle":"Av. Francia",
+    "numero":"1726",
+    "colonia":"Col. Moderna",
+    "cp":"44190",
+    "id_estado":14,
+    "estado":"Jalisco",
+    "id_municipio":14039,
+    "municipio":"Guadalajara",
+    "id_localidad":140390001,
+    "localidad":"Guadalajara",
+    "tel":"3030-9200 ext. 8221",
+    "fax":"",
+    "contacto":"Arq. José Manuel Gómez Padilla",
+    "email":"jgomez@ceajalisco.gob.mx",
+    "fecha_act":"2014-11-23",
+    "interno":1,
+    "cea":1,
+    "tasa":0,
+    "activo":1
+  },
+  {
+    "id":8,
+    "id_cliente":1,
+    "cliente":"Comisión Estatal del Agua de Jalisco",
+    "area":"Gerencia de Formulación de Proyectos",
+    "rfc":"Registro Federal de Contribuyentes",
+    "calle":"Av. Francia",
+    "numero":"1726",
+    "colonia":"Col. Moderna",
+    "cp":"44190",
+    "id_estado":14,
+    "estado":"Jalisco",
+    "id_municipio":14039,
+    "municipio":"Guadalajara",
+    "id_localidad":140390001,
+    "localidad":"Guadalajara",
+    "tel":"3030-9200 ext. 8108",
+    "fax":"",
+    "contacto":"Gustavo Luna González",
+    "email":"gluna@ceajalisco.gob.mx",
+    "fecha_act":"2014-11-23",
+    "interno":1,
+    "cea":1,
+    "tasa":0,
+    "activo":1
+  },
+  {
+    "id":9,
+    "id_cliente":2,
+    "cliente":"Comisión Nacional del Agua",
+    "area":"Comisión Nacional del Agua",
+    "rfc":"Registro Federal de Contribuyentes",
+    "calle":"Av. Federalismo Norte",
+    "numero":"275",
+    "colonia":"Col. Centro",
+    "cp":"44100",
+    "id_estado":14,
+    "estado":"Jalisco",
+    "id_municipio":14039,
+    "municipio":"Guadalajara",
+    "id_localidad":140390001,
+    "localidad":"Guadalajara",
+    "tel":"3268-0200 ext.1530",
+    "fax":"",
+    "contacto":"Ing. J. Jesús Amezcua Cerda",
+    "email":"jamezcua@conagua.gob.mx",
+    "fecha_act":"2014-11-23",
+    "interno":1,
+    "cea":0,
+    "tasa":0,
+    "activo":1
+  },
+  {
+    "id":10,
+    "id_cliente":3,
+    "cliente":"Procuraduria Estatal de Protección al Ambiente (PROEPA)",
+    "area":"Procuraduria Estatal de Protección al Ambiente (PROEPA)",
+    "rfc":"Registro Federal de Contribuyentes",
+    "calle":"Circ. Agustín Yáñez esq. Av. Niños Héroes",
+    "numero":"2343",
+    "colonia":"Col. Arcos",
+    "cp":"44130",
+    "id_estado":14,
+    "estado":"Jalisco",
+    "id_municipio":14039,
+    "municipio":"Guadalajara",
+    "id_localidad":140390001,
+    "localidad":"Guadalajara",
+    "tel":"1199-7550 ext. 56212",
+    "fax":"",
+    "contacto":"Lic. Sergio Enrique Arias García",
+    "email":"sergio.arias@jalisco.gob.mx",
+    "fecha_act":"2014-11-23",
+    "interno":1,
+    "cea":0,
+    "tasa":0,
+    "activo":1
+  },
+  {
+    "id":11,
+    "id_cliente":4,
+    "cliente":"Ministerio Público de la Federación",
+    "area":"Agencia II Investigadora del Ministerio Público de la Federación",
+    "rfc":"Registro Federal de Contribuyentes",
+    "calle":"Av. 16 de septiembre",
+    "numero":"591",
+    "colonia":"Col. Mexicaltzingo",
+    "cp":"44180",
+    "id_estado":14,
+    "estado":"Jalisco",
+    "id_municipio":14039,
+    "municipio":"Guadalajara",
+    "id_localidad":140390001,
+    "localidad":"Guadalajara",
+    "tel":"3942-3349",
+    "fax":"",
+    "contacto":"Lic. César Melendez Ibarra",
+    "email":"",
+    "fecha_act":"2014-11-23",
+    "interno":1,
+    "cea":0,
+    "tasa":0,
+    "activo":1
+  },
+  {
+    "id":12,
+    "id_cliente":5,
+    "cliente":"Secretaria de Salud Jalisco",
+    "area":"Región Sanitaria XII centro - Tlaquepaque",
+    "rfc":"Registro Federal de Contribuyentes",
+    "calle":"Los Ángeles esq. Analco",
+    "numero":"S/N",
+    "colonia":"Col. Las Conchas",
+    "cp":"44600",
+    "id_estado":14,
+    "estado":"Jalisco",
+    "id_municipio":14039,
+    "municipio":"Guadalajara",
+    "id_localidad":140390001,
+    "localidad":"Guadalajara",
+    "tel":"3030-5600",
+    "fax":"",
+    "contacto":"Dr. Juan Jóse González Chávez",
+    "email":"",
+    "fecha_act":"2014-11-23",
+    "interno":1,
+    "cea":0,
+    "tasa":0,
+    "activo":1
+  },
+  {
+    "id":13,
+    "id_cliente":6,
+    "cliente":"Ayuntamiento de Cotija, Michoacan",
+    "area":"",
+    "rfc":"Registro Federal de Contribuyentes",
+    "calle":"Pino Suárez Pte.",
+    "numero":"100",
+    "colonia":"Col. Centro",
+    "cp":"59940",
+    "id_estado":16,
+    "estado":"Michoacán de Ocampo",
+    "id_municipio":16019,
+    "municipio":"Cotija",
+    "id_localidad":160190001,
+    "localidad":"Cotija de La Paz",
+    "tel":"045-35-4100-1836",
+    "fax":"",
+    "contacto":"Arq. Juan Jesús Zarate Barajas",
+    "email":"ooapascotija@hotmail.com",
+    "fecha_act":"2014-11-23",
+    "interno":0,
+    "cea":0,
+    "tasa":1,
+    "activo":1
+  },
+  {
+    "id":14,
+    "id_cliente":7,
+    "cliente":"Biosoluciones Integrales S.A. de C.V.",
+    "area":"",
+    "rfc":"Registro Federal de Contribuyentes",
+    "calle":"Río Orinoco",
+    "numero":"213B Int. 203",
+    "colonia":"Col. Del Valle",
+    "cp":"66220",
+    "id_estado":19,
+    "estado":"Nuevo León",
+    "id_municipio":19019,
+    "municipio":"San Pedro Garza García",
+    "id_localidad":190190001,
+    "localidad":"San Pedro Garza García",
+    "tel":"3168-4358",
+    "fax":"",
+    "contacto":"Ing. Jorge de la Cruz",
+    "email":"jorge-eduardo@bio-si.com.mx",
+    "fecha_act":"2014-11-23",
+    "interno":0,
+    "cea":0,
+    "tasa":1,
+    "activo":1
+  },
+  {
+    "id":15,
+    "id_cliente":8,
+    "cliente":"Consultoria Obras y Supervisión S.A. de C.V.",
+    "area":"",
+    "rfc":"Registro Federal de Contribuyentes",
+    "calle":"Tratado de Tlatelolco",
+    "numero":"4201",
+    "colonia":"Col. Jardines del Provenir",
+    "cp":"45186",
+    "id_estado":14,
+    "estado":"Jalisco",
+    "id_municipio":14120,
+    "municipio":"Zapopan",
+    "id_localidad":141200001,
+    "localidad":"Zapopan",
+    "tel":"3861-8339",
+    "fax":"",
+    "contacto":"Cecilio Santos Villanueva",
+    "email":"cossa_02@yahoo.es",
+    "fecha_act":"2014-11-23",
+    "interno":0,
+    "cea":0,
+    "tasa":1,
+    "activo":1
+  },
+  {
+    "id":16,
+    "id_cliente":9,
+    "cliente":"Estudios Técnicos Ambientales y de Higiene Laboral S.A. de C.V.",
+    "area":"",
+    "rfc":"Registro Federal de Contribuyentes",
+    "calle":"Av. Sierra de Tapalpa",
+    "numero":"2880",
+    "colonia":"Col. Colinas de Las Águilas",
+    "cp":"45080",
+    "id_estado":14,
+    "estado":"Jalisco",
+    "id_municipio":14120,
+    "municipio":"Zapopan",
+    "id_localidad":141200001,
+    "localidad":"Zapopan",
+    "tel":"3135-2158",
+    "fax":"",
+    "contacto":"Biol. María de Jesús",
+    "email":"esteam@prodigy.net.mx",
+    "fecha_act":"2014-11-23",
+    "interno":0,
+    "cea":0,
+    "tasa":1,
+    "activo":1
+  },
+  {
+    "id":17,
+    "id_cliente":10,
+    "cliente":"Instituto Tecnológico Superior de Arandas, Jalisco",
+    "area":"",
+    "rfc":"Registro Federal de Contribuyentes",
+    "domicilio":"Libramiento Sur, km 2.7, Arandas, Jalisco",
+    "calle":"Libramiento Sur",
+    "numero":"Km 2.7",
+    "colonia":"Arandas Centro",
+    "cp":"47180",
+    "id_estado":14,
+    "estado":"Jalisco",
+    "id_municipio":14008,
+    "municipio":"Arandas",
+    "id_localidad":140080001,
+    "localidad":"Arandas",
+    "tel":"01-348-783-2010",
+    "fax":"",
+    "contacto":"Francisco López López",
+    "email":"francisco.lopez@tecarandas.edu.mx",
+    "fecha_act":"2014-11-23",
+    "interno":0,
+    "cea":0,
+    "tasa":1,
+    "activo":1
+  },
+  {
+    "id":18,
+    "id_cliente":11,
+    "cliente":"Instituto Tecnológico Superior de la Huerta",
+    "area":"",
+    "rfc":"Registro Federal de Contribuyentes",
+    "calle":"Rafael Palomera",
+    "numero":"161",
+    "colonia":"Col. El Maguey",
+    "cp":"48850",
+    "id_estado":14,
+    "estado":"Jalisco",
+    "id_municipio":14043,
+    "municipio":"La Huerta",
+    "id_localidad":140430001,
+    "localidad":"La Huerta",
+    "tel":"01-357-384-0440",
+    "fax":"",
+    "contacto":"Ing. Ramón de Niz García",
+    "email":"compras@itslahuerta.edu.mx",
+    "fecha_act":"2014-11-23",
+    "interno":0,
+    "cea":0,
+    "tasa":1,
+    "activo":1
+  },
+  {
+    "id":19,
+    "id_cliente":12,
+    "cliente":"Instituto Tecnológico Superior de Zapotlanejo",
+    "area":"",
+    "rfc":"Registro Federal de Contribuyentes",
+    "calle":"Av. Tecnológico",
+    "numero":"300",
+    "colonia":"predio Huejotitlán",
+    "cp":"45430",
+    "id_estado":14,
+    "estado":"Jalisco",
+    "id_municipio":14124,
+    "municipio":"Zapotlanejo",
+    "id_localidad":141240001,
+    "localidad":"Zapotlanejo",
+    "tel":"01-373-735-6060",
+    "fax":"",
+    "contacto":"Ing. Raúl Arambula",
+    "email":"jrulas2011@gmail.com",
+    "fecha_act":"2014-11-23",
+    "interno":0,
+    "cea":0,
+    "tasa":1,
+    "activo":1
+  },
+  {
+    "id":20,
+    "id_cliente":13,
+    "cliente":"OMEX Alimentaria S.A. de C.V.",
+    "area":"",
+    "rfc":"Registro Federal de Contribuyentes",
+    "calle":"Carr. Fed. Ayotlán-La Piedad",
+    "numero":"Km 3.5",
+    "colonia":"Col. El Bajío",
+    "cp":"47930",
+    "id_estado":14,
+    "estado":"Jalisco",
+    "id_municipio":14016,
+    "municipio":"Ayotlán",
+    "id_localidad":140160001,
+    "localidad":"Ayotlán",
+    "tel":"044-33-3114-9580",
+    "fax":"",
+    "contacto":"Bernardo Pulido Valdés",
+    "email":"bernardo.pulido@gmail.com",
+    "fecha_act":"2014-11-23",
+    "interno":0,
+    "cea":0,
+    "tasa":1,
+    "activo":1
+  },
+  {
+    "id":21,
+    "id_cliente":14,
+    "cliente":"SECOLAM S.A. de C.V.",
+    "area":"",
+    "rfc":"Registro Federal de Contribuyentes",
+    "calle":"De los Fiordos",
+    "numero":"16",
+    "colonia":"Col. Acueducto de Guadalupe",
+    "cp":"07279",
+    "id_estado":9,
+    "estado":"Distrito Federal",
+    "id_municipio":9007,
+    "municipio":"Gustavo A. Madero",
+    "id_localidad":90070001,
+    "localidad":"Gustavo A. Madero",
+    "tel":"1567-4406",
+    "fax":"",
+    "contacto":"Ing. Roberto Escalante Villanueva",
+    "email":"rescalante@secovam.com",
+    "fecha_act":"2014-11-23",
+    "interno":0,
+    "cea":0,
+    "tasa":1,
+    "activo":1
+  }
+]
+;
+    var i = 0,
+    l = data.length,
+    output = '',
+    row = {};
+    $('#clientsList tbody').empty();
+    for (i; i < l; i += 1)
+    {
+      row = data[i];
+      output += '<tr id="clientId' + row.id;
+      output += '"><td>';
+      output += '<h6>' + row.cliente;
+      output += '</h6>';
+      if (String(row.area).length > 0)
+      {
+        output += '<span class="text-muted">' + row.area;
+        output += '</span>';
+
+      }
+      if (row.interno < 1)
+      {
+        output += ' <span class="label label-default">Externo</span> ';
+      }
+      output += '</td>';
+      output += '<td>' + row.contacto;
+      output += '<br>';
+      if (String(row.email).length > 0)
+      {
+        output += '<a href="mailto:' + row.email;
+        output += '">' + row.email;
+        output += '</a>';
+      }
+      output += '<br>' + row.tel;
+      output += '</td>';
+      output += '<td>' + row.calle;
+      output += ', ' + row.numero;
+      output += '<br>' + row.colonia;
+      output += '<br> ' + row.localidad;
+      output += ', ' + row.estado;
+      output += '<br>CP ' + row.cp;
+      output += '</td>';
+      output += '</tr>';
+    }
+    $('#clientsList tbody').append(output);
+  </script>
+  </body>
+</html>
