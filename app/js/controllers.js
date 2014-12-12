@@ -154,6 +154,18 @@ siclabControllers.controller('LabServiceRequestCtrl',
                 }
             }
         ;
+        //$scope.currentClient = {};
+        $scope.setClient = function(idCliente) {
+            var i,l, client = {};
+            l = $scope.clients.length;
+            for (i = 0; i < l; i++) {
+                if ($scope.clients[i].id_cliente == idCliente) {
+                    $scope.currentClient = $scope.clients[i];
+                    break;
+                }
+            }
+            return $scope.currentClient;
+        };
     }
 ]);
 
