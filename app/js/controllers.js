@@ -45,7 +45,7 @@ siclabControllers.controller('LabServiceRequestCtrl',
         $scope.parameters = Parameter.query();
         $scope.norms = Norm.query();
         $scope.samplingTypes = SamplingType.query();
-        $scope.currentLabServiceRequest =
+        $scope.labServiceRequest =
             {
                 "id_solicitud_cotizacion":3458,
                 "folio_solicitud":432,
@@ -55,9 +55,13 @@ siclabControllers.controller('LabServiceRequestCtrl',
                 "fecha_valida":null,
                 "fecha_acepta":null,
                 "fecha_actualizacion":"2014-07-01",
-                "esta_validado":0,
+                "validado":0,
                 "precio_total":2580.00,
                 "id_cliente":1,
+                "id_usuario_captura":1,
+                "id_usuario_valida":3,
+                "id_norma":1,
+                "id_tipo_muestreo":1,
                 "cliente":
                 {
                     "id_cliente":1,
@@ -88,65 +92,264 @@ siclabControllers.controller('LabServiceRequestCtrl',
                 "descripcion_servicio":"Servicio de muestreo y análisis, para verificar el cumplimiento de la norma NOM-001-SEMARNAT-1996, que establece los límites máximos permisibles de contaminantes en las descargas de aguas residuales a los sistemas de alcantarillado urbano o municipal. -auto",
                 "notas":"La presente cotización se realiza sin visita previa y se contempla un fácil y seguro acceso para la toma de muestras. Se requiere regresar esta cotización con la firma y sello de Aceptación del Servicio. -auto",
                 "condiciones":"El informe de resultados se entregará a los 10 días hábiles de haber ingresado las muestras al laboratorio. El pago de resultados se hará en las instalaciones del Laboratorio de Calidad del Agua de la CEA, así también mediante depósito bancario a la cuenta: 884371445 de la Institución Bancaria BANORTE a nombre de la Comisión Estatal del Agua de Jalisco o por transferencia electrónica, cuenta interbancaria: 072320008843714454. -auto",
-                "id_usuario_captura":1,
                 "captura":{
                     "id_usuario":1,
                     "nombre":"Usuario captura",
                     "puesto":"puesto Usuario captura"
                 },
-                "id_usuario_valida":3,
                 "valida":{
                     "id_empleado":3,
                     "nombre":"Gerente que valida",
                     "puesto":"puesto Usuario valida"
                 },
-                "id_norma":1,
-                "norma":
-                {
+                "norma":{
                     "id_norma":1,
                     "norma":"NOM-001-SEMARNAT-1996",
                     "desc":"Norma Oficial Mexicana",
+                    "parametros":[
+                        {
+                            "id_parametro":25,
+                            "parametro":"Arsénico",
+                            "cert":1,
+                            "id_metodo":1,
+                            "metodo": {
+                                "id_metodo":1,
+                                "metodo":"NMX-AA-000-0000"
+                            },
+                            "cantidad":1,
+                            "precio":164.65
+                        },
+                        {
+                            "id_parametro":27,
+                            "parametro":"Cadmio",
+                            "cert":1,
+                            "id_metodo":1,
+                            "metodo": {
+                                "id_metodo":1,
+                                "metodo":"NMX-AA-000-0000"
+                            },
+                            "cantidad":1,
+                            "precio":164.65
+                        },
+                        {
+                            "id_parametro":28,
+                            "parametro":"Cobre",
+                            "cert":1,
+                            "id_metodo":1,
+                            "metodo": {
+                                "id_metodo":1,
+                                "metodo":"NMX-AA-000-0000"
+                            },
+                            "cantidad":1,
+                            "precio":164.65
+                        },
+                        {
+                            "id_parametro":38,
+                            "parametro":"Coliformes fecales",
+                            "cert":1,
+                            "id_metodo":1,
+                            "metodo": {
+                                "id_metodo":1,
+                                "metodo":"NMX-AA-000-0000"
+                            },
+                            "cantidad":1,
+                            "precio":164.65
+                        },
+                        {
+                            "id_parametro":29,
+                            "parametro":"Cromo",
+                            "cert":1,
+                            "id_metodo":1,
+                            "metodo": {
+                                "id_metodo":1,
+                                "metodo":"NMX-AA-000-0000"
+                            },
+                            "cantidad":1,
+                            "precio":164.65
+                        },
+                        {
+                            "id_parametro":16,
+                            "parametro":"Demada bioquímica de oxígeno",
+                            "cert":0,
+                            "id_metodo":1,
+                            "metodo": {
+                                "id_metodo":1,
+                                "metodo":"NMX-AA-000-0000"
+                            },
+                            "cantidad":1,
+                            "precio":164.65
+                        },
+                        {
+                            "id_parametro":19,
+                            "parametro":"Fósforo total",
+                            "cert":1,
+                            "id_metodo":1,
+                            "metodo": {
+                                "id_metodo":1,
+                                "metodo":"NMX-AA-000-0000"
+                            },
+                            "cantidad":1,
+                            "precio":164.65
+                        },
+                        {
+                            "id_parametro":18,
+                            "parametro":"Grasas y aceites",
+                            "cert":1,
+                            "id_metodo":1,
+                            "metodo": {
+                                "id_metodo":1,
+                                "metodo":"NMX-AA-000-0000"
+                            },
+                            "cantidad":1,
+                            "precio":164.65
+                        },
+                        {
+                            "id_parametro":6,
+                            "parametro":"Alcalinidad total",
+                            "cert":1,
+                            "id_metodo":1,
+                            "metodo": {
+                                "id_metodo":1,
+                                "metodo":"NMX-AA-000-0000"
+                            },
+                            "cantidad":1,
+                            "precio":164.65
+                        },
+                        {
+                            "id_parametro":39,
+                            "parametro":"Materia flotante",
+                            "cert":1,
+                            "id_metodo":1,
+                            "metodo": {
+                                "id_metodo":1,
+                                "metodo":"NMX-AA-000-0000"
+                            },
+                            "cantidad":1,
+                            "precio":164.65
+                        },
+                        {
+                            "id_parametro":32,
+                            "parametro":"Mercurio",
+                            "cert":1,
+                            "id_metodo":1,
+                            "metodo": {
+                                "id_metodo":1,
+                                "metodo":"NMX-AA-000-0000"
+                            },
+                            "cantidad":1,
+                            "precio":164.65
+                        },
+                        {
+                            "id_parametro":7,
+                            "parametro":"Cloruros totales",
+                            "cert":1,
+                            "id_metodo":1,
+                            "metodo": {
+                                "id_metodo":1,
+                                "metodo":"NMX-AA-000-0000"
+                            },
+                            "cantidad":1,
+                            "precio":164.65
+                        },
+                        {
+                            "id_parametro":33,
+                            "parametro":"Níquel",
+                            "cert":1,
+                            "id_metodo":1,
+                            "metodo": {
+                                "id_metodo":1,
+                                "metodo":"NMX-AA-000-0000"
+                            },
+                            "cantidad":1,
+                            "precio":164.65
+                        },
+                        {
+                            "id_parametro":2,
+                            "parametro":"Potencial de hidrógeno",
+                            "cert":1,
+                            "id_metodo":1,
+                            "metodo": {
+                                "id_metodo":1,
+                                "metodo":"NMX-AA-000-0000"
+                            },
+                            "cantidad":1,
+                            "precio":164.65
+                        },
+                        {
+                            "id_parametro":34,
+                            "parametro":"Plomo",
+                            "cert":1,
+                            "id_metodo":1,
+                            "metodo": {
+                                "id_metodo":1,
+                                "metodo":"NMX-AA-000-0000"
+                            },
+                            "cantidad":1,
+                            "precio":164.65
+                        },
+                        {
+                            "id_parametro":22,
+                            "parametro":"Sólidos sedimentables",
+                            "cert":1,
+                            "id_metodo":1,
+                            "metodo": {
+                                "id_metodo":1,
+                                "metodo":"NMX-AA-000-0000"
+                            },
+                            "cantidad":1,
+                            "precio":164.65
+                        },
+                        {
+                            "id_parametro":20,
+                            "parametro":"Sólidos suspendidos totales",
+                            "cert":1,
+                            "id_metodo":1,
+                            "metodo": {
+                                "id_metodo":1,
+                                "metodo":"NMX-AA-000-0000"
+                            },
+                            "cantidad":1,
+                            "precio":164.65
+                        },
+                        {
+                            "id_parametro":1,
+                            "parametro":"Temperatura",
+                            "cert":1,
+                            "id_metodo":1,
+                            "metodo": {
+                                "id_metodo":1,
+                                "metodo":"NMX-AA-000-0000"
+                            },
+                            "cantidad":1,
+                            "precio":164.65
+                        },
+                        {
+                            "id_parametro":36,
+                            "parametro":"Zinc",
+                            "cert":1,
+                            "id_metodo":1,
+                            "metodo": {
+                                "id_metodo":1,
+                                "metodo":"NMX-AA-000-0000"
+                            },
+                            "cantidad":1,
+                            "precio":164.65
+                        },
+                    ]
                 },
-                "parametros":[
-                    {"id_parametro":25,"parametro":"Arsénico"},
-                    {"id_parametro":27,"parametro":"Cadmio"},
-                    {"id_parametro":28,"parametro":"Cobre"},
-                    {"id_parametro":38,"parametro":"Coliformes fecales"},
-                    {"id_parametro":29,"parametro":"Cromo"},
-                    {"id_parametro":16,"parametro":"Demada bioquímica de oxígeno*"},
-                    {"id_parametro":19,"parametro":"Fósforo total"},
-                    {"id_parametro":18,"parametro":"Grasas y aceites"},
-                    {"id_parametro":6,"parametro":"Alcalinidad total"},
-                    {"id_parametro":39,"parametro":"Materia flotante"},
-                    {"id_parametro":32,"parametro":"Mercurio"},
-                    {"id_parametro":7,"parametro":"Cloruros totales"},
-                    {"id_parametro":33,"parametro":"Níquel"},
-                    {"id_parametro":2,"parametro":"Potencial de hidrógeno"},
-                    {"id_parametro":34,"parametro":"Plomo"},
-                    {"id_parametro":22,"parametro":"Sólidos sedimentables"},
-                    {"id_parametro":20,"parametro":"Sólidos suspendidos totales"},
-                    {"id_parametro":1,"parametro":"Temperatura"},
-                    {"id_parametro":36,"parametro":"Zinc"}
-                ],
-                "actividades_adicionales":[
+                "actividades":[
                     {
                         "id_actividad":1,
                         "actividad":"Muestreo instantáneo",
                         "id_metodo":87,
                         "metodo":{
                             "id_metodo":87,
-                            "metodo":"metodo para muestreo instantáneo"
+                            "metodo":"metodo para muestreo instantáneo",
                         },
-                        "id_precio":80,
-                        "precio": {
-                            "id_precio":80,
-                            "precio":0,
-                            "fecha_actualizacion":"2014-01-01",
-                            "activo":1
-                        }
+                        "cantidad":1,
+                        "precio":0
                     }
                 ],
-                "id_tipo_muestreo":1,
                 "tipo_muestreo":
                 {
                     "id_tipo_muestreo":1,
@@ -154,17 +357,79 @@ siclabControllers.controller('LabServiceRequestCtrl',
                 }
             }
         ;
-        //$scope.currentClient = {};
-        $scope.setClient = function(idCliente) {
+        $scope.currentClient = {};
+        $scope.showCurrentClientDetails = function() {
+            var id = $scope.labServiceRequest.id_cliente;
+            if ($scope.labServiceRequest.id_cliente > 0 &&
+                $scope.selectClient(id).cliente &&
+                !$scope.clientDetailsIsShown)
+            {
+                $scope.clientDetailsIsShown = true;
+            }
+            else
+            {
+                $scope.clientDetailsIsShown = false;
+            }
+        };
+        $scope.clientDetailsIsShown = false;
+
+
+
+        //$scope.currentClient
+        //$scope.selectClient = function(idClient, clients) {
+        //    var i = 0,l = clients.length, client = {};
+        //    for (i = 0; i < l; i += 1) {
+        //        if (clients[i].id_cliente == idClient) {
+        //            client = clients[i];
+        //            break;
+        //        }
+        //    }
+        //    return client;
+        //};
+        //$scope.currentClient = $scope.selectClient(
+        //    $scope.labServiceRequest.id_cliente,
+        //    $scope.clients
+        //);
+
+
+
+        $scope.selectClient = function(idClient) {
             var i,l, client = {};
             l = $scope.clients.length;
+            $scope.currentClient = {};
             for (i = 0; i < l; i++) {
-                if ($scope.clients[i].id_cliente == idCliente) {
+                if ($scope.clients[i].id_cliente == idClient) {
                     $scope.currentClient = $scope.clients[i];
                     break;
                 }
             }
+            $scope.labServiceRequest.cliente = $scope.currentClient;
             return $scope.currentClient;
+        };
+        $scope.selectNorm = function(idNorm) {
+            var i,l,j,m, client = {};
+            l = $scope.norms.length;
+            $scope.labServiceRequest.norma = {};
+            $scope.labServiceRequest.actividades = [];
+            for (i = 0; i < l; i++) {
+                if ($scope.norms[i].id_norma == idNorm) {
+                    $scope.labServiceRequest.norma = $scope.norms[i];
+                    break;
+                }
+            }
+            /*
+            l = $scope.parameters.length;
+            for (i = 0; i < l; i++)
+            {
+                j = $scope.labServiceRequest.norm.parametros.length;
+                for(j = 0; j < m, j++)
+                {
+
+                }
+                if($scope.parameters[i].id_parametro == )
+            }
+            */
+            return $scope.labServiceRequest.norma;
         };
     }
 ]);

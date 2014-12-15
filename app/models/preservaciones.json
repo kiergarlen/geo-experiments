@@ -1,0 +1,47 @@
+[
+	{
+		"id_preservacion":1,
+		"tipo_param":"FQ",
+		"preservacion":"Sin preservar, a 4°C"
+	},
+	{
+		"id_preservacion":2,
+		"tipo_param":"OD",
+		"preservacion":"2 ml MnSo4 + 2 ml Álcali Ioduro + 2 ml H2So4"
+	},
+	{
+		"id_preservacion":3,
+		"tipo_param":"SAAM",
+		"preservacion":"H2SO4, 4°C,  pH<2"
+	},
+	{
+		"id_preservacion":4,
+		"tipo_param":"FEN",
+		"preservacion":"H2SO4 + CuSO4, 4°C, pH<2"
+	},
+	{
+		"id_preservacion":5,
+		"tipo_param":"DZA",
+		"preservacion":"HNO3, pH<2"
+	},
+	{
+		"id_preservacion":6,
+		"tipo_param":"SULFUROS",
+		"preservacion":"6.5 ml de Acetato de Zn 2N, NaOH 6N pH≥9, 4°C"
+	},
+	{
+		"id_preservacion":7,
+		"tipo_param":"FQ-2",
+		"preservacion":"H2SO4, 4°C, pH<2"
+	},
+	{
+		"id_preservacion":8,
+		"tipo_param":"GyA",
+		"preservacion":"HCL1:1, 4°C, pH<2"
+	},
+	{
+		"id_preservacion":9,
+		"tipo_param":"MP",
+		"preservacion":"HNO3, pH<2"
+	}
+]

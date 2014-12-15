@@ -1,0 +1,171 @@
+[
+	{
+		"id_plan_muestreo":1,
+		"plan_muestreo":"CEA-PM-001/2014",
+		"folio":17897,
+		"ejercicio":2014,
+		"id_cotizacion":12412,
+		"cotizacion":"CEA-CT-121/2014",
+		"fecha_elaboracion":"2014-12-31",
+		"fecha_inicio":"2014-11-28",
+		"hora_inicio":"06:01:03.527",
+		"fecha_termino":"2014-11-28",
+		"hora_termino":"16:12:15.132",
+		"id_cliente":1,
+		"cliente":{
+			"id_cliente":1,
+			"nombre":"Comisión Estatal del Agua de Jalisco",
+			"contacto":"nombre del contacto del cliente (Atención, dicen ellos)",
+			"domicilio": {
+				"calle":"Avenida Francia",
+				"numero":"1377",
+				"telefono":"3030-9200"
+			},
+		},
+		"elabora":{
+			"id_empleado":1,
+			"nombre":"Empleado",
+			"puesto":"Puesto del elaborador"
+		},
+		"revisa":{
+			"id_empleado":2,
+			"nombre":"Empleado 2",
+			"puesto":"Supervisor Empleado 1"
+		},
+		"fecha_muestreo":"2014-12-16",
+		"fecha_entrega":"2014-12-19",
+		"id_tipo_objetivo":1,
+		"tipo_objetivo":"Recolección de muestra(s) conforma al programa",
+		"id_tipo_reconocimiento_punto":1,
+		"tipo_reconocimiento_punto":"Punto provisional",
+		"lugar":"pleonasmo para ubicación, ver datos reales",
+		"ubicacion": {},
+		"punto_muestreo": {
+			"cantidad":3,
+			"puntos": [
+				{
+					"id_punto_muestreo":1,
+					"id_tipo_muestreo":2,
+					"frecuencia":"frecuencia muestreo",
+					"observaciones":"comentarios y demas"
+				},
+				{
+					"id_punto_muestreo":2,
+					"id_tipo_muestreo":2,
+					"frecuencia":"frecuencia muestreo",
+					"observaciones":"comentarios y demas"
+				},
+				{
+					"id_punto_muestreo":3,
+					"id_tipo_muestreo":1,
+					"frecuencia":"frecuencia muestreo",
+					"observaciones":"comentarios y demas"
+				}
+			]
+		},
+		"id_matriz":1,
+		"matriz":"Agua Potable",
+		"id_responsable_muestreo":1,
+		"responsable_muestreo": {},
+		"asistentes": [
+			{
+				"id_empleado":1,
+				"asistente":"Acompañante 1",
+				"tarea":"Entrega"
+			},
+			{
+				"id_empleado":2,
+				"asistente":"Acompañante 2",
+				"tarea":"Recolección"
+			},
+			{
+				"id_empleado":3,
+				"asistente":"Acompañante 3",
+				"tarea":"Registro"
+			}
+		],
+		"id_hoja_campo":1,
+		"hoja_campo": {
+
+		},
+		"actividades": [
+			{
+				"id_actividad":7734,
+				"id_tipo_actividad":1,
+				"tipo_actividad":"Calibración y verificación",
+				"id_responsable_actividad":1,
+				"responsable_actividad":"responsable",
+				"fecha_actividad":"2014-11-29",
+				"equipos": [
+					{
+						"id_equipo_campo":1,
+						"equipo_campo":"Equipo desc.",
+						"serie":"IE-MU-002",
+						"id_bitacora":432343,
+						"bitacora":"BR-MU-032423",
+						"folio":53,
+						"ejercicio":2014
+					},
+					{
+						"id_equipo_campo":5,
+						"equipo_campo":"Equipo desc.",
+						"serie":"IE-MU-034",
+						"id_bitacora":7842,
+						"bitacora":"BR-MU-032429",
+						"folio":65,
+						"ejercicio":2014
+					},
+					{
+						"id_equipo_campo":1,
+						"equipo_campo":"Equipo desc.",
+						"serie":"IE-MU-176",
+						"id_bitacora":2373,
+						"bitacora":"BR-MU-03233",
+						"folio":3,
+						"ejercicio":2014
+					},
+				]
+			},
+			{
+				"id_actividad":7735,
+				"id_tipo_actividad":2,
+				"tipo_actividad":"Preparación de envases",
+				"id_responsable_actividad":1,
+				"responsable_actividad":"responsable",
+				"fecha_actividad":"2014-11-29",
+				"envases": [
+				]
+			},
+			{
+				"id_actividad":7736,
+				"id_tipo_actividad":3,
+				"tipo_actividad":"Reactivos y soluciones",
+				"id_responsable_actividad":1,
+				"responsable_actividad":"responsable",
+				"fecha_actividad":"2014-11-29",
+				"reactivos": [
+				]
+			},
+			{
+				"id_actividad":7737,
+				"id_tipo_actividad":4,
+				"tipo_actividad":"Preparación de material y equipo",
+				"id_responsable_actividad":1,
+				"responsable_actividad":"responsable",
+				"fecha_actividad":"2014-11-29",
+				"materiales": [
+				]
+			},
+			{
+				"id_actividad":7737,
+				"id_tipo_actividad":5,
+				"tipo_actividad":"Inventario hieleras",
+				"id_responsable_actividad":1,
+				"responsable_actividad":"responsable",
+				"fecha_actividad":"2014-11-29",
+				"hieleras": [
+				]
+			}
+		]
+	}
+]

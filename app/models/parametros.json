@@ -16,7 +16,8 @@
     "metodoEnsayo":"NMX-AA-007-SCFI-2000",
     "unidad":"°C",
     "descripcionUnidad":"grados celsius",
-    "selected":0
+    "selected":1,
+    "precio":165.89
   },
   {
     "idParametro":2,
@@ -35,7 +36,8 @@
     "metodoEnsayo":"NMX-AA-008-SCFI-2011",
     "unidad":"Unid. pH",
     "descripcionUnidad":"unidad pH",
-    "selected":0
+    "selected":0,
+    "precio":12.34
   },
   {
     "idParametro":3,
@@ -54,7 +56,8 @@
     "metodoEnsayo":"NMX-AA-012-SCFI-2001",
     "unidad":"mg/l",
     "descripcionUnidad":"miligramos por litro",
-    "selected":0
+    "selected":0,
+    "precio":12.34
   },
   {
     "idParametro":4,
@@ -73,7 +76,8 @@
     "metodoEnsayo":"NMX-AA-093-SCFI-2000",
     "unidad":"uS/cm",
     "descripcionUnidad":"microsiemens por centímetro",
-    "selected":0
+    "selected":0,
+    "precio":12.34
   },
   {
     "idParametro":5,
@@ -92,7 +96,8 @@
     "metodoEnsayo":"NMX-AA-038-SCFI-2001",
     "unidad":"UNT",
     "descripcionUnidad":"unidades nefelométricas de turbidez",
-    "selected":0
+    "selected":0,
+    "precio":12.34
   },
   {
     "idParametro":6,
@@ -111,7 +116,8 @@
     "metodoEnsayo":"NMX-AA-073-SCFI-2001",
     "unidad":"mg CaCO3/l",
     "descripcionUnidad":"miligramos de Carbonato de Calcio por litro",
-    "selected":0
+    "selected":0,
+    "precio":262.35
   },
   {
     "idParametro":7,
@@ -130,7 +136,8 @@
     "metodoEnsayo":"NMX-AA-072-SCFI-2001",
     "unidad":"mg/l",
     "descripcionUnidad":"miligramos por litro",
-    "selected":0
+    "selected":0,
+    "precio":12.34
   },
   {
     "idParametro":8,
@@ -149,7 +156,8 @@
     "metodoEnsayo":"NMX-AA-077-SCFI-2001",
     "unidad":"mg CaCO3/l",
     "descripcionUnidad":"miligramos de Carbonato de Calcio por litro",
-    "selected":0
+    "selected":0,
+    "precio":12.34
   },
   {
     "idParametro":9,
@@ -168,7 +176,8 @@
     "metodoEnsayo":"NMX-AA-079-SCFI-2001",
     "unidad":"mg/l",
     "descripcionUnidad":"miligramos por litro",
-    "selected":0
+    "selected":0,
+    "precio":12.34
   },
   {
     "idParametro":10,
@@ -187,7 +196,8 @@
     "metodoEnsayo":"NMX-AA-099-SCFI-2006",
     "unidad":"mg/l",
     "descripcionUnidad":"miligramos por litro",
-    "selected":0
+    "selected":0,
+    "precio":12.34
   },
   {
     "idParametro":11,
@@ -206,7 +216,8 @@
     "metodoEnsayo":"NMX-AA-026-SCFI-2010",
     "unidad":"mg/l",
     "descripcionUnidad":"miligramos por litro",
-    "selected":0
+    "selected":0,
+    "precio":12.34
   },
   {
     "idParametro":12,
@@ -225,7 +236,8 @@
     "metodoEnsayo":"NMX-AA-026-SCFI-2010",
     "unidad":"mg/l",
     "descripcionUnidad":"miligramos por litro",
-    "selected":0
+    "selected":0,
+    "precio":12.34
   },
   {
     "idParametro":13,
@@ -244,7 +256,8 @@
     "metodoEnsayo":"NMX-AA-074-1981",
     "unidad":"mg/l",
     "descripcionUnidad":"miligramos por litro",
-    "selected":0
+    "selected":0,
+    "precio":12.34
   },
   {
     "idParametro":14,
@@ -263,7 +276,8 @@
     "metodoEnsayo":"NMX-AA-039-SCFI-2001",
     "unidad":"mg/l",
     "descripcionUnidad":"miligramos por litro",
-    "selected":0
+    "selected":0,
+    "precio":12.34
   },
   {
     "idParametro":15,
@@ -282,7 +296,8 @@
     "metodoEnsayo":"NMX-AA-028-SCFI-2001",
     "unidad":"mg/l",
     "descripcionUnidad":"miligramos por litro",
-    "selected":0
+    "selected":0,
+    "precio":12.34
   },
   {
     "idParametro":16,
@@ -301,7 +316,8 @@
     "metodoEnsayo":"NMX-AA-030-SCFI-2001",
     "unidad":"mg/l",
     "descripcionUnidad":"miligramos por litro",
-    "selected":0
+    "selected":0,
+    "precio":12.34
   },
   {
     "idParametro":17,
@@ -320,7 +336,8 @@
     "metodoEnsayo":"NMX-AA-005-SCFI-2000",
     "unidad":"mg/l",
     "descripcionUnidad":"miligramos por litro",
-    "selected":0
+    "selected":0,
+    "precio":12.34
   },
   {
     "idParametro":18,
@@ -339,7 +356,8 @@
     "metodoEnsayo":"NMX-AA-029-SCFI-2001",
     "unidad":"mg/l",
     "descripcionUnidad":"miligramos por litro",
-    "selected":0
+    "selected":0,
+    "precio":12.34
   },
   {
     "idParametro":19,
@@ -358,7 +376,8 @@
     "metodoEnsayo":"NMX-AA-034-SCFI-2001",
     "unidad":"mg/l",
     "descripcionUnidad":"miligramos por litro",
-    "selected":0
+    "selected":0,
+    "precio":12.34
   },
   {
     "idParametro":20,
@@ -377,7 +396,8 @@
     "metodoEnsayo":"NMX-AA-034-SCFI-2001",
     "unidad":"mg/l",
     "descripcionUnidad":"miligramos por litro",
-    "selected":0
+    "selected":0,
+    "precio":12.34
   },
   {
     "idParametro":21,
@@ -396,7 +416,8 @@
     "metodoEnsayo":"NMX-AA-004-SCFI-2000",
     "unidad":"mg/l",
     "descripcionUnidad":"miligramos por litro",
-    "selected":0
+    "selected":0,
+    "precio":12.34
   },
   {
     "idParametro":22,
@@ -415,7 +436,8 @@
     "metodoEnsayo":"NMX-AA-084-1982",
     "unidad":"ml/l",
     "descripcionUnidad":"mililitros por litro",
-    "selected":0
+    "selected":0,
+    "precio":12.34
   },
   {
     "idParametro":23,
@@ -434,7 +456,8 @@
     "metodoEnsayo":"NMX-AA-051-SCFI-2001",
     "unidad":"mg/l",
     "descripcionUnidad":"miligramos por litro",
-    "selected":0
+    "selected":0,
+    "precio":381.47
   },
   {
     "idParametro":24,
@@ -453,7 +476,8 @@
     "metodoEnsayo":"NMX-AA-051-SCFI-2001",
     "unidad":"mg/l",
     "descripcionUnidad":"miligramos por litro",
-    "selected":0
+    "selected":0,
+    "precio":381.47
   },
   {
     "idParametro":25,
@@ -472,7 +496,8 @@
     "metodoEnsayo":"NMX-AA-051-SCFI-2001",
     "unidad":"mg/l",
     "descripcionUnidad":"miligramos por litro",
-    "selected":0
+    "selected":0,
+    "precio":381.47
   },
   {
     "idParametro":26,
@@ -491,7 +516,8 @@
     "metodoEnsayo":"NMX-AA-051-SCFI-2001",
     "unidad":"mg/l",
     "descripcionUnidad":"miligramos por litro",
-    "selected":0
+    "selected":0,
+    "precio":381.47
   },
   {
     "idParametro":27,
@@ -510,7 +536,8 @@
     "metodoEnsayo":"NMX-AA-051-SCFI-2001",
     "unidad":"mg/l",
     "descripcionUnidad":"miligramos por litro",
-    "selected":0
+    "selected":0,
+    "precio":381.47
   },
   {
     "idParametro":28,
@@ -529,7 +556,8 @@
     "metodoEnsayo":"NMX-AA-051-SCFI-2001",
     "unidad":"mg/l",
     "descripcionUnidad":"miligramos por litro",
-    "selected":0
+    "selected":0,
+    "precio":381.47
   },
   {
     "idParametro":29,
@@ -548,7 +576,8 @@
     "metodoEnsayo":"NMX-AA-051-SCFI-2001",
     "unidad":"mg/l",
     "descripcionUnidad":"miligramos por litro",
-    "selected":0
+    "selected":0,
+    "precio":381.47
   },
   {
     "idParametro":30,
@@ -567,7 +596,8 @@
     "metodoEnsayo":"NMX-AA-051-SCFI-2001",
     "unidad":"mg/l",
     "descripcionUnidad":"miligramos por litro",
-    "selected":0
+    "selected":0,
+    "precio":381.47
   },
   {
     "idParametro":31,
@@ -586,7 +616,8 @@
     "metodoEnsayo":"NMX-AA-051-SCFI-2001",
     "unidad":"mg/l",
     "descripcionUnidad":"miligramos por litro",
-    "selected":0
+    "selected":0,
+    "precio":381.47
   },
   {
     "idParametro":32,
@@ -605,7 +636,8 @@
     "metodoEnsayo":"NMX-AA-051-SCFI-2001",
     "unidad":"mg/l",
     "descripcionUnidad":"miligramos por litro",
-    "selected":0
+    "selected":0,
+    "precio":381.47
   },
   {
     "idParametro":33,
@@ -624,7 +656,8 @@
     "metodoEnsayo":"NMX-AA-051-SCFI-2001",
     "unidad":"mg/l",
     "descripcionUnidad":"miligramos por litro",
-    "selected":0
+    "selected":0,
+    "precio":381.47
   },
   {
     "idParametro":34,
@@ -643,7 +676,8 @@
     "metodoEnsayo":"NMX-AA-051-SCFI-2001",
     "unidad":"mg/l",
     "descripcionUnidad":"miligramos por litro",
-    "selected":0
+    "selected":0,
+    "precio":381.47
   },
   {
     "idParametro":35,
@@ -662,7 +696,8 @@
     "metodoEnsayo":"NMX-AA-051-SCFI-2001",
     "unidad":"mg/l",
     "descripcionUnidad":"miligramos por litro",
-    "selected":0
+    "selected":0,
+    "precio":381.47
   },
   {
     "idParametro":36,
@@ -681,7 +716,8 @@
     "metodoEnsayo":"NMX-AA-051-SCFI-2001",
     "unidad":"mg/l",
     "descripcionUnidad":"miligramos por litro",
-    "selected":0
+    "selected":0,
+    "precio":381.47
   },
   {
     "idParametro":37,
@@ -700,7 +736,8 @@
     "metodoEnsayo":"NMX-AA-042-1987",
     "unidad":"NMP/100ml",
     "descripcionUnidad":"número más probable por 100 mililitros",
-    "selected":0
+    "selected":0,
+    "precio":12.34
   },
   {
     "idParametro":38,
@@ -719,7 +756,8 @@
     "metodoEnsayo":"NMX-AA-042-1987",
     "unidad":"NMP/100ml",
     "descripcionUnidad":"número más probable por 100 mililitros",
-    "selected":0
+    "selected":0,
+    "precio":12.34
   },
   {
     "idParametro":39,
@@ -738,7 +776,8 @@
     "metodoEnsayo":"NMX-AA-006-SCFI-2010",
     "unidad":"--",
     "descripcionUnidad":"sin unidad",
-    "selected":0
+    "selected":0,
+    "precio":12.34
   },
   {
     "idParametro":40,
@@ -757,7 +796,8 @@
     "metodoEnsayo":"SM-4500 Cl-G",
     "unidad":"mg/l",
     "descripcionUnidad":"miligramos por litro",
-    "selected":0
+    "selected":0,
+    "precio":12.34
   },
   {
     "idParametro":41,
@@ -776,7 +816,8 @@
     "metodoEnsayo":"Organoléptico-visual",
     "unidad":"--",
     "descripcionUnidad":"sin unidad",
-    "selected":0
+    "selected":0,
+    "precio":12.34
   },
   {
     "idParametro":42,
@@ -795,7 +836,8 @@
     "metodoEnsayo":"Volumétrico",
     "unidad":"l/s",
     "descripcionUnidad":"litros por segundo",
-    "selected":0
+    "selected":0,
+    "precio":12.34
   },
   {
     "idParametro":43,
@@ -814,7 +856,8 @@
     "metodoEnsayo":"Organoléptico-visual",
     "unidad":"--",
     "descripcionUnidad":"sin unidad",
-    "selected":0
+    "selected":0,
+    "precio":12.34
   },
   {
     "idParametro":44,
@@ -833,7 +876,8 @@
     "metodoEnsayo":"NMX-AA-012-SCFI-2001",
     "unidad":"mg/l",
     "descripcionUnidad":"miligramos por litro",
-    "selected":0
+    "selected":0,
+    "precio":12.34
   },
   {
     "idParametro":45,
@@ -852,7 +896,8 @@
     "metodoEnsayo":"Medición directa",
     "unidad":"m",
     "descripcionUnidad":"metros",
-    "selected":0
+    "selected":0,
+    "precio":12.34
   },
   {
     "idParametro":46,
@@ -871,7 +916,8 @@
     "metodoEnsayo":"NMX-AA-007-SCFI-2000",
     "unidad":"°C",
     "descripcionUnidad":"grados celsius",
-    "selected":0
+    "selected":0,
+    "precio":165.89
   },
   {
     "idParametro":47,
@@ -890,7 +936,8 @@
     "metodoEnsayo":"Disco Secchi",
     "unidad":"m",
     "descripcionUnidad":"metros",
-    "selected":0
+    "selected":0,
+    "precio":12.34
   },
   {
     "idParametro":48,
@@ -909,7 +956,8 @@
     "metodoEnsayo":"NMX-AA-073-SCFI-2001",
     "unidad":"--",
     "descripcionUnidad":"sin unidad",
-    "selected":0
+    "selected":0,
+    "precio":262.35
   },
   {
     "idParametro":49,
@@ -928,7 +976,8 @@
     "metodoEnsayo":"NMX-AA-073-SCFI-2001",
     "unidad":"mg CaCO3/l",
     "descripcionUnidad":"miligramos de Carbonato de Calcio por litro",
-    "selected":0
+    "selected":0,
+    "precio":262.35
   },
   {
     "idParametro":50,
@@ -947,7 +996,8 @@
     "metodoEnsayo":"NMX-AA-045-SCFI-2001",
     "unidad":"U (Pt-Co)",
     "descripcionUnidad":"color",
-    "selected":0
+    "selected":0,
+    "precio":12.34
   },
   {
     "idParametro":51,
@@ -966,7 +1016,8 @@
     "metodoEnsayo":"Sin método",
     "unidad":"--",
     "descripcionUnidad":"sin unidad",
-    "selected":0
+    "selected":0,
+    "precio":12.34
   },
   {
     "idParametro":52,
@@ -985,7 +1036,8 @@
     "metodoEnsayo":"Sin método",
     "unidad":"--",
     "descripcionUnidad":"sin unidad",
-    "selected":0
+    "selected":0,
+    "precio":12.34
   },
   {
     "idParametro":53,
@@ -1004,7 +1056,8 @@
     "metodoEnsayo":"Sin método",
     "unidad":"--",
     "descripcionUnidad":"sin unidad",
-    "selected":0
+    "selected":0,
+    "precio":12.34
   },
   {
     "idParametro":54,
@@ -1023,7 +1076,8 @@
     "metodoEnsayo":"NMX-AA-050-SCFI-2001",
     "unidad":"mg/l",
     "descripcionUnidad":"miligramos por litro",
-    "selected":0
+    "selected":0,
+    "precio":12.34
   },
   {
     "idParametro":55,
@@ -1042,7 +1096,8 @@
     "metodoEnsayo":"Sin método",
     "unidad":"--",
     "descripcionUnidad":"sin unidad",
-    "selected":0
+    "selected":0,
+    "precio":12.34
   },
   {
     "idParametro":56,
@@ -1061,7 +1116,8 @@
     "metodoEnsayo":"Sin método",
     "unidad":"--",
     "descripcionUnidad":"sin unidad",
-    "selected":0
+    "selected":0,
+    "precio":12.34
   },
   {
     "idParametro":57,
@@ -1080,7 +1136,8 @@
     "metodoEnsayo":"Sin método",
     "unidad":"--",
     "descripcionUnidad":"sin unidad",
-    "selected":0
+    "selected":0,
+    "precio":12.34
   },
   {
     "idParametro":58,
@@ -1099,7 +1156,8 @@
     "metodoEnsayo":"Sin método",
     "unidad":"--",
     "descripcionUnidad":"sin unidad",
-    "selected":0
+    "selected":0,
+    "precio":12.34
   },
   {
     "idParametro":59,
@@ -1118,7 +1176,8 @@
     "metodoEnsayo":"Sin método",
     "unidad":"--",
     "descripcionUnidad":"sin unidad",
-    "selected":0
+    "selected":0,
+    "precio":12.34
   },
   {
     "idParametro":60,
@@ -1137,7 +1196,8 @@
     "metodoEnsayo":"Sin método",
     "unidad":"--",
     "descripcionUnidad":"sin unidad",
-    "selected":0
+    "selected":0,
+    "precio":12.34
   },
   {
     "idParametro":61,
@@ -1156,7 +1216,8 @@
     "metodoEnsayo":"Sin método",
     "unidad":"--",
     "descripcionUnidad":"sin unidad",
-    "selected":0
+    "selected":0,
+    "precio":12.34
   },
   {
     "idParametro":62,
@@ -1175,7 +1236,8 @@
     "metodoEnsayo":"Sin método",
     "unidad":"--",
     "descripcionUnidad":"sin unidad",
-    "selected":0
+    "selected":0,
+    "precio":12.34
   },
   {
     "idParametro":63,
@@ -1194,7 +1256,8 @@
     "metodoEnsayo":"Sin método",
     "unidad":"--",
     "descripcionUnidad":"sin unidad",
-    "selected":0
+    "selected":0,
+    "precio":12.34
   },
   {
     "idParametro":64,
@@ -1213,7 +1276,8 @@
     "metodoEnsayo":"Sin método",
     "unidad":"--",
     "descripcionUnidad":"sin unidad",
-    "selected":0
+    "selected":0,
+    "precio":12.34
   },
   {
     "idParametro":65,
@@ -1232,7 +1296,8 @@
     "metodoEnsayo":"Sin método",
     "unidad":"--",
     "descripcionUnidad":"sin unidad",
-    "selected":0
+    "selected":0,
+    "precio":12.34
   },
   {
     "idParametro":66,
@@ -1251,7 +1316,8 @@
     "metodoEnsayo":"Sin método",
     "unidad":"--",
     "descripcionUnidad":"sin unidad",
-    "selected":0
+    "selected":0,
+    "precio":12.34
   },
   {
     "idParametro":67,
@@ -1270,7 +1336,8 @@
     "metodoEnsayo":"Sin método",
     "unidad":"--",
     "descripcionUnidad":"sin unidad",
-    "selected":0
+    "selected":0,
+    "precio":12.34
   },
   {
     "idParametro":68,
@@ -1289,7 +1356,8 @@
     "metodoEnsayo":"Sin método",
     "unidad":"--",
     "descripcionUnidad":"sin unidad",
-    "selected":0
+    "selected":0,
+    "precio":12.34
   },
   {
     "idParametro":69,
@@ -1308,7 +1376,8 @@
     "metodoEnsayo":"Sin método",
     "unidad":"--",
     "descripcionUnidad":"sin unidad",
-    "selected":0
+    "selected":0,
+    "precio":12.34
   },
   {
     "idParametro":70,
@@ -1327,7 +1396,8 @@
     "metodoEnsayo":"Sin método",
     "unidad":"--",
     "descripcionUnidad":"sin unidad",
-    "selected":0
+    "selected":0,
+    "precio":12.34
   },
   {
     "idParametro":71,
@@ -1346,7 +1416,8 @@
     "metodoEnsayo":"Sin método",
     "unidad":"--",
     "descripcionUnidad":"sin unidad",
-    "selected":0
+    "selected":0,
+    "precio":12.34
   },
   {
     "idParametro":72,
@@ -1365,7 +1436,8 @@
     "metodoEnsayo":"Sin método",
     "unidad":"--",
     "descripcionUnidad":"sin unidad",
-    "selected":0
+    "selected":0,
+    "precio":12.34
   },
   {
     "idParametro":73,
@@ -1384,7 +1456,8 @@
     "metodoEnsayo":"Sin método",
     "unidad":"--",
     "descripcionUnidad":"sin unidad",
-    "selected":0
+    "selected":0,
+    "precio":12.34
   },
   {
     "idParametro":74,
@@ -1403,7 +1476,8 @@
     "metodoEnsayo":"Sin método",
     "unidad":"--",
     "descripcionUnidad":"sin unidad",
-    "selected":0
+    "selected":0,
+    "precio":12.34
   },
   {
     "idParametro":75,
@@ -1422,7 +1496,8 @@
     "metodoEnsayo":"Sin método",
     "unidad":"--",
     "descripcionUnidad":"sin unidad",
-    "selected":0
+    "selected":0,
+    "precio":12.34
   },
   {
     "idParametro":76,
@@ -1441,7 +1516,8 @@
     "metodoEnsayo":"Sin método",
     "unidad":"--",
     "descripcionUnidad":"sin unidad",
-    "selected":0
+    "selected":0,
+    "precio":12.34
   },
   {
     "idParametro":77,
@@ -1460,7 +1536,8 @@
     "metodoEnsayo":"Sin método",
     "unidad":"--",
     "descripcionUnidad":"sin unidad",
-    "selected":0
+    "selected":0,
+    "precio":12.34
   },
   {
     "idParametro":78,
@@ -1479,6 +1556,7 @@
     "metodoEnsayo":"NMX-AA-051-SCFI-2001",
     "unidad":"mg/l",
     "descripcionUnidad":"miligramos por litro",
-    "selected":0
+    "selected":0,
+    "precio":381.47
   }
 ]

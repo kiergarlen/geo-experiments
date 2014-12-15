@@ -3,6 +3,22 @@
 		"id_hoja_campo":1,
 		"fecha_inicio_muestreo":"2014-12-30",
 		"id_responsable_muestreo":1,
+		"id_metodo":1,
+		"id_plan_muestreo":1,
+		"id_punto_muestreo":1,
+		"domicilio":"Calle numero, colonia",
+		"municpio":"Municipio",
+		"localidad":"Localidad",
+		"id_cotizacion":1,
+		"id_tipo_muestreo":1,
+		"id_matriz":1,
+		"id_cliente":1,
+		"aceptado_cliente":0,
+		"validado":0,
+		"fimado_responsable":0,
+		"fecha_aceptado":"",
+		"fecha_validado":"",
+		"fecha_firmado":"",
 		"responsable_muestreo": {
 			"id_responsable_muestreo":1,
 			"id_area":1,
@@ -11,12 +27,10 @@
 				"area":"Muestreo"
 			}
 		},
-		"id_metodo":1,
 		"metodo_muestreo":{
 			"id_metodo":1,
 			"metodo":"Metodo de muestreo"
 		},
-		"id_plan_muestreo":1,
 		"plan_muestreo": {
 			"id_plan_muestreo":1,
 			"plan_muestreo":"datos del plan de muestreo...."
@@ -25,26 +39,19 @@
 			"id_punto_muestreo":1,
 			"datos_punto_muestreo":""
 		},
-		"domicilio":"Calle numero, colonia",
-		"municpio":"Municipio",
-		"localidad":"Localidad",
-		"id_cotizacion":1,
 		"cotizacion": {
 			"id_cotizacion":1,
 			"folio_cotizacion":1,
 			"ejercicio":2014
 		},
-		"id_tipo_muestreo":1,
 		"tipo_muestreo": {
 			"id_tipo_muestreo":1,
 			"tipo_muestreo":"Simple"
 		},
-		"id_matriz":1,
 		"matriz": {
 			"id_matriz":1,
 			"matriz":"Matriz de estudio"
 		},
-		"id_cliente":1,
 		"cliente": {
 			"id_cliente":1,
 			"cliente":"Cliente",
@@ -65,8 +72,375 @@
 				"id_direccion_viento":1,
 				"direccion_viento":"Norte"
 			},
-
-
+			"id_oleaje":1,
+			"oleaje": {
+				"id_oleaje":1,
+				"oleaje":"Nulo"
+			}
+		},
+		"referencia_muestreo": {
+			"TODO":"Revisar si es seleccion múltiple",
+			"metodos": [
+				{
+					"id_metodo":234,
+					"metodo":"NMX-AA-003-1980"
+				},
+				{
+					"id_metodo":234,
+					"metodo":"NMX-AA-014-1980"
+				},
+				{
+					"id_metodo":234432443325,
+					"metodo":"NOM-230-SSA1-2001"
+				},
+			]
+		},
+		"normas_referencia": [
+			{
+				"TODO":"Revisar junto con referencia_muestreo"
+			},
+			{
+				"id_norma":321,
+				"norma":"NOM-230-SSA1-2001"
+			}
+		],
+		"calibracion": {
+			"id_calibracion":1,
+			"bitacora":"BT-00-AAA-2134",
+			"folio":"001",
+			"ejercicio":"2014"
+		},
+		"verificacion": {
+			"id_verificacion":1,
+			"bitacora":"BT-00-AAA-2134",
+			"folio":"001",
+			"ejercicio":"2014"
+		},
+		"id_informe":1,
+		"muestreo": {
+			"id_muestra":1,
+			"muestra": {
+				"temperatura1":24.56,
+				"temperatura2":22.24,
+				"temperatura3":25.23,
+				"temperatura_promedio":24.01,
+				"ph1":4.87,
+				"ph2":5.04,
+				"ph3":4.98,
+				"ph_promedio":4.96,
+				"conductividad1":24.56,
+				"conductividad2":22.24,
+				"conductividad3":25.23,
+				"conductividad_promedio":24.01,
+				"oxigeno_disuelto1":4.87,
+				"oxigeno_disuelto2":5.04,
+				"oxigeno_disuelto3":4.98,
+				"oxigeno_disuelto_promedio":4.96,
+				"materia_flotante":1,
+				"transparencia":0.4357,
+				"cloro_residual":3.1569,
+				"recipientes": [
+					{
+						"id_muestra":53,
+						"id_recipiente":123,
+						"id_tipo_recipiente":1,
+						"tipo_recipiente": {
+							"id_tipo_recipiente":1,
+							"tipo_recipiente":"Plástico"
+						},
+						"id_preservacion":1,
+						"preservacion":{
+							"id_preservacion":1,
+							"preservacion":"FQ1 Hielo"
+						},
+						"preservado":1,
+						"volumen":100,
+						"fecha_ingreso":"2014-11-20",
+						"hora_ingreso":"16:32:59.001",
+						"fecha_caducidad":"2014-11-22",
+						"hora_caducidad":"12:32:59.001",
+						"vigencia":"segun parametro - ver horas vigencia en tabla - valor numerico",
+						"cantidad":1
+					},
+					{
+						"id_muestra":53,
+						"id_recipiente":124,
+						"id_tipo_recipiente":1,
+						"tipo_recipiente": {
+							"id_tipo_recipiente":1,
+							"tipo_recipiente":"Plástico"
+						},
+						"id_preservacion":2,
+						"preservacion":{
+							"id_preservacion":2,
+							"preservacion":"Dureza ph<2"
+						},
+						"preservado":0,
+						"volumen":100,
+						"fecha_ingreso":"2014-11-20",
+						"hora_ingreso":"16:32:59.001",
+						"fecha_caducidad":"2014-11-22",
+						"hora_caducidad":"12:32:59.001",
+						"vigencia":"segun parametro - ver horas vigencia en tabla - valor numerico",
+						"cantidad":1
+					},
+					{
+						"id_muestra":53,
+						"id_recipiente":125,
+						"id_tipo_recipiente":1,
+						"tipo_recipiente": {
+							"id_tipo_recipiente":1,
+							"tipo_recipiente":"Plástico"
+						},
+						"id_preservacion":3,
+						"preservacion":{
+							"id_preservacion":3,
+							"preservacion":"FQ2 ph<2"
+						},
+						"preservado":0,
+						"volumen":100,
+						"fecha_ingreso":"2014-11-20",
+						"hora_ingreso":"16:32:59.001",
+						"fecha_caducidad":"2014-11-22",
+						"hora_caducidad":"12:32:59.001",
+						"vigencia":"segun parametro - ver horas vigencia en tabla - valor numerico",
+						"cantidad":1
+					},
+					{
+						"id_muestra":53,
+						"id_recipiente":126,
+						"id_tipo_recipiente":1,
+						"tipo_recipiente": {
+							"id_tipo_recipiente":1,
+							"tipo_recipiente":"Plástico"
+						},
+						"id_preservacion":4,
+						"preservacion":{
+							"id_preservacion":4,
+							"preservacion":"SAAM ph<2"
+						},
+						"preservado":1,
+						"volumen":100,
+						"fecha_ingreso":"2014-11-20",
+						"hora_ingreso":"16:32:59.001",
+						"fecha_caducidad":"2014-11-22",
+						"hora_caducidad":"12:32:59.001",
+						"vigencia":"segun parametro - ver horas vigencia en tabla - valor numerico",
+						"cantidad":1
+					},
+					{
+						"id_muestra":53,
+						"id_recipiente":127,
+						"id_tipo_recipiente":1,
+						"tipo_recipiente": {
+							"id_tipo_recipiente":1,
+							"tipo_recipiente":"Plástico"
+						},
+						"id_preservacion":5,
+						"preservacion":{
+							"id_preservacion":5,
+							"preservacion":"Grasas y aceites ph<2"
+						},
+						"preservado":1,
+						"volumen":100,
+						"fecha_ingreso":"2014-11-20",
+						"hora_ingreso":"16:32:59.001",
+						"fecha_caducidad":"2014-11-22",
+						"hora_caducidad":"12:32:59.001",
+						"vigencia":"segun parametro - ver horas vigencia en tabla - valor numerico",
+						"cantidad":1
+					},
+					{
+						"id_muestra":53,
+						"id_recipiente":128,
+						"id_tipo_recipiente":1,
+						"tipo_recipiente": {
+							"id_tipo_recipiente":1,
+							"tipo_recipiente":"Plástico"
+						},
+						"id_preservacion":6,
+						"preservacion":{
+							"id_preservacion":6,
+							"preservacion":"Nitrógreno ph<2"
+						},
+						"preservado":0,
+						"volumen":100,
+						"fecha_ingreso":"2014-11-20",
+						"hora_ingreso":"16:32:59.001",
+						"fecha_caducidad":"2014-11-22",
+						"hora_caducidad":"12:32:59.001",
+						"vigencia":"segun parametro - ver horas vigencia en tabla - valor numerico",
+						"cantidad":1
+					},
+					{
+						"id_muestra":53,
+						"id_recipiente":129,
+						"id_tipo_recipiente":1,
+						"tipo_recipiente": {
+							"id_tipo_recipiente":1,
+							"tipo_recipiente":"Plástico"
+						},
+						"id_preservacion":7,
+						"preservacion":{
+							"id_preservacion":7,
+							"preservacion":"Metales pesados ph<2"
+						},
+						"preservado":0,
+						"volumen":100,
+						"fecha_ingreso":"2014-11-20",
+						"hora_ingreso":"16:32:59.001",
+						"fecha_caducidad":"2014-11-22",
+						"hora_caducidad":"12:32:59.001",
+						"vigencia":"segun parametro - ver horas vigencia en tabla - valor numerico",
+						"cantidad":1
+					},
+					{
+						"id_muestra":53,
+						"id_recipiente":130,
+						"id_tipo_recipiente":1,
+						"tipo_recipiente": {
+							"id_tipo_recipiente":1,
+							"tipo_recipiente":"Plástico"
+						},
+						"id_preservacion":8,
+						"preservacion":{
+							"id_preservacion":8,
+							"preservacion":"Sulfuros ph<2"
+						},
+						"preservado":1,
+						"volumen":100,
+						"fecha_ingreso":"2014-11-20",
+						"hora_ingreso":"16:32:59.001",
+						"fecha_caducidad":"2014-11-22",
+						"hora_caducidad":"12:32:59.001",
+						"vigencia":"segun parametro - ver horas vigencia en tabla - valor numerico",
+						"cantidad":1
+					},
+					{
+						"id_muestra":53,
+						"id_recipiente":131,
+						"id_tipo_recipiente":1,
+						"tipo_recipiente": {
+							"id_tipo_recipiente":1,
+							"tipo_recipiente":"Plástico"
+						},
+						"id_preservacion":9,
+						"preservacion":{
+							"id_preservacion":9,
+							"preservacion":"Fenoles ph<2 y CuSO4"
+						},
+						"preservado":1,
+						"volumen":100,
+						"fecha_ingreso":"2014-11-20",
+						"hora_ingreso":"16:32:59.001",
+						"fecha_caducidad":"2014-11-22",
+						"hora_caducidad":"12:32:59.001",
+						"vigencia":"segun parametro - ver horas vigencia en tabla - valor numerico",
+						"cantidad":1
+					},
+					{
+						"id_muestra":53,
+						"id_recipiente":132,
+						"id_tipo_recipiente":1,
+						"tipo_recipiente": {
+							"id_tipo_recipiente":1,
+							"tipo_recipiente":"Plástico"
+						},
+						"id_preservacion":9,
+						"preservacion":{
+							"id_preservacion":9,
+							"preservacion":"Otra"
+						},
+						"preservado":1,
+						"volumen":100,
+						"fecha_ingreso":"2014-11-20",
+						"hora_ingreso":"16:32:59.001",
+						"fecha_caducidad":"2014-11-22",
+						"hora_caducidad":"12:32:59.001",
+						"vigencia":"segun parametro - ver horas vigencia en tabla - valor numerico",
+						"cantidad":1
+					},
+					{
+						"id_muestra":53,
+						"id_recipiente":133,
+						"id_tipo_recipiente":1,
+						"tipo_recipiente": {
+							"id_tipo_recipiente":1,
+							"tipo_recipiente":"Plástico"
+						},
+						"id_preservacion":9,
+						"preservacion":{
+							"id_preservacion":9,
+							"preservacion":"Otra"
+						},
+						"preservado":0,
+						"volumen":100,
+						"fecha_ingreso":"2014-11-20",
+						"hora_ingreso":"16:32:59.001",
+						"fecha_caducidad":"2014-11-22",
+						"hora_caducidad":"12:32:59.001",
+						"vigencia":"segun parametro - ver horas vigencia en tabla - valor numerico",
+						"cantidad":1
+					},
+				]
+			},
+			"fecha_muestreo":"2014-11-30",
+			"hora_muestreo":"14:43:04.001",
+			"observaciones":"texto de observaciones y comentarios",
+			"calculos":"",
+			"imagen_croquis":"url/imagen/croquis_172446543.jpg",
+			"id_punto_muestreo":1,
+			"punto_muestreo": {
+				"id_punto_muestreo":1,
+				"punto_muestreo":"Desc. abrev. punto",
+				"identificacion":"Descripción a detalle de la ubicación del punto de muestreo",
+				"coordenadas": [
+					{
+						"TODO":"DEFINIR tipo de coordenadas y su manejo",
+						"tipo":"grados_decimales traducidos de entrada de grados, minutos y segundos",
+						"lat":20.123456,
+						"lng":-102.123456,
+						"lat_gra":20,
+						"lat_min":54,
+						"lat_seg":59.9932,
+						"lng_gra":-102,
+						"lng_min":12,
+						"lng_seg":4.9932
+					}
+				],
+				"resultados":[
+					{
+						"id_parametro":432314,
+						"parametro":"Color",
+						"valor":-1,
+						"valor_texto":"Color apreciado"
+					},
+					{
+						"id_parametro":7576,
+						"parametro":"Olor",
+						"valor":-1,
+						"valor_texto":"Olor apreciado"
+					},
+					{
+						"id_parametro":3134,
+						"parametro":"Gasto l/s",
+						"valor":0.4324,
+						"valor_texto":"0.4324"
+					},
+					{
+						"id_parametro":73675,
+						"parametro":"Profundidad",
+						"valor":2.15,
+						"valor_texto":"2.15"
+					},
+					{
+						"id_parametro":593,
+						"parametro":"Temperatura ambiente",
+						"valor":22,
+						"valor_texto":"22"
+					}
+				]
+			}
 		}
 	}
 ]
