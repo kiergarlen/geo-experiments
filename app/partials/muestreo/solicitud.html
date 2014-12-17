@@ -12,18 +12,14 @@
             <h4>Datos de Referencia</h4>
             <div class="well well-sm">
               <ul class="list-unstyled">
-                <li>[{{currentLabServiceRequest.id_solicitud_cotizacion}}]</li>
-                <li>Folio: {{currentLabServiceRequest.folio_solicitud}}/{{currentLabServiceRequest.ejercicio}}</li>
-                <li>Fecha Solicitud: {{currentLabServiceRequest.fecha_solicitud}}</li>
-                <li>Fecha Captura: {{currentLabServiceRequest.fecha_captura}}</li>
-                <li>Fecha Validación Gerente: {{currentLabServiceRequest.fecha_valida}}</li>
-                <li>Fecha Aceptación Cliente: {{currentLabServiceRequest.fecha_acepta}}</li>
-                <li>Fecha Última modificación: {{currentLabServiceRequest.fecha_actualizacion}}</li>
+                <li>Folio: {{labServiceRequest.folio_solicitud}}/{{labServiceRequest.ejercicio}}</li>
+                <li>Fecha Solicitud: {{labServiceRequest.fecha_solicitud}}</li>
+                <li data-ng-show="labServiceRequest.fecha_captura.length > 0">Fecha Captura: {{labServiceRequest.fecha_captura}}</li>
+                <li data-ng-show="labServiceRequest.fecha_valida.length > 0">Fecha Validación Gerente: {{labServiceRequest.fecha_valida}}</li>
+                <li data-ng-show="labServiceRequest.fecha_acepta.length > 0">Fecha Aceptación Cliente: {{labServiceRequest.fecha_acepta}}</li>
+                <li data-ng-show="labServiceRequest.fecha_actualizacion.length > 0">Fecha Última modificación: {{labServiceRequest.fecha_actualizacion}}</li>
               </ul>
-              <br>
-              <span class="text-info" data-ng-show="currentLabServiceRequest.esta_validado > 0">Validada</span>
-              <br>
-              Precio: {{currentLabServiceRequest.precio_total}}
+              <span class="text-info" data-ng-show="labServiceRequest.validado > 0">Validada</span>
             </div>
           </div>
         </div>
@@ -35,29 +31,33 @@
         <div class="row">
           <div class="col-xs-12 col-md-6 col-lg-5">
             <label for="selectClient">Seleccione un Cliente</label>
-            <select class="form-control" id="selectClient" data-ng-model="currentLabServiceRequest.id_cliente">
-              <option value="0" selected="selected">Seleccione una opción</option>
-              <option ng-repeat="client in clients"
+            <select class="form-control" id="selectClient" data-ng-model="labServiceRequest.id_cliente">
+              <option data-ng-repeat="client in clients"
                 value="{{client.id_cliente}}">
-                {{client.cliente}} {{client.area}}
+                {{client.cliente}}{{client.area.length > 0 && ' - ' + client.area || '' }}
               </option>
             </select>
+            <br>
+            <button class="btn btn-default"
+              data-ng-click="showCurrentClientDetails()">
+              Datos Cliente
+            </button>
           </div>
         </div>
-        <div class="row" data-ng-show="currentClient.cliente">
-          <div class="col-xs-12 col-md-8 col-lg-7">
-             <div class="well well-sm">
-              <h4>{{currentLabServiceRequest.id_cliente}} {{setClient(currentLabServiceRequest.id_cliente).cliente}}<br>
-                <small>{{setClient(currentLabServiceRequest.id_cliente).area}}</small>
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="well well-sm item-z1" data-ng-show="clientDetailsIsShown">
+              <h4>{{selectClient(labServiceRequest.id_cliente).cliente}}<br>
+                <small>{{currentClient.area}}</small>
               </h4>
               <ul class="list-unstyled">
-                <li>Domicilio <strong>{{setClient(currentLabServiceRequest.id_cliente).calle}}
-                  {{setClient(currentLabServiceRequest.id_cliente).numero}},
-                  {{setClient(currentLabServiceRequest.id_cliente).colonia}}</strong></li>
-                <li>Contacto <strong>{{setClient(currentLabServiceRequest.id_cliente).contacto}}</strong></li>
-                <li>Tel. <strong>{{setClient(currentLabServiceRequest.id_cliente).tel}}</strong></li>
-                <li>Email <strong>{{setClient(currentLabServiceRequest.id_cliente).email}}</strong></li>
-                <li>Tarifa <strong>{{100 * setClient(currentLabServiceRequest.id_cliente).tasa}}%</strong></li>
+                <li>Domicilio <strong>{{currentClient.calle}}
+                  {{currentClient.numero}},
+                  {{currentClient.colonia}}</strong></li>
+                <li>Contacto <strong>{{currentClient.contacto}}</strong></li>
+                <li>Tel. <strong>{{currentClient.tel}}</strong></li>
+                <li>Email <strong>{{currentClient.email}}</strong></li>
+                <li>Tarifa <strong>{{100 * currentClient.tasa}}%</strong></li>
               </ul>
             </div>
           </div>
@@ -70,33 +70,82 @@
         <div class="row">
           <div class="col-xs-12 col-md-6 col-lg-5">
             <label for="selectNorm">Análisis de parámetros según Norma</label>
-            <select class="form-control" id="selectNorm" data-ng-model="currentLabServiceRequest.id_norma">
-              <option value="0" selected="selected">Seleccione una opción</option>
-              <option ng-repeat="norm in norms"
+            <select class="form-control" id="selectNorm" data-ng-model="labServiceRequest.id_norma">
+              <option data-ng-repeat="norm in norms"
                 value="{{norm.id_norma}}">
                 {{norm.norma}}
               </option>
             </select>
           </div>
         </div>
-        <h1>{{currentLabServiceRequest.id_norma}}</h1>
         <div class="row">
           <div class="col-xs-12">
             <h5>Parámetros seleccionados</h5>
+            <h4><span class="text-muted">Total:</span> {{totalParameter() | currency}} {{selectNorm(labServiceRequest.id_norma)}}</h4>
           </div>
         </div>
         <div class="row">
-          <div class="col-xs-6 col-sm-4 col-md-3" data-ng-repeat="parameter in parameters">
-            <label>
-              <input type="checkbox" value="paramId{{parameter.idParametro}}"> {{parameter.param}}
-            </label>
+          <div class="col-xs-12">
+            <table class="table table-condensed">
+              <tr data-ng-repeat="parameter in parameters">
+                <td>
+                  <label>
+                      <input type="checkbox" data-ng-model="parameter.selected" value="1" name="{{parameter.parametro}}" />
+                      {{parameter.parametro}}
+                  </label>
+                </td>
+                <td>
+                  {{parameter.metodoEnsayo}}
+                </td>
+                <td>
+                  <span class="text-muted">{{parameter.precio | currency}}</span>
+                </td>
+              </tr>
+            </table>
           </div>
-          <div class="col-xs-6 col-sm-4 col-md-3" data-ng-repeat="activity in currentLabServiceRequest.actividades_adicionales">
+        </div>
+        <!--
+        <div class="row">
+          <div class="col-xs-12">
+            <table class="table table-condensed">
+              <thead>
+                <tr>
+                  <th>Sel.</th>
+                  <th>Parámetro</th>
+                  <th>Precio unitario</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr data-ng-repeat="parameter in parameters">
+                  <td>
+                    <label>
+                      <input type="checkbox" value="{{parameter.selected}}" name="selectedParameters"/>
+                    </label>
+                  </td>
+                  <td>
+                    <span class="text-muted">{{parameter.idParametro}}</span> {{parameter.param}}
+                  </td>
+                  <td>
+                    {{parameter.precio | currency}}
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="panel">
+              <div class="panel-heading">
+                <h4>Total: {{selectParameters().total}}</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-6 col-sm-4 col-md-3" data-ng-repeat="activity in labServiceRequest.actividades_adicionales">
             <label>
               <input type="checkbox" value="activityId{{activity.id_actividad}}"> {{activity.actividad}}
             </label>
           </div>
         </div>
+        -->
         <div class="row">
           <div class="col-xs-12">
             <h5>Tipo de muestreo</h5>

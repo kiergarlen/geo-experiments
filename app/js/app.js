@@ -6,18 +6,35 @@ var siclabApp = angular.module('siclabApp', [
   'ngRoute',
   'siclabAnimations',
   //'ui.bootstrap',
+  'siclabDirectives',
   'siclabControllers',
   'siclabFilters',
   'siclabServices'
 ]);
-
-siclabApp.directive('ngMainnav', function() {
+/*
+siclabApp.directive('ngMainNav', function() {
   return {
     restrict: 'A',
     require: '^ngModel',
     templateUrl: 'partials/navbar.html'
   }
 });
+
+siclabApp.directive('customButton', function () {
+  return {
+    restrict: 'A',
+    replace: true,
+    transclude: true,
+    template: '<a href="" class="myawesomebutton" ng-transclude>' +
+                '<i class="icon-ok-sign"></i>' +
+              '</a>',
+    //templateUrl: 'templates/customButton.html'
+    link: function (scope, element, attrs) {
+      // DOM manipulation/events here!
+    }
+  };
+});
+*/
 
 siclabApp.config(['$routeProvider',
   function($routeProvider) {

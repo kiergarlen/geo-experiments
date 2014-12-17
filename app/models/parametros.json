@@ -1,8 +1,8 @@
 [
   {
-    "idParametro":1,
+    "id_parametro":1,
     "idTipoParametro":1,
-    "idUnidad":2,
+    "id_unidad":2,
     "idMetodoEnsayo":4,
     "param":"Temperatura",
     "parametro":"Temperatura",
@@ -16,12 +16,13 @@
     "metodoEnsayo":"NMX-AA-007-SCFI-2000",
     "unidad":"°C",
     "descripcionUnidad":"grados celsius",
-    "selected":0
+    "selected":false,
+    "precio":165.89
   },
   {
-    "idParametro":2,
+    "id_parametro":2,
     "idTipoParametro":1,
-    "idUnidad":3,
+    "id_unidad":3,
     "idMetodoEnsayo":5,
     "param":"pH",
     "parametro":"Potencial de hidrógeno",
@@ -35,12 +36,13 @@
     "metodoEnsayo":"NMX-AA-008-SCFI-2011",
     "unidad":"Unid. pH",
     "descripcionUnidad":"unidad pH",
-    "selected":0
+    "selected":false,
+    "precio":12.34
   },
   {
-    "idParametro":3,
+    "id_parametro":3,
     "idTipoParametro":1,
-    "idUnidad":1,
+    "id_unidad":1,
     "idMetodoEnsayo":6,
     "param":"Oxígeno disuelto",
     "parametro":"Oxígeno disuelto",
@@ -54,12 +56,13 @@
     "metodoEnsayo":"NMX-AA-012-SCFI-2001",
     "unidad":"mg/l",
     "descripcionUnidad":"miligramos por litro",
-    "selected":0
+    "selected":false,
+    "precio":12.34
   },
   {
-    "idParametro":4,
+    "id_parametro":4,
     "idTipoParametro":1,
-    "idUnidad":4,
+    "id_unidad":4,
     "idMetodoEnsayo":23,
     "param":"Conductividad",
     "parametro":"Conductividad",
@@ -73,12 +76,13 @@
     "metodoEnsayo":"NMX-AA-093-SCFI-2000",
     "unidad":"uS/cm",
     "descripcionUnidad":"microsiemens por centímetro",
-    "selected":0
+    "selected":false,
+    "precio":12.34
   },
   {
-    "idParametro":5,
+    "id_parametro":5,
     "idTipoParametro":1,
-    "idUnidad":5,
+    "id_unidad":5,
     "idMetodoEnsayo":13,
     "param":"Turbiedad",
     "parametro":"Turbiedad",
@@ -92,12 +96,13 @@
     "metodoEnsayo":"NMX-AA-038-SCFI-2001",
     "unidad":"UNT",
     "descripcionUnidad":"unidades nefelométricas de turbidez",
-    "selected":0
+    "selected":false,
+    "precio":12.34
   },
   {
-    "idParametro":6,
+    "id_parametro":6,
     "idTipoParametro":1,
-    "idUnidad":6,
+    "id_unidad":6,
     "idMetodoEnsayo":18,
     "param":"Alcalinidad total",
     "parametro":"Alcalinidad total",
@@ -111,12 +116,13 @@
     "metodoEnsayo":"NMX-AA-073-SCFI-2001",
     "unidad":"mg CaCO3/l",
     "descripcionUnidad":"miligramos de Carbonato de Calcio por litro",
-    "selected":0
+    "selected":false,
+    "precio":262.35
   },
   {
-    "idParametro":7,
+    "id_parametro":7,
     "idTipoParametro":1,
-    "idUnidad":1,
+    "id_unidad":1,
     "idMetodoEnsayo":17,
     "param":"Cloruros totales",
     "parametro":"Cloruros totales",
@@ -130,12 +136,13 @@
     "metodoEnsayo":"NMX-AA-072-SCFI-2001",
     "unidad":"mg/l",
     "descripcionUnidad":"miligramos por litro",
-    "selected":0
+    "selected":false,
+    "precio":12.34
   },
   {
-    "idParametro":8,
+    "id_parametro":8,
     "idTipoParametro":1,
-    "idUnidad":6,
+    "id_unidad":6,
     "idMetodoEnsayo":20,
     "param":"Dureza total",
     "parametro":"Dureza total",
@@ -149,12 +156,13 @@
     "metodoEnsayo":"NMX-AA-077-SCFI-2001",
     "unidad":"mg CaCO3/l",
     "descripcionUnidad":"miligramos de Carbonato de Calcio por litro",
-    "selected":0
+    "selected":false,
+    "precio":12.34
   },
   {
-    "idParametro":9,
+    "id_parametro":9,
     "idTipoParametro":1,
-    "idUnidad":1,
+    "id_unidad":1,
     "idMetodoEnsayo":21,
     "param":"Fluoruros",
     "parametro":"Fluoruros",
@@ -168,12 +176,13 @@
     "metodoEnsayo":"NMX-AA-079-SCFI-2001",
     "unidad":"mg/l",
     "descripcionUnidad":"miligramos por litro",
-    "selected":0
+    "selected":false,
+    "precio":12.34
   },
   {
-    "idParametro":10,
+    "id_parametro":10,
     "idTipoParametro":1,
-    "idUnidad":1,
+    "id_unidad":1,
     "idMetodoEnsayo":24,
     "param":"Nitrógeno de nitratos",
     "parametro":"Nitrógeno de nitratos",
@@ -187,12 +196,13 @@
     "metodoEnsayo":"NMX-AA-099-SCFI-2006",
     "unidad":"mg/l",
     "descripcionUnidad":"miligramos por litro",
-    "selected":0
+    "selected":false,
+    "precio":12.34
   },
   {
-    "idParametro":11,
+    "id_parametro":11,
     "idTipoParametro":1,
-    "idUnidad":1,
+    "id_unidad":1,
     "idMetodoEnsayo":7,
     "param":"Nitrógeno de nitritos",
     "parametro":"Nitrógeno de nitritos",
@@ -206,12 +216,13 @@
     "metodoEnsayo":"NMX-AA-026-SCFI-2010",
     "unidad":"mg/l",
     "descripcionUnidad":"miligramos por litro",
-    "selected":0
+    "selected":false,
+    "precio":12.34
   },
   {
-    "idParametro":12,
+    "id_parametro":12,
     "idTipoParametro":1,
-    "idUnidad":1,
+    "id_unidad":1,
     "idMetodoEnsayo":7,
     "param":"Nitrógeno amoniacal",
     "parametro":"Nitrógeno amoniacal",
@@ -225,12 +236,13 @@
     "metodoEnsayo":"NMX-AA-026-SCFI-2010",
     "unidad":"mg/l",
     "descripcionUnidad":"miligramos por litro",
-    "selected":0
+    "selected":false,
+    "precio":12.34
   },
   {
-    "idParametro":13,
+    "id_parametro":13,
     "idTipoParametro":1,
-    "idUnidad":1,
+    "id_unidad":1,
     "idMetodoEnsayo":19,
     "param":"Nitrógeno total Kjeldahl",
     "parametro":"Nitrógeno total Kjeldahl",
@@ -244,12 +256,13 @@
     "metodoEnsayo":"NMX-AA-074-1981",
     "unidad":"mg/l",
     "descripcionUnidad":"miligramos por litro",
-    "selected":0
+    "selected":false,
+    "precio":12.34
   },
   {
-    "idParametro":14,
+    "id_parametro":14,
     "idTipoParametro":1,
-    "idUnidad":1,
+    "id_unidad":1,
     "idMetodoEnsayo":14,
     "param":"Sulfatos",
     "parametro":"Sulfatos",
@@ -263,12 +276,13 @@
     "metodoEnsayo":"NMX-AA-039-SCFI-2001",
     "unidad":"mg/l",
     "descripcionUnidad":"miligramos por litro",
-    "selected":0
+    "selected":false,
+    "precio":12.34
   },
   {
-    "idParametro":15,
+    "id_parametro":15,
     "idTipoParametro":1,
-    "idUnidad":1,
+    "id_unidad":1,
     "idMetodoEnsayo":8,
     "param":"SAAM",
     "parametro":"Sustancias activas al azul de metileno",
@@ -282,12 +296,13 @@
     "metodoEnsayo":"NMX-AA-028-SCFI-2001",
     "unidad":"mg/l",
     "descripcionUnidad":"miligramos por litro",
-    "selected":0
+    "selected":false,
+    "precio":12.34
   },
   {
-    "idParametro":16,
+    "id_parametro":16,
     "idTipoParametro":1,
-    "idUnidad":1,
+    "id_unidad":1,
     "idMetodoEnsayo":10,
     "param":"DBO 5",
     "parametro":"Demanda bioquímica de oxígeno",
@@ -301,12 +316,13 @@
     "metodoEnsayo":"NMX-AA-030-SCFI-2001",
     "unidad":"mg/l",
     "descripcionUnidad":"miligramos por litro",
-    "selected":0
+    "selected":false,
+    "precio":12.34
   },
   {
-    "idParametro":17,
+    "id_parametro":17,
     "idTipoParametro":1,
-    "idUnidad":1,
+    "id_unidad":1,
     "idMetodoEnsayo":2,
     "param":"DQO",
     "parametro":"Demanda química de oxígeno",
@@ -320,12 +336,13 @@
     "metodoEnsayo":"NMX-AA-005-SCFI-2000",
     "unidad":"mg/l",
     "descripcionUnidad":"miligramos por litro",
-    "selected":0
+    "selected":false,
+    "precio":12.34
   },
   {
-    "idParametro":18,
+    "id_parametro":18,
     "idTipoParametro":1,
-    "idUnidad":1,
+    "id_unidad":1,
     "idMetodoEnsayo":9,
     "param":"Grasas y aceites",
     "parametro":"Grasas y aceites",
@@ -339,12 +356,13 @@
     "metodoEnsayo":"NMX-AA-029-SCFI-2001",
     "unidad":"mg/l",
     "descripcionUnidad":"miligramos por litro",
-    "selected":0
+    "selected":false,
+    "precio":12.34
   },
   {
-    "idParametro":19,
+    "id_parametro":19,
     "idTipoParametro":1,
-    "idUnidad":1,
+    "id_unidad":1,
     "idMetodoEnsayo":11,
     "param":"Fósforo total",
     "parametro":"Fósforo total",
@@ -358,12 +376,13 @@
     "metodoEnsayo":"NMX-AA-034-SCFI-2001",
     "unidad":"mg/l",
     "descripcionUnidad":"miligramos por litro",
-    "selected":0
+    "selected":false,
+    "precio":12.34
   },
   {
-    "idParametro":20,
+    "id_parametro":20,
     "idTipoParametro":1,
-    "idUnidad":1,
+    "id_unidad":1,
     "idMetodoEnsayo":11,
     "param":"SST",
     "parametro":"Sólidos suspendidos totales",
@@ -377,12 +396,13 @@
     "metodoEnsayo":"NMX-AA-034-SCFI-2001",
     "unidad":"mg/l",
     "descripcionUnidad":"miligramos por litro",
-    "selected":0
+    "selected":false,
+    "precio":12.34
   },
   {
-    "idParametro":21,
+    "id_parametro":21,
     "idTipoParametro":1,
-    "idUnidad":1,
+    "id_unidad":1,
     "idMetodoEnsayo":1,
     "param":"Sólidos disueltos tot.",
     "parametro":"Sólidos disueltos totales",
@@ -396,12 +416,13 @@
     "metodoEnsayo":"NMX-AA-004-SCFI-2000",
     "unidad":"mg/l",
     "descripcionUnidad":"miligramos por litro",
-    "selected":0
+    "selected":false,
+    "precio":12.34
   },
   {
-    "idParametro":22,
+    "id_parametro":22,
     "idTipoParametro":1,
-    "idUnidad":7,
+    "id_unidad":7,
     "idMetodoEnsayo":22,
     "param":"Sólidos sedimentables",
     "parametro":"Sólidos sedimentables",
@@ -415,12 +436,13 @@
     "metodoEnsayo":"NMX-AA-084-1982",
     "unidad":"ml/l",
     "descripcionUnidad":"mililitros por litro",
-    "selected":0
+    "selected":false,
+    "precio":12.34
   },
   {
-    "idParametro":23,
+    "id_parametro":23,
     "idTipoParametro":1,
-    "idUnidad":1,
+    "id_unidad":1,
     "idMetodoEnsayo":16,
     "param":"Sulfuros",
     "parametro":"Sulfuros",
@@ -434,12 +456,13 @@
     "metodoEnsayo":"NMX-AA-051-SCFI-2001",
     "unidad":"mg/l",
     "descripcionUnidad":"miligramos por litro",
-    "selected":0
+    "selected":false,
+    "precio":381.47
   },
   {
-    "idParametro":24,
+    "id_parametro":24,
     "idTipoParametro":2,
-    "idUnidad":1,
+    "id_unidad":1,
     "idMetodoEnsayo":16,
     "param":"Aluminio",
     "parametro":"Aluminio",
@@ -453,12 +476,13 @@
     "metodoEnsayo":"NMX-AA-051-SCFI-2001",
     "unidad":"mg/l",
     "descripcionUnidad":"miligramos por litro",
-    "selected":0
+    "selected":false,
+    "precio":381.47
   },
   {
-    "idParametro":25,
+    "id_parametro":25,
     "idTipoParametro":2,
-    "idUnidad":1,
+    "id_unidad":1,
     "idMetodoEnsayo":16,
     "param":"Arsénico",
     "parametro":"Arsénico",
@@ -472,12 +496,13 @@
     "metodoEnsayo":"NMX-AA-051-SCFI-2001",
     "unidad":"mg/l",
     "descripcionUnidad":"miligramos por litro",
-    "selected":0
+    "selected":false,
+    "precio":381.47
   },
   {
-    "idParametro":26,
+    "id_parametro":26,
     "idTipoParametro":2,
-    "idUnidad":1,
+    "id_unidad":1,
     "idMetodoEnsayo":16,
     "param":"Bario",
     "parametro":"Bario",
@@ -491,12 +516,13 @@
     "metodoEnsayo":"NMX-AA-051-SCFI-2001",
     "unidad":"mg/l",
     "descripcionUnidad":"miligramos por litro",
-    "selected":0
+    "selected":false,
+    "precio":381.47
   },
   {
-    "idParametro":27,
+    "id_parametro":27,
     "idTipoParametro":2,
-    "idUnidad":1,
+    "id_unidad":1,
     "idMetodoEnsayo":16,
     "param":"Cadmio",
     "parametro":"Cadmio",
@@ -510,12 +536,13 @@
     "metodoEnsayo":"NMX-AA-051-SCFI-2001",
     "unidad":"mg/l",
     "descripcionUnidad":"miligramos por litro",
-    "selected":0
+    "selected":false,
+    "precio":381.47
   },
   {
-    "idParametro":28,
+    "id_parametro":28,
     "idTipoParametro":2,
-    "idUnidad":1,
+    "id_unidad":1,
     "idMetodoEnsayo":16,
     "param":"Cobre",
     "parametro":"Cobre",
@@ -529,12 +556,13 @@
     "metodoEnsayo":"NMX-AA-051-SCFI-2001",
     "unidad":"mg/l",
     "descripcionUnidad":"miligramos por litro",
-    "selected":0
+    "selected":false,
+    "precio":381.47
   },
   {
-    "idParametro":29,
+    "id_parametro":29,
     "idTipoParametro":2,
-    "idUnidad":1,
+    "id_unidad":1,
     "idMetodoEnsayo":16,
     "param":"Cromo",
     "parametro":"Cromo",
@@ -548,12 +576,13 @@
     "metodoEnsayo":"NMX-AA-051-SCFI-2001",
     "unidad":"mg/l",
     "descripcionUnidad":"miligramos por litro",
-    "selected":0
+    "selected":false,
+    "precio":381.47
   },
   {
-    "idParametro":30,
+    "id_parametro":30,
     "idTipoParametro":2,
-    "idUnidad":1,
+    "id_unidad":1,
     "idMetodoEnsayo":16,
     "param":"Fierro",
     "parametro":"Fierro",
@@ -567,12 +596,13 @@
     "metodoEnsayo":"NMX-AA-051-SCFI-2001",
     "unidad":"mg/l",
     "descripcionUnidad":"miligramos por litro",
-    "selected":0
+    "selected":false,
+    "precio":381.47
   },
   {
-    "idParametro":31,
+    "id_parametro":31,
     "idTipoParametro":2,
-    "idUnidad":1,
+    "id_unidad":1,
     "idMetodoEnsayo":16,
     "param":"Manganeso",
     "parametro":"Manganeso",
@@ -586,12 +616,13 @@
     "metodoEnsayo":"NMX-AA-051-SCFI-2001",
     "unidad":"mg/l",
     "descripcionUnidad":"miligramos por litro",
-    "selected":0
+    "selected":false,
+    "precio":381.47
   },
   {
-    "idParametro":32,
+    "id_parametro":32,
     "idTipoParametro":2,
-    "idUnidad":1,
+    "id_unidad":1,
     "idMetodoEnsayo":16,
     "param":"Mercurio",
     "parametro":"Mercurio",
@@ -605,12 +636,13 @@
     "metodoEnsayo":"NMX-AA-051-SCFI-2001",
     "unidad":"mg/l",
     "descripcionUnidad":"miligramos por litro",
-    "selected":0
+    "selected":false,
+    "precio":381.47
   },
   {
-    "idParametro":33,
+    "id_parametro":33,
     "idTipoParametro":2,
-    "idUnidad":1,
+    "id_unidad":1,
     "idMetodoEnsayo":16,
     "param":"Níquel",
     "parametro":"Níquel",
@@ -624,12 +656,13 @@
     "metodoEnsayo":"NMX-AA-051-SCFI-2001",
     "unidad":"mg/l",
     "descripcionUnidad":"miligramos por litro",
-    "selected":0
+    "selected":false,
+    "precio":381.47
   },
   {
-    "idParametro":34,
+    "id_parametro":34,
     "idTipoParametro":2,
-    "idUnidad":1,
+    "id_unidad":1,
     "idMetodoEnsayo":16,
     "param":"Plomo",
     "parametro":"Plomo",
@@ -643,12 +676,13 @@
     "metodoEnsayo":"NMX-AA-051-SCFI-2001",
     "unidad":"mg/l",
     "descripcionUnidad":"miligramos por litro",
-    "selected":0
+    "selected":false,
+    "precio":381.47
   },
   {
-    "idParametro":35,
+    "id_parametro":35,
     "idTipoParametro":2,
-    "idUnidad":1,
+    "id_unidad":1,
     "idMetodoEnsayo":16,
     "param":"Sodio",
     "parametro":"Sodio",
@@ -662,12 +696,13 @@
     "metodoEnsayo":"NMX-AA-051-SCFI-2001",
     "unidad":"mg/l",
     "descripcionUnidad":"miligramos por litro",
-    "selected":0
+    "selected":false,
+    "precio":381.47
   },
   {
-    "idParametro":36,
+    "id_parametro":36,
     "idTipoParametro":2,
-    "idUnidad":1,
+    "id_unidad":1,
     "idMetodoEnsayo":16,
     "param":"Zinc",
     "parametro":"Zinc",
@@ -681,12 +716,13 @@
     "metodoEnsayo":"NMX-AA-051-SCFI-2001",
     "unidad":"mg/l",
     "descripcionUnidad":"miligramos por litro",
-    "selected":0
+    "selected":false,
+    "precio":381.47
   },
   {
-    "idParametro":37,
+    "id_parametro":37,
     "idTipoParametro":3,
-    "idUnidad":8,
+    "id_unidad":8,
     "idMetodoEnsayo":15,
     "param":"Coliformes totales",
     "parametro":"Coliformes totales",
@@ -700,12 +736,13 @@
     "metodoEnsayo":"NMX-AA-042-1987",
     "unidad":"NMP/100ml",
     "descripcionUnidad":"número más probable por 100 mililitros",
-    "selected":0
+    "selected":false,
+    "precio":12.34
   },
   {
-    "idParametro":38,
+    "id_parametro":38,
     "idTipoParametro":3,
-    "idUnidad":8,
+    "id_unidad":8,
     "idMetodoEnsayo":15,
     "param":"Coliformes fecales",
     "parametro":"Coliformes fecales",
@@ -719,12 +756,13 @@
     "metodoEnsayo":"NMX-AA-042-1987",
     "unidad":"NMP/100ml",
     "descripcionUnidad":"número más probable por 100 mililitros",
-    "selected":0
+    "selected":false,
+    "precio":12.34
   },
   {
-    "idParametro":39,
+    "id_parametro":39,
     "idTipoParametro":1,
-    "idUnidad":9,
+    "id_unidad":9,
     "idMetodoEnsayo":3,
     "param":"Materia flotante",
     "parametro":"Presencia de materia flotante",
@@ -738,12 +776,13 @@
     "metodoEnsayo":"NMX-AA-006-SCFI-2010",
     "unidad":"--",
     "descripcionUnidad":"sin unidad",
-    "selected":0
+    "selected":false,
+    "precio":12.34
   },
   {
-    "idParametro":40,
+    "id_parametro":40,
     "idTipoParametro":4,
-    "idUnidad":1,
+    "id_unidad":1,
     "idMetodoEnsayo":25,
     "param":"Cloro libre residual",
     "parametro":"Cloro libre residual",
@@ -757,12 +796,13 @@
     "metodoEnsayo":"SM-4500 Cl-G",
     "unidad":"mg/l",
     "descripcionUnidad":"miligramos por litro",
-    "selected":0
+    "selected":false,
+    "precio":12.34
   },
   {
-    "idParametro":41,
+    "id_parametro":41,
     "idTipoParametro":4,
-    "idUnidad":9,
+    "id_unidad":9,
     "idMetodoEnsayo":27,
     "param":"Color",
     "parametro":"Color",
@@ -776,12 +816,13 @@
     "metodoEnsayo":"Organoléptico-visual",
     "unidad":"--",
     "descripcionUnidad":"sin unidad",
-    "selected":0
+    "selected":false,
+    "precio":12.34
   },
   {
-    "idParametro":42,
+    "id_parametro":42,
     "idTipoParametro":4,
-    "idUnidad":10,
+    "id_unidad":10,
     "idMetodoEnsayo":28,
     "param":"Gasto",
     "parametro":"Gasto",
@@ -795,12 +836,13 @@
     "metodoEnsayo":"Volumétrico",
     "unidad":"l/s",
     "descripcionUnidad":"litros por segundo",
-    "selected":0
+    "selected":false,
+    "precio":12.34
   },
   {
-    "idParametro":43,
+    "id_parametro":43,
     "idTipoParametro":4,
-    "idUnidad":9,
+    "id_unidad":9,
     "idMetodoEnsayo":27,
     "param":"Olor",
     "parametro":"Olor",
@@ -814,12 +856,13 @@
     "metodoEnsayo":"Organoléptico-visual",
     "unidad":"--",
     "descripcionUnidad":"sin unidad",
-    "selected":0
+    "selected":false,
+    "precio":12.34
   },
   {
-    "idParametro":44,
+    "id_parametro":44,
     "idTipoParametro":4,
-    "idUnidad":1,
+    "id_unidad":1,
     "idMetodoEnsayo":6,
     "param":"O2 disuelto",
     "parametro":"Oxígeno disuelto",
@@ -833,12 +876,13 @@
     "metodoEnsayo":"NMX-AA-012-SCFI-2001",
     "unidad":"mg/l",
     "descripcionUnidad":"miligramos por litro",
-    "selected":0
+    "selected":false,
+    "precio":12.34
   },
   {
-    "idParametro":45,
+    "id_parametro":45,
     "idTipoParametro":4,
-    "idUnidad":11,
+    "id_unidad":11,
     "idMetodoEnsayo":29,
     "param":"Profundidad",
     "parametro":"Profundidad",
@@ -852,12 +896,13 @@
     "metodoEnsayo":"Medición directa",
     "unidad":"m",
     "descripcionUnidad":"metros",
-    "selected":0
+    "selected":false,
+    "precio":12.34
   },
   {
-    "idParametro":46,
+    "id_parametro":46,
     "idTipoParametro":1,
-    "idUnidad":2,
+    "id_unidad":2,
     "idMetodoEnsayo":4,
     "param":"Temp. ambiente",
     "parametro":"Temperatura ambiente",
@@ -871,12 +916,13 @@
     "metodoEnsayo":"NMX-AA-007-SCFI-2000",
     "unidad":"°C",
     "descripcionUnidad":"grados celsius",
-    "selected":0
+    "selected":false,
+    "precio":165.89
   },
   {
-    "idParametro":47,
+    "id_parametro":47,
     "idTipoParametro":4,
-    "idUnidad":11,
+    "id_unidad":11,
     "idMetodoEnsayo":30,
     "param":"Transparencia Secchi",
     "parametro":"Transparencia Secchi",
@@ -890,12 +936,13 @@
     "metodoEnsayo":"Disco Secchi",
     "unidad":"m",
     "descripcionUnidad":"metros",
-    "selected":0
+    "selected":false,
+    "precio":12.34
   },
   {
-    "idParametro":48,
+    "id_parametro":48,
     "idTipoParametro":1,
-    "idUnidad":9,
+    "id_unidad":9,
     "idMetodoEnsayo":18,
     "param":"Acidez total",
     "parametro":"Acidez total",
@@ -909,12 +956,13 @@
     "metodoEnsayo":"NMX-AA-073-SCFI-2001",
     "unidad":"--",
     "descripcionUnidad":"sin unidad",
-    "selected":0
+    "selected":false,
+    "precio":262.35
   },
   {
-    "idParametro":49,
+    "id_parametro":49,
     "idTipoParametro":1,
-    "idUnidad":6,
+    "id_unidad":6,
     "idMetodoEnsayo":18,
     "param":"Alcalinidad fenolftaleína",
     "parametro":"Alcalinidad a la fenolftaleína",
@@ -928,12 +976,13 @@
     "metodoEnsayo":"NMX-AA-073-SCFI-2001",
     "unidad":"mg CaCO3/l",
     "descripcionUnidad":"miligramos de Carbonato de Calcio por litro",
-    "selected":0
+    "selected":false,
+    "precio":262.35
   },
   {
-    "idParametro":50,
+    "id_parametro":50,
     "idTipoParametro":1,
-    "idUnidad":12,
+    "id_unidad":12,
     "idMetodoEnsayo":32,
     "param":"Color verdadero",
     "parametro":"Color verdadero",
@@ -947,12 +996,13 @@
     "metodoEnsayo":"NMX-AA-045-SCFI-2001",
     "unidad":"U (Pt-Co)",
     "descripcionUnidad":"color",
-    "selected":0
+    "selected":false,
+    "precio":12.34
   },
   {
-    "idParametro":51,
+    "id_parametro":51,
     "idTipoParametro":1,
-    "idUnidad":9,
+    "id_unidad":9,
     "idMetodoEnsayo":31,
     "param":"Cromo hexavalente",
     "parametro":"Cromo hexavalente",
@@ -966,12 +1016,13 @@
     "metodoEnsayo":"Sin método",
     "unidad":"--",
     "descripcionUnidad":"sin unidad",
-    "selected":0
+    "selected":false,
+    "precio":12.34
   },
   {
-    "idParametro":52,
+    "id_parametro":52,
     "idTipoParametro":1,
-    "idUnidad":9,
+    "id_unidad":9,
     "idMetodoEnsayo":31,
     "param":"Dureza de calcio",
     "parametro":"Dureza de calcio",
@@ -985,12 +1036,13 @@
     "metodoEnsayo":"Sin método",
     "unidad":"--",
     "descripcionUnidad":"sin unidad",
-    "selected":0
+    "selected":false,
+    "precio":12.34
   },
   {
-    "idParametro":53,
+    "id_parametro":53,
     "idTipoParametro":1,
-    "idUnidad":9,
+    "id_unidad":9,
     "idMetodoEnsayo":31,
     "param":"Dureza de manganeso",
     "parametro":"Dureza de manganeso",
@@ -1004,12 +1056,13 @@
     "metodoEnsayo":"Sin método",
     "unidad":"--",
     "descripcionUnidad":"sin unidad",
-    "selected":0
+    "selected":false,
+    "precio":12.34
   },
   {
-    "idParametro":54,
+    "id_parametro":54,
     "idTipoParametro":1,
-    "idUnidad":1,
+    "id_unidad":1,
     "idMetodoEnsayo":33,
     "param":"Fenoles",
     "parametro":"Fenoles",
@@ -1023,12 +1076,13 @@
     "metodoEnsayo":"NMX-AA-050-SCFI-2001",
     "unidad":"mg/l",
     "descripcionUnidad":"miligramos por litro",
-    "selected":0
+    "selected":false,
+    "precio":12.34
   },
   {
-    "idParametro":55,
+    "id_parametro":55,
     "idTipoParametro":1,
-    "idUnidad":9,
+    "id_unidad":9,
     "idMetodoEnsayo":31,
     "param":"Sólidos totales",
     "parametro":"Sólidos totales",
@@ -1042,12 +1096,13 @@
     "metodoEnsayo":"Sin método",
     "unidad":"--",
     "descripcionUnidad":"sin unidad",
-    "selected":0
+    "selected":false,
+    "precio":12.34
   },
   {
-    "idParametro":56,
+    "id_parametro":56,
     "idTipoParametro":1,
-    "idUnidad":9,
+    "id_unidad":9,
     "idMetodoEnsayo":31,
     "param":"SDV",
     "parametro":"SDV",
@@ -1061,12 +1116,13 @@
     "metodoEnsayo":"Sin método",
     "unidad":"--",
     "descripcionUnidad":"sin unidad",
-    "selected":0
+    "selected":false,
+    "precio":12.34
   },
   {
-    "idParametro":57,
+    "id_parametro":57,
     "idTipoParametro":1,
-    "idUnidad":9,
+    "id_unidad":9,
     "idMetodoEnsayo":31,
     "param":"STV",
     "parametro":"STV",
@@ -1080,12 +1136,13 @@
     "metodoEnsayo":"Sin método",
     "unidad":"--",
     "descripcionUnidad":"sin unidad",
-    "selected":0
+    "selected":false,
+    "precio":12.34
   },
   {
-    "idParametro":58,
+    "id_parametro":58,
     "idTipoParametro":1,
-    "idUnidad":9,
+    "id_unidad":9,
     "idMetodoEnsayo":31,
     "param":"SSV",
     "parametro":"SSV",
@@ -1099,12 +1156,13 @@
     "metodoEnsayo":"Sin método",
     "unidad":"--",
     "descripcionUnidad":"sin unidad",
-    "selected":0
+    "selected":false,
+    "precio":12.34
   },
   {
-    "idParametro":59,
+    "id_parametro":59,
     "idTipoParametro":1,
-    "idUnidad":9,
+    "id_unidad":9,
     "idMetodoEnsayo":31,
     "param":"SDF",
     "parametro":"SDF",
@@ -1118,12 +1176,13 @@
     "metodoEnsayo":"Sin método",
     "unidad":"--",
     "descripcionUnidad":"sin unidad",
-    "selected":0
+    "selected":false,
+    "precio":12.34
   },
   {
-    "idParametro":60,
+    "id_parametro":60,
     "idTipoParametro":1,
-    "idUnidad":9,
+    "id_unidad":9,
     "idMetodoEnsayo":31,
     "param":"STF",
     "parametro":"STF",
@@ -1137,12 +1196,13 @@
     "metodoEnsayo":"Sin método",
     "unidad":"--",
     "descripcionUnidad":"sin unidad",
-    "selected":0
+    "selected":false,
+    "precio":12.34
   },
   {
-    "idParametro":61,
+    "id_parametro":61,
     "idTipoParametro":1,
-    "idUnidad":9,
+    "id_unidad":9,
     "idMetodoEnsayo":31,
     "param":"SSF",
     "parametro":"SSF",
@@ -1156,12 +1216,13 @@
     "metodoEnsayo":"Sin método",
     "unidad":"--",
     "descripcionUnidad":"sin unidad",
-    "selected":0
+    "selected":false,
+    "precio":12.34
   },
   {
-    "idParametro":62,
+    "id_parametro":62,
     "idTipoParametro":1,
-    "idUnidad":9,
+    "id_unidad":9,
     "idMetodoEnsayo":31,
     "param":"Ortofosfatos",
     "parametro":"Ortofosfatos",
@@ -1175,12 +1236,13 @@
     "metodoEnsayo":"Sin método",
     "unidad":"--",
     "descripcionUnidad":"sin unidad",
-    "selected":0
+    "selected":false,
+    "precio":12.34
   },
   {
-    "idParametro":63,
+    "id_parametro":63,
     "idTipoParametro":1,
-    "idUnidad":9,
+    "id_unidad":9,
     "idMetodoEnsayo":31,
     "param":"Sílice",
     "parametro":"Sílice",
@@ -1194,12 +1256,13 @@
     "metodoEnsayo":"Sin método",
     "unidad":"--",
     "descripcionUnidad":"sin unidad",
-    "selected":0
+    "selected":false,
+    "precio":12.34
   },
   {
-    "idParametro":64,
+    "id_parametro":64,
     "idTipoParametro":1,
-    "idUnidad":9,
+    "id_unidad":9,
     "idMetodoEnsayo":31,
     "param":"Cianuros",
     "parametro":"Cianuros",
@@ -1213,12 +1276,13 @@
     "metodoEnsayo":"Sin método",
     "unidad":"--",
     "descripcionUnidad":"sin unidad",
-    "selected":0
+    "selected":false,
+    "precio":12.34
   },
   {
-    "idParametro":65,
+    "id_parametro":65,
     "idTipoParametro":1,
-    "idUnidad":9,
+    "id_unidad":9,
     "idMetodoEnsayo":31,
     "param":"DBO Soluble",
     "parametro":"DBO Soluble",
@@ -1232,12 +1296,13 @@
     "metodoEnsayo":"Sin método",
     "unidad":"--",
     "descripcionUnidad":"sin unidad",
-    "selected":0
+    "selected":false,
+    "precio":12.34
   },
   {
-    "idParametro":66,
+    "id_parametro":66,
     "idTipoParametro":1,
-    "idUnidad":9,
+    "id_unidad":9,
     "idMetodoEnsayo":31,
     "param":"DQO Soluble",
     "parametro":"DQO Soluble",
@@ -1251,12 +1316,13 @@
     "metodoEnsayo":"Sin método",
     "unidad":"--",
     "descripcionUnidad":"sin unidad",
-    "selected":0
+    "selected":false,
+    "precio":12.34
   },
   {
-    "idParametro":67,
+    "id_parametro":67,
     "idTipoParametro":3,
-    "idUnidad":9,
+    "id_unidad":9,
     "idMetodoEnsayo":31,
     "param":"Coliformes fecales UFC",
     "parametro":"Coliformes fecales UFC",
@@ -1270,12 +1336,13 @@
     "metodoEnsayo":"Sin método",
     "unidad":"--",
     "descripcionUnidad":"sin unidad",
-    "selected":0
+    "selected":false,
+    "precio":12.34
   },
   {
-    "idParametro":68,
+    "id_parametro":68,
     "idTipoParametro":3,
-    "idUnidad":9,
+    "id_unidad":9,
     "idMetodoEnsayo":31,
     "param":"Coliformes totales UFC",
     "parametro":"Coliformes totales UFC",
@@ -1289,12 +1356,13 @@
     "metodoEnsayo":"Sin método",
     "unidad":"--",
     "descripcionUnidad":"sin unidad",
-    "selected":0
+    "selected":false,
+    "precio":12.34
   },
   {
-    "idParametro":69,
+    "id_parametro":69,
     "idTipoParametro":3,
-    "idUnidad":9,
+    "id_unidad":9,
     "idMetodoEnsayo":31,
     "param":"Huevos de helminto",
     "parametro":"Huevos de helminto",
@@ -1308,12 +1376,13 @@
     "metodoEnsayo":"Sin método",
     "unidad":"--",
     "descripcionUnidad":"sin unidad",
-    "selected":0
+    "selected":false,
+    "precio":12.34
   },
   {
-    "idParametro":70,
+    "id_parametro":70,
     "idTipoParametro":5,
-    "idUnidad":9,
+    "id_unidad":9,
     "idMetodoEnsayo":31,
     "param":"Plaguicidas",
     "parametro":"Plaguicidas organoclorados",
@@ -1327,12 +1396,13 @@
     "metodoEnsayo":"Sin método",
     "unidad":"--",
     "descripcionUnidad":"sin unidad",
-    "selected":0
+    "selected":false,
+    "precio":12.34
   },
   {
-    "idParametro":71,
+    "id_parametro":71,
     "idTipoParametro":5,
-    "idUnidad":9,
+    "id_unidad":9,
     "idMetodoEnsayo":31,
     "param":"Trihalometanos",
     "parametro":"Trihalometanos",
@@ -1346,12 +1416,13 @@
     "metodoEnsayo":"Sin método",
     "unidad":"--",
     "descripcionUnidad":"sin unidad",
-    "selected":0
+    "selected":false,
+    "precio":12.34
   },
   {
-    "idParametro":72,
+    "id_parametro":72,
     "idTipoParametro":5,
-    "idUnidad":9,
+    "id_unidad":9,
     "idMetodoEnsayo":31,
     "param":"Herbicidas",
     "parametro":"Herbicidas clorados",
@@ -1365,12 +1436,13 @@
     "metodoEnsayo":"Sin método",
     "unidad":"--",
     "descripcionUnidad":"sin unidad",
-    "selected":0
+    "selected":false,
+    "precio":12.34
   },
   {
-    "idParametro":73,
+    "id_parametro":73,
     "idTipoParametro":5,
-    "idUnidad":9,
+    "id_unidad":9,
     "idMetodoEnsayo":31,
     "param":"Clorofilas",
     "parametro":"Clorofilas A, B y C",
@@ -1384,12 +1456,13 @@
     "metodoEnsayo":"Sin método",
     "unidad":"--",
     "descripcionUnidad":"sin unidad",
-    "selected":0
+    "selected":false,
+    "precio":12.34
   },
   {
-    "idParametro":74,
+    "id_parametro":74,
     "idTipoParametro":1,
-    "idUnidad":9,
+    "id_unidad":9,
     "idMetodoEnsayo":31,
     "param":"Nitrógeno total",
     "parametro":"Nitrógeno total",
@@ -1403,12 +1476,13 @@
     "metodoEnsayo":"Sin método",
     "unidad":"--",
     "descripcionUnidad":"sin unidad",
-    "selected":0
+    "selected":false,
+    "precio":12.34
   },
   {
-    "idParametro":75,
+    "id_parametro":75,
     "idTipoParametro":5,
-    "idUnidad":9,
+    "id_unidad":9,
     "idMetodoEnsayo":31,
     "param":"Clorofila A",
     "parametro":"Clorofila A",
@@ -1422,12 +1496,13 @@
     "metodoEnsayo":"Sin método",
     "unidad":"--",
     "descripcionUnidad":"sin unidad",
-    "selected":0
+    "selected":false,
+    "precio":12.34
   },
   {
-    "idParametro":76,
+    "id_parametro":76,
     "idTipoParametro":5,
-    "idUnidad":9,
+    "id_unidad":9,
     "idMetodoEnsayo":31,
     "param":"Clorofila B",
     "parametro":"Clorofila B",
@@ -1441,12 +1516,13 @@
     "metodoEnsayo":"Sin método",
     "unidad":"--",
     "descripcionUnidad":"sin unidad",
-    "selected":0
+    "selected":false,
+    "precio":12.34
   },
   {
-    "idParametro":77,
+    "id_parametro":77,
     "idTipoParametro":5,
-    "idUnidad":9,
+    "id_unidad":9,
     "idMetodoEnsayo":31,
     "param":"Clorofila C",
     "parametro":"Clorofila C",
@@ -1460,12 +1536,13 @@
     "metodoEnsayo":"Sin método",
     "unidad":"--",
     "descripcionUnidad":"sin unidad",
-    "selected":0
+    "selected":false,
+    "precio":12.34
   },
   {
-    "idParametro":78,
+    "id_parametro":78,
     "idTipoParametro":2,
-    "idUnidad":1,
+    "id_unidad":1,
     "idMetodoEnsayo":16,
     "param":"Plata",
     "parametro":"Plata",
@@ -1479,6 +1556,7 @@
     "metodoEnsayo":"NMX-AA-051-SCFI-2001",
     "unidad":"mg/l",
     "descripcionUnidad":"miligramos por litro",
-    "selected":0
+    "selected":false,
+    "precio":381.47
   }
 ]

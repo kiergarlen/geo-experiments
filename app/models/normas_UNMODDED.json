@@ -68,6 +68,13 @@
 		]
 	},
 	{
+		"id_norma":4,
+		"norma":"NOM-004-SEMARNAT-2002",
+		"desc":"Norma Oficial Mexicana",
+		"parametros":[
+		]
+	},
+	{
 		"id_norma":5,
 		"norma":"NOM-127-SSA1-1994",
 		"desc":"Norma Oficial Mexicana",
@@ -100,6 +107,13 @@
 			{"id_parametro":15,"parametro":"Sustancias activas al azul de metileno"},
 			{"id_parametro":36,"parametro":"Zinc"},
 			{"id_parametro":5,"parametro":"Turbiedad"}
+		]
+	},
+	{
+		"id_norma":6,
+		"norma":"NOM-230-SSA1-2002",
+		"desc":"Norma Oficial Mexicana",
+		"parametros":[
 		]
 	},
 	{
@@ -137,6 +151,13 @@
 			{"id_parametro":34,"parametro":"Plomo"},
 			{"id_parametro":36,"parametro":"Zinc"},
 			{"id_parametro":7,"parametro":"Cloruros totales"}
+		]
+	},
+	{
+		"id_norma":8,
+		"norma":"Personalizada",
+		"desc":"Otra/Personalizada",
+		"parametros":[
 		]
 	}
 ]

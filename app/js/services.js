@@ -10,9 +10,9 @@ siclabServices.factory('Menu', ['$resource', function($resource){
 	});
 }]);
 
-siclabServices.factory('Phone', ['$resource', function($resource){
-	return $resource('phones/:phoneId.json', {}, {
-		query: {method:'GET', params:{phoneId:'phones'}, isArray:true}
+siclabServices.factory('ClientDetail', ['$resource', function($resource){
+	return $resource('models/clients/:clientId.json', {}, {
+		query: {method:'GET', params:{clientId:'id_cliente'}, isArray:true}
 	});
 }]);
 
