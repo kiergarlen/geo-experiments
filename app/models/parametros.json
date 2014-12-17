@@ -16,7 +16,11 @@
     "metodoEnsayo":"NMX-AA-007-SCFI-2000",
     "unidad":"°C",
     "descripcionUnidad":"grados celsius",
+<<<<<<< HEAD
     "selected":false,
+=======
+    "selected":1,
+>>>>>>> FETCH_HEAD
     "precio":165.89
   },
   {
@@ -36,7 +40,11 @@
     "metodoEnsayo":"NMX-AA-008-SCFI-2011",
     "unidad":"Unid. pH",
     "descripcionUnidad":"unidad pH",
+<<<<<<< HEAD
     "selected":false,
+=======
+    "selected":0,
+>>>>>>> FETCH_HEAD
     "precio":12.34
   },
   {
@@ -56,7 +64,11 @@
     "metodoEnsayo":"NMX-AA-012-SCFI-2001",
     "unidad":"mg/l",
     "descripcionUnidad":"miligramos por litro",
+<<<<<<< HEAD
     "selected":false,
+=======
+    "selected":0,
+>>>>>>> FETCH_HEAD
     "precio":12.34
   },
   {
@@ -76,7 +88,11 @@
     "metodoEnsayo":"NMX-AA-093-SCFI-2000",
     "unidad":"uS/cm",
     "descripcionUnidad":"microsiemens por centímetro",
+<<<<<<< HEAD
     "selected":false,
+=======
+    "selected":0,
+>>>>>>> FETCH_HEAD
     "precio":12.34
   },
   {
@@ -96,7 +112,11 @@
     "metodoEnsayo":"NMX-AA-038-SCFI-2001",
     "unidad":"UNT",
     "descripcionUnidad":"unidades nefelométricas de turbidez",
+<<<<<<< HEAD
     "selected":false,
+=======
+    "selected":0,
+>>>>>>> FETCH_HEAD
     "precio":12.34
   },
   {
@@ -116,7 +136,11 @@
     "metodoEnsayo":"NMX-AA-073-SCFI-2001",
     "unidad":"mg CaCO3/l",
     "descripcionUnidad":"miligramos de Carbonato de Calcio por litro",
+<<<<<<< HEAD
     "selected":false,
+=======
+    "selected":0,
+>>>>>>> FETCH_HEAD
     "precio":262.35
   },
   {
@@ -136,7 +160,11 @@
     "metodoEnsayo":"NMX-AA-072-SCFI-2001",
     "unidad":"mg/l",
     "descripcionUnidad":"miligramos por litro",
+<<<<<<< HEAD
     "selected":false,
+=======
+    "selected":0,
+>>>>>>> FETCH_HEAD
     "precio":12.34
   },
   {
@@ -156,7 +184,11 @@
     "metodoEnsayo":"NMX-AA-077-SCFI-2001",
     "unidad":"mg CaCO3/l",
     "descripcionUnidad":"miligramos de Carbonato de Calcio por litro",
+<<<<<<< HEAD
     "selected":false,
+=======
+    "selected":0,
+>>>>>>> FETCH_HEAD
     "precio":12.34
   },
   {
@@ -176,7 +208,11 @@
     "metodoEnsayo":"NMX-AA-079-SCFI-2001",
     "unidad":"mg/l",
     "descripcionUnidad":"miligramos por litro",
+<<<<<<< HEAD
     "selected":false,
+=======
+    "selected":0,
+>>>>>>> FETCH_HEAD
     "precio":12.34
   },
   {
@@ -196,7 +232,11 @@
     "metodoEnsayo":"NMX-AA-099-SCFI-2006",
     "unidad":"mg/l",
     "descripcionUnidad":"miligramos por litro",
+<<<<<<< HEAD
     "selected":false,
+=======
+    "selected":0,
+>>>>>>> FETCH_HEAD
     "precio":12.34
   },
   {
@@ -216,7 +256,11 @@
     "metodoEnsayo":"NMX-AA-026-SCFI-2010",
     "unidad":"mg/l",
     "descripcionUnidad":"miligramos por litro",
+<<<<<<< HEAD
     "selected":false,
+=======
+    "selected":0,
+>>>>>>> FETCH_HEAD
     "precio":12.34
   },
   {
@@ -236,7 +280,11 @@
     "metodoEnsayo":"NMX-AA-026-SCFI-2010",
     "unidad":"mg/l",
     "descripcionUnidad":"miligramos por litro",
+<<<<<<< HEAD
     "selected":false,
+=======
+    "selected":0,
+>>>>>>> FETCH_HEAD
     "precio":12.34
   },
   {
@@ -256,7 +304,11 @@
     "metodoEnsayo":"NMX-AA-074-1981",
     "unidad":"mg/l",
     "descripcionUnidad":"miligramos por litro",
+<<<<<<< HEAD
     "selected":false,
+=======
+    "selected":0,
+>>>>>>> FETCH_HEAD
     "precio":12.34
   },
   {
@@ -276,7 +328,11 @@
     "metodoEnsayo":"NMX-AA-039-SCFI-2001",
     "unidad":"mg/l",
     "descripcionUnidad":"miligramos por litro",
+<<<<<<< HEAD
     "selected":false,
+=======
+    "selected":0,
+>>>>>>> FETCH_HEAD
     "precio":12.34
   },
   {
@@ -296,7 +352,11 @@
     "metodoEnsayo":"NMX-AA-028-SCFI-2001",
     "unidad":"mg/l",
     "descripcionUnidad":"miligramos por litro",
+<<<<<<< HEAD
     "selected":false,
+=======
+    "selected":0,
+>>>>>>> FETCH_HEAD
     "precio":12.34
   },
   {
@@ -316,7 +376,11 @@
     "metodoEnsayo":"NMX-AA-030-SCFI-2001",
     "unidad":"mg/l",
     "descripcionUnidad":"miligramos por litro",
+<<<<<<< HEAD
     "selected":false,
+=======
+    "selected":0,
+>>>>>>> FETCH_HEAD
     "precio":12.34
   },
   {
@@ -336,7 +400,11 @@
     "metodoEnsayo":"NMX-AA-005-SCFI-2000",
     "unidad":"mg/l",
     "descripcionUnidad":"miligramos por litro",
+<<<<<<< HEAD
     "selected":false,
+=======
+    "selected":0,
+>>>>>>> FETCH_HEAD
     "precio":12.34
   },
   {
@@ -356,7 +424,11 @@
     "metodoEnsayo":"NMX-AA-029-SCFI-2001",
     "unidad":"mg/l",
     "descripcionUnidad":"miligramos por litro",
+<<<<<<< HEAD
     "selected":false,
+=======
+    "selected":0,
+>>>>>>> FETCH_HEAD
     "precio":12.34
   },
   {
@@ -376,7 +448,11 @@
     "metodoEnsayo":"NMX-AA-034-SCFI-2001",
     "unidad":"mg/l",
     "descripcionUnidad":"miligramos por litro",
+<<<<<<< HEAD
     "selected":false,
+=======
+    "selected":0,
+>>>>>>> FETCH_HEAD
     "precio":12.34
   },
   {
@@ -396,7 +472,11 @@
     "metodoEnsayo":"NMX-AA-034-SCFI-2001",
     "unidad":"mg/l",
     "descripcionUnidad":"miligramos por litro",
+<<<<<<< HEAD
     "selected":false,
+=======
+    "selected":0,
+>>>>>>> FETCH_HEAD
     "precio":12.34
   },
   {
@@ -416,7 +496,11 @@
     "metodoEnsayo":"NMX-AA-004-SCFI-2000",
     "unidad":"mg/l",
     "descripcionUnidad":"miligramos por litro",
+<<<<<<< HEAD
     "selected":false,
+=======
+    "selected":0,
+>>>>>>> FETCH_HEAD
     "precio":12.34
   },
   {
@@ -436,7 +520,11 @@
     "metodoEnsayo":"NMX-AA-084-1982",
     "unidad":"ml/l",
     "descripcionUnidad":"mililitros por litro",
+<<<<<<< HEAD
     "selected":false,
+=======
+    "selected":0,
+>>>>>>> FETCH_HEAD
     "precio":12.34
   },
   {
@@ -456,7 +544,11 @@
     "metodoEnsayo":"NMX-AA-051-SCFI-2001",
     "unidad":"mg/l",
     "descripcionUnidad":"miligramos por litro",
+<<<<<<< HEAD
     "selected":false,
+=======
+    "selected":0,
+>>>>>>> FETCH_HEAD
     "precio":381.47
   },
   {
@@ -476,7 +568,11 @@
     "metodoEnsayo":"NMX-AA-051-SCFI-2001",
     "unidad":"mg/l",
     "descripcionUnidad":"miligramos por litro",
+<<<<<<< HEAD
     "selected":false,
+=======
+    "selected":0,
+>>>>>>> FETCH_HEAD
     "precio":381.47
   },
   {
@@ -496,7 +592,11 @@
     "metodoEnsayo":"NMX-AA-051-SCFI-2001",
     "unidad":"mg/l",
     "descripcionUnidad":"miligramos por litro",
+<<<<<<< HEAD
     "selected":false,
+=======
+    "selected":0,
+>>>>>>> FETCH_HEAD
     "precio":381.47
   },
   {
@@ -516,7 +616,11 @@
     "metodoEnsayo":"NMX-AA-051-SCFI-2001",
     "unidad":"mg/l",
     "descripcionUnidad":"miligramos por litro",
+<<<<<<< HEAD
     "selected":false,
+=======
+    "selected":0,
+>>>>>>> FETCH_HEAD
     "precio":381.47
   },
   {
@@ -536,7 +640,11 @@
     "metodoEnsayo":"NMX-AA-051-SCFI-2001",
     "unidad":"mg/l",
     "descripcionUnidad":"miligramos por litro",
+<<<<<<< HEAD
     "selected":false,
+=======
+    "selected":0,
+>>>>>>> FETCH_HEAD
     "precio":381.47
   },
   {
@@ -556,7 +664,11 @@
     "metodoEnsayo":"NMX-AA-051-SCFI-2001",
     "unidad":"mg/l",
     "descripcionUnidad":"miligramos por litro",
+<<<<<<< HEAD
     "selected":false,
+=======
+    "selected":0,
+>>>>>>> FETCH_HEAD
     "precio":381.47
   },
   {
@@ -576,7 +688,11 @@
     "metodoEnsayo":"NMX-AA-051-SCFI-2001",
     "unidad":"mg/l",
     "descripcionUnidad":"miligramos por litro",
+<<<<<<< HEAD
     "selected":false,
+=======
+    "selected":0,
+>>>>>>> FETCH_HEAD
     "precio":381.47
   },
   {
@@ -596,7 +712,11 @@
     "metodoEnsayo":"NMX-AA-051-SCFI-2001",
     "unidad":"mg/l",
     "descripcionUnidad":"miligramos por litro",
+<<<<<<< HEAD
     "selected":false,
+=======
+    "selected":0,
+>>>>>>> FETCH_HEAD
     "precio":381.47
   },
   {
@@ -616,7 +736,11 @@
     "metodoEnsayo":"NMX-AA-051-SCFI-2001",
     "unidad":"mg/l",
     "descripcionUnidad":"miligramos por litro",
+<<<<<<< HEAD
     "selected":false,
+=======
+    "selected":0,
+>>>>>>> FETCH_HEAD
     "precio":381.47
   },
   {
@@ -636,7 +760,11 @@
     "metodoEnsayo":"NMX-AA-051-SCFI-2001",
     "unidad":"mg/l",
     "descripcionUnidad":"miligramos por litro",
+<<<<<<< HEAD
     "selected":false,
+=======
+    "selected":0,
+>>>>>>> FETCH_HEAD
     "precio":381.47
   },
   {
@@ -656,7 +784,11 @@
     "metodoEnsayo":"NMX-AA-051-SCFI-2001",
     "unidad":"mg/l",
     "descripcionUnidad":"miligramos por litro",
+<<<<<<< HEAD
     "selected":false,
+=======
+    "selected":0,
+>>>>>>> FETCH_HEAD
     "precio":381.47
   },
   {
@@ -676,7 +808,11 @@
     "metodoEnsayo":"NMX-AA-051-SCFI-2001",
     "unidad":"mg/l",
     "descripcionUnidad":"miligramos por litro",
+<<<<<<< HEAD
     "selected":false,
+=======
+    "selected":0,
+>>>>>>> FETCH_HEAD
     "precio":381.47
   },
   {
@@ -696,7 +832,11 @@
     "metodoEnsayo":"NMX-AA-051-SCFI-2001",
     "unidad":"mg/l",
     "descripcionUnidad":"miligramos por litro",
+<<<<<<< HEAD
     "selected":false,
+=======
+    "selected":0,
+>>>>>>> FETCH_HEAD
     "precio":381.47
   },
   {
@@ -716,7 +856,11 @@
     "metodoEnsayo":"NMX-AA-051-SCFI-2001",
     "unidad":"mg/l",
     "descripcionUnidad":"miligramos por litro",
+<<<<<<< HEAD
     "selected":false,
+=======
+    "selected":0,
+>>>>>>> FETCH_HEAD
     "precio":381.47
   },
   {
@@ -736,7 +880,11 @@
     "metodoEnsayo":"NMX-AA-042-1987",
     "unidad":"NMP/100ml",
     "descripcionUnidad":"número más probable por 100 mililitros",
+<<<<<<< HEAD
     "selected":false,
+=======
+    "selected":0,
+>>>>>>> FETCH_HEAD
     "precio":12.34
   },
   {
@@ -756,7 +904,11 @@
     "metodoEnsayo":"NMX-AA-042-1987",
     "unidad":"NMP/100ml",
     "descripcionUnidad":"número más probable por 100 mililitros",
+<<<<<<< HEAD
     "selected":false,
+=======
+    "selected":0,
+>>>>>>> FETCH_HEAD
     "precio":12.34
   },
   {
@@ -776,7 +928,11 @@
     "metodoEnsayo":"NMX-AA-006-SCFI-2010",
     "unidad":"--",
     "descripcionUnidad":"sin unidad",
+<<<<<<< HEAD
     "selected":false,
+=======
+    "selected":0,
+>>>>>>> FETCH_HEAD
     "precio":12.34
   },
   {
@@ -796,7 +952,11 @@
     "metodoEnsayo":"SM-4500 Cl-G",
     "unidad":"mg/l",
     "descripcionUnidad":"miligramos por litro",
+<<<<<<< HEAD
     "selected":false,
+=======
+    "selected":0,
+>>>>>>> FETCH_HEAD
     "precio":12.34
   },
   {
@@ -816,7 +976,11 @@
     "metodoEnsayo":"Organoléptico-visual",
     "unidad":"--",
     "descripcionUnidad":"sin unidad",
+<<<<<<< HEAD
     "selected":false,
+=======
+    "selected":0,
+>>>>>>> FETCH_HEAD
     "precio":12.34
   },
   {
@@ -836,7 +1000,11 @@
     "metodoEnsayo":"Volumétrico",
     "unidad":"l/s",
     "descripcionUnidad":"litros por segundo",
+<<<<<<< HEAD
     "selected":false,
+=======
+    "selected":0,
+>>>>>>> FETCH_HEAD
     "precio":12.34
   },
   {
@@ -856,7 +1024,11 @@
     "metodoEnsayo":"Organoléptico-visual",
     "unidad":"--",
     "descripcionUnidad":"sin unidad",
+<<<<<<< HEAD
     "selected":false,
+=======
+    "selected":0,
+>>>>>>> FETCH_HEAD
     "precio":12.34
   },
   {
@@ -876,7 +1048,11 @@
     "metodoEnsayo":"NMX-AA-012-SCFI-2001",
     "unidad":"mg/l",
     "descripcionUnidad":"miligramos por litro",
+<<<<<<< HEAD
     "selected":false,
+=======
+    "selected":0,
+>>>>>>> FETCH_HEAD
     "precio":12.34
   },
   {
@@ -896,7 +1072,11 @@
     "metodoEnsayo":"Medición directa",
     "unidad":"m",
     "descripcionUnidad":"metros",
+<<<<<<< HEAD
     "selected":false,
+=======
+    "selected":0,
+>>>>>>> FETCH_HEAD
     "precio":12.34
   },
   {
@@ -916,7 +1096,11 @@
     "metodoEnsayo":"NMX-AA-007-SCFI-2000",
     "unidad":"°C",
     "descripcionUnidad":"grados celsius",
+<<<<<<< HEAD
     "selected":false,
+=======
+    "selected":0,
+>>>>>>> FETCH_HEAD
     "precio":165.89
   },
   {
@@ -936,7 +1120,11 @@
     "metodoEnsayo":"Disco Secchi",
     "unidad":"m",
     "descripcionUnidad":"metros",
+<<<<<<< HEAD
     "selected":false,
+=======
+    "selected":0,
+>>>>>>> FETCH_HEAD
     "precio":12.34
   },
   {
@@ -956,7 +1144,11 @@
     "metodoEnsayo":"NMX-AA-073-SCFI-2001",
     "unidad":"--",
     "descripcionUnidad":"sin unidad",
+<<<<<<< HEAD
     "selected":false,
+=======
+    "selected":0,
+>>>>>>> FETCH_HEAD
     "precio":262.35
   },
   {
@@ -976,7 +1168,11 @@
     "metodoEnsayo":"NMX-AA-073-SCFI-2001",
     "unidad":"mg CaCO3/l",
     "descripcionUnidad":"miligramos de Carbonato de Calcio por litro",
+<<<<<<< HEAD
     "selected":false,
+=======
+    "selected":0,
+>>>>>>> FETCH_HEAD
     "precio":262.35
   },
   {
@@ -996,7 +1192,11 @@
     "metodoEnsayo":"NMX-AA-045-SCFI-2001",
     "unidad":"U (Pt-Co)",
     "descripcionUnidad":"color",
+<<<<<<< HEAD
     "selected":false,
+=======
+    "selected":0,
+>>>>>>> FETCH_HEAD
     "precio":12.34
   },
   {
@@ -1016,7 +1216,11 @@
     "metodoEnsayo":"Sin método",
     "unidad":"--",
     "descripcionUnidad":"sin unidad",
+<<<<<<< HEAD
     "selected":false,
+=======
+    "selected":0,
+>>>>>>> FETCH_HEAD
     "precio":12.34
   },
   {
@@ -1036,7 +1240,11 @@
     "metodoEnsayo":"Sin método",
     "unidad":"--",
     "descripcionUnidad":"sin unidad",
+<<<<<<< HEAD
     "selected":false,
+=======
+    "selected":0,
+>>>>>>> FETCH_HEAD
     "precio":12.34
   },
   {
@@ -1056,7 +1264,11 @@
     "metodoEnsayo":"Sin método",
     "unidad":"--",
     "descripcionUnidad":"sin unidad",
+<<<<<<< HEAD
     "selected":false,
+=======
+    "selected":0,
+>>>>>>> FETCH_HEAD
     "precio":12.34
   },
   {
@@ -1076,7 +1288,11 @@
     "metodoEnsayo":"NMX-AA-050-SCFI-2001",
     "unidad":"mg/l",
     "descripcionUnidad":"miligramos por litro",
+<<<<<<< HEAD
     "selected":false,
+=======
+    "selected":0,
+>>>>>>> FETCH_HEAD
     "precio":12.34
   },
   {
@@ -1096,7 +1312,11 @@
     "metodoEnsayo":"Sin método",
     "unidad":"--",
     "descripcionUnidad":"sin unidad",
+<<<<<<< HEAD
     "selected":false,
+=======
+    "selected":0,
+>>>>>>> FETCH_HEAD
     "precio":12.34
   },
   {
@@ -1116,7 +1336,11 @@
     "metodoEnsayo":"Sin método",
     "unidad":"--",
     "descripcionUnidad":"sin unidad",
+<<<<<<< HEAD
     "selected":false,
+=======
+    "selected":0,
+>>>>>>> FETCH_HEAD
     "precio":12.34
   },
   {
@@ -1136,7 +1360,11 @@
     "metodoEnsayo":"Sin método",
     "unidad":"--",
     "descripcionUnidad":"sin unidad",
+<<<<<<< HEAD
     "selected":false,
+=======
+    "selected":0,
+>>>>>>> FETCH_HEAD
     "precio":12.34
   },
   {
@@ -1156,7 +1384,11 @@
     "metodoEnsayo":"Sin método",
     "unidad":"--",
     "descripcionUnidad":"sin unidad",
+<<<<<<< HEAD
     "selected":false,
+=======
+    "selected":0,
+>>>>>>> FETCH_HEAD
     "precio":12.34
   },
   {
@@ -1176,7 +1408,11 @@
     "metodoEnsayo":"Sin método",
     "unidad":"--",
     "descripcionUnidad":"sin unidad",
+<<<<<<< HEAD
     "selected":false,
+=======
+    "selected":0,
+>>>>>>> FETCH_HEAD
     "precio":12.34
   },
   {
@@ -1196,7 +1432,11 @@
     "metodoEnsayo":"Sin método",
     "unidad":"--",
     "descripcionUnidad":"sin unidad",
+<<<<<<< HEAD
     "selected":false,
+=======
+    "selected":0,
+>>>>>>> FETCH_HEAD
     "precio":12.34
   },
   {
@@ -1216,7 +1456,11 @@
     "metodoEnsayo":"Sin método",
     "unidad":"--",
     "descripcionUnidad":"sin unidad",
+<<<<<<< HEAD
     "selected":false,
+=======
+    "selected":0,
+>>>>>>> FETCH_HEAD
     "precio":12.34
   },
   {
@@ -1236,7 +1480,11 @@
     "metodoEnsayo":"Sin método",
     "unidad":"--",
     "descripcionUnidad":"sin unidad",
+<<<<<<< HEAD
     "selected":false,
+=======
+    "selected":0,
+>>>>>>> FETCH_HEAD
     "precio":12.34
   },
   {
@@ -1256,7 +1504,11 @@
     "metodoEnsayo":"Sin método",
     "unidad":"--",
     "descripcionUnidad":"sin unidad",
+<<<<<<< HEAD
     "selected":false,
+=======
+    "selected":0,
+>>>>>>> FETCH_HEAD
     "precio":12.34
   },
   {
@@ -1276,7 +1528,11 @@
     "metodoEnsayo":"Sin método",
     "unidad":"--",
     "descripcionUnidad":"sin unidad",
+<<<<<<< HEAD
     "selected":false,
+=======
+    "selected":0,
+>>>>>>> FETCH_HEAD
     "precio":12.34
   },
   {
@@ -1296,7 +1552,11 @@
     "metodoEnsayo":"Sin método",
     "unidad":"--",
     "descripcionUnidad":"sin unidad",
+<<<<<<< HEAD
     "selected":false,
+=======
+    "selected":0,
+>>>>>>> FETCH_HEAD
     "precio":12.34
   },
   {
@@ -1316,7 +1576,11 @@
     "metodoEnsayo":"Sin método",
     "unidad":"--",
     "descripcionUnidad":"sin unidad",
+<<<<<<< HEAD
     "selected":false,
+=======
+    "selected":0,
+>>>>>>> FETCH_HEAD
     "precio":12.34
   },
   {
@@ -1336,7 +1600,11 @@
     "metodoEnsayo":"Sin método",
     "unidad":"--",
     "descripcionUnidad":"sin unidad",
+<<<<<<< HEAD
     "selected":false,
+=======
+    "selected":0,
+>>>>>>> FETCH_HEAD
     "precio":12.34
   },
   {
@@ -1356,7 +1624,11 @@
     "metodoEnsayo":"Sin método",
     "unidad":"--",
     "descripcionUnidad":"sin unidad",
+<<<<<<< HEAD
     "selected":false,
+=======
+    "selected":0,
+>>>>>>> FETCH_HEAD
     "precio":12.34
   },
   {
@@ -1376,7 +1648,11 @@
     "metodoEnsayo":"Sin método",
     "unidad":"--",
     "descripcionUnidad":"sin unidad",
+<<<<<<< HEAD
     "selected":false,
+=======
+    "selected":0,
+>>>>>>> FETCH_HEAD
     "precio":12.34
   },
   {
@@ -1396,7 +1672,11 @@
     "metodoEnsayo":"Sin método",
     "unidad":"--",
     "descripcionUnidad":"sin unidad",
+<<<<<<< HEAD
     "selected":false,
+=======
+    "selected":0,
+>>>>>>> FETCH_HEAD
     "precio":12.34
   },
   {
@@ -1416,7 +1696,11 @@
     "metodoEnsayo":"Sin método",
     "unidad":"--",
     "descripcionUnidad":"sin unidad",
+<<<<<<< HEAD
     "selected":false,
+=======
+    "selected":0,
+>>>>>>> FETCH_HEAD
     "precio":12.34
   },
   {
@@ -1436,7 +1720,11 @@
     "metodoEnsayo":"Sin método",
     "unidad":"--",
     "descripcionUnidad":"sin unidad",
+<<<<<<< HEAD
     "selected":false,
+=======
+    "selected":0,
+>>>>>>> FETCH_HEAD
     "precio":12.34
   },
   {
@@ -1456,7 +1744,11 @@
     "metodoEnsayo":"Sin método",
     "unidad":"--",
     "descripcionUnidad":"sin unidad",
+<<<<<<< HEAD
     "selected":false,
+=======
+    "selected":0,
+>>>>>>> FETCH_HEAD
     "precio":12.34
   },
   {
@@ -1476,7 +1768,11 @@
     "metodoEnsayo":"Sin método",
     "unidad":"--",
     "descripcionUnidad":"sin unidad",
+<<<<<<< HEAD
     "selected":false,
+=======
+    "selected":0,
+>>>>>>> FETCH_HEAD
     "precio":12.34
   },
   {
@@ -1496,7 +1792,11 @@
     "metodoEnsayo":"Sin método",
     "unidad":"--",
     "descripcionUnidad":"sin unidad",
+<<<<<<< HEAD
     "selected":false,
+=======
+    "selected":0,
+>>>>>>> FETCH_HEAD
     "precio":12.34
   },
   {
@@ -1516,7 +1816,11 @@
     "metodoEnsayo":"Sin método",
     "unidad":"--",
     "descripcionUnidad":"sin unidad",
+<<<<<<< HEAD
     "selected":false,
+=======
+    "selected":0,
+>>>>>>> FETCH_HEAD
     "precio":12.34
   },
   {
@@ -1536,7 +1840,11 @@
     "metodoEnsayo":"Sin método",
     "unidad":"--",
     "descripcionUnidad":"sin unidad",
+<<<<<<< HEAD
     "selected":false,
+=======
+    "selected":0,
+>>>>>>> FETCH_HEAD
     "precio":12.34
   },
   {
@@ -1556,7 +1864,11 @@
     "metodoEnsayo":"NMX-AA-051-SCFI-2001",
     "unidad":"mg/l",
     "descripcionUnidad":"miligramos por litro",
+<<<<<<< HEAD
     "selected":false,
+=======
+    "selected":0,
+>>>>>>> FETCH_HEAD
     "precio":381.47
   }
 ]
