@@ -6,35 +6,35 @@
           <h2 class="page-header">Solicitud de Servicios / Cotización</h2>
         </div>
       </div>
-      <form class="form" role="form" action="" name="serviceRequestForm">
+      <form class="form" role="form" name="serviceRequestForm"
+        data-ng-submit="submitServiceRequestForm()"
+        novalidate>
         <div class="row">
           <div class="col-xs-12">
             <h4>Datos de Referencia</h4>
             <div class="well well-sm">
               <ul class="list-unstyled">
-<<<<<<< HEAD
-                <li>Folio: {{labServiceRequest.folio_solicitud}}/{{labServiceRequest.ejercicio}}</li>
-                <li>Fecha Solicitud: {{labServiceRequest.fecha_solicitud}}</li>
-                <li data-ng-show="labServiceRequest.fecha_captura.length > 0">Fecha Captura: {{labServiceRequest.fecha_captura}}</li>
-                <li data-ng-show="labServiceRequest.fecha_valida.length > 0">Fecha Validación Gerente: {{labServiceRequest.fecha_valida}}</li>
-                <li data-ng-show="labServiceRequest.fecha_acepta.length > 0">Fecha Aceptación Cliente: {{labServiceRequest.fecha_acepta}}</li>
-                <li data-ng-show="labServiceRequest.fecha_actualizacion.length > 0">Fecha Última modificación: {{labServiceRequest.fecha_actualizacion}}</li>
+                <li>
+                  Folio: {{labServiceRequest.folio_solicitud}}/{{labServiceRequest.ejercicio}}
+                </li>
+                <li>
+                  Fecha Solicitud: {{labServiceRequest.fecha_solicitud}}
+                </li>
+                <li data-ng-show="labServiceRequest.fecha_captura.length > 0">
+                  Fecha captura: {{labServiceRequest.fecha_captura}}
+                </li>
+                <li data-ng-show="labServiceRequest.fecha_valida.length > 0">
+                  Fecha validación gerente: {{labServiceRequest.fecha_valida}}
+                </li>
+                <li data-ng-show="labServiceRequest.fecha_acepta.length > 0">
+                  Fecha aceptación cliente: {{labServiceRequest.fecha_acepta}}
+                </li>
+                <li data-ng-show="labServiceRequest.fecha_actualizacion.length > 0">
+                  Fecha actualización: {{labServiceRequest.fecha_actualizacion}}
+                </li>
               </ul>
-              <span class="text-info" data-ng-show="labServiceRequest.validado > 0">Validada</span>
-=======
-                <li>[{{labServiceRequest.id_solicitud_cotizacion}}]</li>
-                <li>Folio: {{labServiceRequest.folio_solicitud}}/{{labServiceRequest.ejercicio}}</li>
-                <li>Fecha Solicitud: {{labServiceRequest.fecha_solicitud}}</li>
-                <li>Fecha Captura: {{labServiceRequest.fecha_captura}}</li>
-                <li>Fecha Validación Gerente: {{labServiceRequest.fecha_valida}}</li>
-                <li>Fecha Aceptación Cliente: {{labServiceRequest.fecha_acepta}}</li>
-                <li>Fecha Última modificación: {{labServiceRequest.fecha_actualizacion}}</li>
-              </ul>
-              <br>
-              <span class="text-info" data-ng-show="labServiceRequest.validado > 0">Validada</span>
-              <br>
-              Precio: {{labServiceRequest.precio_total}}
->>>>>>> FETCH_HEAD
+              <span class="text-info"
+                data-ng-show="labServiceRequest.validado > 0">Validada</span>
             </div>
           </div>
         </div>
@@ -46,33 +46,30 @@
         <div class="row">
           <div class="col-xs-12 col-md-6 col-lg-5">
             <label for="selectClient">Seleccione un Cliente</label>
-            <select class="form-control" id="selectClient" data-ng-model="labServiceRequest.id_cliente">
-<<<<<<< HEAD
+            <select class="form-control" id="selectClient"
+              required
+              data-ng-model="labServiceRequest.id_cliente">
               <option data-ng-repeat="client in clients"
-=======
-              <option value="0" selected="selected">Seleccione una opción</option>
-              <option ng-repeat="client in clients"
->>>>>>> FETCH_HEAD
                 value="{{client.id_cliente}}">
                 {{client.cliente}}{{client.area.length > 0 && ' - ' + client.area || '' }}
               </option>
             </select>
             <br>
-            <button class="btn btn-default"
-              data-ng-click="showCurrentClientDetails()">
-              Datos Cliente
-            </button>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-xs-12">
-            <div class="well well-sm item-z1" data-ng-show="clientDetailsIsShown">
+            <div class="well well-sm item-z2 details-tooltip"
+              data-ng-show="clientDetailsIsShown"
+              data-ng-click="toggleClientInfo($event)">
+              <div class="pull-right">
+                <button type="button" class="close">
+                  <span aria-hidden="true">&times;</span>
+                  <span class="sr-only">Close</span>
+                </button>
+              </div>
               <h4>{{selectClient(labServiceRequest.id_cliente).cliente}}<br>
                 <small>{{currentClient.area}}</small>
               </h4>
               <ul class="list-unstyled">
                 <li>Domicilio <strong>{{currentClient.calle}}
-                  {{currentClient.numero}},
+                  {{currentClient.numero}}<br>
                   {{currentClient.colonia}}</strong></li>
                 <li>Contacto <strong>{{currentClient.contacto}}</strong></li>
                 <li>Tel. <strong>{{currentClient.tel}}</strong></li>
@@ -80,6 +77,10 @@
                 <li>Tarifa <strong>{{100 * currentClient.tasa}}%</strong></li>
               </ul>
             </div>
+            <button class="btn btn-default"
+              data-ng-click="toggleClientInfo($event)">
+              Datos Cliente
+            </button>
           </div>
         </div>
         <div class="row">
@@ -90,44 +91,33 @@
         <div class="row">
           <div class="col-xs-12 col-md-6 col-lg-5">
             <label for="selectNorm">Análisis de parámetros según Norma</label>
-            <select class="form-control" id="selectNorm" data-ng-model="labServiceRequest.id_norma">
-<<<<<<< HEAD
+            <select class="form-control" id="selectNorm"
+              data-ng-model="labServiceRequest.id_norma">
               <option data-ng-repeat="norm in norms"
-=======
-              <option value="0" selected="selected">Seleccione una opción</option>
-              <option ng-repeat="norm in norms"
->>>>>>> FETCH_HEAD
                 value="{{norm.id_norma}}">
                 {{norm.norma}}
               </option>
             </select>
           </div>
         </div>
-<<<<<<< HEAD
-=======
-        <!--
-        <ul>
-          <li data-ng-repeat="suggestedParameter in selectNorm(labServiceRequest.id_norma).parametros">
-            {{suggestedParameter.id_parametro}} -
-            {{suggestedParameter.parametro}}
-          </li>
-        </ul>
-        -->
->>>>>>> FETCH_HEAD
         <div class="row">
           <div class="col-xs-12">
             <h5>Parámetros seleccionados</h5>
-            <h4><span class="text-muted">Total:</span> {{totalParameter() | currency}} {{selectNorm(labServiceRequest.id_norma)}}</h4>
+            <h4>
+              <span class="text-muted">Costo Total:</span>
+              {{totalParameter() | currency}}
+              {{selectNorm(labServiceRequest.id_norma)}}
+            </h4>
           </div>
         </div>
         <div class="row">
           <div class="col-xs-12">
             <table class="table table-condensed">
-<<<<<<< HEAD
               <tr data-ng-repeat="parameter in parameters">
                 <td>
                   <label>
-                      <input type="checkbox" data-ng-model="parameter.selected" value="1" name="{{parameter.parametro}}" />
+                      <input type="checkbox" data-ng-model="parameter.selected"
+                        value="1" name="{{parameter.parametro}}" />
                       {{parameter.parametro}}
                   </label>
                 </td>
@@ -142,44 +132,6 @@
           </div>
         </div>
         <!--
-        <div class="row">
-          <div class="col-xs-12">
-            <table class="table table-condensed">
-=======
->>>>>>> FETCH_HEAD
-              <thead>
-                <tr>
-                  <th>Sel.</th>
-                  <th>Parámetro</th>
-                  <th>Precio unitario</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr data-ng-repeat="parameter in parameters">
-                  <td>
-                    <label>
-                      <input type="checkbox" value="{{parameter.selected}}" name="selectedParameters"/>
-                    </label>
-                  </td>
-                  <td>
-                    <span class="text-muted">{{parameter.idParametro}}</span> {{parameter.param}}
-                  </td>
-                  <td>
-                    {{parameter.precio | currency}}
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-<<<<<<< HEAD
-            <div class="panel">
-              <div class="panel-heading">
-                <h4>Total: {{selectParameters().total}}</h4>
-              </div>
-            </div>
-=======
->>>>>>> FETCH_HEAD
-          </div>
-        </div>
         <div class="row">
           <div class="col-xs-6 col-sm-4 col-md-3" data-ng-repeat="activity in labServiceRequest.actividades_adicionales">
             <label>
@@ -199,13 +151,17 @@
               <label>
                 <input type="radio" name="samplingTypesRadios"
                   id="samplingTypeId{{samplingType.id_tipo_muestreo}}"
-                  value="{{samplingType.id_tipo_muestreo}}"> {{samplingType.tipo_muestreo}}
+                  value="{{samplingType.id_tipo_muestreo}}"
+                  required>
+                  {{samplingType.tipo_muestreo}}
               </label>
             </div>
           </div>
         </div>
         <br>
-        <button class="btn btn-primary" type="submit">Guardar y enviar a validación</button>
+        <button type="submit" class="btn btn-primary"
+          value="Guardar" title="Guardar"
+          data-ng-disabled="!serviceRequestForm.$valid">Guardar</button>
       </form>
       <footer class="common-footer">
         <br>

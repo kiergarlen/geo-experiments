@@ -4,49 +4,17 @@
 
 var siclabApp = angular.module('siclabApp', [
   'ngRoute',
-  'siclabAnimations',
   //'ui.bootstrap',
+  'siclabAnimations',
   'siclabDirectives',
   'siclabControllers',
   'siclabFilters',
   'siclabServices'
 ]);
-/*
-siclabApp.directive('ngMainNav', function() {
-  return {
-    restrict: 'A',
-    require: '^ngModel',
-    templateUrl: 'partials/navbar.html'
-  }
-});
-
-siclabApp.directive('customButton', function () {
-  return {
-    restrict: 'A',
-    replace: true,
-    transclude: true,
-    template: '<a href="" class="myawesomebutton" ng-transclude>' +
-                '<i class="icon-ok-sign"></i>' +
-              '</a>',
-    //templateUrl: 'templates/customButton.html'
-    link: function (scope, element, attrs) {
-      // DOM manipulation/events here!
-    }
-  };
-});
-*/
 
 siclabApp.config(['$routeProvider',
   function($routeProvider) {
     $routeProvider.
-      when('/phones', {
-        templateUrl: 'partials/phone-list.html',
-        controller: 'PhoneListCtrl'
-      }).
-      when('/phones/:phoneId', {
-        templateUrl: 'partials/phone-detail.html',
-        controller: 'PhoneDetailCtrl'
-      }).
       when('/main', {
           templateUrl: 'partials/main.html',
           controller: 'TasksCtrl'
@@ -70,6 +38,10 @@ siclabApp.config(['$routeProvider',
       when('/catalogo/clientes', {
           templateUrl: 'partials/catalogo/clientes.html',
           controller: 'ClientsListCtrl'
+      }).
+      when('/catalogo/clientes/:clientId', {
+        templateUrl: 'partials/catalogo/cliente.html',
+        controller: 'ClientDetailCtrl'
       }).
       when('/catalogo/empleados', {
           templateUrl: 'partials/catalogo/empleados.html',
@@ -147,6 +119,10 @@ siclabApp.config(['$routeProvider',
           templateUrl: 'partials/reporte/validar.html',
           controller: 'ReportApprovalCtrl'
       }).
+      when('/sistema/login', {
+          templateUrl: 'partials/sistema/login.html',
+          controller: 'LoginCtrl'
+      }).
       when('/sistema/logout', {
           templateUrl: 'partials/sistema/logout.html',
           controller: 'LogoutCtrl'
@@ -160,7 +136,7 @@ siclabApp.config(['$routeProvider',
           controller: 'UsersListCtrl'
       })
       .otherwise({
-       redirectTo: '/main'
+       redirectTo: '/sistema/login'
       })
     ;
   }]);

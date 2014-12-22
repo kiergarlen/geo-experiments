@@ -1,0 +1,20 @@
+{
+	"id_usuario":1,
+	"id_nivel":1,
+	"id_area":5,
+	"area":"Administrativo",
+	"id_puesto":1,
+	"username":"rgarcia",
+	"password":"123456",
+	"puesto":"Gerente",
+	"nombres":"Reyna",
+	"ap":"García",
+	"am":"Meneses",
+	"fecha_act":"2014-11-30",
+	"calidad":1,
+	"supervisa":1,
+	"analiza":1,
+	"muestrea":0,
+	"cert":1,
+	"activo":1
+}

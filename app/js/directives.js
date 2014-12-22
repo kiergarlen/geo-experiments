@@ -9,5 +9,5 @@ siclabDirectives.directive('ngMainNav', function() {
     restrict: 'A',
     require: '^ngModel',
     templateUrl: 'partials/navbar.html'
-  }
+  };
 });

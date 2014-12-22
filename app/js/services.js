@@ -4,6 +4,12 @@
 
 var siclabServices = angular.module('siclabServices', ['ngResource']);
 
+siclabServices.factory('Login', ['$resource', function($resource){
+	return $resource('models/login.json', {}, {
+		query: {method:'GET', params:{}, isArray:false}
+	});
+}]);
+
 siclabServices.factory('Menu', ['$resource', function($resource){
 	return $resource('models/menu.json', {}, {
 		query: {method:'GET', params:{}, isArray:true}

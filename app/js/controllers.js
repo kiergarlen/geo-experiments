@@ -4,11 +4,32 @@
 
 var siclabControllers = angular.module('siclabControllers', []);
 
-siclabControllers.controller('PhoneListCtrl', ['$scope', 'Phone',
-  function($scope, Phone) {
-    $scope.phones = Phone.query();
-    $scope.orderProp = 'age';
-  }]);
+siclabApp.controller('LoginCtrl', ['$scope', 'Login', function($scope, Login) {
+    //$scope.user = Login.query();
+    $scope.user = {
+        username: '',
+        password: ''
+    }
+    $scope.login = function() {
+        if ($scope.loginForm.$valid)
+        {
+            if ($scope.user.username == 'rgarcia' &&
+                $scope.user.password == '123'
+            ) {
+                console.log('Enviando...');
+            }
+            else
+            {
+                console.log('Usuario o contraseña incorrectos');
+            }
+
+        }
+        else
+        {
+            console.log('Debe ingresar usuario y/o contraseña');
+        }
+    };
+}]);
 
 siclabApp.controller('NavCtrl', ['$scope', 'Menu', function($scope, Menu) {
     $scope.menu = Menu.query();
@@ -20,6 +41,10 @@ siclabApp.controller('TasksCtrl', ['$scope', function($scope) {
 
 siclabControllers.controller('ClientsListCtrl', ['$scope', 'Client', function($scope, Client) {
     $scope.clients = Client.query();
+}]);
+
+siclabControllers.controller('ClientDetailCtrl', ['$scope', 'ClientDetail', function($scope, ClientDetail) {
+    $scope.clientDetail = ClientDetail.query();
 }]);
 
 siclabControllers.controller('DepartmentsListCtrl', ['$scope', 'Department', function($scope, Department) {
@@ -359,61 +384,21 @@ siclabControllers.controller('LabServiceRequestCtrl',
             }
         ;
         $scope.currentClient = {};
-        $scope.showCurrentClientDetails = function() {
-            var id = $scope.labServiceRequest.id_cliente;
-            if ($scope.labServiceRequest.id_cliente > 0 &&
-                $scope.selectClient(id).cliente &&
-                !$scope.clientDetailsIsShown)
-            {
-                $scope.clientDetailsIsShown = true;
-            }
-            else
-            {
-                $scope.clientDetailsIsShown = false;
-            }
-        };
         $scope.clientDetailsIsShown = false;
-
-        $scope.totalParameter=function(){
-            var t = 0;
-            angular.forEach($scope.parameters, function(s){
-                if(s.selected)
-                    t+=parseFloat(s.precio);
-            });
-            return (Math.round(t * 100) / 100);
+        $scope.toggleClientInfo = function($event) {
+            var id = $scope.labServiceRequest.id_cliente;
+            $event.stopPropagation();
+            $scope.clientDetailsIsShown = (
+                $scope.labServiceRequest.id_cliente > 0 &&
+                $scope.selectClient(id).cliente &&
+                !$scope.clientDetailsIsShown
+            );
         };
-
-        $scope.toggleParamSel = function(s){
-            s.selected = !s.selected;
-        };
-
-        $scope.selectParameters = function () {
-            return 0;
-        };
-
-        //$scope.currentClient
-        //$scope.selectClient = function(idClient, clients) {
-        //    var i = 0,l = clients.length, client = {};
-        //    for (i = 0; i < l; i += 1) {
-        //        if (clients[i].id_cliente == idClient) {
-        //            client = clients[i];
-        //            break;
-        //        }
-        //    }
-        //    return client;
-        //};
-        //$scope.currentClient = $scope.selectClient(
-        //    $scope.labServiceRequest.id_cliente,
-        //    $scope.clients
-        //);
-
-
 
         $scope.selectClient = function(idClient) {
-            var i,l, client = {};
-            l = $scope.clients.length;
+            var i = 0,l = $scope.clients.length;
             $scope.currentClient = {};
-            for (i = 0; i < l; i++) {
+            for (i; i < l; i += 1) {
                 if ($scope.clients[i].id_cliente == idClient) {
                     $scope.currentClient = $scope.clients[i];
                     break;
@@ -423,12 +408,27 @@ siclabControllers.controller('LabServiceRequestCtrl',
             return $scope.currentClient;
         };
 
+        $scope.totalParameter=function(){
+            var t = 0;
+            angular.forEach($scope.parameters, function(s){
+                if(s.selected) {
+                    t += parseFloat(s.precio);
+                }
+            });
+            t = t * $scope.labServiceRequest.cliente.tasa;
+            return (Math.round(t * 100) / 100);
+        };
+
+        $scope.toggleParamSel = function(s){
+            s.selected = !s.selected;
+        };
+
         $scope.selectNorm = function(idNorm) {
-            var i,l,j,m, client = {}, params;
+            var i, l, j, m, params;
             l = $scope.norms.length;
             $scope.labServiceRequest.norma = {};
             $scope.labServiceRequest.parametros_seleccionados = [];
-            for (i = 0; i < l; i++) {
+            for (i = 0; i < l; i += 1) {
                 if ($scope.norms[i].id_norma == idNorm) {
                     $scope.labServiceRequest.norma = $scope.norms[i];
                     break;
@@ -438,7 +438,7 @@ siclabControllers.controller('LabServiceRequestCtrl',
             params = $scope.labServiceRequest.norma.parametros;
             for(i = 0; i < l; i += 1) {
                 $scope.parameters[i].selected = false;
-                if (params != undefined) {
+                if (params !== undefined) {
                     m = params.length;
                     for (j = 0; j < m; j += 1) {
                         if ($scope.parameters[i].id_parametro == params[j].id_parametro) {
@@ -449,16 +449,26 @@ siclabControllers.controller('LabServiceRequestCtrl',
             }
             return '';
         };
+
+        /*
+            <form name="myForm">
+              <input type="text" ng-model="field" name="myField" required minlength="5" />
+              <div ng-messages="myForm.myField.$error">
+                <div ng-message="required">You did not enter a field</div>
+                <div ng-message="minlength">The value entered is too short</div>
+              </div>
+            </form>
+            ng-class="{ 'has-error': registerForm.email.$invalid && (registerForm.email.$touched || registerForm.$submitted), 'has-success': !registerForm.email.$invalid && (registerForm.email.$touched || registerForm.$submitted)}"
+
+            and
+
+            this.reset = function() {
+            registerController.email = "";
+            registerController.password = "";
+            registerController.repeatPassword = "";
+            $scope.registerForm.$setUntouched(true);
+            $scope.registerForm.$setPristine(true);
+            };
+        */
     }
 ]);
-
-siclabControllers.controller('PhoneDetailCtrl', ['$scope', '$routeParams', 'Phone',
-  function($scope, $routeParams, Phone) {
-    $scope.phone = Phone.get({phoneId: $routeParams.phoneId}, function(phone) {
-      $scope.mainImageUrl = phone.images[0];
-    });
-
-    $scope.setImage = function(imageUrl) {
-      $scope.mainImageUrl = imageUrl;
-    }
-  }]);

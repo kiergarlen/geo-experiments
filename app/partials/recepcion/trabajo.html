@@ -6,39 +6,133 @@
           <h2 class="page-header">Orden de trabajo</h2>
         </div>
       </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <h6>Datos Cliente</h6>
+        </div>
+      </div>
+      <form class="form" role="form" action="">
+        <div class="row">
+          <div class="col-xs-12">
+            <h4>Datos de Referencia</h4>
+            <div class="well well-sm">
+              <ul class="list-inline">
+                <li>Folio: {{currentServiceRequest.folio}}/{{currentServiceRequest.ejercicio}}</li>
+                <li>Fecha actual: {{currentDatetime}}</li>
+                <li>Fecha Solicitud: {{serviceOrder.fecha_solicitud}}</li>
+                <li>Fecha Captura: {{serviceOrder.fecha_captura}}</li>
+                <li>Fecha Validación Gerente: {{serviceOrder.fecha_valida}}</li>
+                <li>Fecha Aceptación Cliente: {{serviceOrder.fecha_acepta}}</li>
+                <li>Fecha Última modificación: {{serviceOrder.fecha_actualizacion}}</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-6">
+            <h4>Cliente</h4>
+            <div class="well well-sm">
+              <ul class="list-inline">
+                <li>Cliente: {{currentOrder.client.cliente}}</li>
+                <li>Contacto: {{currentOrder.client.contacto}}</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6">
+            <h4>Solicitud / Cotización</h4>
+            <div class="well well-sm">
+              <ul class="list-inline">
+                <li>Solicitud: {{currentOrder.serviceRequest.folio}}</li>
+                <li>FEcha: {{currentOrder.serviceRequest.fecha}}</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <h4>Medio de Solicitud de Muestreo</h4>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-8 col-md-6">
+            <label for="selectObjective" class="sr-only">Medio de Solicitud</label>
+            <select class="form-control" id="selectObjective">
+              <option value="0">Seleccione una opción</option>
+              <option value="1">Oficio</option>
+              <option value="2">Cotización</option>
+              <option value="3">Programa</option>
+              <option value="4">Emergencia</option>
+            </select>
+          </div>
+          <div class="col-xs-12 col-sm-8 col-md-6">
+            <label class="sr-only" for="emergencyReason">En caso de emergencia, especificar</label>
+            <input type="text" class="form-control" id="emergencyReason" placeholder="En caso de emergencia, especificar">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <h4>Matriz</h4>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-8 col-md-6">
+            <label for="selectPointsType">Tipo de matriz</label>
+            <select class="form-control" id="selectPointsType">
+              <option value="0">Seleccione una opción</option>
+              <option value="1">Agua Residual</option>
+              <option value="2">Agua Residual Tratada</option>
+              <option value="3">Agua Potable</option>
+              <option value="4">Agua Superficial</option>
+              <option value="5">Agua Subterránea</option>
+              <option value="6">Agua Residual Municipal</option>
+              <option value="7">Agua Residual Industrial</option>
+              <option value="8">Sedimentos</option>
+              <option value="9">Planta Potabilizadora</option>
+              <option value="10">Otra</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <h4>Normas y Parámetros</h4>
+            <p>lista de parámetros solicitados, de acuerdo a Norma o personalizados</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <h4>Asignar Responsable de Muestreo</h4>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-8 col-md-6">
+            <label for="selectTakeSupervisor">Responsable de muestreo</label>
+            <select class="form-control" id="selectTakeSupervisot">
+              <option value="0">Seleccione una opción</option>
+              <option value="3">Marín Gomar Sosa</option>
+              <option value="12">José Adalberto Olivarez Cornejo</option>
+              <option value="13">Luis Fabián Mercado del Ángel</option>
+              <option value="14">Octavio Elizalde Ulloa</option>
+              <option value="15">Mitzi Acahualxóchitl Rodríguez García</option>
+            </select>
+            <br>
+          </div>
+        </div>
+        <button class="btn btn-primary" type="submit">Generar Orden Muestreo</button>
+      </form>
+      <footer class="common-footer">
+        <br>
+        <strong>Centro de Estudios Limnológicos</strong><br>
+        <ul class="list-inline">
+          <li>Av. Solidaridad Iberoamericana Km 11</li>
+          <li>Col. Las Pintas</li>
+          <li>El Salto</li>
+          <li>Jalisco</li>
+          <li>CP 45690</li>
+          <li>Tel. (33) 3689-1542</li>
+          <li>Fax (33) 3689-4658</li>
+        </ul>
+        <small class=" text-muted">2014 &ndash; <strong>Comisión Estatal del Agua de Jalisco</strong></small>
+      </footer>
     </div>
-    <form class="form" role="form" action="#">
-      <div class="row">
-        <div class="col-xs-12">
-          <h4>Asignar Responsable</h4>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-xs-12">
-          <label for="selectSupervisor">Seleccione un responsable</label>
-          <select class="form-control" id="selectSupervisor">
-            <option value="0" selected>Select option</option>
-            <option value="2">María de la Torre Castañeda (Fisicoquímicos)</option>
-            <option value="3">Marín Gomar Sosa (Metales Pesados)</option>
-            <option value="4">Nayeli del Rosario Guzmán Rosales (Microbiología)</option>
-          </select>
-        </div>
-      </div>
-      <button class="btn btn-primary" type="submit">Guardar</button>
-    </form>
-    <footer class="common-footer">
-      <br>
-      <strong>Centro de Estudios Limnológicos</strong><br>
-      <ul class="list-inline">
-        <li>Av. Solidaridad Iberoamericana Km 11</li>
-        <li>Col. Las Pintas</li>
-        <li>El Salto</li>
-        <li>Jalisco</li>
-        <li>CP 45690</li>
-        <li>Tel. (33) 3689-1542</li>
-        <li>Fax (33) 3689-4658</li>
-      </ul>
-      <small class=" text-muted">2014 &ndash; <strong>Comisión Estatal del Agua de Jalisco</strong></small>
-    </footer>
   </div><!-- row -->
 </div>
