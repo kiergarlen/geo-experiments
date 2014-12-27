@@ -15,7 +15,8 @@
             <div class="well well-sm">
               <ul class="list-unstyled">
                 <li>
-                  Folio: {{labServiceRequest.folio_solicitud}}/{{labServiceRequest.ejercicio}}
+                  Folio: {{labServiceRequest.folio_solicitud}}/
+                  {{labServiceRequest.ejercicio}}
                 </li>
                 <li>
                   Fecha Solicitud: {{labServiceRequest.fecha_solicitud}}
@@ -46,12 +47,27 @@
         <div class="row">
           <div class="col-xs-12 col-md-6 col-lg-5">
             <label for="selectClient">Seleccione un Cliente</label>
+
+            <select class="form-control pull-right"
+              ng-model="currentClient"
+              ng-options="client as client.cliente for client in clients"></select>
+
             <select class="form-control" id="selectClient"
               required
               data-ng-model="labServiceRequest.id_cliente">
               <option data-ng-repeat="client in clients"
                 value="{{client.id_cliente}}">
-                {{client.cliente}}{{client.area.length > 0 && ' - ' + client.area || '' }}
+                {{client.cliente}}
+                {{client.area.length > 0 && ' - ' + client.area || '' }}
+              </option>
+            </select>
+            <select class="form-control" id="selectClient"
+              required
+              data-ng-model="labServiceRequest.id_cliente">
+              <option data-ng-repeat="client in clients"
+                value="{{client.id_cliente}}">
+                {{client.cliente}}
+                {{client.area.length > 0 && ' - ' + client.area || '' }}
               </option>
             </select>
             <br>
