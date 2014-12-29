@@ -178,5 +178,3 @@ siclabControllers.controller('SamplingOrderCtrl',
         };
     }
 ]);
-
-
