@@ -378,14 +378,244 @@
       {
         "id_tipo_muestreo":1,
         "tipo_muestreo":"Simple"
-      },
-      "parametros_seleccionados":[]
+      }
     },
+    "parametros":
+    [
+      {
+        "id_parametro":25,
+        "parametro":"Arsénico",
+        "cert":1,
+        "id_metodo":1,
+        "metodo": {
+          "id_metodo":1,
+          "metodo":"NMX-AA-000-0000"
+        },
+        "cantidad":1,
+        "precio":164.65
+      },
+      {
+        "id_parametro":27,
+        "parametro":"Cadmio",
+        "cert":1,
+        "id_metodo":1,
+        "metodo": {
+          "id_metodo":1,
+          "metodo":"NMX-AA-000-0000"
+        },
+        "cantidad":1,
+        "precio":164.65
+      },
+      {
+        "id_parametro":28,
+        "parametro":"Cobre",
+        "cert":1,
+        "id_metodo":1,
+        "metodo": {
+          "id_metodo":1,
+          "metodo":"NMX-AA-000-0000"
+        },
+        "cantidad":1,
+        "precio":164.65
+      },
+      {
+        "id_parametro":38,
+        "parametro":"Coliformes fecales",
+        "cert":1,
+        "id_metodo":1,
+        "metodo": {
+          "id_metodo":1,
+          "metodo":"NMX-AA-000-0000"
+        },
+        "cantidad":1,
+        "precio":164.65
+      },
+      {
+        "id_parametro":29,
+        "parametro":"Cromo",
+        "cert":1,
+        "id_metodo":1,
+        "metodo": {
+          "id_metodo":1,
+          "metodo":"NMX-AA-000-0000"
+        },
+        "cantidad":1,
+        "precio":164.65
+      },
+      {
+        "id_parametro":16,
+        "parametro":"Demada bioquímica de oxígeno",
+        "cert":0,
+        "id_metodo":1,
+        "metodo": {
+          "id_metodo":1,
+          "metodo":"NMX-AA-000-0000"
+        },
+        "cantidad":1,
+        "precio":164.65
+      },
+      {
+        "id_parametro":19,
+        "parametro":"Fósforo total",
+        "cert":1,
+        "id_metodo":1,
+        "metodo": {
+          "id_metodo":1,
+          "metodo":"NMX-AA-000-0000"
+        },
+        "cantidad":1,
+        "precio":164.65
+      },
+      {
+        "id_parametro":18,
+        "parametro":"Grasas y aceites",
+        "cert":1,
+        "id_metodo":1,
+        "metodo": {
+          "id_metodo":1,
+          "metodo":"NMX-AA-000-0000"
+        },
+        "cantidad":1,
+        "precio":164.65
+      },
+      {
+        "id_parametro":6,
+        "parametro":"Alcalinidad total",
+        "cert":1,
+        "id_metodo":1,
+        "metodo": {
+          "id_metodo":1,
+          "metodo":"NMX-AA-000-0000"
+        },
+        "cantidad":1,
+        "precio":164.65
+      },
+      {
+        "id_parametro":39,
+        "parametro":"Materia flotante",
+        "cert":1,
+        "id_metodo":1,
+        "metodo": {
+          "id_metodo":1,
+          "metodo":"NMX-AA-000-0000"
+        },
+        "cantidad":1,
+        "precio":164.65
+      },
+      {
+        "id_parametro":32,
+        "parametro":"Mercurio",
+        "cert":1,
+        "id_metodo":1,
+        "metodo": {
+          "id_metodo":1,
+          "metodo":"NMX-AA-000-0000"
+        },
+        "cantidad":1,
+        "precio":164.65
+      },
+      {
+        "id_parametro":7,
+        "parametro":"Cloruros totales",
+        "cert":1,
+        "id_metodo":1,
+        "metodo": {
+          "id_metodo":1,
+          "metodo":"NMX-AA-000-0000"
+        },
+        "cantidad":1,
+        "precio":164.65
+      },
+      {
+        "id_parametro":33,
+        "parametro":"Níquel",
+        "cert":1,
+        "id_metodo":1,
+        "metodo": {
+          "id_metodo":1,
+          "metodo":"NMX-AA-000-0000"
+        },
+        "cantidad":1,
+        "precio":164.65
+      },
+      {
+        "id_parametro":2,
+        "parametro":"Potencial de hidrógeno",
+        "cert":1,
+        "id_metodo":1,
+        "metodo": {
+          "id_metodo":1,
+          "metodo":"NMX-AA-000-0000"
+        },
+        "cantidad":1,
+        "precio":164.65
+      },
+      {
+        "id_parametro":34,
+        "parametro":"Plomo",
+        "cert":1,
+        "id_metodo":1,
+        "metodo": {
+          "id_metodo":1,
+          "metodo":"NMX-AA-000-0000"
+        },
+        "cantidad":1,
+        "precio":164.65
+      },
+      {
+        "id_parametro":22,
+        "parametro":"Sólidos sedimentables",
+        "cert":1,
+        "id_metodo":1,
+        "metodo": {
+          "id_metodo":1,
+          "metodo":"NMX-AA-000-0000"
+        },
+        "cantidad":1,
+        "precio":164.65
+      },
+      {
+        "id_parametro":20,
+        "parametro":"Sólidos suspendidos totales",
+        "cert":1,
+        "id_metodo":1,
+        "metodo": {
+          "id_metodo":1,
+          "metodo":"NMX-AA-000-0000"
+        },
+        "cantidad":1,
+        "precio":164.65
+      },
+      {
+        "id_parametro":1,
+        "parametro":"Temperatura",
+        "cert":1,
+        "id_metodo":1,
+        "metodo": {
+          "id_metodo":1,
+          "metodo":"NMX-AA-000-0000"
+        },
+        "cantidad":1,
+        "precio":164.65
+      },
+      {
+        "id_parametro":36,
+        "parametro":"Zinc",
+        "cert":1,
+        "id_metodo":1,
+        "metodo": {
+          "id_metodo":1,
+          "metodo":"NMX-AA-000-0000"
+        },
+        "cantidad":1,
+        "precio":164.65
+      }
+    ],
     "id_matriz":3,
     "matriz":
     {
       "id_matriz":3,
-      "Agua Residual Tratada"
+      "matriz":"Agua Residual Tratada"
     },
     "id_tipo_muestreo":1,
     "tipo_muestreo":
@@ -635,5 +865,6 @@
         }
       ]
     }
+
   }
 ]

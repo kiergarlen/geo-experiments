@@ -46,12 +46,6 @@ siclabServices.factory('User', ['$resource', function($resource){
 	});
 }]);
 
-siclabServices.factory('Department', ['$resource', function($resource){
-	return $resource('models/areas.json', {}, {
-		query: {method:'GET', params:{}, isArray:true}
-	});
-}]);
-
 siclabServices.factory('Parameter', ['$resource', function($resource){
 	return $resource('models/parametros.json', {}, {
 		query: {method:'GET', params:{}, isArray:true}
@@ -69,10 +63,33 @@ siclabServices.factory('SamplingType', ['$resource', function($resource){
 		query: {method:'GET', params:{}, isArray:true}
 	});
 }]);
-/*
-siclabServices.factory('LabService', ['$resource', function($resource){
-	return $resource('models/labServices/:labServiceId.json', {}, {
-		query: {method:'GET', params:{labServiceId:'labServices'}, isArray:true}
+
+siclabServices.factory('Quote', ['$resource', function($resource){
+	return $resource('models/quotes/1.json', {}, {
+		query: {method:'GET', params:{}, isArray:false}
 	});
 }]);
-*/
+
+siclabServices.factory('OrderSource', ['$resource', function($resource){
+	return $resource('models/order_sources.json', {}, {
+		query: {method:'GET', params:{}, isArray:true}
+	});
+}]);
+
+siclabServices.factory('Matrix', ['$resource', function($resource){
+	return $resource('models/matrices.json', {}, {
+		query: {method:'GET', params:{}, isArray:true}
+	});
+}]);
+
+siclabServices.factory('SamplingSupervisor', ['$resource', function($resource){
+	return $resource('models/sampling_supervisors.json', {}, {
+		query: {method:'GET', params:{}, isArray:true}
+	});
+}]);
+
+siclabServices.factory('SamplingOrder', ['$resource', function($resource){
+	return $resource('models/sampling/orders/1.json', {}, {
+		query: {method:'GET', params:{}, isArray:false}
+	});
+}]);

@@ -1,0 +1,52 @@
+[
+	{
+		"id_matriz":1,
+		"matriz":"Agua Residual",
+		"clave":"AR"
+	},
+	{
+		"id_matriz":2,
+		"matriz":"Agua Residual Tratada",
+		"clave":"ART"
+	},
+	{
+		"id_matriz":3,
+		"matriz":"Agua Potable",
+		"clave":"AP"
+	},
+	{
+		"id_matriz":4,
+		"matriz":"Agua Superficial",
+		"clave":"AS"
+	},
+	{
+		"id_matriz":5,
+		"matriz":"Agua Subterránea",
+		"clave":"ASb"
+	},
+	{
+		"id_matriz":6,
+		"matriz":"Agua Residual Municipal",
+		"clave":"ARM"
+	},
+	{
+		"id_matriz":7,
+		"matriz":"Agua Residual Industrial",
+		"clave":"ARI"
+	},
+	{
+		"id_matriz":8,
+		"matriz":"Sedimentos",
+		"clave":"SDM"
+	},
+	{
+		"id_matriz":9,
+		"matriz":"Planta Potabilizadora",
+		"clave":"PPt"
+	},
+	{
+		"id_matriz":10,
+		"matriz":"Otra",
+		"clave":"OTR"
+	}
+]

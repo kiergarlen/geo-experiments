@@ -11,20 +11,41 @@
           <h6>Datos Cliente</h6>
         </div>
       </div>
-      <form class="form" role="form" action="">
+      <form class="form" role="form"
+        name="orderForm"
+        data-ng-submit="submitOrderForm()"
+        novalidate
+        >
         <div class="row">
           <div class="col-xs-12">
             <h4>Datos de Referencia</h4>
             <div class="well well-sm">
               <ul class="list-inline">
-                <li>Folio: {{currentServiceRequest.folio}}/{{currentServiceRequest.ejercicio}}</li>
-                <li>Fecha actual: {{currentDatetime}}</li>
-                <li>Fecha Solicitud: {{serviceOrder.fecha_solicitud}}</li>
-                <li>Fecha Captura: {{serviceOrder.fecha_captura}}</li>
-                <li>Fecha Validación Gerente: {{serviceOrder.fecha_valida}}</li>
-                <li>Fecha Aceptación Cliente: {{serviceOrder.fecha_acepta}}</li>
-                <li>Fecha Última modificación: {{serviceOrder.fecha_actualizacion}}</li>
+                <li>
+                  Folio:
+                  {{order.folio}}/
+                  {{order.ejercicio}}</li>
+                <li data-ng-show="order.fecha_orden.length > 0">
+                  Fecha actual:
+                  {{order.fecha_orden}}</li>
+                <li data-ng-show="order.solicitud.length > 0">
+                  Fecha Solicitud:
+                  {{order.solicitud.fecha_solicitud}}</li>
+                <li data-ng-show="order.fecha_captura.length > 0">
+                  Fecha Captura:
+                  {{order.fecha_captura}}</li>
+                <li data-ng-show="order.fecha_valida.length > 0">
+                  Fecha Validación Gerente:
+                  {{order.fecha_valida}}</li>
+                <li data-ng-show="order.fecha_acepta.length > 0">
+                  Fecha Aceptación Cliente:
+                  {{order.fecha_acepta}}</li>
+                <li data-ng-show="order.fecha_actualizacion.length > 0">
+                  Fecha Última modificación:
+                  {{order.fecha_actualizacion}}</li>
               </ul>
+              <span class="text-info"
+                data-ng-show="order.validado > 0">Validada</span>
             </div>
           </div>
         </div>
@@ -32,9 +53,12 @@
           <div class="col-xs-12 col-sm-6">
             <h4>Cliente</h4>
             <div class="well well-sm">
-              <ul class="list-inline">
-                <li>Cliente: {{currentOrder.client.cliente}}</li>
-                <li>Contacto: {{currentOrder.client.contacto}}</li>
+                Cliente: {{order.cliente.cliente}}
+                {{order.cliente.area.length > 0 &&
+                ' - ' + order.cliente.area ||
+                ''}}
+                <br>
+                Contacto: {{order.cliente.contacto}}</li>
               </ul>
             </div>
           </div>
@@ -42,8 +66,13 @@
             <h4>Solicitud / Cotización</h4>
             <div class="well well-sm">
               <ul class="list-inline">
-                <li>Solicitud: {{currentOrder.serviceRequest.folio}}</li>
-                <li>FEcha: {{currentOrder.serviceRequest.fecha}}</li>
+                <li>Solicitud:
+                  {{order.solicitud.folio}}/
+                  {{order.solicitud.ejercicio}}
+                </li>
+                <li>Fecha:
+                  {{order.solicitud.fecha}}
+                </li>
               </ul>
             </div>
           </div>
@@ -54,19 +83,33 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-xs-12 col-sm-8 col-md-6">
-            <label for="selectObjective" class="sr-only">Medio de Solicitud</label>
-            <select class="form-control" id="selectObjective">
-              <option value="0">Seleccione una opción</option>
-              <option value="1">Oficio</option>
-              <option value="2">Cotización</option>
-              <option value="3">Programa</option>
-              <option value="4">Emergencia</option>
+          <div class="col-xs-12 col-md-6 col-lg-5">
+            <label for="orderSourceSelect" class="sr-only">
+              Seleccione un Medio de Solicitud
+            </label>
+            <select class="form-control" name="orderSourceSelect"
+              required
+              data-ng-model="order.id_origen_orden"
+              >
+              <!-- data-ng-change="selectOrderSource()" -->
+              <option value="0">
+                Seleccione una opción
+              </option>
+              <option data-ng-repeat="orderSource in orderSources"
+                value="{{orderSource.id_origen_orden}}">
+                {{orderSource.origen_orden}}
+              </option>
             </select>
           </div>
           <div class="col-xs-12 col-sm-8 col-md-6">
-            <label class="sr-only" for="emergencyReason">En caso de emergencia, especificar</label>
-            <input type="text" class="form-control" id="emergencyReason" placeholder="En caso de emergencia, especificar">
+            <label class="sr-only" for="emergency">
+              En caso de emergencia, especificar
+            </label>
+            <input type="text" class="form-control"
+              name="emergency"
+              placeholder="En caso de emergencia, especificar"
+              data-ng-model="order.emergencia"
+              >
           </div>
         </div>
         <div class="row">
@@ -75,27 +118,45 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-xs-12 col-sm-8 col-md-6">
-            <label for="selectPointsType">Tipo de matriz</label>
-            <select class="form-control" id="selectPointsType">
-              <option value="0">Seleccione una opción</option>
-              <option value="1">Agua Residual</option>
-              <option value="2">Agua Residual Tratada</option>
-              <option value="3">Agua Potable</option>
-              <option value="4">Agua Superficial</option>
-              <option value="5">Agua Subterránea</option>
-              <option value="6">Agua Residual Municipal</option>
-              <option value="7">Agua Residual Industrial</option>
-              <option value="8">Sedimentos</option>
-              <option value="9">Planta Potabilizadora</option>
-              <option value="10">Otra</option>
+          <div class="col-xs-12 col-md-6 col-lg-5">
+            <label for="matrixSelect" class="sr-only">
+              Seleccione un Tipo de Matriz
+            </label>
+            <select class="form-control" name="matrixSelect"
+              required
+              data-ng-model="order.id_matriz"
+              >
+              <!-- data-ng-change="selectMatrix()" -->
+              <option value="0">
+                Seleccione una opción
+              </option>
+              <option data-ng-repeat="matrix in matrices"
+                value="{{matrix.id_matriz}}">
+                {{matrix.matriz}}
+              </option>
             </select>
           </div>
         </div>
         <div class="row">
           <div class="col-xs-12">
-            <h4>Normas y Parámetros</h4>
-            <p>lista de parámetros solicitados, de acuerdo a Norma o personalizados</p>
+            <h4>Parámetros</h4>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 well well-sm">
+            <div class="row">
+              <div class="col-xs-12 col-sm-6 col-md-4"
+                data-ng-repeat="parameter in order.parametros"
+              >
+                {{parameter.parametro}}
+                <!--
+                <br>
+                <span class="text-muted">
+                  {{parameter.metodo.metodo}}
+                </span>
+                -->
+              </div>
+            </div>
           </div>
         </div>
         <div class="row">
@@ -104,20 +165,34 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-xs-12 col-sm-8 col-md-6">
-            <label for="selectTakeSupervisor">Responsable de muestreo</label>
-            <select class="form-control" id="selectTakeSupervisot">
-              <option value="0">Seleccione una opción</option>
-              <option value="3">Marín Gomar Sosa</option>
-              <option value="12">José Adalberto Olivarez Cornejo</option>
-              <option value="13">Luis Fabián Mercado del Ángel</option>
-              <option value="14">Octavio Elizalde Ulloa</option>
-              <option value="15">Mitzi Acahualxóchitl Rodríguez García</option>
+          <div class="col-xs-12 col-md-6 col-lg-5">
+            <label for="supervisorSelect" class="sr-only">
+              Seleccione un Responsable de muestreo
+            </label>
+            <select class="form-control" name="supervisorSelect"
+              required
+              data-ng-model="order.id_responsable_muestreo"
+              >
+              <!-- data-ng-change="selectSupervisor()" -->
+              <option value="0">
+                Seleccione una opción
+              </option>
+              <option data-ng-repeat="supervisor in supervisors"
+                value="{{supervisor.id_empleado}}">
+                {{supervisor.nombres}}
+                {{supervisor.ap}}
+                {{supervisor.am}}
+              </option>
             </select>
-            <br>
           </div>
         </div>
-        <button class="btn btn-primary" type="submit">Generar Orden Muestreo</button>
+        <br>
+        <button type="submit" class="btn btn-primary"
+          value="Guardar" title="Guardar"
+          data-ng-disabled="!orderForm.$valid"
+          >
+          <!-- data-ng-click="validate()" -->
+          Guardar</button>
       </form>
       <footer class="common-footer">
         <br>

@@ -93,7 +93,7 @@ siclabApp.config(['$routeProvider',
       }).
       when('/muestreo/solicitud', {
           templateUrl: 'partials/muestreo/solicitud.html',
-          controller: 'LabServiceRequestCtrl'
+          controller: 'QuoteCtrl'
       }).
       when('/recepcion/custodia', {
           templateUrl: 'partials/recepcion/custodia.html',

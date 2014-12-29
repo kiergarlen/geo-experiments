@@ -1,0 +1,18 @@
+[
+  {
+    "id_origen_orden":1,
+    "origen_orden":"Oficio"
+  },
+  {
+    "id_origen_orden":2,
+    "origen_orden":"Cotización"
+  },
+  {
+    "id_origen_orden":3,
+    "origen_orden":"Programa"
+  },
+  {
+    "id_origen_orden":4,
+    "origen_orden":"Emergencia"
+  }
+]
