@@ -50,12 +50,14 @@
         <div class="row">
           <div class="col-xs-12 col-md-6 col-lg-5">
             <label for="clientSelect">Seleccione un Cliente</label>
-            <select class="form-control" name="clientSelect"
+            <select class="form-control"
+              id="clientSelect"
+              name="clientSelect"
               required
               data-ng-model="quote.id_cliente"
               >
               <!-- data-ng-change="selectClient()" -->
-              <option value="0">
+              <option value="">
                 Seleccione una opción
               </option>
               <option data-ng-repeat="client in clients"
@@ -103,11 +105,14 @@
         <div class="row">
           <div class="col-xs-12 col-md-6 col-lg-5">
             <label for="normSelect">Análisis de parámetros según Norma</label>
-            <select class="form-control" name="normSelect"
+            <select class="form-control"
+              id="normSelect"
+              name="normSelect"
+              required
               data-ng-model="quote.id_norma"
               >
               <!-- data-ng-change="selectNorm($event)" -->
-              <option value="0">
+              <option value="">
                 Seleccione una opción
               </option>
               <option data-ng-repeat="norm in norms"
@@ -134,7 +139,7 @@
                 <td>
                   <label>
                       <input type="checkbox"
-                        value="1"
+                        value="0"
                         data-ng-model="parameter.selected"
                         name="{{parameter.parametro}}" />
                       {{parameter.parametro}}
@@ -173,8 +178,8 @@
               data-ng-repeat="samplingType in samplingTypes">
               <label>
                 <input type="radio"
-                  name="samplingTypesRadios"
                   id="samplingTypeId{{samplingType.id_tipo_muestreo}}"
+                  name="samplingTypesRadios"
                   value="{{samplingType.id_tipo_muestreo}}"
                   required>
                   {{samplingType.tipo_muestreo}}
