@@ -88,12 +88,14 @@
             <label for="orderSourceSelect" class="sr-only">
               Seleccione un Medio de Solicitud
             </label>
-            <select class="form-control" name="orderSourceSelect"
+            <select class="form-control"
+              id="orderSourceSelect"
+              name="orderSourceSelect"
               required
               data-ng-model="order.id_origen_orden"
               >
               <!-- data-ng-change="selectOrderSource()" -->
-              <option value="0">
+              <option value="">
                 Seleccione una opción
               </option>
               <option data-ng-repeat="orderSource in orderSources"
@@ -107,6 +109,7 @@
               En caso de emergencia, especificar
             </label>
             <input type="text" class="form-control"
+              id="emergencyText"
               name="emergencyText"
               placeholder="En caso de emergencia, especificar"
               data-ng-model="order.emergencia"
@@ -123,12 +126,14 @@
             <label for="matrixSelect" class="sr-only">
               Seleccione un Tipo de Matriz
             </label>
-            <select class="form-control" name="matrixSelect"
+            <select class="form-control"
+              id="matrixSelect"
+              name="matrixSelect"
               required
               data-ng-model="order.id_matriz"
               >
               <!-- data-ng-change="selectMatrix()" -->
-              <option value="0">
+              <option value="">
                 Seleccione una opción
               </option>
               <option data-ng-repeat="matrix in matrices"
@@ -142,9 +147,9 @@
               En caso de otra, especificar
             </label>
             <input type="text" class="form-control"
+              id="matrixText"
               name="matrixText"
               placeholder="En caso de otra, especificar"
-              required
               data-ng-model="order.matriz_otra"
               >
           </div>
@@ -181,12 +186,14 @@
             <label for="supervisorSelect" class="sr-only">
               Seleccione un Responsable de muestreo
             </label>
-            <select class="form-control" name="supervisorSelect"
+            <select class="form-control"
+              id="supervisorSelect"
+              name="supervisorSelect"
               required
               data-ng-model="order.id_responsable_muestreo"
               >
               <!-- data-ng-change="selectSupervisor()" -->
-              <option value="0">
+              <option value="">
                 Seleccione una opción
               </option>
               <option data-ng-repeat="supervisor in supervisors"
