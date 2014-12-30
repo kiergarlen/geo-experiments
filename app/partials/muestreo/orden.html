@@ -23,25 +23,26 @@
               <ul class="list-inline">
                 <li>
                   Folio:
-                  {{order.folio}}/
+                  {{order.folio}}
+                  /
                   {{order.ejercicio}}</li>
                 <li data-ng-show="order.fecha_orden.length > 0">
                   Fecha actual:
                   {{order.fecha_orden}}</li>
                 <li data-ng-show="order.solicitud.length > 0">
-                  Fecha Solicitud:
+                  Fecha solicitud:
                   {{order.solicitud.fecha_solicitud}}</li>
                 <li data-ng-show="order.fecha_captura.length > 0">
-                  Fecha Captura:
+                  Fecha captura:
                   {{order.fecha_captura}}</li>
                 <li data-ng-show="order.fecha_valida.length > 0">
-                  Fecha Validación Gerente:
+                  Fecha validación:
                   {{order.fecha_valida}}</li>
                 <li data-ng-show="order.fecha_acepta.length > 0">
-                  Fecha Aceptación Cliente:
+                  Fecha aceptación:
                   {{order.fecha_acepta}}</li>
                 <li data-ng-show="order.fecha_actualizacion.length > 0">
-                  Fecha Última modificación:
+                  Fecha actualización:
                   {{order.fecha_actualizacion}}</li>
               </ul>
               <span class="text-info"
@@ -67,11 +68,12 @@
             <div class="well well-sm">
               <ul class="list-inline">
                 <li>Solicitud:
-                  {{order.solicitud.folio}}/
+                  {{order.solicitud.folio_solicitud}}
+                  /
                   {{order.solicitud.ejercicio}}
                 </li>
-                <li>Fecha:
-                  {{order.solicitud.fecha}}
+                <li>Fecha captura:
+                  {{order.solicitud.fecha_captura}}
                 </li>
               </ul>
             </div>
@@ -102,11 +104,11 @@
             </select>
           </div>
           <div class="col-xs-12 col-sm-8 col-md-6">
-            <label class="sr-only" for="emergency">
+            <label class="sr-only" for="emergencyText">
               En caso de emergencia, especificar
             </label>
             <input type="text" class="form-control"
-              name="emergency"
+              name="emergencyText"
               placeholder="En caso de emergencia, especificar"
               data-ng-model="order.emergencia"
               >
@@ -135,6 +137,17 @@
                 {{matrix.matriz}}
               </option>
             </select>
+          </div>
+          <div class="col-xs-12 col-sm-8 col-md-6">
+            <label class="sr-only" for="matrixText">
+              En caso de otra, especificar
+            </label>
+            <input type="text" class="form-control"
+              name="matrixText"
+              placeholder="En caso de otra, especificar"
+              required
+              data-ng-model="order.matriz_otra"
+              >
           </div>
         </div>
         <div class="row">
