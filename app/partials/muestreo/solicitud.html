@@ -1,6 +1,3 @@
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-xs-12 col-lg-8 col-lg-offset-2 main item-z2">
       <div class="row">
         <div class="col-xs-12">
           <h2 class="page-header">Solicitud de Servicios / Cotización</h2>
@@ -8,7 +5,7 @@
       </div>
       <form class="form" role="form"
         name="quoteForm"
-        data-ng-submit="submitQuoteForm()"
+        data-ng-submit="quote.submitQuoteForm()"
         novalidate
         >
         <div class="row">
@@ -48,19 +45,20 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-xs-12 col-md-6 col-lg-5">
-            <label for="clientSelect">Seleccione un Cliente</label>
+          <div class="col-xs-12 col-sm-7 col-md-7 col-lg-6">
+            <label for="clientSelect" class="sr-only">
+              Cliente</label>
             <select class="form-control"
               id="clientSelect"
               name="clientSelect"
               required
               data-ng-model="quote.id_cliente"
+              data-ng-change="quote.selectClient()"
               >
-              <!-- data-ng-change="selectClient()" -->
               <option value="">
                 Seleccione una opción
               </option>
-              <option data-ng-repeat="client in clients"
+              <option data-ng-repeat="client in quote.clients"
                 value="{{client.id_cliente}}">
                 {{client.cliente}}
                 {{client.area.length > 0 &&
@@ -70,19 +68,20 @@
             </select>
             <br>
             <div class="well well-sm item-z2 details-tooltip"
-              data-ng-show="clientDetailsIsShown"
-              data-ng-click="toggleClientInfo($event)">
+              data-ng-show="quote.clientDetailsIsShown"
+              data-ng-click="quote.toggleClientInfo($event)">
               <div class="pull-right">
                 <button type="button" class="close">
                   <span aria-hidden="true">&times;</span>
                   <span class="sr-only">Close</span>
                 </button>
               </div>
-              <h4>{{selectClient(quote.id_cliente).cliente}}<br>
+              <h4>{{quote.selectClient(quote.id_cliente).cliente}}<br>
                 <small>{{quote.cliente.area}}</small>
               </h4>
               <ul class="list-unstyled">
-                <li>Domicilio <strong>{{quote.cliente.calle}}
+                <li>Domicilio <strong>
+                  {{quote.cliente.calle}}
                   {{quote.cliente.numero}}<br>
                   {{quote.cliente.colonia}}</strong></li>
                 <li>Contacto <strong>{{quote.cliente.contacto}}</strong></li>
@@ -92,7 +91,7 @@
               </ul>
             </div>
             <button class="btn btn-default"
-              data-ng-click="toggleClientInfo($event)">
+              data-ng-click="quote.toggleClientInfo($event)">
               Datos Cliente
             </button>
           </div>
@@ -103,19 +102,21 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-xs-12 col-md-6 col-lg-5">
-            <label for="normSelect">Análisis de parámetros según Norma</label>
+          <div class="col-xs-12 col-sm-7 col-md-7 col-lg-6">
+            <label for="normSelect">
+              Análisis de parámetros según Norma
+            </label>
             <select class="form-control"
               id="normSelect"
               name="normSelect"
               required
               data-ng-model="quote.id_norma"
+              data-ng-change="quote.selectNorm($event)"
               >
-              <!-- data-ng-change="selectNorm($event)" -->
               <option value="">
                 Seleccione una opción
               </option>
-              <option data-ng-repeat="norm in norms"
+              <option data-ng-repeat="norm in quote.norms"
                 value="{{norm.id_norma}}">
                 {{norm.norma}}
               </option>
@@ -127,19 +128,18 @@
             <h5>Parámetros seleccionados</h5>
             <h4>
               <span class="text-muted">Costo Total:</span>
-              {{totalParameter() | currency}}
-              {{selectNorm(quote.id_norma)}}
+              {{quote.totalParameter() | currency}}
+              {{quote.selectNorm(quote.id_norma)}}
             </h4>
           </div>
         </div>
         <div class="row">
           <div class="col-xs-12">
             <table class="table table-condensed">
-              <tr data-ng-repeat="parameter in parameters">
+              <tr data-ng-repeat="parameter in quote.parameters">
                 <td>
                   <label>
                       <input type="checkbox"
-                        value="0"
                         data-ng-model="parameter.selected"
                         name="{{parameter.parametro}}" />
                       {{parameter.parametro}}
@@ -175,7 +175,7 @@
         <div class="row">
           <div class="col-xs-6">
             <div class="radio"
-              data-ng-repeat="samplingType in samplingTypes">
+              data-ng-repeat="samplingType in quote.samplingTypes">
               <label>
                 <input type="radio"
                   id="samplingTypeId{{samplingType.id_tipo_muestreo}}"
@@ -190,25 +190,7 @@
         <br>
         <button type="submit" class="btn btn-primary"
           value="Guardar" title="Guardar"
-          data-ng-disabled="!quoteForm.$valid"
+          data-ng-click="quote.validateOrderForm()"
           >
-          <!-- data-ng-click="validate()" -->
           Guardar</button>
       </form>
-      <footer class="common-footer">
-        <br>
-        <strong>Centro de Estudios Limnológicos</strong><br>
-        <ul class="list-inline">
-          <li>Av. Solidaridad Iberoamericana Km 11</li>
-          <li>Col. Las Pintas</li>
-          <li>El Salto</li>
-          <li>Jalisco</li>
-          <li>CP 45690</li>
-          <li>Tel. (33) 3689-1542</li>
-          <li>Fax (33) 3689-4658</li>
-        </ul>
-        <small class=" text-muted">2014 &ndash; <strong>Comisión Estatal del Agua de Jalisco</strong></small>
-      </footer>
-    </div>
-  </div><!-- row -->
-</div>

@@ -1,0 +1,22 @@
+[
+  {
+    "id_clase_punto":1,
+    "clase_punto":"Fijos",
+    "activo":1
+  },
+  {
+    "id_clase_punto":2,
+    "clase_punto":"Provisionales",
+    "activo":1
+  },
+  {
+    "id_clase_punto":3,
+    "clase_punto":"De Interés General",
+    "activo":1
+  },
+  {
+    "id_clase_punto":4,
+    "clase_punto":"De Interés Particular",
+    "activo":1
+  }
+]

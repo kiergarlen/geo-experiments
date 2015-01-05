@@ -5,10 +5,8 @@
 var siclabApp = angular.module('siclabApp', [
   'ngRoute',
   //'ui.bootstrap',
-  'siclabAnimations',
   'siclabDirectives',
   'siclabControllers',
-  'siclabFilters',
   'siclabServices'
 ]);
 
@@ -16,124 +14,174 @@ siclabApp.config(['$routeProvider',
   function($routeProvider) {
     $routeProvider.
       when('/main', {
-          templateUrl: 'partials/main.html',
-          controller: 'TasksCtrl'
+          templateUrl: 'partials/sistema/main.html',
+          controller: 'TasksController',
+          controllerAs: 'tasks'
       }).
       when('/analisis/captura', {
           templateUrl: 'partials/analisis/captura.html',
-          controller: 'AnalysisCtrl'
+          controller: 'AnalysisController',
+          controllerAs: 'analysis'
       }).
       when('/analisis/consulta', {
           templateUrl: 'partials/analisis/consulta.html',
-          controller: 'AnalysisListCtrl'
+          controller: 'AnalysisListController',
+          controllerAs: 'analysisList'
       }).
       when('/catalogo/metodos', {
           templateUrl: 'partials/catalogo/metodos.html',
-          controller: 'MethodsListCtrl'
+          controller: 'MethodsListController',
+          controllerAs: 'methodsList'
       }).
       when('/catalogo/areas', {
           templateUrl: 'partials/catalogo/areas.html',
-          controller: 'DepartmentsListCtrl'
+          controller: 'DepartmentsListController',
+          controllerAs: 'departmentsList'
       }).
       when('/catalogo/clientes', {
           templateUrl: 'partials/catalogo/clientes.html',
-          controller: 'ClientsListCtrl'
+          controller: 'ClientsListController',
+          controllerAs: 'clientsList'
       }).
       when('/catalogo/clientes/:clientId', {
         templateUrl: 'partials/catalogo/cliente.html',
-        controller: 'ClientDetailCtrl'
+        controller: 'ClientDetailController',
+        controllerAs: 'clientDetail'
       }).
       when('/catalogo/empleados', {
           templateUrl: 'partials/catalogo/empleados.html',
-          controller: 'EmployeesListCtrl'
+          controller: 'EmployeesListController',
+          controllerAs: 'employeesList'
       }).
       when('/catalogo/normas', {
           templateUrl: 'partials/catalogo/normas.html',
-          controller: 'NormsListCtrl'
+          controller: 'NormsListController',
+          controllerAs: 'normsList'
       }).
       when('/catalogo/precios', {
           templateUrl: 'partials/catalogo/precios.html',
-          controller: 'PricesListCtrl'
+          controller: 'PricesListController',
+          controllerAs: 'pricesList'
       }).
       when('/catalogo/puntos', {
           templateUrl: 'partials/catalogo/puntos.html',
-          controller: 'PointsListCtrl'
+          controller: 'PointsListController',
+          controllerAs: 'pointsList'
       }).
       when('/catalogo/referencia', {
           templateUrl: 'partials/catalogo/referencia.html',
-          controller: 'ReferencesListCtrl'
+          controller: 'ReferencesListController',
+          controllerAs: 'referencesList'
       }).
       when('/inventario/equipos', {
           templateUrl: 'partials/inventario/equipos.html',
-          controller: 'InstrumentsListCtrl'
+          controller: 'InstrumentsListController',
+          controllerAs: 'instrumentsList'
       }).
       when('/inventario/muestras', {
           templateUrl: 'partials/inventario/muestras.html',
-          controller: 'SamplesListCtrl'
+          controller: 'SamplesListController',
+          controllerAs: 'samplesList'
       }).
       when('/inventario/reactivos', {
           templateUrl: 'partials/inventario/reactivos.html',
-          controller: 'ReactivesListCtrl'
+          controller: 'ReactivesListController',
+          controllerAs: 'reactivesList'
       }).
       when('/inventario/recipientes', {
           templateUrl: 'partials/inventario/recipientes.html',
-          controller: 'RecipientsListCtrl'
-      }).
-      when('/muestreo/cotizacion', {
-          templateUrl: 'partials/muestreo/cotizacion.html',
-          controller: 'QuotationCtrl'
+          controller: 'RecipientsListController',
+          controllerAs: 'recipientsList'
       }).
       when('/muestreo/orden', {
           templateUrl: 'partials/muestreo/orden.html',
-          controller: 'SamplingOrderCtrl'
+          controller: 'SamplingOrderController',
+          controllerAs: 'samplingOrder'
       }).
       when('/muestreo/plan', {
           templateUrl: 'partials/muestreo/plan.html',
-          controller: 'SamplingPlanCtrl'
+          controller: 'SamplingPlanController',
+          controllerAs: 'samplingPlan'
+      }).
+      when('/muestreo/plan/hieleras', {
+          templateUrl: 'partials/muestreo/plan/hieleras.html',
+          controller: 'SamplingPlanPreservatorController',
+          controllerAs: 'samplingPlanPreservator'
+      }).
+      when('/muestreo/plan/materiales', {
+          templateUrl: 'partials/muestreo/plan/materiales.html',
+          controller: 'SamplingPlanMaterialistController',
+          controllerAs: 'samplingPlanMaterialist'
+      }).
+      when('/muestreo/plan/reactivos', {
+          templateUrl: 'partials/muestreo/plan/reactivos.html',
+          controller: 'SamplingPlanChemistController',
+          controllerAs: 'samplingPlanChemist'
+      }).
+      when('/muestreo/plan/recipientes', {
+          templateUrl: 'partials/muestreo/plan/recipientes.html',
+          controller: 'SamplingPlanPreparatorController',
+          controllerAs: 'samplingPlanPreparator'
+      }).
+      when('/muestreo/plan/verificacion', {
+          templateUrl: 'partials/muestreo/plan/verificacion.html',
+          controller: 'SamplingPlanCalibratorController',
+          controllerAs: 'samplingPlanCalibrator'
       }).
       when('/muestreo/solicitud', {
           templateUrl: 'partials/muestreo/solicitud.html',
-          controller: 'QuoteCtrl'
+          controller: 'QuoteController',
+          controllerAs: 'quote'
       }).
       when('/recepcion/custodia', {
           templateUrl: 'partials/recepcion/custodia.html',
-          controller: 'CustodyCtrl'
+          controller: 'CustodyController',
+          controllerAs: 'custody'
       }).
       when('/recepcion/campo', {
           templateUrl: 'partials/recepcion/campo.html',
-          controller: 'FieldDataSheetCtrl'
+          controller: 'FieldDataSheetController',
+          controllerAs: 'fieldDataSheet'
       }).
       when('/recepcion/muestra', {
           templateUrl: 'partials/recepcion/muestra.html',
-          controller: 'SampleReceptionCtrl'
+          controller: 'SampleReceptionController',
+          controllerAs: 'sampleReception'
       }).
       when('/recepcion/trabajo', {
           templateUrl: 'partials/recepcion/trabajo.html',
-          controller: 'TaskAssignmentCtrl'
+          controller: 'TaskAssignmentController',
+          controllerAs: 'taskAssignment'
       }).
       when('/reporte/consulta', {
           templateUrl: 'partials/reporte/consulta.html',
-          controller: 'ReportsListCtrl'
+          controller: 'ReportsListController',
+          controllerAs: 'reportsList'
       }).
       when('/reporte/validar', {
           templateUrl: 'partials/reporte/validar.html',
-          controller: 'ReportApprovalCtrl'
+          controller: 'ReportApprovalController',
+          controllerAs: 'reportApproval'
       }).
       when('/sistema/login', {
           templateUrl: 'partials/sistema/login.html',
-          controller: 'LoginCtrl'
+          controller: 'LoginController',
+          controllerAs: 'login'
       }).
       when('/sistema/logout', {
           templateUrl: 'partials/sistema/logout.html',
-          controller: 'LogoutCtrl'
+          controller: 'LogoutController',
+          controllerAs: 'logout'
       }).
       when('/sistema/perfil', {
           templateUrl: 'partials/sistema/perfil.html',
-          controller: 'ProfileCtrl'
+          controller: 'ProfileController',
+          controllerAs: 'profile'
       }).
       when('/sistema/usuarios', {
           templateUrl: 'partials/sistema/usuarios.html',
-          controller: 'UsersListCtrl'
+          controller: 'UsersListController',
+          controllerAs: 'usersList'
       })
       .otherwise({
        redirectTo: '/sistema/login'

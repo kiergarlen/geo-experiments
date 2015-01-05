@@ -1,0 +1,27 @@
+[
+  {
+    "id_objetivo_plan":1,
+    "objetivo_plan":"Programa",
+    "activo":1
+  },
+  {
+    "id_objetivo_plan":2,
+    "objetivo_plan":"Puntos concertados con el cliente",
+    "activo":1
+  },
+  {
+    "id_objetivo_plan":3,
+    "objetivo_plan":"Atención a una emergencia",
+    "activo":1
+  },
+  {
+    "id_objetivo_plan":4,
+    "objetivo_plan":"Obtención de Control, blanco de campo, etc",
+    "activo":1
+  },
+  {
+    "id_objetivo_plan":5,
+    "objetivo_plan":"Otro",
+    "activo":1
+  }
+]

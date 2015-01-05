@@ -1,991 +1,530 @@
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-xs-12 col-lg-8 col-lg-offset-2 main item-z2">
-      <div class="row">
-        <div class="col-xs-12">
-          <h2 class="page-header">Plan de muestreo</h2>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-xs-12">
-          <h4>{{plan.referenceData1Title}}</h4>
-          <ul class="list-inline">
-            <li>{{plan.referenceData1Item1}}</li>
-            <li>{{plan.referenceData1Item2}}</li>
-          </ul>
-        </div>
-      </div>
-      <form class="form" role="form" action="hoja_campo.html">
-        <div class="row">
-          <div class="col-xs-12">
-            <h3 class="page-header">Plan de muestreo</h3>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-xs-12">
-            <h4>Referencia</h4>
-          </div>
-        </div>
-        <div class="form-group">
-          <div class="col-xs-6">
-            <label for="planKey">Folio</label>
-            <input type="text" class="form-control" placeholder="Folio" id="planKey">
-          </div>
-          <div class="col-xs-6">
-            <label for="generationDate">Fecha</label>
-            <input type="text" class="form-control" placeholder="Fecha" id="generationDate">
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-xs-12">
-            <h4>Orden de muestreo</h4>
-          </div>
-        </div>
-        <div class="form-group">
-          <div class="col-xs-4">
-            <label for="orderKey">Folio orden</label>
-            <input type="text" class="form-control" placeholder="Folio" id="orderKey">
-          </div>
-          <div class="col-xs-4">
-            <label for="orderGenerationDate">Fecha orden</label>
-            <input type="text" class="form-control" placeholder="Fecha de Elaboración" id="orderGenerationDate">
-          </div>
-          <div class="col-xs-4">
-            <label for="orderGenerator">Elaboró orden</label>
-            <input type="text" class="form-control" placeholder="Elaboró Orden" id="orderGenerator">
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-xs-12">
-            <h4>Objetivo</h4>
-          </div>
-        </div>
-        <div class="form-group">
-          <label for="selectObjective">Motivo de recolección de muestras</label>
-          <select class="form-control" id="selectObjective">
-            <option value="0">Seleccione una opción</option>
-            <option value="1">Programa</option>
-            <option value="2">Puntos concertados con el cliente</option>
-            <option value="3">Atención a una emergencia</option>
-            <option value="4">Obtención de Control, blanco de campo, etc.</option>
-            <option value="5">Otro</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label for="selectPointsType">Reconocimiento de puntos de muestreo</label>
-          <select class="form-control" id="selectPointsType">
-            <option value="0">Seleccione una opción</option>
-            <option value="1">Fijos</option>
-            <option value="2">Provisionales</option>
-            <option value="3">De Interés General</option>
-            <option value="4">De Interés Particular</option>
-          </select>
-        </div>
-
-        <div class="row">
-          <div class="col-xs-12">
-            <h4>Ubicación</h4>
-          </div>
-        </div>
-        <div class="form-group">
-          <div class="col-xs-8">
-            <label for="domCalle" class="sr-only">Calle</label>
-            <input type="text" class="form-control" placeholder="Calle" id="domCalle">
-          </div>
-          <div class="col-xs-4">
-            <label for="domNum" class="sr-only">Número externo</label>
-            <input type="text" class="form-control" placeholder="Número externo" id="domNum">
-          </div>
-        </div>
-        <div class="form-group">
-          <div class="col-xs-6">
-            <label for="cliMunicipio" class="sr-only">Municipio</label>
-            <input type="text" class="form-control" placeholder="Municipio" id="cliMunicipio">
-          </div>
-          <div class="col-xs-6">
-            <label for="cliLocalidad" class="sr-only">Localidad</label>
-            <input type="text" class="form-control" placeholder="Localidad" id="cliLocalidad">
-          </div>
-        </div>
-        <div class="form-group">
-          <div class="col-xs-6">
-            <label for="cliContacto" class="sr-only">Nombre del Contacto</label>
-            <input type="text" class="form-control" placeholder="Nombre del Contacto" id="cliContacto">
-          </div>
-          <div class="col-xs-6">
-            <label for="cliTelefonoContacto" class="sr-only">Tel. contacto</label>
-            <input type="text" class="form-control" placeholder="Tel. contacto" id="cliTelefonoContacto">
-          </div>
-          <div class="col-xs-12">
-            <label for="cliEmail" class="sr-only">Email contacto</label>
-            <input type="text" class="form-control" placeholder="Email contacto" id="cliEmail">
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-xs-12">
-            <h4>Puntos de muestreo</h4>
-          </div>
-        </div>
-        <div class="form-group">
-          <div class="col-xs-12 col-md-4">
-            <label for="pointsQuantity">Cantidad de puntos</label>
-            <input type="text" class="form-control" placeholder="Cantidad de puntos" id="pointsQuantity">
-          </div>
-          <div class="col-xs-12 col-md-4">
-            <label>Tipo de muestra</label>
-            <div class="radio">
-              <label>
-                <input type="radio" name="takeRadios" id="takeRadios1" checked value="isSingleTake"> Muestra Simple
-              </label>
-              <label>
-                <input type="radio" name="takeRadios" id="takeRadios2" value="isMultipleTake"> Muestra Compuesta
-              </label>
-            </div>
-          </div>
-          <div class="col-xs-12 col-md-4">
-            <label for="sampleFrequency">Frecuencia</label>
-            <input type="text" class="form-control" placeholder="Frecuencia" id="sampleFrequency">
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-xs-12">
-            <h4>Matriz</h4>
-          </div>
-        </div>
-        <div class="form-group">
-          <div class="col-xs-6 col-md-3">
-            <label>
-              <input type="checkbox" value="1"> Agua Residual
-            </label>
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <label>
-              <input type="checkbox" value="2"> Agua Residual Tratada
-            </label>
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <label>
-              <input type="checkbox" value="3"> Agua Potable
-            </label>
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <label>
-              <input type="checkbox" value="4"> Agua Superficial
-            </label>
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <label>
-              <input type="checkbox" value="5"> Agua Subterránea
-            </label>
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <label>
-              <input type="checkbox" value="6"> Agua Residual Municipal
-            </label>
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <label>
-              <input type="checkbox" value="7"> Agua Residual Industrial
-            </label>
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <label>
-              <input type="checkbox" value="8"> Sedimentos
-            </label>
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <label>
-              <input type="checkbox" value="9"> Planta Potabilizadora
-            </label>
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <label>
-              <input type="checkbox" value="10"> Otra Matriz
-            </label>
-          </div>
-        </div>
-        <div class="col-xs-2 col-md-6">
-        </div>
-        <div class="clearfix hidden-xs-block"></div>
-
-        <div class="row">
-          <div class="col-xs-12">
-            <h4>Inicio / Término</h4>
-          </div>
-        </div>
-        <div class="form-group">
-          <div class="col-xs-6 col-md-3">
-            <label for="samplingStartDate">Fecha Inicio</label>
-            <input type="text" class="form-control" placeholder="Fecha Inicio" id="samplingStartDate">
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <label for="samplingStartTime">Hora Inicio</label>
-            <input type="text" class="form-control" placeholder="Hora Inicio" id="samplingStartTime">
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <label for="samplingEndDate">Fecha Término</label>
-            <input type="text" class="form-control" placeholder="Fecha Término" id="samplingEndDate">
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <label for="samplingEndTime">Hora Término</label>
-            <input type="text" class="form-control" placeholder="Hora Término" id="samplingEndTime">
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-xs-12">
-            <h4>Responsables</h4>
-          </div>
-        </div>
-        <div class="form-group">
-          <label for="selectResponsable">Muestreo y entrega</label>
-          <select class="form-control" id="selectResponsable">
-            <option value="0">Seleccione una opción</option>
-            <option value="1">Agua Residual</option>
-            <option value="2">Agua Residual Tratada</option>
-            <option value="3">Agua Potable</option>
-            <option value="4">Agua Superficial</option>
-            <option value="5">Agua Subterránea</option>
-            <option value="6">Agua Residual Municipal</option>
-            <option value="7">Agua Residual Industrial</option>
-            <option value="8">Sedimentos</option>
-            <option value="9">Planta Potabilizadora</option>
-            <option value="10">Otra</option>
-          </select>
-          <label for="responsableCompanion" class="sr-only">Acompañante responsable</label>
-          <input type="text" class="form-control" placeholder="Acompañante responsable" id="responsableCompanion">
-
-          <label for="selectCollector">Recolección</label>
-          <select class="form-control" id="selectCollector">
-            <option value="0">Seleccione una opción</option>
-            <option value="1">Agua Residual</option>
-            <option value="2">Agua Residual Tratada</option>
-            <option value="3">Agua Potable</option>
-            <option value="4">Agua Superficial</option>
-            <option value="5">Agua Subterránea</option>
-            <option value="6">Agua Residual Municipal</option>
-            <option value="7">Agua Residual Industrial</option>
-            <option value="8">Sedimentos</option>
-            <option value="9">Planta Potabilizadora</option>
-            <option value="10">Otra</option>
-          </select>
-          <label for="collectorCompanion" class="sr-only">Acompañante recolección</label>
-          <input type="text" class="form-control" placeholder="Acompañante recolección" id="collectorCompanion">
-
-          <label for="selectRegister">Registro de lecturas</label>
-          <select class="form-control" id="selectRegister">
-            <option value="0">Seleccione una opción</option>
-            <option value="1">Agua Residual</option>
-            <option value="2">Agua Residual Tratada</option>
-            <option value="3">Agua Potable</option>
-            <option value="4">Agua Superficial</option>
-            <option value="5">Agua Subterránea</option>
-            <option value="6">Agua Residual Municipal</option>
-            <option value="7">Agua Residual Industrial</option>
-            <option value="8">Sedimentos</option>
-            <option value="9">Planta Potabilizadora</option>
-            <option value="10">Otra</option>
-          </select>
-          <label for="registerCompanion" class="sr-only">Acompañante registro de lecturas</label>
-          <input type="text" class="form-control" placeholder="Acompañante registro de lecturas" id="registerCompanion">
-        </div>
-        <!--
-        <h4>[Referencia a Hoja de Campo?]</h4>
-        -->
-        <div class="row">
-          <div class="col-xs-12">
-            <h4>Asignación de Actividades</h4>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-xs-12">
-            <h5>Calibración y verificación de equipo</h5>
-          </div>
-        </div>
-        <div class="form-group">
-          <div class="col-xs-12">
-            <label for="calibrationDate">Fecha de calibración</label>
-            <input type="text" placeholder="Fecha de calibración" id="calibrationDate">
-          </div>
-          <div class="col-xs-4">
-            <label for="equipmentInventory1">Inventario IE-MU </label>
-            <input type="text" placeholder="01" id="equipmentInventory1">
-          </div>
-          <div class="col-xs-4">
-            <label for="equipmentLog2">Bitácora BR-MU </label>
-            <input type="text" placeholder="01" id="equipmentLog1">
-          </div>
-          <div class="col-xs-4">
-            <label for="equipmentKey2">Folio</label>
-            <input type="text" placeholder="01" id="equipmentKey1">
-          </div>
-          <div class="col-xs-4">
-            <label for="equipmentInventory2">Inventario IE-MU </label>
-            <input type="text" placeholder="02" id="equipmentInventory2">
-          </div>
-          <div class="col-xs-4">
-            <label for="equipmentLog3">Bitácora BR-MU </label>
-            <input type="text" placeholder="02" id="equipmentLog2">
-          </div>
-          <div class="col-xs-4">
-            <label for="equipmentKey3">Folio</label>
-            <input type="text" placeholder="02" id="equipmentKey2">
-          </div>
-          <div class="col-xs-4">
-            <label for="equipmentInventory3">Inventario IE-MU </label>
-            <input type="text" placeholder="03" id="equipmentInventory3">
-          </div>
-          <div class="col-xs-4">
-            <label for="equipmentLog4">Bitácora BR-MU </label>
-            <input type="text" placeholder="03" id="equipmentLog3">
-          </div>
-          <div class="col-xs-4">
-            <label for="equipmentKey4">Folio</label>
-            <input type="text" placeholder="03" id="equipmentKey3">
-          </div>
-          <div class="col-xs-4">
-            <label for="equipmentInventory4">Inventario IE-MU </label>
-            <input type="text" placeholder="04" id="equipmentInventory4">
-          </div>
-          <div class="col-xs-4">
-            <label for="equipmentLog5">Bitácora BR-MU </label>
-            <input type="text" placeholder="04" id="equipmentLog4">
-          </div>
-          <div class="col-xs-4">
-            <label for="equipmentKey5">Folio</label>
-            <input type="text" placeholder="04" id="equipmentKey4">
-          </div>
-          <div class="col-xs-4">
-            <label for="equipmentInventory5">Inventario IE-MU </label>
-            <input type="text" placeholder="05" id="equipmentInventory5">
-          </div>
-          <div class="col-xs-4">
-            <label for="equipmentLog5">Bitácora BR-MU </label>
-            <input type="text" placeholder="05" id="equipmentLog5">
-          </div>
-          <div class="col-xs-4">
-            <label for="equipmentKey5">Folio</label>
-            <input type="text" placeholder="05" id="equipmentKey5">
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-xs-12">
-            <h5>Preparación de contenendores</h5>
-          </div>
-        </div>
-        <div class="form-group">
-          <div class="col-xs-6 col-md-3">
-            <label>
-              <input type="checkbox" value="1"> Fisicoquímico 1
-            </label>
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <label class="sr-only" for="containerQuantity1">1
-            </label>
-            <input type="text" id="containerQuantity1" placeholder="1">
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <label>
-              <input type="checkbox" value="2"> Fisicoquímico 2
-            </label>
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <label class="sr-only" for="containerQuantity2">2
-            </label>
-            <input type="text" id="containerQuantity2" placeholder="2">
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <label>
-              <input type="checkbox" value="3"> Dureza total
-            </label>
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <label class="sr-only" for="containerQuantity3">3
-            </label>
-            <input type="text" id="containerQuantity3" placeholder="3">
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <label>
-              <input type="checkbox" value="4"> Grasas y aceites
-            </label>
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <label class="sr-only" for="containerQuantity4">4
-            </label>
-            <input type="text" id="containerQuantity4" placeholder="4">
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <label>
-              <input type="checkbox" value="5"> Cianuros
-            </label>
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <label class="sr-only" for="containerQuantity5">5
-            </label>
-            <input type="text" id="containerQuantity5" placeholder="5">
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <label>
-              <input type="checkbox" value="6"> Fenoles
-            </label>
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <label class="sr-only" for="containerQuantity6">6
-            </label>
-            <input type="text" id="containerQuantity6" placeholder="6">
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <label>
-              <input type="checkbox" value="7"> Sulfuros
-            </label>
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <label class="sr-only" for="containerQuantity7">7
-            </label>
-            <input type="text" id="containerQuantity7" placeholder="7">
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <label>
-              <input type="checkbox" value="8"> Metales pesados generales
-            </label>
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <label class="sr-only" for="containerQuantity8">8
-            </label>
-            <input type="text" id="containerQuantity8" placeholder="8">
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <label>
-              <input type="checkbox" value="9"> Metales pesados Hg
-            </label>
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <label class="sr-only" for="containerQuantity9">9
-            </label>
-            <input type="text" id="containerQuantity9" placeholder="9">
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <label>
-              <input type="checkbox" value="10"> Metales pesados As
-            </label>
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <label class="sr-only" for="containerQuantity10">10
-            </label>
-            <input type="text" id="containerQuantity10" placeholder="10">
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <label>
-              <input type="checkbox" value="11"> Coliformes
-            </label>
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <label class="sr-only" for="containerQuantity11">11
-            </label>
-            <input type="text" id="containerQuantity11" placeholder="11">
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <label>
-              <input type="checkbox" value="2"> Coliformes con Tiosulfato
-            </label>
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <label class="sr-only" for="containerQuantity12">12
-            </label>
-            <input type="text" id="containerQuantity12" placeholder="12">
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <label>
-              <input type="checkbox" value="13"> Huevos de Helminto
-            </label>
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <label class="sr-only" for="containerQuantity13">13
-            </label>
-            <input type="text" id="containerQuantity13" placeholder="13">
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <label>
-              <input type="checkbox" value="14"> Clorofilas
-            </label>
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <label class="sr-only" for="containerQuantity14">14
-            </label>
-            <input type="text" id="containerQuantity14" placeholder="14">
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <label>
-              <input type="checkbox" value="15"> Plancton
-            </label>
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <label class="sr-only" for="containerQuantity15">15
-            </label>
-            <input type="text" id="containerQuantity15" placeholder="15">
-          </div>
-        </div>
-
-        <div class="clearfix hidden-xs-block"></div>
-
-        <div class="row">
-          <div class="col-xs-12">
-            <h5>Reactivos y soluciones</h5>
-          </div>
-        </div>
-        <div class="form-group">
-          <div class="col-xs-6 col-md-3">
-            <label>
-              <input type="checkbox" value="1"> Solución de pH 4
-            </label>
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <label class="sr-only" for="reactiveLot
-            ">Lote</label>
-            <input type="text" id="reactiveLot1" placeholder="Lote1">
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <label>
-              <input type="checkbox" value="2"> Solución de pH 7
-            </label>
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <label class="sr-only" for="reactiveLot
-            ">Lote</label>
-            <input type="text" id="reactiveLot2" placeholder="Lote2">
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <label>
-              <input type="checkbox" value="3"> Solución de pH 10
-            </label>
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <label class="sr-only" for="reactiveLot
-            ">Lote</label>
-            <input type="text" id="reactiveLot3" placeholder="Lote3">
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <label>
-              <input type="checkbox" value="4"> Solución de pH _____
-            </label>
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <label class="sr-only" for="reactiveLot
-            ">Lote</label>
-            <input type="text" id="reactiveLot4" placeholder="Lote4">
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <label>
-              <input type="checkbox" value="5"> Acido Clorhídrico
-            </label>
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <label class="sr-only" for="reactiveLot
-            ">Lote</label>
-            <input type="text" id="reactiveLot5" placeholder="Lote5">
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <label>
-              <input type="checkbox" value="6"> Acido sulfúrico
-            </label>
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <label class="sr-only" for="reactiveLot
-            ">Lote</label>
-            <input type="text" id="reactiveLot6" placeholder="Lote6">
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <label>
-              <input type="checkbox" value="7"> Agua desionizada
-            </label>
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <label class="sr-only" for="reactiveLot
-            ">Lote</label>
-            <input type="text" id="reactiveLot7" placeholder="Lote7">
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <label>
-              <input type="checkbox" value="8"> Acido Nítrico
-            </label>
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <label class="sr-only" for="reactiveLot
-            ">Lote</label>
-            <input type="text" id="reactiveLot8" placeholder="Lote8">
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <label>
-              <input type="checkbox" value="9"> Acido Nítrico Instra
-            </label>
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <label class="sr-only" for="reactiveLot
-            ">Lote</label>
-            <input type="text" id="reactiveLot9" placeholder="Lote9">
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <label>
-              <input type="checkbox" value="10"> Conductividad _____
-            </label>
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <label class="sr-only" for="reactiveLot
-            ">Lote</label>
-            <input type="text" id="reactiveLot10" placeholder="Lote10">
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <label>
-              <input type="checkbox" value="11"> Conductividad _____
-            </label>
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <label class="sr-only" for="reactiveLot
-            ">Lote</label>
-            <input type="text" id="reactiveLot11" placeholder="Lote11">
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <label>
-              <input type="checkbox" value="12"> Conductividad _____
-            </label>
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <label class="sr-only" for="reactiveLot
-            ">Lote</label>
-            <input type="text" id="reactiveLot12" placeholder="Lote12">
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <label>
-              <input type="checkbox" value="13"> Conductividad _____
-            </label>
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <label class="sr-only" for="reactiveLot
-            ">Lote</label>
-            <input type="text" id="reactiveLot13" placeholder="Lote13">
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <label>
-              <input type="checkbox" value="14"> Acetato de zinc
-            </label>
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <label class="sr-only" for="reactiveLot
-            ">Lote</label>
-            <input type="text" id="reactiveLot14" placeholder="Lote14">
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <label>
-              <input type="checkbox" value="15"> Hidróxido de sodio 6N
-            </label>
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <label class="sr-only" for="reactiveLot
-            ">Lote</label>
-            <input type="text" id="reactiveLot15" placeholder="Lote15">
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <label>
-              <input type="checkbox" value="16"> Sulfato de cobre 10%
-            </label>
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <label class="sr-only" for="reactiveLot
-            ">Lote</label>
-            <input type="text" id="reactiveLot16" placeholder="Lote16">
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <label>
-              <input type="checkbox" value="17"> Hielo
-            </label>
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <label class="sr-only" for="reactiveLot
-            ">Lote</label>
-            <input type="text" id="reactiveLot17" placeholder="Lote17">
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-xs-12">
-            <h5>Preparación de material y equipo</h5>
-          </div>
-        </div>
-        <div class="form-group">
-          <div class="col-xs-6 col-md-3">
-            <label>
-              <input type="checkbox" value="eq1"> Manual de Procedimientos
-            </label>
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <label>
-              <input type="checkbox" value="eq2"> Hoja de campo
-            </label>
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <label>
-              <input type="checkbox" value="eq3"> Bitácora
-            </label>
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <label>
-              <input type="checkbox" value="eq4"> Disco Sechi
-            </label>
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <label>
-              <input type="checkbox" value="eq5"> Draga
-            </label>
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <label>
-              <input type="checkbox" value="eq6"> Tamiz
-            </label>
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <label>
-              <input type="checkbox" value="eq7"> Medidor de temperatura
-            </label>
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <label>
-              <input type="checkbox" value="eq8"> Geoposicionador
-            </label>
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <label>
-              <input type="checkbox" value="eq9"> Tiras reactivas pH
-            </label>
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <label>
-              <input type="checkbox" value="eq10"> Pipetas Pasteur
-            </label>
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <label>
-              <input type="checkbox" value="eq11"> Termo
-            </label>
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <label>
-              <input type="checkbox" value="eq12"> Cubeta
-            </label>
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <label>
-              <input type="checkbox" value="eq13"> Marcadores
-            </label>
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <label>
-              <input type="checkbox" value="eq14"> Papel secante
-            </label>
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <label>
-              <input type="checkbox" value="eq15"> Pisetas
-            </label>
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <label>
-              <input type="checkbox" value="eq16"> Camara
-            </label>
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <label>
-              <input type="checkbox" value="eq17"> Guantes
-            </label>
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <label>
-              <input type="checkbox" value="eq18"> Lentes de Protección
-            </label>
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <label>
-              <input type="checkbox" value="eq19"> Chaleco salvavidas
-            </label>
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <label>
-              <input type="checkbox" value="eq20"> Arnés
-            </label>
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <label>
-              <input type="checkbox" value="eq21"> Cuerdas
-            </label>
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <label>
-              <input type="checkbox" value="eq22"> Cubre bocas
-            </label>
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <label>
-              <input type="checkbox" value="eq23"> Casco
-            </label>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-xs-12">
-            <h5>Hieleras</h5>
-          </div>
-        </div>
-        <div class="form-group">
-          <div class="col-xs-6 col-md-3">
-            <label>
-              <input type="checkbox" value="cooler1"> Hielera 1
-            </label>
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <label>
-              <input type="checkbox" value="cooler2"> Hielera 2
-            </label>
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <label>
-              <input type="checkbox" value="cooler3"> Hielera 3
-            </label>
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <label>
-              <input type="checkbox" value="cooler4"> Hielera 4
-            </label>
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <label>
-              <input type="checkbox" value="cooler5"> Hielera 5
-            </label>
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <label>
-              <input type="checkbox" value="cooler6"> Hielera 6
-            </label>
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <label>
-              <input type="checkbox" value="cooler7"> Hielera 7
-            </label>
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <label>
-              <input type="checkbox" value="cooler8"> Hielera 8
-            </label>
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <label>
-              <input type="checkbox" value="cooler9"> Hielera 9
-            </label>
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <label>
-              <input type="checkbox" value="cooler10"> Hielera 10
-            </label>
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <label>
-              <input type="checkbox" value="cooler11"> Hielera 11
-            </label>
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <label>
-              <input type="checkbox" value="cooler12"> Hielera 12
-            </label>
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <label>
-              <input type="checkbox" value="cooler13"> Hielera 13
-            </label>
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <label>
-              <input type="checkbox" value="cooler14"> Hielera 14
-            </label>
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <label>
-              <input type="checkbox" value="cooler15"> Hielera 15
-            </label>
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <label>
-              <input type="checkbox" value="cooler16"> Hielera 16
-            </label>
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <label>
-              <input type="checkbox" value="cooler17"> Hielera 17
-            </label>
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <label>
-              <input type="checkbox" value="cooler18"> Hielera 18
-            </label>
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <label>
-              <input type="checkbox" value="cooler19"> Hielera 19
-            </label>
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <label>
-              <input type="checkbox" value="cooler"> Hielera 20
-            </label>
-          </div>
-          <div class="col-xs-12">
-            <label for="coolerQuantity">Cantidad de hieleras</label>
-            <input type="text" id="coolerQuantity" placeholder="0">
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-xs-12">
-            <h4>Status</h4>
-          </div>
-        </div>
-        <div class="form-group">
-          <div class="col-xs-12 col-md-6">
-            <label for="selectPlanGenerator">Elaborado por</label>
-            <select class="form-control" id="selectPlanGenerator">
-              <option value="0">Seleccione una opción</option>
-
-            </select>
-          </div>
-          <div class="col-xs-12 col-md-6">
-            <label for="selectPlanSupervisor">Aprobado por</label>
-            <select class="form-control" id="selectPlanSupervisor">
-            </select>
-          </div>
-        </div>
-        <div class="clearfix"><br class="clear"></div>
-        <div class="form-group">
-          <div class="col-xs-12">
-            <button class="btn btn-primary" type="submit">Guardar y enviar a validación</button>
-          </div>
-        </div>
-      </form>
-      <footer class="common-footer">
-        <br>
-        <strong>Centro de Estudios Limnológicos</strong><br>
-        <ul class="list-inline">
-          <li>Av. Solidaridad Iberoamericana Km 11</li>
-          <li>Col. Las Pintas</li>
-          <li>El Salto</li>
-          <li>Jalisco</li>
-          <li>CP 45690</li>
-          <li>Tel. (33) 3689-1542</li>
-          <li>Fax (33) 3689-4658</li>
-        </ul>
-        <small class=" text-muted">2014 &ndash; <strong>Comisión Estatal del Agua de Jalisco</strong></small>
-      </footer>
-    </div>
-  </div><!-- row -->
+<div class="row">
+  <div class="col-xs-12">
+    <h2 class="page-header">Plan de muestreo</h2>
+  </div>
 </div>
+<form class="form" role="form"
+  name="orderForm"
+  data-ng-submit="plan.submitOrderForm()"
+  novalidate
+  >
+  <div class="row">
+    <div class="col-xs-12">
+      <h4>Datos de Referencia</h4>
+      <div class="well well-sm">
+        <ul class="list-inline">
+          <li>
+            Folio:
+            {{plan.folio}}
+            /
+            {{plan.ejercicio}}</li>
+          <li data-ng-show="plan.fecha_plan.length > 0">
+            Fecha actual:
+            {{plan.fecha_plan}}</li>
+          <li data-ng-show="plan.fecha_orden.length > 0">
+            Fecha orden:
+            {{plan.fecha_orden}}</li>
+          <li data-ng-show="plan.solicitud.length > 0">
+            Fecha solicitud:
+            {{plan.solicitud.fecha_solicitud}}</li>
+          <li data-ng-show="plan.fecha_captura.length > 0">
+            Fecha captura:
+            {{plan.fecha_captura}}</li>
+          <li data-ng-show="plan.fecha_valida.length > 0">
+            Fecha validación:
+            {{plan.fecha_valida}}</li>
+          <li data-ng-show="plan.fecha_acepta.length > 0">
+            Fecha aceptación:
+            {{plan.fecha_acepta}}</li>
+          <li data-ng-show="plan.fecha_actualizacion.length > 0">
+            Fecha actualización:
+            {{plan.fecha_actualizacion}}</li>
+        </ul>
+        <span class="text-info"
+          data-ng-show="plan.validado > 0">Validada</span>
+        <h5>Orden de muestreo</h5>
+        Folio:
+        {{plan.orden.folio}}
+        /
+        {{plan.orden.ejercicio}}
+        <br>Fecha:
+        {{plan.orden.fecha_captura}}
+        <h5>Matriz</h5>
+        {{plan.matriz.matriz}}
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      <h4>Objetivo</h4>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12 col-sm-6 col-md-5 col-lg-5">
+      <label for="objectiveSelect" class="sr-only">
+        Objetivo de muestreo
+      </label>
+      <select class="form-control"
+        id="objectiveSelect"
+        name="objectiveSelect"
+        required
+        data-ng-model="plan.id_objetivo_plan"
+        data-ng-change="plan.selectObjective()"
+        >
+        <option value="">
+          Seleccione una opción
+        </option>
+        <option data-ng-repeat="objective in plan.objectives"
+          value="{{objective.id_origen_orden}}">
+          {{objective.origen_orden}}
+        </option>
+      </select>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-7 col-lg-7">
+      <label class="sr-only" for="objectiveText">
+        En caso de otro, especificar
+      </label>
+      <input type="text" class="form-control"
+        id="objectiveText"
+        name="objectiveText"
+        placeholder="En caso de otro, especificar"
+        data-ng-model="plan.objetivo_otro"
+        >
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      <h4>Ubicación</h4>
+      <div class="well well-sm">
+        <h5>
+          {{plan.cliente.cliente}}
+          {{plan.cliente.area}}
+        </h5>
+        <ul class="list-unstyled">
+          <li>Domicilio <strong>{{plan.cliente.calle}}
+            {{plan.cliente.numero}}<br>
+            {{plan.cliente.colonia}}</strong></li>
+          <li><strong>{{plan.cliente.municipio}}
+            {{plan.cliente.localidad}}<br>
+            {{plan.cliente.estado}}</strong></li>
+          <li>Contacto <strong>{{plan.cliente.contacto}}</strong></li>
+          <li>Tel. <strong>{{plan.cliente.tel}}</strong></li>
+          <li>Email <strong>{{plan.cliente.email}}</strong></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      <h4>Puntos de muestreo</h4>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      <button class="btn btn-default" type="button"
+        id="addPointsButton"
+        name="addPointsButton"
+        data-mg-click="plan.addPoints()"
+        >
+        Agregar puntos de muestreo</button>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12 col-sm-6 col-md-5 col-lg-5">
+      <label for="pointTypeSelect">
+        Tipo de puntos de muestreo
+      </label>
+      <select class="form-control"
+        id="pointTypeSelect"
+        name="pointTypeSelect"
+        required
+        data-ng-model="plan.id_reconocimiento_punto"
+        data-ng-change="plan.selectPointType()"
+        >
+        <option value="">
+          Seleccione una opción
+        </option>
+        <option
+          data-ng-repeat="pointType in plan.pointTypes"
+          value="{{pointType.id_origen_orden}}">
+          {{pointType.origen_orden}}
+        </option>
+      </select>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12 col-sm-4">
+      <label for="pointsQuantity">Cantidad de puntos</label>
+      <input type="text"
+        class="form-control"
+        placeholder="Cantidad de puntos"
+        id="pointsQuantity"
+        name="pointsQuantity"
+        data-ng-model="plan.cantidad_puntos"
+        >
+    </div>
+    <div class="col-xs-12 col-sm-4">
+      <label>Tipo de muestreo</label>
+      <div class="radio">
+        <label>
+          <input type="radio" name="samplingTypeRadios"
+            id="samplingTypeRadios1"
+            name="samplingTypeRadios1"
+            value="1"
+            >
+            Simple
+        </label>
+        <label>
+          <input type="radio" name="samplingTypeRadios"
+            id="samplingTypeRadios2"
+            name="samplingTypeRadios2"
+            value="2"
+            >
+            Compuesto
+        </label>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-4">
+      <label for="sampleFrequency">Frecuencia</label>
+      <input type="text"
+        class="form-control"
+        placeholder="Frecuencia"
+        id="sampleFrequency"
+        name="sampleFrequency"
+        data-ng-model="plan.frecuencia_muestreo"
+        >
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      <h4>Inicio / Término de muestreo</h4>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12 col-sm-6 col-md-3">
+      <label for="samplingStartDate">Fecha Inicio</label>
+      <input type="date"
+        class="form-control"
+        placeholder="aaaa-mm-dd"
+        id="samplingStartDate"
+        name="samplingStartDate"
+        required
+        data-ng-model="plan.fecha_inicio"
+        >
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-3">
+      <label for="samplingStartTime">Hora Inicio</label>
+      <input type="time"
+        class="form-control"
+        placeholder="HH:mm:ss"
+        id="samplingStartTime"
+        name="samplingStartTime"
+        required
+        data-ng-model="plan.hora_inicio"
+        >
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-3">
+      <label for="samplingEndDate">Fecha Término</label>
+      <input type="date"
+        class="form-control"
+        placeholder="aaaa-mm-dd"
+        id="samplingEndDate"
+        name="samplingEndDate"
+        required
+        data-ng-model="plan_fecha_fin"
+        >
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-3">
+      <label for="samplingEndTime">Hora Término</label>
+      <input type="time"
+        class="form-control"
+        placeholder="HH:mm:ss"
+        id="samplingEndTime"
+        name="samplingEndTime"
+        required
+        data-ng-model="plan.hora_fin"
+        >
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      <h4>Responsables</h4>
+    </div>
+  </div>
+  <div class="row"
+    data-ng-show="plan.order.responsable_muestreo.responsable"
+    >
+    <div class="col-xs-12">
+      <h5>Responsable muestreo <small>(Orden de muestreo)</small></h5>
+      {{plan.order.responsable_muestreo.responsable}}
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      <h5>Muestreo y entrega</h5>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12 col-sm-6 col-md-7 col-lg-7">
+      <label for="samplingSupervisorSelect" class="sr-only">
+        Responsable de muestreo y entrega
+      </label>
+      <select class="form-control"
+        id="samplingSupervisorSelect"
+        name="samplingSupervisorSelect"
+        required
+        data-ng-model="plan.id_responsable_muestreo"
+        data-ng-change="plan.selectSamplingSupervisor()"
+        >
+        <option value="">
+          Seleccione una opción
+        </option>
+        <option
+          data-ng-repeat="samplingSupervisor in plan.samplingSupervisors"
+          value="{{samplingSupervisor.id_responsable_muestreo}}">
+          {{samplingSupervisor.responsable_muestreo}}
+        </option>
+      </select>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-5 col-lg-5">
+      <label for="samplingSupervisorCompanion" class="sr-only">
+        Acompañante muestreo y entrega
+      </label>
+      <input type="text" class="form-control"
+        id="samplingSupervisorCompanion"
+        name="samplingSupervisorCompanion"
+        placeholder="Acompañante muestreo y entrega"
+        data-ng-model="plan.samplingSupervisorCompanion"
+        >
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      <h5>Recolección</h5>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12 col-sm-6 col-md-7 col-lg-7">
+      <label for="collectingSupervisorSelect" class="sr-only">
+        Responsable de recolección
+      </label>
+      <select class="form-control"
+        id="collectingSupervisorSelect"
+        name="collectingSupervisorSelect"
+        required
+        data-ng-model="plan.id_responsable_recoleccion"
+        data-ng-change="plan.selectCollectingSupervisor()"
+        >
+        <option value="">
+          Seleccione una opción
+        </option>
+        <option
+          data-ng-repeat="collectingSupervisor in plan.collectingSupervisors"
+          value="{{collectingSupervisor.id_responsable_recoleccion}}">
+          {{collectingSupervisor.responsable_recoleccion}}
+        </option>
+      </select>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-5 col-lg-5">
+      <label for="collectingSupervisorCompanion" class="sr-only">
+        Acompañante recolección
+      </label>
+      <input type="text" class="form-control"
+        id="collectingSupervisorCompanion"
+        name="collectingSupervisorCompanion"
+        placeholder="Acompañante recolección"
+        data-ng-model="plan.collectingSupervisorCompanion"
+        >
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      <h5>Registro resultados</h5>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12 col-sm-6 col-md-7 col-lg-7">
+      <label for="loggingSupervisorSelect" class="sr-only">
+        Responsable de registro
+      </label>
+      <select class="form-control"
+        id="loggingSupervisorSelect"
+        name="loggingSupervisorSelect"
+        required
+        data-ng-model="plan.id_responsable_registro"
+        data-ng-change="plan.selectCollectingSupervisor()"
+        >
+        <option value="">
+          Seleccione una opción
+        </option>
+        <option
+          data-ng-repeat="loggingSupervisor in plan.loggingSupervisors"
+          value="{{loggingSupervisor.id_responsable_registro}}">
+          {{loggingSupervisor.responsable_registro}}
+        </option>
+      </select>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-5 col-lg-5">
+      <label for="loggingSupervisorCompanion" class="sr-only">
+        Acompañante registro
+      </label>
+      <input type="text" class="form-control"
+        id="loggingSupervisorCompanion"
+        name="loggingSupervisorCompanion"
+        placeholder="Acompañante registro"
+        data-ng-model="plan.loggingSupervisorCompanion"
+        >
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      <h4>Asignación de Actividades</h4>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      <h5>Calibración y verificación de equipo</h5>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12 col-sm-6 col-md-7 col-lg-7">
+      <label for="calibratorSelect" class="sr-only">
+        Encargado de calibración
+      </label>
+      <select class="form-control"
+        id="calibratorSelect"
+        name="calibratorSelect"
+        required
+        data-ng-model="plan.id_encargado_calibracion"
+        data-ng-change="plan.selectCalibrator()"
+        >
+        <option value="">
+          Seleccione una opción
+        </option>
+        <option
+          data-ng-repeat="calibrator in plan.calibrators"
+          value="{{calibrator.id_encargado_calibracion}}">
+          {{calibrator.encargado_calibracion}}
+        </option>
+      </select>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      <h5>Preparación de recipientes</h5>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12 col-sm-6 col-md-7 col-lg-7">
+      <label for="preparatorSelect" class="sr-only">
+        Encargado de preparación
+      </label>
+      <select class="form-control"
+        id="preparatorSelect"
+        name="preparatorSelect"
+        required
+        data-ng-model="plan.id_encargado_recipientes"
+        data-ng-change="plan.selectPreparator()"
+        >
+        <option value="">
+          Seleccione una opción
+        </option>
+        <option
+          data-ng-repeat="preparator in plan.preparators"
+          value="{{preparator.id_encargado_recipientes}}">
+          {{preparator.encargado_recipientes}}
+        </option>
+      </select>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      <h5>Reactivos y soluciones</h5>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12 col-sm-6 col-md-7 col-lg-7">
+      <label for="chemistSelect" class="sr-only">
+        Encargado de reactivos
+      </label>
+      <select class="form-control"
+        id="chemistSelect"
+        name="chemistSelect"
+        required
+        data-ng-model="plan.id_encargado_reactivos"
+        data-ng-change="plan.selectChemist()"
+        >
+        <option value="">
+          Seleccione una opción
+        </option>
+        <option
+          data-ng-repeat="chemist in plan.chemists"
+          value="{{chemist.id_encargado_reactivos}}">
+          {{chemist.encargado_reactivos}}
+        </option>
+      </select>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      <h5>Preparación de material y equipo</h5>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12 col-sm-6 col-md-7 col-lg-7">
+      <label for="materialistSelect" class="sr-only">
+        Encargado de preparación
+      </label>
+      <select class="form-control"
+        id="materialistSelect"
+        name="materialistSelect"
+        required
+        data-ng-model="plan.id_encargado_materiales"
+        data-ng-change="plan.selectMaterialist()"
+        >
+        <option value="">
+          Seleccione una opción
+        </option>
+        <option
+          data-ng-repeat="materialist in plan.materialists"
+          value="{{materialist.id_encargado_materiales}}">
+          {{materialist.encargado_materiales}}
+        </option>
+      </select>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      <h5>Hieleras</h5>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12 col-sm-6 col-md-7 col-lg-7">
+      <label for="preservatorSelect" class="sr-only">
+        Encargado de hieleras
+      </label>
+      <select class="form-control"
+        id="preservatorSelect"
+        name="preservatorSelect"
+        required
+        data-ng-model="plan.id_encargado_hieleras"
+        data-ng-change="plan.selectPreservator()"
+        >
+        <option value="">
+          Seleccione una opción
+        </option>
+        <option
+          data-ng-repeat="preservator in plan.preservators"
+          value="{{preservator.id_encargado_hieleras}}">
+          {{preservator.encargado_hieleras}}
+        </option>
+      </select>
+    </div>
+  </div>
+  <br>
+  <button type="submit" class="btn btn-primary"
+    value="Guardar" title="Guardar"
+    data-ng-click="plan.validatePlanForm()"
+    >
+    Guardar</button>
+</form>

@@ -1,107 +1,37 @@
-   <div class="container-fluid">
       <div class="row">
-        <div class="col-xs-12 col-lg-8 col-lg-offset-2 main item-z2">
-          <div class="row">
-            <div class="col-xs-12">
-              <h2 class="page-header">{{analisis.itemTitle}}</h2>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-xs-12">
-              <h4>{{analisis.referenceData1Title}}</h4>
-              <ul class="list-inline">
-                <li>{{analisis.referenceData1Item1}}</li>
-                <li>{{analisis.referenceData1Item2}}</li>
-              </ul>
-            </div>
-          </div>
-          <form class="form" role="form" action="">
-            <div class="row">
-              <div class="col-xs-12">
-                <h4>{{analisis.formMainHeader}}</h4>
-              </div>
-            </div>
-            <div class="col-xs-12">
-              <label for="select{{analisis.selectInputId}}">{{analisis.selectInputLabel}}</label>
-              <select class="form-control" id="select{{analisis.selectInputId}}">
-                <option value="0" selected>Select option</option>
-                <option value="1">Item 1</option>
-                <option value="2">Item 2</option>
-                <option value="3">Item 3</option>
-              </select>
-              <label class="sr-only" for="{{analisis.inputTextId}}">{{analisis.inputTextLabel}}</label>
-              <input type="text" class="form-control" id="{{analisis.inputTextId}}" placeholder="{{analisis.inputTextLabel}}">
-              <label class="sr-only" for="{{analisis.inputTextDisabledId}}">{{analisis.inputTextDisabledLabel}}</label>
-              <input type="text" class="form-control" id="{{analisis.inputTextDisabledId}}" placeholder="{{analisis.inputTextDisabledLabel}}" disabled>
-            </div>
-            <div class="row">
-              <div class="col-xs-12">
-                <h5>{{analisis.formSubSectionHeader}}</h5>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-xs-12 col-sm-8">
-                <label for="{{analisis.inputTextTwoThirdsId}}" class="sr-only">{{analisis.inputTextTwoThirdsLabel}}</label>
-                <input type="text" class="form-control" placeholder="{{analisis.inputTextTwoThirdsLabel}}" id="{{analisis.inputTextTwoThirdsId}}">
-              </div>
-              <div class="col-xs-12 col-sm-4">
-                <label for="{{analisis.inputTextOneThirdId}}" class="sr-only">{{analisis.inputTextOneThirdLabel}}</label>
-                <input type="text" class="form-control" placeholder="{{analisis.inputTextOneThirdLabel}}" id="{{analisis.inputTextOneThirdId}}">
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-xs-12">
-                <h5>{{analisis.formSubSectionHeader}}</h5>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-xs-6 col-md-3">
-                <label>
-                  <input type="checkbox" value="1"> {{analisis.checkbox1Label}}
-                </label>
-              </div>
-              <div class="col-xs-6 col-md-3">
-                <label>
-                  <input type="checkbox" value="2"> {{analisis.checkbox2Label}}
-                </label>
-              </div>
-              <div class="col-xs-6 col-md-3">
-                <label>
-                  <input type="checkbox" value="3"> {{analisis.checkbox3Label}}
-                </label>
-              </div>
-              <div class="col-xs-6 col-md-3">
-                <label>
-                  <input type="checkbox" value="4"> {{analisis.checkbox4Label}}
-                </label>
-              </div>
-              <div class="col-xs-6 col-md-3">
-                <label>
-                  <input type="checkbox" value="5"> {{analisis.checkbox5Label}}
-                </label>
-              </div>
-              <div class="col-xs-6 col-md-3">
-                <label>
-                  <input type="checkbox" value="6"> {{analisis.checkbox6Label}}
-                </label>
-              </div>
-            </div>
-            <button class="btn btn-primary" type="submit">{{analisis.buttonSubmitLabel}}</button>
-          </form>
-          <footer class="common-footer">
-            <br>
-            <strong>Centro de Estudios Limnológicos</strong><br>
-            <ul class="list-inline">
-              <li>Av. Solidaridad Iberoamericana Km 11</li>
-              <li>Col. Las Pintas</li>
-              <li>El Salto</li>
-              <li>Jalisco</li>
-              <li>CP 45690</li>
-              <li>Tel. (33) 3689-1542</li>
-              <li>Fax (33) 3689-4658</li>
-            </ul>
-            <small class=" text-muted">2014 &ndash; <strong>Comisión Estatal del Agua de Jalisco</strong></small>
-          </footer>
+        <div class="col-xs-12">
+          <h2 class="page-header">Métodos de análisis</h2>
         </div>
-      </div><!-- row -->
-    </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="panel">
+            <div class="panel-heading">
+              <h3 class="panel-title">Métodos de análisis</h3>
+              <!--
+              <h3 class="sub-header">Métodos de análisis</h3>
+              -->
+            </div>
+            <div class="table-responsive">
+              <table class="table table-hover table-striped" id="employeesList">
+                <thead>
+                  <tr>
+                    <th>Valor</th>
+                    <th>Norma</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr data-ng-repeat="item in normas" id="normId{{item.id_norma}}">
+                    <td>
+                      <h4>{{item.siglas}}</h4>
+                    </td>
+                    <td>
+                      {{item.descipcion}}
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>

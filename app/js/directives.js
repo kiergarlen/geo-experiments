@@ -4,10 +4,12 @@
 
 var siclabDirectives = angular.module('siclabDirectives', []);
 
-siclabDirectives.directive('ngMainNav', function() {
+function mainNav() {
   return {
-    restrict: 'A',
+    restrict: 'EA',
     require: '^ngModel',
-    templateUrl: 'partials/navbar.html'
+    templateUrl: 'partials/sistema/nav.html'
   };
-});
+}
+
+siclabDirectives.directive('mainNav', mainNav);
