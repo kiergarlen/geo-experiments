@@ -1,45 +1,45 @@
-      <div class="row">
-        <div class="col-xs-12">
-          <div class="row">
-            <br>
-            <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-lg-6 col-lg-offset-3">
-              <form role="form" name="loginForm"
-                novalidate>
-                <h3>Ingreso</h3>
-                <div class="form-group"
-                  data-ng-class="{ 'has-error': loginForm.username.$invalid &&
-                  (loginForm.username.$touched || loginForm.$submitted),
-                  'has-success': !loginForm.username.$invalid &&
-                  (loginForm.username.$touched || loginForm.$submitted)}">
-                  <label for="username">Usuario</label>
-                    <input type="text" class="form-control"
-                    name="username"
-                    data-ng-model="user.username"
-                    placeholder="Usuario"
-                    required
-                    autofocus>
-                </div>
-                <div class="form-group"
-                  data-ng-class="{ 'has-error': loginForm.password.$invalid &&
-                  (loginForm.password.$touched || loginForm.$submitted),
-                  'has-success': !loginForm.password.$invalid &&
-                  (loginForm.password.$touched || loginForm.$submitted)}">
-                  <label for="password">Contraseña</label>
-                    <input type="password" class="form-control"
-                    name="password"
-                    data-ng-model="user.password"
-                    placeholder="Contraseña"
-                    required
-                    >
-                </div>
-                <br>
-                <button class="btn btn-lg btn-primary btn-block"
-                  data-ng-click="login.validateLoginForm()"
-                  >
-                  Iniciar sesión</button>
-                <br>
-              </form>
-            </div>
+<div class="row">
+  <div class="col-xs-12">
+    <div class="row">
+      <br>
+      <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-lg-6 col-lg-offset-3">
+        <form role="form" name="loginForm"
+          novalidate>
+          <h3>Ingreso</h3>
+          <div class="form-group"
+            data-ng-class="{ 'has-error': loginForm.username.$invalid &&
+            (loginForm.username.$touched || loginForm.$submitted),
+            'has-success': !loginForm.username.$invalid &&
+            (loginForm.username.$touched || loginForm.$submitted)}">
+            <label for="username">Usuario</label>
+              <input type="text" class="form-control"
+              name="username"
+              data-ng-model="user.username"
+              placeholder="Usuario"
+              required
+              autofocus>
           </div>
-        </div>
+          <div class="form-group"
+            data-ng-class="{ 'has-error': loginForm.password.$invalid &&
+            (loginForm.password.$touched || loginForm.$submitted),
+            'has-success': !loginForm.password.$invalid &&
+            (loginForm.password.$touched || loginForm.$submitted)}">
+            <label for="password">Contraseña</label>
+              <input type="password" class="form-control"
+              name="password"
+              data-ng-model="user.password"
+              placeholder="Contraseña"
+              required
+              >
+          </div>
+          <br>
+          <button class="btn btn-lg btn-primary btn-block"
+            data-ng-click="login.validateLoginForm()"
+            >
+            Iniciar sesión</button>
+          <br>
+        </form>
       </div>
+    </div>
+  </div>
+</div>
