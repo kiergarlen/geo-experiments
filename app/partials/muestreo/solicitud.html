@@ -1,196 +1,196 @@
-      <div class="row">
-        <div class="col-xs-12">
-          <h2 class="page-header">Solicitud de Servicios / Cotización</h2>
-        </div>
+<div class="row">
+  <div class="col-xs-12">
+    <h2 class="page-header">Solicitud de Servicios / Cotización</h2>
+  </div>
+</div>
+<form class="form" role="form"
+  name="quoteForm"
+  data-ng-submit="quote.submitQuoteForm()"
+  novalidate
+  >
+  <div class="row">
+    <div class="col-xs-12">
+      <h4>Datos de Referencia</h4>
+      <div class="well well-sm">
+        <ul class="list-unstyled">
+          <li>
+            Folio:
+            {{quote.quote.folio_solicitud}}/
+            {{quote.quote.ejercicio}}
+          </li>
+          <li data-ng-show="quote.quote.fecha_solicitud.length > 0">
+            Fecha Solicitud: {{quote.quote.fecha_solicitud}}
+          </li>
+          <li data-ng-show="quote.quote.fecha_captura.length > 0">
+            Fecha captura: {{quote.quote.fecha_captura}}
+          </li>
+          <li data-ng-show="quote.quote.fecha_valida.length > 0">
+            Fecha validación gerente: {{quote.quote.fecha_valida}}
+          </li>
+          <li data-ng-show="quote.quote.fecha_acepta.length > 0">
+            Fecha aceptación cliente: {{quote.quote.fecha_acepta}}
+          </li>
+          <li data-ng-show="quote.quote.fecha_actualizacion.length > 0">
+            Fecha actualización: {{quote.quote.fecha_actualizacion}}
+          </li>
+        </ul>
+        <span class="text-info"
+          data-ng-show="quote.quote.validado > 0">Validada</span>
       </div>
-      <form class="form" role="form"
-        name="quoteForm"
-        data-ng-submit="quote.submitQuoteForm()"
-        novalidate
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      <h4>Cliente</h4>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12 col-sm-7 col-md-7 col-lg-6">
+      <label for="clientSelect" class="sr-only">
+        Cliente</label>
+      <select class="form-control"
+        id="clientSelect"
+        name="clientSelect"
+        required
+        data-ng-model="quote.quote.id_cliente"
+        data-ng-change="quote.selectClient()"
         >
-        <div class="row">
-          <div class="col-xs-12">
-            <h4>Datos de Referencia</h4>
-            <div class="well well-sm">
-              <ul class="list-unstyled">
-                <li>
-                  Folio:
-                  {{quote.folio_solicitud}}/
-                  {{quote.ejercicio}}
-                </li>
-                <li data-ng-show="quote.fecha_solicitud.length > 0">
-                  Fecha Solicitud: {{quote.fecha_solicitud}}
-                </li>
-                <li data-ng-show="quote.fecha_captura.length > 0">
-                  Fecha captura: {{quote.fecha_captura}}
-                </li>
-                <li data-ng-show="quote.fecha_valida.length > 0">
-                  Fecha validación gerente: {{quote.fecha_valida}}
-                </li>
-                <li data-ng-show="quote.fecha_acepta.length > 0">
-                  Fecha aceptación cliente: {{quote.fecha_acepta}}
-                </li>
-                <li data-ng-show="quote.fecha_actualizacion.length > 0">
-                  Fecha actualización: {{quote.fecha_actualizacion}}
-                </li>
-              </ul>
-              <span class="text-info"
-                data-ng-show="quote.validado > 0">Validada</span>
-            </div>
-          </div>
+        <option value="">
+          Seleccione una opción
+        </option>
+        <option data-ng-repeat="client in quote.clients"
+          value="{{client.id_cliente}}">
+          {{client.cliente}}
+          {{client.area.length > 0 &&
+          ' - ' + client.area ||
+          ''}}
+        </option>
+      </select>
+      <br>
+      <div class="well well-sm item-z2 details-tooltip"
+        data-ng-show="quote.clientDetailsIsShown"
+        data-ng-click="quote.toggleClientInfo($event)">
+        <div class="pull-right">
+          <button type="button" class="close">
+            <span aria-hidden="true">&times;</span>
+            <span class="sr-only">Close</span>
+          </button>
         </div>
-        <div class="row">
-          <div class="col-xs-12">
-            <h4>Cliente</h4>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-xs-12 col-sm-7 col-md-7 col-lg-6">
-            <label for="clientSelect" class="sr-only">
-              Cliente</label>
-            <select class="form-control"
-              id="clientSelect"
-              name="clientSelect"
-              required
-              data-ng-model="quote.id_cliente"
-              data-ng-change="quote.selectClient()"
-              >
-              <option value="">
-                Seleccione una opción
-              </option>
-              <option data-ng-repeat="client in quote.clients"
-                value="{{client.id_cliente}}">
-                {{client.cliente}}
-                {{client.area.length > 0 &&
-                ' - ' + client.area ||
-                ''}}
-              </option>
-            </select>
-            <br>
-            <div class="well well-sm item-z2 details-tooltip"
-              data-ng-show="quote.clientDetailsIsShown"
-              data-ng-click="quote.toggleClientInfo($event)">
-              <div class="pull-right">
-                <button type="button" class="close">
-                  <span aria-hidden="true">&times;</span>
-                  <span class="sr-only">Close</span>
-                </button>
-              </div>
-              <h4>{{quote.selectClient(quote.id_cliente).cliente}}<br>
-                <small>{{quote.cliente.area}}</small>
-              </h4>
-              <ul class="list-unstyled">
-                <li>Domicilio <strong>
-                  {{quote.cliente.calle}}
-                  {{quote.cliente.numero}}<br>
-                  {{quote.cliente.colonia}}</strong></li>
-                <li>Contacto <strong>{{quote.cliente.contacto}}</strong></li>
-                <li>Tel. <strong>{{quote.cliente.tel}}</strong></li>
-                <li>Email <strong>{{quote.cliente.email}}</strong></li>
-                <li>Tarifa <strong>{{100 * quote.cliente.tasa}}%</strong></li>
-              </ul>
-            </div>
-            <button class="btn btn-default"
-              data-ng-click="quote.toggleClientInfo($event)">
-              Datos Cliente
-            </button>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-xs-12">
-            <h5>Norma</h5>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-xs-12 col-sm-7 col-md-7 col-lg-6">
-            <label for="normSelect">
-              Análisis de parámetros según Norma
-            </label>
-            <select class="form-control"
-              id="normSelect"
-              name="normSelect"
-              required
-              data-ng-model="quote.id_norma"
-              data-ng-change="quote.selectNorm($event)"
-              >
-              <option value="">
-                Seleccione una opción
-              </option>
-              <option data-ng-repeat="norm in quote.norms"
-                value="{{norm.id_norma}}">
-                {{norm.norma}}
-              </option>
-            </select>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-xs-12">
-            <h5>Parámetros seleccionados</h5>
-            <h4>
-              <span class="text-muted">Costo Total:</span>
-              {{quote.totalParameter() | currency}}
-              {{quote.selectNorm(quote.id_norma)}}
-            </h4>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-xs-12">
-            <table class="table table-condensed">
-              <tr data-ng-repeat="parameter in quote.parameters">
-                <td>
-                  <label>
-                      <input type="checkbox"
-                        data-ng-model="parameter.selected"
-                        name="{{parameter.parametro}}" />
-                      {{parameter.parametro}}
-                  </label>
-                </td>
-                <td>
-                  {{parameter.metodoEnsayo}}
-                </td>
-                <td>
-                  <span class="text-muted">
-                    {{parameter.precio | currency}}
-                  </span>
-                </td>
-              </tr>
-            </table>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-xs-6 col-sm-4 col-md-3"
-            data-ng-repeat="activity in quote.actividades_adicionales">
+        <h4>{{quote.selectClient(quote.quote.id_cliente).cliente}}<br>
+          <small>{{quote.quote.cliente.area}}</small>
+        </h4>
+        <ul class="list-unstyled">
+          <li>Domicilio <strong>
+            {{quote.quote.cliente.calle}}
+            {{quote.quote.cliente.numero}}<br>
+            {{quote.quote.cliente.colonia}}</strong></li>
+          <li>Contacto <strong>{{quote.quote.cliente.contacto}}</strong></li>
+          <li>Tel. <strong>{{quote.quote.cliente.tel}}</strong></li>
+          <li>Email <strong>{{quote.quote.cliente.email}}</strong></li>
+          <li>Tarifa <strong>{{100 * quote.quote.cliente.tasa}}%</strong></li>
+        </ul>
+      </div>
+      <button class="btn btn-default"
+        data-ng-click="quote.toggleClientInfo($event)">
+        Datos Cliente
+      </button>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      <h5>Norma</h5>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12 col-sm-7 col-md-7 col-lg-6">
+      <label for="normSelect">
+        Análisis de parámetros según Norma
+      </label>
+      <select class="form-control"
+        id="normSelect"
+        name="normSelect"
+        required
+        data-ng-model="quote.quote.id_norma"
+        data-ng-change="quote.selectNorm($event)"
+        >
+        <option value="">
+          Seleccione una opción
+        </option>
+        <option data-ng-repeat="norm in quote.norms"
+          value="{{norm.id_norma}}">
+          {{norm.norma}}
+        </option>
+      </select>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      <h5>Parámetros seleccionados</h5>
+      <h4>
+        <span class="text-muted">Costo Total:</span>
+        {{quote.totalParameter() | currency}}
+        {{quote.selectNorm(quote.quote.id_norma)}}
+      </h4>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      <table class="table table-condensed">
+        <tr data-ng-repeat="parameter in quote.parameters">
+          <td>
             <label>
-              <input type="checkbox"
-                value="activityId{{activity.id_actividad}}">
-                {{activity.actividad}}
+                <input type="checkbox"
+                  data-ng-model="parameter.selected"
+                  name="{{parameter.parametro}}" />
+                {{parameter.parametro}}
             </label>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-xs-12">
-            <h5>Tipo de muestreo</h5>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-xs-6">
-            <div class="radio"
-              data-ng-repeat="samplingType in quote.samplingTypes">
-              <label>
-                <input type="radio"
-                  id="samplingTypeId{{samplingType.id_tipo_muestreo}}"
-                  name="samplingTypesRadios"
-                  value="{{samplingType.id_tipo_muestreo}}"
-                  required>
-                  {{samplingType.tipo_muestreo}}
-              </label>
-            </div>
-          </div>
-        </div>
-        <br>
-        <button type="submit" class="btn btn-primary"
-          value="Guardar" title="Guardar"
-          data-ng-click="quote.validateOrderForm()"
-          >
-          Guardar</button>
-      </form>
+          </td>
+          <td>
+            {{parameter.metodoEnsayo}}
+          </td>
+          <td>
+            <span class="text-muted">
+              {{parameter.precio | currency}}
+            </span>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-6 col-sm-4 col-md-3"
+      data-ng-repeat="activity in quote.quote.actividades_adicionales">
+      <label>
+        <input type="checkbox"
+          value="activityId{{activity.id_actividad}}">
+          {{activity.actividad}}
+      </label>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      <h5>Tipo de muestreo</h5>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-6">
+      <div class="radio"
+        data-ng-repeat="samplingType in quote.samplingTypes">
+        <label>
+          <input type="radio"
+            id="samplingTypeId{{samplingType.id_tipo_muestreo}}"
+            name="samplingTypesRadios"
+            value="{{samplingType.id_tipo_muestreo}}"
+            required>
+            {{samplingType.tipo_muestreo}}
+        </label>
+      </div>
+    </div>
+  </div>
+  <br>
+  <button type="submit" class="btn btn-primary"
+    value="Guardar" title="Guardar"
+    data-ng-click="quote.validateOrderForm()"
+    >
+    Guardar</button>
+</form>

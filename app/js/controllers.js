@@ -16,8 +16,10 @@ siclabControllers.controller('LoginController',
     {
       if ($scope.user.username == 'rgarcia' &&
         $scope.user.password == '123'
-      ) {
+      )
+      {
         //console.log('Enviando...');
+
       }
       else
       {
@@ -37,15 +39,13 @@ siclabControllers.controller('NavController',
   $scope.menu = Menu.query();
 }]);
 
-function TasksController() {
-  this.welcome = {
+siclabControllers.controller('TasksController',
+  ['$scope', function() {
+  $scope.welcome = {
     title:"Bienvenido",
     subtitle:"Sistema de Control y Administración de Laboratorio"
   };
-}
-
-siclabControllers.controller('TasksController',
-  ['$scope', TasksController]);
+}]);
 
 siclabControllers.controller('ClientsListController',
   ['$scope', 'Client', function($scope, Client) {
@@ -81,72 +81,73 @@ siclabControllers.controller('QuoteController',
 
  ['$scope', 'Client', 'Parameter', 'Norm', 'SamplingType', 'Quote',
   function($scope, Client, Parameter, Norm, SamplingType, Quote) {
-    $scope.clients = Client.query();
-    $scope.parameters = Parameter.query();
-    $scope.norms = Norm.query();
-    $scope.samplingTypes = SamplingType.query();
-    $scope.quote = Quote.query();
-    $scope.clientDetailsIsShown = false;
-    $scope.totalCost = 0;
+    $scope.quote = {};
+    $scope.quote.clients = Client.query();
+    $scope.quote.parameters = Parameter.query();
+    $scope.quote.norms = Norm.query();
+    $scope.quote.samplingTypes = SamplingType.query();
+    $scope.quote.quote = Quote.query();
+    $scope.quote.clientDetailsIsShown = false;
+    $scope.quote.totalCost = 0;
 
-    $scope.toggleClientInfo = function($event) {
-      var id = $scope.quote.id_cliente;
+    $scope.quote.toggleClientInfo = function($event) {
+      var id = $scope.quote.quote.id_cliente;
       $event.stopPropagation();
-      $scope.clientDetailsIsShown = (
-        $scope.quote.id_cliente > 0 &&
-        $scope.selectClient(id).cliente &&
-        !$scope.clientDetailsIsShown
+      $scope.quote.clientDetailsIsShown = (
+        $scope.quote.quote.id_cliente > 0 &&
+        $scope.quote.selectClient(id).cliente &&
+        !$scope.quote.clientDetailsIsShown
       );
     };
 
-    $scope.selectClient = function(idClient) {
-      var i = 0,l = $scope.clients.length;
-      $scope.quote.cliente = {};
+    $scope.quote.selectClient = function(idClient) {
+      var i = 0,l = $scope.quote.clients.length;
+      $scope.quote.quote.cliente = {};
       for (i; i < l; i += 1) {
-        if ($scope.clients[i].id_cliente == idClient) {
-          $scope.quote.cliente = $scope.clients[i];
+        if ($scope.quote.clients[i].id_cliente == idClient) {
+          $scope.quote.quote.cliente = $scope.quote.clients[i];
           break;
         }
       }
-      return $scope.quote.cliente;
+      return $scope.quote.quote.cliente;
     };
 
-    $scope.totalParameter = function(){
+    $scope.quote.totalParameter = function(){
       var t = 0;
-      angular.forEach($scope.parameters, function(s){
+      angular.forEach($scope.quote.parameters, function(s){
         if(s.selected) {
           t += parseFloat(s.precio);
         }
       });
-      t = t * $scope.quote.cliente.tasa;
-      $scope.totalCost = (Math.round(t * 100) / 100);
-      return $scope.totalCost;
+      t = t * $scope.quote.quote.cliente.tasa;
+      $scope.quote.totalCost = (Math.round(t * 100) / 100);
+      return $scope.quote.totalCost;
     };
 
-    $scope.toggleParamSel = function(s){
+    $scope.quote.toggleParamSel = function(s){
       s.selected = !s.selected;
     };
 
-    $scope.selectNorm = function(idNorm) {
+    $scope.quote.selectNorm = function(idNorm) {
       var i, l, j, m, params;
-      l = $scope.norms.length;
-      $scope.quote.norma = {};
-      $scope.quote.parametros_seleccionados = [];
+      l = $scope.quote.norms.length;
+      $scope.quote.quote.norma = {};
+      $scope.quote.quote.parametros_seleccionados = [];
       for (i = 0; i < l; i += 1) {
-        if ($scope.norms[i].id_norma == idNorm) {
-          $scope.quote.norma = $scope.norms[i];
+        if ($scope.quote.norms[i].id_norma == idNorm) {
+          $scope.quote.quote.norma = $scope.quote.norms[i];
           break;
         }
       }
-      l = $scope.parameters.length;
-      params = $scope.quote.norma.parametros;
+      l = $scope.quote.parameters.length;
+      params = $scope.quote.quote.norma.parametros;
       for(i = 0; i < l; i += 1) {
-        $scope.parameters[i].selected = false;
+        $scope.quote.parameters[i].selected = false;
         if (params !== undefined) {
           m = params.length;
           for (j = 0; j < m; j += 1) {
-            if ($scope.parameters[i].id_parametro == params[j].id_parametro) {
-              $scope.parameters[i].selected = true;
+            if ($scope.quote.parameters[i].id_parametro == params[j].id_parametro) {
+              $scope.quote.parameters[i].selected = true;
             }
           }
         }
@@ -154,7 +155,7 @@ siclabControllers.controller('QuoteController',
       return '';
     };
 
-    $scope.submitQuoteForm = function () {
+    $scope.quote.submitQuoteForm = function () {
 
     };
     /*
@@ -173,8 +174,8 @@ siclabControllers.controller('QuoteController',
       registerController.email = "";
       registerController.password = "";
       registerController.repeatPassword = "";
-      $scope.registerForm.$setUntouched(true);
-      $scope.registerForm.$setPristine(true);
+      $scope.quote.registerForm.$setUntouched(true);
+      $scope.quote.registerForm.$setPristine(true);
       };
     */
   }
