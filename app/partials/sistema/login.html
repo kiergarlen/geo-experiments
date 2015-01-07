@@ -1,7 +1,6 @@
 <div class="row">
   <div class="col-xs-12">
     <div class="row">
-      <br>
       <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-lg-6 col-lg-offset-3">
         <form role="form" name="loginForm"
           novalidate>
@@ -14,7 +13,7 @@
             <label for="username">Usuario</label>
               <input type="text" class="form-control"
               name="username"
-              data-ng-model="user.username"
+              data-ng-model="login.user.username"
               placeholder="Usuario"
               required
               autofocus>
@@ -27,18 +26,39 @@
             <label for="password">Contraseña</label>
               <input type="password" class="form-control"
               name="password"
-              data-ng-model="user.password"
+              data-ng-model="login.user.password"
               placeholder="Contraseña"
               required
               >
           </div>
+          <h6>{{login.message}}</h6>
           <br>
           <button class="btn btn-lg btn-primary btn-block"
-            data-ng-click="login.validateLoginForm()"
+            data-ng-click="login.login()"
             >
             Iniciar sesión</button>
           <br>
         </form>
+        <!--
+        <form name="myForm">
+          <input type="text" ng-model="field" name="myField" required minlength="5" />
+          <div ng-messages="myForm.myField.$error">
+          <div ng-message="required">You did not enter a field</div>
+          <div ng-message="minlength">The value entered is too short</div>
+          </div>
+        </form>
+          ng-class="{ 'has-error': registerForm.email.$invalid && (registerForm.email.$touched || registerForm.$submitted), 'has-success': !registerForm.email.$invalid && (registerForm.email.$touched || registerForm.$submitted)}"
+        -->
+        <script>
+        ////and
+        //this.reset = function() {
+        //  registerController.email = "";
+        //  registerController.password = "";
+        //  registerController.repeatPassword = "";
+        //  $scope.quote.registerForm.$setUntouched(true);
+        //  $scope.quote.registerForm.$setPristine(true);
+        //};
+        </script>
       </div>
     </div>
   </div>

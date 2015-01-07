@@ -187,4 +187,5 @@ siclabApp.config(['$routeProvider',
        redirectTo: '/sistema/login'
       })
     ;
-  }]);
+  }
+]);

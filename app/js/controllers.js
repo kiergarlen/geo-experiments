@@ -7,29 +7,31 @@ var siclabControllers = angular.module('siclabControllers', []);
 siclabControllers.controller('LoginController',
   ['$scope', 'Login', function($scope, Login) {
   //$scope.user = Login.query();
-  $scope.user = {
+  $scope.login = {};
+  $scope.login.message = '';
+  $scope.login.user = {
     username: '',
     password: ''
   };
-  $scope.login = function() {
+  $scope.login.login = function() {
+    $scope.login.message = 'Working...';
     if ($scope.loginForm.$valid)
     {
-      if ($scope.user.username == 'rgarcia' &&
-        $scope.user.password == '123'
+      if ($scope.login.user.username == 'rgarcia' &&
+        $scope.login.user.password == '123'
       )
       {
-        //console.log('Enviando...');
+        $scope.login.message = 'Enviando...';
 
       }
       else
       {
-        //console.log('Usuario o contraseña incorrectos');
+        $scope.login.message = 'Usuario o contraseña incorrectos';
       }
-
     }
     else
     {
-      //console.log('Debe ingresar usuario y/o contraseña');
+      $scope.login.message = 'Debe ingresar usuario y/o contraseña';
     }
   };
 }]);
@@ -41,10 +43,8 @@ siclabControllers.controller('NavController',
 
 siclabControllers.controller('TasksController',
   ['$scope', function() {
-  $scope.welcome = {
-    title:"Bienvenido",
-    subtitle:"Sistema de Control y Administración de Laboratorio"
-  };
+  $scope.tasks.title = 'Bienvenido';
+  $scope.tasks.subtitle = 'Sistema de Control y Administración de Laboratorio';
 }]);
 
 siclabControllers.controller('ClientsListController',
@@ -78,7 +78,6 @@ siclabControllers.controller('NormsListController',
 }]);
 
 siclabControllers.controller('QuoteController',
-
  ['$scope', 'Client', 'Parameter', 'Norm', 'SamplingType', 'Quote',
   function($scope, Client, Parameter, Norm, SamplingType, Quote) {
     $scope.quote = {};
@@ -158,50 +157,30 @@ siclabControllers.controller('QuoteController',
     $scope.quote.submitQuoteForm = function () {
 
     };
-    /*
-      <form name="myForm">
-        <input type="text" ng-model="field" name="myField" required minlength="5" />
-        <div ng-messages="myForm.myField.$error">
-        <div ng-message="required">You did not enter a field</div>
-        <div ng-message="minlength">The value entered is too short</div>
-        </div>
-      </form>
-      ng-class="{ 'has-error': registerForm.email.$invalid && (registerForm.email.$touched || registerForm.$submitted), 'has-success': !registerForm.email.$invalid && (registerForm.email.$touched || registerForm.$submitted)}"
-
-      and
-
-      this.reset = function() {
-      registerController.email = "";
-      registerController.password = "";
-      registerController.repeatPassword = "";
-      $scope.quote.registerForm.$setUntouched(true);
-      $scope.quote.registerForm.$setPristine(true);
-      };
-    */
   }
 ]);
 
 siclabControllers.controller('SamplingOrderController',
   ['$scope', 'Quote', 'OrderSource', 'Matrix', 'SamplingSupervisor', 'SamplingOrder',
   function($scope, Quote, OrderSource, Matrix, SamplingSupervisor, SamplingOrder) {
-    $scope.order = SamplingOrder.query();
-    $scope.quote = Quote.query();
-    $scope.orderSources = OrderSource.query();
-    $scope.matrices = Matrix.query();
-    $scope.supervisors = SamplingSupervisor.query();
-    $scope.selectOrderSource = function() {
+    $scope.order.order = SamplingOrder.query();
+    $scope.order.quote = Quote.query();
+    $scope.order.orderSources = OrderSource.query();
+    $scope.order.matrices = Matrix.query();
+    $scope.order.supervisors = SamplingSupervisor.query();
+    $scope.order.selectOrderSource = function() {
 
     };
-    $scope.selectMatrix = function() {
+    $scope.order.selectMatrix = function() {
 
     };
-    $scope.selectSupervisor = function() {
+    $scope.order.selectSupervisor = function() {
 
     };
-    $scope.validateOrderForm = function() {
+    $scope.order.validateOrderForm = function() {
 
     };
-    $scope.submitOrderForm = function() {
+    $scope.order.submitOrderForm = function() {
 
     };
   }
@@ -209,7 +188,7 @@ siclabControllers.controller('SamplingOrderController',
 
 siclabControllers.controller('SamplingPlanController',
   ['$scope',
-  function() {}
+  function() {
+
+  }
 ]);
-
-
